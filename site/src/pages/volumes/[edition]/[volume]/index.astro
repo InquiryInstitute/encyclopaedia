@@ -1,0 +1,256 @@
+---
+import { getVolume, getAllVolumes, type Entry } from '../../../../data/volumes';
+
+export async function getStaticPaths() {
+  const volumes = getAllVolumes();
+  const editions = ['adult', 'children'];
+  const paths = [];
+  
+  for (const edition of editions) {
+    for (const volume of volumes) {
+      paths.push({
+        params: {
+          edition,
+          volume: volume.slug,
+        },
+      });
+    }
+  }
+  
+  return paths;
+}
+
+interface Props {
+  edition: string;
+  volume: string;
+}
+
+const { edition, volume } = Astro.params;
+
+// Map volume slug to volume number
+const volumeMap: Record<string, string> = {
+  'volume-01-mind': 'I',
+  'volume-02-language-meaning': 'II',
+  'volume-03-nature': 'III',
+  'volume-04-measure': 'IV',
+  'volume-05-society': 'V',
+  'volume-06-art-form': 'VI',
+  'volume-07-knowledge': 'VII',
+  'volume-08-history': 'VIII',
+  'volume-09-ethics': 'IX',
+  'volume-10-machines': 'X',
+  'volume-11-futures': 'XI',
+  'volume-12-limits': 'XII',
+};
+
+const volumeNum = volumeMap[volume || ''] || 'I';
+const editionType = (edition === 'children' ? 'children' : 'adult') as 'adult' | 'children';
+const volumeData = getVolume(editionType, volumeNum);
+
+if (!volumeData) {
+  return Astro.redirect('/404');
+}
+
+// Group entries by type
+const entriesByType = volumeData.entries.reduce((acc: Record<string, Entry[]>, entry: Entry) => {
+  if (!acc[entry.type]) {
+    acc[entry.type] = [];
+  }
+  acc[entry.type].push(entry);
+  return acc;
+}, {} as Record<string, Entry[]>);
+
+// Sort entries alphabetically within each type
+Object.keys(entriesByType).forEach(type => {
+  entriesByType[type].sort((a: Entry, b: Entry) => a.title.localeCompare(b.title));
+});
+---
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volume {volumeData.num}: {volumeData.title} - {editionType === 'adult' ? 'Adult' : 'Children\'s'} Edition | The Encyclopædia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-wood-dark: #3d2914;
+      --color-wood: #5c3d1e;
+      --color-wood-light: #8b6914;
+      --color-shadow: rgba(0, 0, 0, 0.4);
+      --color-gold: #c9a227;
+      --color-cream: #f5f0e6;
+      --font-display: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Cormorant Garamond', Georgia, serif;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: var(--font-body);
+      background: linear-gradient(180deg, #1a1512 0%, #2a1f18 50%, #1a1512 100%);
+      color: var(--color-cream);
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: var(--color-gold);
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      transition: opacity 0.2s;
+    }
+    
+    .back-link:hover {
+      opacity: 0.8;
+    }
+    
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: var(--color-gold);
+      margin-bottom: 0.5rem;
+    }
+    
+    .subtitle {
+      font-size: 1.1rem;
+      color: #a89080;
+      font-style: italic;
+    }
+    
+    .toc-container {
+      background: rgba(45, 42, 36, 0.6);
+      border-radius: 8px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .toc-section {
+      margin-bottom: 2.5rem;
+    }
+    
+    .toc-section:last-child {
+      margin-bottom: 0;
+    }
+    
+    .toc-section-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+    }
+    
+    .entry-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 0.75rem;
+    }
+    
+    .entry-item {
+      display: flex;
+      flex-direction: column;
+      padding: 0.75rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    
+    .entry-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+    
+    .entry-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+      color: var(--color-cream);
+    }
+    
+    .entry-author {
+      font-size: 0.85rem;
+      color: #a89080;
+      font-style: italic;
+    }
+    
+    /* Font weight variations by type */
+    .entry-item[data-type="major"] .entry-title {
+      font-weight: 700;
+    }
+    
+    .entry-item[data-type="standard"] .entry-title {
+      font-weight: 500;
+    }
+    
+    .entry-item[data-type="boundary"] .entry-title {
+      font-weight: 400;
+    }
+    
+    .entry-item[data-type="closing"] .entry-title {
+      font-weight: 300;
+    }
+    
+    @media (max-width: 768px) {
+      .entry-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/" class="back-link">← Back to Bookshelf</a>
+      <h1>Volume {volumeData.num}: {volumeData.title}</h1>
+      <p class="subtitle">{editionType === 'adult' ? 'Adult' : 'Children\'s'} Edition · 2026</p>
+    </header>
+    
+    <div class="toc-container">
+      <h2 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 2rem; text-align: center; color: var(--color-gold);">
+        Table of Contents
+      </h2>
+      
+      {Object.entries(entriesByType).map(([type, entries]) => (
+        <section class="toc-section">
+          <h3 class="toc-section-title">
+            {type === 'major' ? 'Major Entries' : 
+             type === 'standard' ? 'Standard Entries' :
+             type === 'boundary' ? 'Boundary Entries' :
+             'Closing Entries'}
+          </h3>
+          <ul class="entry-list">
+            {(entries as Entry[]).map((entry) => (
+              <li class="entry-item" data-type={entry.type}>
+                <span class="entry-title">{entry.title}</span>
+                <span class="entry-author">{entry.author}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </div>
+</body>
+</html>

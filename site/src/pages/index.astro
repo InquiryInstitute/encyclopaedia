@@ -1,18 +1,18 @@
 ---
 // The Encyclopædia - Home Page - Bookshelf View
 const volumes = [
-  { num: 'I', title: 'Mind', status: 'active', entries: 29, year: 2026 },
-  { num: 'II', title: 'Language & Meaning', status: 'planned', entries: 19, year: 2026 },
-  { num: 'III', title: 'Nature', status: 'planned', entries: 19, year: 2026 },
-  { num: 'IV', title: 'Measure', status: 'planned', entries: 19, year: 2026 },
-  { num: 'V', title: 'Society', status: 'planned', entries: 19, year: 2026 },
-  { num: 'VI', title: 'Art & Form', status: 'planned', entries: 19, year: 2026 },
-  { num: 'VII', title: 'Knowledge', status: 'planned', entries: 20, year: 2026 },
-  { num: 'VIII', title: 'History', status: 'planned', entries: 19, year: 2026 },
-  { num: 'IX', title: 'Ethics', status: 'planned', entries: 20, year: 2026 },
-  { num: 'X', title: 'Machines', status: 'planned', entries: 20, year: 2026 },
-  { num: 'XI', title: 'Futures', status: 'planned', entries: 20, year: 2026 },
-  { num: 'XII', title: 'Limits', status: 'planned', entries: 21, year: 2026 },
+  { num: 'I', title: 'Mind', status: 'active', entries: 29, year: 2026, slug: 'volume-01-mind' },
+  { num: 'II', title: 'Language & Meaning', status: 'planned', entries: 19, year: 2026, slug: 'volume-02-language-meaning' },
+  { num: 'III', title: 'Nature', status: 'planned', entries: 19, year: 2026, slug: 'volume-03-nature' },
+  { num: 'IV', title: 'Measure', status: 'planned', entries: 19, year: 2026, slug: 'volume-04-measure' },
+  { num: 'V', title: 'Society', status: 'planned', entries: 19, year: 2026, slug: 'volume-05-society' },
+  { num: 'VI', title: 'Art & Form', status: 'planned', entries: 19, year: 2026, slug: 'volume-06-art-form' },
+  { num: 'VII', title: 'Knowledge', status: 'planned', entries: 20, year: 2026, slug: 'volume-07-knowledge' },
+  { num: 'VIII', title: 'History', status: 'planned', entries: 19, year: 2026, slug: 'volume-08-history' },
+  { num: 'IX', title: 'Ethics', status: 'planned', entries: 20, year: 2026, slug: 'volume-09-ethics' },
+  { num: 'X', title: 'Machines', status: 'planned', entries: 20, year: 2026, slug: 'volume-10-machines' },
+  { num: 'XI', title: 'Futures', status: 'planned', entries: 20, year: 2026, slug: 'volume-11-futures' },
+  { num: 'XII', title: 'Limits', status: 'planned', entries: 21, year: 2026, slug: 'volume-12-limits' },
 ];
 
 // Color schemes for editions
@@ -148,6 +148,14 @@ const childrenSpineText = '#f0f4f8';
       cursor: pointer;
       transform-origin: bottom center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .book a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: inherit;
     }
     
     .book:hover {
@@ -410,14 +418,16 @@ const childrenSpineText = '#f0f4f8';
       <div class="books-row">
         {volumes.map(vol => (
           <div class={`book ${vol.status === 'active' ? 'active' : ''}`} data-volume={vol.num} data-edition="adult">
-            <div class="spine" style={`background: linear-gradient(135deg, ${adultSpineColor} 0%, ${adultSpineAccent} 100%); color: ${adultSpineText}; --spine-height: 260px;`}>
-              <span class="volume-num">{vol.num}</span>
-              <span class="volume-title">{vol.title}</span>
-              <span class="edition-mark">
-                <span class="edition-year">{vol.year}</span>
-                <span>Adult</span>
-              </span>
-            </div>
+            <a href={`/volumes/adult/${vol.slug}/`}>
+              <div class="spine" style={`background: linear-gradient(135deg, ${adultSpineColor} 0%, ${adultSpineAccent} 100%); color: ${adultSpineText}; --spine-height: 260px;`}>
+                <span class="volume-num">{vol.num}</span>
+                <span class="volume-title">{vol.title}</span>
+                <span class="edition-mark">
+                  <span class="edition-year">{vol.year}</span>
+                  <span>Adult</span>
+                </span>
+              </div>
+            </a>
           </div>
         ))}
       </div>
@@ -430,14 +440,16 @@ const childrenSpineText = '#f0f4f8';
       <div class="books-row">
         {volumes.map(vol => (
           <div class={`book ${vol.status === 'active' ? 'active' : ''}`} data-volume={vol.num} data-edition="children">
-            <div class="spine" style={`background: linear-gradient(135deg, ${childrenSpineColor} 0%, ${childrenSpineAccent} 100%); color: ${childrenSpineText}; --spine-height: 260px;`}>
-              <span class="volume-num">{vol.num}</span>
-              <span class="volume-title">{vol.title}</span>
-              <span class="edition-mark">
-                <span class="edition-year">{vol.year}</span>
-                <span>Children</span>
-              </span>
-            </div>
+            <a href={`/volumes/children/${vol.slug}/`}>
+              <div class="spine" style={`background: linear-gradient(135deg, ${childrenSpineColor} 0%, ${childrenSpineAccent} 100%); color: ${childrenSpineText}; --spine-height: 260px;`}>
+                <span class="volume-num">{vol.num}</span>
+                <span class="volume-title">{vol.title}</span>
+                <span class="edition-mark">
+                  <span class="edition-year">{vol.year}</span>
+                  <span>Children</span>
+                </span>
+              </div>
+            </a>
           </div>
         ))}
       </div>
