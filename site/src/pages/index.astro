@@ -1,18 +1,18 @@
 ---
 // The Encyclopædia - Home Page - Bookshelf View
 const volumes = [
-  { num: 'I', title: 'Mind', status: 'active', entries: 29 },
-  { num: 'II', title: 'Language & Meaning', status: 'planned', entries: 19 },
-  { num: 'III', title: 'Nature', status: 'planned', entries: 19 },
-  { num: 'IV', title: 'Measure', status: 'planned', entries: 19 },
-  { num: 'V', title: 'Society', status: 'planned', entries: 19 },
-  { num: 'VI', title: 'Art & Form', status: 'planned', entries: 19 },
-  { num: 'VII', title: 'Knowledge', status: 'planned', entries: 20 },
-  { num: 'VIII', title: 'History', status: 'planned', entries: 19 },
-  { num: 'IX', title: 'Ethics', status: 'planned', entries: 20 },
-  { num: 'X', title: 'Machines', status: 'planned', entries: 20 },
-  { num: 'XI', title: 'Futures', status: 'planned', entries: 20 },
-  { num: 'XII', title: 'Limits', status: 'planned', entries: 21 },
+  { num: 'I', title: 'Mind', status: 'active', entries: 29, year: 2026 },
+  { num: 'II', title: 'Language & Meaning', status: 'planned', entries: 19, year: 2026 },
+  { num: 'III', title: 'Nature', status: 'planned', entries: 19, year: 2026 },
+  { num: 'IV', title: 'Measure', status: 'planned', entries: 19, year: 2026 },
+  { num: 'V', title: 'Society', status: 'planned', entries: 19, year: 2026 },
+  { num: 'VI', title: 'Art & Form', status: 'planned', entries: 19, year: 2026 },
+  { num: 'VII', title: 'Knowledge', status: 'planned', entries: 20, year: 2026 },
+  { num: 'VIII', title: 'History', status: 'planned', entries: 19, year: 2026 },
+  { num: 'IX', title: 'Ethics', status: 'planned', entries: 20, year: 2026 },
+  { num: 'X', title: 'Machines', status: 'planned', entries: 20, year: 2026 },
+  { num: 'XI', title: 'Futures', status: 'planned', entries: 20, year: 2026 },
+  { num: 'XII', title: 'Limits', status: 'planned', entries: 21, year: 2026 },
 ];
 
 // Unified color scheme for all volumes
@@ -231,6 +231,18 @@ const spineText = '#ecf0f1';
       letter-spacing: 0.15em;
       text-transform: uppercase;
       opacity: 0.7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+    }
+    
+    .edition-year {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      opacity: 0.85;
     }
     
     /* Active volume glow */
@@ -385,7 +397,10 @@ const spineText = '#ecf0f1';
             <div class="spine" style={`background: linear-gradient(135deg, ${spineColor} 0%, ${spineAccent} 100%); color: ${spineText}; --spine-height: 260px;`}>
               <span class="volume-num">{vol.num}</span>
               <span class="volume-title">{vol.title}</span>
-              <span class="edition-mark">Adult</span>
+              <span class="edition-mark">
+                <span class="edition-year">{vol.year}</span>
+                <span>Adult</span>
+              </span>
             </div>
           </div>
         ))}
