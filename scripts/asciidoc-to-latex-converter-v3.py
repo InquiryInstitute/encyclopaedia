@@ -85,13 +85,27 @@ def get_volume_slug(volume_num):
     return slugs.get(volume_num, 'unknown')
 
 def parse_entry(entry_content):
-    """Parse an entry AsciiDoc block and extract title, canonical text, and marginalia"""
+    """Parse an entry AsciiDoc block and extract title, canonical text, author, and marginalia"""
     # Extract entry title (=== Title) - can be anywhere in file
     title_match = re.search(r'^=== (.+)$', entry_content, re.MULTILINE)
     if not title_match:
         # Try alternative: [[entry-slug]]\n=== Title
         title_match = re.search(r'\[\[entry-[^\]]+\]\]\s*\n=== (.+)$', entry_content, re.MULTILINE)
     title = title_match.group(1).strip() if title_match else "Untitled"
+    
+    # Extract author information
+    canonical_author_match = re.search(r':canonical-author:\s*(.+)', entry_content)
+    canonical_author = canonical_author_match.group(1).strip() if canonical_author_match else None
+    
+    faculty_id_match = re.search(r':faculty-id:\s*(.+)', entry_content)
+    faculty_id = faculty_id_match.group(1).strip() if faculty_id_match else None
+    
+    # Use canonical-author if available, otherwise try to derive from faculty-id
+    author_name = canonical_author
+    if not author_name and faculty_id:
+        # Try to derive name from faculty ID (e.g., a.peirce -> Charles Sanders Peirce)
+        # This is a fallback - ideally canonical-author should always be set
+        author_name = faculty_id.replace('a.', '').replace('.', ' ').title()
     
     # Extract canonical text block - handle both generated and placeholder
     canonical_pattern = re.compile(
@@ -135,6 +149,7 @@ def parse_entry(entry_content):
     return {
         'title': title,
         'canonical': canonical_text,
+        'author': author_name,
         'marginalia': marginalia_blocks
     }
 

@@ -77,6 +77,16 @@
   }%
 }
 
+% Author signature (Britannica-style: end of entry, restrained)
+% Usage: \authorsignature{Author Name}
+\newcommand{\authorsignature}[1]{%
+  \vspace*{0.5\baselineskip}
+  \begin{center}
+    \textsc{--- #1}
+  \end{center}
+  \vspace*{0.3\baselineskip}
+}
+
 % Entry command for spanning both columns (Britannica-style)
 % Usage: \entry{Title}
 \newcommand{\entry}[1]{%
