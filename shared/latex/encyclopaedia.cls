@@ -68,9 +68,13 @@
 % Entry command for spanning both columns
 % Usage: \entry{Title}
 \newcommand{\entry}[1]{%
-  \twocolumn[%
-    \section*{#1}%
-  ]%
+  \onecolumn
+  \vspace*{0.5\baselineskip}
+  \begin{center}
+    \Large\bfseries #1
+  \end{center}
+  \vspace*{0.5\baselineskip}
+  \twocolumn
 }
 
 % End of class
