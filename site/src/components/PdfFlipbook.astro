@@ -369,6 +369,9 @@ const { pdfUrl, title, edition } = Astro.props;
       maxHeight: 1600,
     });
     
+    // Load pages into PageFlip (required for flip effect)
+    pageFlip.loadFromHTML(pages);
+    
     // Render pages as needed
     pageFlip.on('flip', (e) => {
       const currentPage = e.data + 1;
@@ -394,6 +397,7 @@ const { pdfUrl, title, edition } = Astro.props;
     updatePageFlipSize();
     window.addEventListener('resize', () => {
       updatePageFlipSize();
+      pageFlip.update();
     });
   }
   
