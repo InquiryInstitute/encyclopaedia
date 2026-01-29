@@ -19,22 +19,37 @@ get_supabase_vars() {
       SUPABASE_URL="https://${PROJECT_REF}.supabase.co"
       
       # Try to get service role key from Supabase CLI
-      if SUPABASE_SERVICE_ROLE_KEY=$(supabase projects api-keys --project-ref "$PROJECT_REF" 2>/dev/null | grep -i "service_role" | awk '{print $NF}' | head -1); then
-        export SUPABASE_URL
-        export SUPABASE_SERVICE_ROLE_KEY
-        echo "✅ Got Supabase variables from CLI (project: $PROJECT_REF)"
-        return 0
+      # Format: "service_role | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+      API_KEYS_OUTPUT=$(supabase projects api-keys --project-ref "$PROJECT_REF" 2>/dev/null)
+      if [ -n "$API_KEYS_OUTPUT" ]; then
+        SUPABASE_SERVICE_ROLE_KEY=$(echo "$API_KEYS_OUTPUT" | grep -i "service_role" | awk -F'|' '{print $2}' | xargs)
+        if [ -n "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+          export SUPABASE_URL
+          export SUPABASE_SERVICE_ROLE_KEY
+          echo "✅ Got Supabase variables from CLI (project: $PROJECT_REF)"
+          return 0
+        fi
       fi
     fi
     
-    # Try to get from projects list
-    if PROJECT_REF=$(supabase projects list 2>/dev/null | grep -E "pilmscrodlitdrygabvo|xougqdomkoisrxdnagcj" | head -1 | awk '{print $1}'); then
-      SUPABASE_URL="https://${PROJECT_REF}.supabase.co"
-      if SUPABASE_SERVICE_ROLE_KEY=$(supabase projects api-keys --project-ref "$PROJECT_REF" 2>/dev/null | grep -i "service_role" | awk '{print $NF}' | head -1); then
-        export SUPABASE_URL
-        export SUPABASE_SERVICE_ROLE_KEY
-        echo "✅ Got Supabase variables from CLI (project: $PROJECT_REF)"
-        return 0
+    # Try to get from projects list (use linked project or default)
+    if PROJECT_REF=$(supabase projects list 2>/dev/null | grep -E "●.*pilmscrodlitdrygabvo|●.*xougqdomkoisrxdnagcj" | awk '{print $4}' | head -1); then
+      if [ -z "$PROJECT_REF" ]; then
+        # Try without the linked marker
+        PROJECT_REF=$(supabase projects list 2>/dev/null | grep -E "pilmscrodlitdrygabvo|xougqdomkoisrxdnagcj" | awk '{print $4}' | head -1)
+      fi
+      if [ -n "$PROJECT_REF" ]; then
+        SUPABASE_URL="https://${PROJECT_REF}.supabase.co"
+        API_KEYS_OUTPUT=$(supabase projects api-keys --project-ref "$PROJECT_REF" 2>/dev/null)
+        if [ -n "$API_KEYS_OUTPUT" ]; then
+          SUPABASE_SERVICE_ROLE_KEY=$(echo "$API_KEYS_OUTPUT" | grep -i "service_role" | awk -F'|' '{print $2}' | xargs)
+          if [ -n "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            export SUPABASE_URL
+            export SUPABASE_SERVICE_ROLE_KEY
+            echo "✅ Got Supabase variables from CLI (project: $PROJECT_REF)"
+            return 0
+          fi
+        fi
       fi
     fi
   fi
@@ -200,7 +215,7 @@ for volume in "${VOLUMES[@]}"; do
   
   for edition in "${EDITIONS[@]}"; do
     echo ""
-    echo "📚 ${edition^^} EDITION"
+    echo "📚 $(echo "$edition" | tr '[:lower:]' '[:upper:]') EDITION"
     
     # Find all entries
     entries=$(find_entries "$volume" "$edition")
