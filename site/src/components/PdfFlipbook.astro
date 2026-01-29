@@ -118,52 +118,118 @@ const { pdfUrl, title, edition } = Astro.props;
     const viewport = document.getElementById('flipbook-viewport');
     if (!viewport) return 1.0;
     
-    const maxWidth = viewport.clientWidth - 40; // Padding
+    // Account for two pages side by side with gap
+    const maxWidth = (viewport.clientWidth - 60) / 2; // Split width, minus padding and gap
     const maxHeight = viewport.clientHeight - 40;
     
     const widthScale = maxWidth / pageWidth;
     const heightScale = maxHeight / pageHeight;
     
     // Use the smaller scale to fit both dimensions
-    return Math.min(widthScale, heightScale, 1.5); // Cap at 1.5x for readability
+    return Math.min(widthScale, heightScale, 1.2); // Cap at 1.2x for two-page view
   }
   
-  async function renderPage(num) {
+  async function renderSpread(spreadNum) {
     pageRendering = true;
     
     try {
-      const page = await pdfDoc.getPage(num);
-      const viewport = page.getViewport({ scale: 1.0 });
+      // Calculate page numbers for this spread
+      // Spread 1 = pages 1-2, Spread 2 = pages 3-4, etc.
+      const leftPageNum = (spreadNum - 1) * 2 + 1;
+      const rightPageNum = leftPageNum + 1;
       
-      // Calculate optimal scale to fit viewport
-      const optimalScale = calculateScale(viewport.width, viewport.height);
-      const scaledViewport = page.getViewport({ scale: optimalScale });
+      // Render left page
+      if (leftPageNum <= pdfDoc.numPages) {
+        const leftPageObj = await pdfDoc.getPage(leftPageNum);
+        const leftViewport = leftPageObj.getViewport({ scale: 1.0 });
+        const optimalScale = calculateScale(leftViewport.width, leftViewport.height);
+        const scaledLeftViewport = leftPageObj.getViewport({ scale: optimalScale });
+        
+        canvasLeft.height = scaledLeftViewport.height;
+        canvasLeft.width = scaledLeftViewport.width;
+        
+        await leftPageObj.render({
+          canvasContext: ctxLeft,
+          viewport: scaledLeftViewport
+        }).promise;
+        
+        leftPage.style.display = 'block';
+      } else {
+        leftPage.style.display = 'none';
+      }
       
-      canvas.height = scaledViewport.height;
-      canvas.width = scaledViewport.width;
-      
-      const renderContext = {
-        canvasContext: ctx,
-        viewport: scaledViewport
-      };
-      
-      await page.render(renderContext).promise;
+      // Render right page
+      if (rightPageNum <= pdfDoc.numPages) {
+        const rightPageObj = await pdfDoc.getPage(rightPageNum);
+        const rightViewport = rightPageObj.getViewport({ scale: 1.0 });
+        const optimalScale = calculateScale(rightViewport.width, rightViewport.height);
+        const scaledRightViewport = rightPageObj.getViewport({ scale: optimalScale });
+        
+        canvasRight.height = scaledRightViewport.height;
+        canvasRight.width = scaledRightViewport.width;
+        
+        await rightPageObj.render({
+          canvasContext: ctxRight,
+          viewport: scaledRightViewport
+        }).promise;
+        
+        rightPage.style.display = 'block';
+      } else {
+        rightPage.style.display = 'none';
+      }
       
       pageRendering = false;
-      currentPageSpan.textContent = num;
+      currentPageSpan.textContent = `${leftPageNum}${rightPageNum <= pdfDoc.numPages ? '-' + rightPageNum : ''}`;
       
       // Update button states
-      prevBtn.disabled = num <= 1;
-      nextBtn.disabled = num >= pdfDoc.numPages;
+      prevBtn.disabled = currentSpread <= 1;
+      nextBtn.disabled = rightPageNum >= pdfDoc.numPages;
       
       if (pageNumPending !== null) {
-        renderPage(pageNumPending);
+        renderSpread(pageNumPending);
         pageNumPending = null;
       }
     } catch (error) {
-      console.error('Error rendering page:', error);
+      console.error('Error rendering spread:', error);
       pageRendering = false;
     }
+  }
+  
+  function queueRenderSpread(spreadNum) {
+    if (pageRendering) {
+      pageNumPending = spreadNum;
+    } else {
+      renderSpread(spreadNum);
+    }
+  }
+  
+  function onPrevSpread() {
+    if (currentSpread <= 1) return;
+    
+    // Add flip animation
+    const container = document.getElementById('page-container');
+    container.classList.add('flip-left');
+    
+    setTimeout(() => {
+      currentSpread--;
+      renderSpread(currentSpread);
+      container.classList.remove('flip-left');
+    }, 300);
+  }
+  
+  function onNextSpread() {
+    const rightPageNum = currentSpread * 2;
+    if (rightPageNum >= pdfDoc.numPages) return;
+    
+    // Add flip animation
+    const container = document.getElementById('page-container');
+    container.classList.add('flip-right');
+    
+    setTimeout(() => {
+      currentSpread++;
+      renderSpread(currentSpread);
+      container.classList.remove('flip-right');
+    }, 300);
   }
   
   // Handle window resize
@@ -171,31 +237,11 @@ const { pdfUrl, title, edition } = Astro.props;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
-      if (pdfDoc && pageNum) {
-        renderPage(pageNum);
+      if (pdfDoc && currentSpread) {
+        renderSpread(currentSpread);
       }
     }, 250);
   });
-  
-  function queueRenderPage(num) {
-    if (pageRendering) {
-      pageNumPending = num;
-    } else {
-      renderPage(num);
-    }
-  }
-  
-  function onPrevPage() {
-    if (pageNum <= 1) return;
-    pageNum--;
-    queueRenderPage(pageNum);
-  }
-  
-  function onNextPage() {
-    if (pageNum >= pdfDoc.numPages) return;
-    pageNum++;
-    queueRenderPage(pageNum);
-  }
   
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
