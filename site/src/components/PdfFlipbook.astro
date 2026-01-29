@@ -337,12 +337,27 @@ const { pdfUrl, title, edition } = Astro.props;
       container.appendChild(pageDiv);
     }
     
-    // Initialize PageFlip
-    pageFlip = new St.PageFlip(container, {
-      width: 600,
-      height: 800,
-      showCover: false,
+    // Initialize PageFlip (using page-flip library)
+    const PageFlipClass = window.PageFlip;
+    
+    if (!PageFlipClass) {
+      throw new Error('PageFlip library not available. Check console for loading errors.');
+    }
+    
+    // Calculate optimal size for two-page spread
+    const viewport = document.getElementById('flipbook-viewport');
+    const maxWidth = viewport.clientWidth - 60;
+    const maxHeight = viewport.clientHeight - 40;
+    
+    // A4 aspect ratio is ~1.414:1, so for two pages side by side
+    const optimalWidth = Math.min(maxWidth, maxHeight * 1.414 * 2);
+    const optimalHeight = optimalWidth / (1.414 * 2);
+    
+    pageFlip = new PageFlipClass(container, {
+      width: optimalWidth,
+      height: optimalHeight,
       maxShadowOpacity: 0.5,
+      showCover: false,
       drawShadow: true,
       flippingTime: 1000,
       usePortrait: true,
