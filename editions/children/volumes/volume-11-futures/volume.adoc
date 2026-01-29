@@ -1,0 +1,58 @@
+= The Children's Encyclopædia
+:volume: XI
+:volume-title: Futures
+:season: Samhain → Candlemas (Winter)
+:edition: Children
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume XI: Futures
+
+// Major Entries
+include::entries/future.adoc[]
+include::entries/possibility.adoc[]
+include::entries/prediction.adoc[]
+include::entries/hope.adoc[]
+
+// Standard Entries
+include::entries/expectation.adoc[]
+include::entries/anticipation.adoc[]
+include::entries/planning.adoc[]
+include::entries/project.adoc[]
+include::entries/goal.adoc[]
+include::entries/purpose.adoc[]
+include::entries/teleology.adoc[]
+include::entries/potential.adoc[]
+include::entries/tendency.adoc[]
+include::entries/probability-future.adoc[]
+include::entries/risk.adoc[]
+include::entries/scenario.adoc[]
+include::entries/forecast.adoc[]
+include::entries/vision.adoc[]
+include::entries/dream-future.adoc[]
+include::entries/promise-future.adoc[]
+include::entries/commitment.adoc[]
+include::entries/waiting.adoc[]
+
+== Boundary Entries
+include::entries/utopia-future.adoc[]
+include::entries/dystopia.adoc[]
+include::entries/apocalypse.adoc[]
+include::entries/singularity.adoc[]
+
+== Closing Entries
+include::entries/contingency.adoc[]
+include::entries/fate.adoc[]
+include::entries/open-future.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

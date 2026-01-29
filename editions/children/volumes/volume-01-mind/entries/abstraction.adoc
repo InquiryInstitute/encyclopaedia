@@ -1,0 +1,21 @@
+// Entry: austraction (Children's Edition)
+// Canonical Author: Alfred North Whitehead
+// Faculty ID: a.whitehead
+
+[[entry-abstraction]]
+=== austraction
+:canonical-author: Alfred North Whitehead
+:faculty-id: a.whitehead
+:status: canonical
+:entry-type: standard
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/abstraction.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

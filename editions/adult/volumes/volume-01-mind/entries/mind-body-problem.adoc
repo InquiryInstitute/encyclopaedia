@@ -1,0 +1,29 @@
+// Entry: Mind–Body Problem (Adult Edition)
+// Canonical Author: René Descartes
+// Type: Boundary Entry (6–8 pages)
+// Faculty ID: a.descartes
+
+[[entry-mind-body-problem]]
+=== Mind–Body Problem
+:canonical-author: René Descartes
+:faculty-id: a.descartes
+:status: canonical
+:entry-type: boundary
+:length-target: 6–8 pages
+:word-target: 3000–4000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/mind-body-problem.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the real distinction between mind and body—thinking substance and extended substance—and the mystery of their union in the human composite.
+
+Topics to cover:
+- The method of doubt
+- The cogito and the certainty of the mind
+- The nature of extended substance
+- The real distinction of mind and body
+- The union of mind and body
+- The pineal gland and interaction
+====

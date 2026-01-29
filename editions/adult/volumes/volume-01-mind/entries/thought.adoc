@@ -1,0 +1,29 @@
+// Entry: Thought (Adult Edition)
+// Canonical Author: Hannah Arendt
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.arendt
+
+[[entry-thought]]
+=== Thought
+:canonical-author: Hannah Arendt
+:faculty-id: a.arendt
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/thought.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore thinking as the inner dialogue of the soul with itself—the withdrawal from appearance that is necessary for making judgments in the world.
+
+Topics to cover:
+- Thinking and the two-in-one
+- The wind of thought
+- Thinking and common sense
+- The banality of thoughtlessness
+- Thinking and judging
+- The life of the mind
+====

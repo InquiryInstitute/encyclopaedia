@@ -1,0 +1,58 @@
+= The Encyclopædia
+:volume: VII
+:volume-title: Knowledge
+:season: Lammas → Samhain (Autumn)
+:edition: Adult
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume VII: Knowledge
+
+// Major Entries (8–12 pages)
+include::entries/knowledge.adoc[]
+include::entries/truth.adoc[]
+include::entries/evidence.adoc[]
+include::entries/method.adoc[]
+
+// Standard Entries (4–6 pages)
+include::entries/belief-epistemic.adoc[]
+include::entries/justification.adoc[]
+include::entries/certainty.adoc[]
+include::entries/doubt.adoc[]
+include::entries/inquiry.adoc[]
+include::entries/hypothesis.adoc[]
+include::entries/experiment.adoc[]
+include::entries/observation.adoc[]
+include::entries/inference.adoc[]
+include::entries/induction.adoc[]
+include::entries/deduction.adoc[]
+include::entries/proof.adoc[]
+include::entries/demonstration.adoc[]
+include::entries/explanation.adoc[]
+include::entries/understanding.adoc[]
+include::entries/wisdom.adoc[]
+include::entries/opinion.adoc[]
+include::entries/fact.adoc[]
+
+== Boundary Entries
+include::entries/revelation.adoc[]
+include::entries/intuition-epistemic.adoc[]
+include::entries/tacit-knowledge.adoc[]
+include::entries/testimony.adoc[]
+
+== Closing Entries
+include::entries/skepticism.adoc[]
+include::entries/fallibility.adoc[]
+include::entries/learned-ignorance.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

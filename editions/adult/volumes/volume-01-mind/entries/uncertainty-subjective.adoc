@@ -1,0 +1,28 @@
+// Entry: Uncertainty (Subjective) (Adult Edition)
+// Canonical Author: Blaise Pascal
+// Type: Closing Entry (2–4 pages)
+// Faculty ID: a.pascal
+
+[[entry-uncertainty-subjective]]
+=== Uncertainty (Subjective)
+:canonical-author: Blaise Pascal
+:faculty-id: a.pascal
+:status: canonical
+:entry-type: closing
+:length-target: 2–4 pages
+:word-target: 1000–2000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/uncertainty-subjective.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the human condition of uncertainty—caught between infinite spaces that terrify us, we wager without certainty yet must still act.
+
+Topics to cover:
+- The human condition between two infinities
+- The misery and grandeur of man
+- The wager and decision under uncertainty
+- The heart has its reasons
+- Diversion and the avoidance of self
+====

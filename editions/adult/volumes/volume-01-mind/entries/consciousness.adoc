@@ -1,0 +1,29 @@
+// Entry: Consciousness (Adult Edition)
+// Canonical Author: Henri Bergson
+// Type: Major Entry (10–12 pages)
+// Faculty ID: a.bergson
+
+[[entry-consciousness]]
+=== Consciousness
+:canonical-author: Henri Bergson
+:faculty-id: a.bergson
+:status: canonical
+:entry-type: major
+:length-target: 10–12 pages
+:word-target: 5000–6000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/consciousness.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore consciousness as durée (duration)—the continuous flow of inner experience that cannot be adequately captured by spatial metaphors or discrete measurements.
+
+Topics to cover:
+- Duration vs. clock time
+- The qualitative multiplicity of conscious states
+- Memory and the persistence of the past in the present
+- Intuition as the mode of knowing consciousness
+- Critique of associationist psychology
+- Freedom and the creative evolution of mind
+====

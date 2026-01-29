@@ -1,0 +1,21 @@
+// Entry: hauit (Children's Edition)
+// Canonical Author: William James
+// Faculty ID: a.james
+
+[[entry-habit]]
+=== hauit
+:canonical-author: William James
+:faculty-id: a.james
+:status: canonical
+:entry-type: standard
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/habit.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

@@ -1,0 +1,119 @@
+= Back Matter
+:doctype: article
+
+== Index of Names
+
+A comprehensive index of all persons mentioned in Volume I, including canonical authors, marginalia contributors, and cited scholars.
+
+_[Index to be generated during final compilation]_
+
+== Index of Subjects
+
+A thematic index covering all topics discussed across entries.
+
+_[Index to be generated during final compilation]_
+
+== Bibliography
+
+=== Primary Sources
+
+Works by canonical authors consulted in preparing this volume:
+
+* Aristotle. _De Anima_ (On the Soul). Trans. J. A. Smith.
+* Bergson, Henri. _Matter and Memory_. 1896.
+* Darwin, Charles. _The Expression of the Emotions in Man and Animals_. 1872.
+* Descartes, René. _Meditations on First Philosophy_. 1641.
+* Dewey, John. _Experience and Nature_. 1925.
+* Durkheim, Émile. _The Rules of Sociological Method_. 1895.
+* Husserl, Edmund. _Ideas I_. 1913.
+* James, William. _The Principles of Psychology_. 1890.
+* Kant, Immanuel. _Critique of Pure Reason_. 1781.
+* Nicholas of Cusa. _De Docta Ignorantia_ (On Learned Ignorance). 1440.
+* Pascal, Blaise. _Pensées_. 1670.
+* Peirce, Charles Sanders. _Collected Papers_. 1931-1958.
+* Piaget, Jean. _The Psychology of Intelligence_. 1947.
+* Plato. _Apology of Socrates_.
+* Schopenhauer, Arthur. _The World as Will and Representation_. 1818.
+* Spinoza, Baruch. _Ethics_. 1677.
+* Turing, Alan. "Computing Machinery and Intelligence." _Mind_, 1950.
+* Uexküll, Jakob von. _A Foray into the Worlds of Animals and Humans_. 1934.
+* Weber, Ernst. _De Tactu_. 1834.
+* Whitehead, Alfred North. _Process and Reality_. 1929.
+
+=== Secondary Sources
+
+Scholarship informing the marginalia and editorial apparatus:
+
+_[To be compiled during editorial review]_
+
+== Notes on the Marginalia
+
+This volume includes marginalia from the following contributors:
+
+=== Adjunct Voices
+
+Scholars whose work extends or clarifies the canonical texts.
+
+_[Contributor list to be compiled]_
+
+=== Heretic Voices
+
+Thinkers who challenge fundamental assumptions of the canonical texts.
+
+_[Contributor list to be compiled]_
+
+=== Synthetic Voices
+
+AI-generated annotations for pedagogical clarity, clearly marked.
+
+_[None in Adult Edition]_
+
+== Candlemas Notes
+
+This section documents changes made during the annual revision cycle:
+
+=== Year 1 (2026)
+
+* Initial publication of Volume I: Mind
+* 27 entries covering the territory of mental life
+* Marginalia collected from peer review process
+
+== Colophon
+
+_The Encyclopædia_, Volume I: Mind
+
+* *Edition*: Adult
+* *Publisher*: Inquiry Institute
+* *Season*: Candlemas (Spring)
+* *Year*: 2026
+
+Typeset using AsciiDoc and LaTeX. The marginalia layout follows the Talmudic tradition of commentary surrounding canonical text.
+
+This work is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). The canonical texts are in the public domain. Marginalia attributions must be preserved.
+
+== Errata
+
+_[No errata at time of publication]_
+
+Corrections may be submitted to: editors@inquiry.institute
+
+== Cross-Volume Index
+
+References to concepts that appear in other volumes:
+
+* Language → Volume II: Language & Meaning
+* Measurement → Volume IV: Measure
+* Knowledge → Volume VII: Knowledge
+* History → Volume VIII: History
+* Ethics → Volume IX: Ethics
+* Machines → Volume X: Machines
+
+== Coming in Volume II
+
+_Language & Meaning_ opens the Summer season with entries on:
+
+* Sign, Symbol, Metaphor
+* Grammar, Syntax, Semantics
+* Translation, Interpretation
+* Rhetoric, Persuasion
+* And more...

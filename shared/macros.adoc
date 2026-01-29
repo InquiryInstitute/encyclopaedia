@@ -1,0 +1,89 @@
+// Encyclopædia Shared Macros
+// These macros provide consistent formatting across all volumes
+
+// Entry cross-reference
+:xref-entry: xref:entries/
+
+// Volume cross-reference
+:xref-volume: xref:../
+
+// Edition marker
+:edition-adult: Adult Edition
+:edition-children: Children's Edition
+
+// Seasonal gates
+:gate-candlemas: Candlemas (February 2)
+:gate-beltane: Beltane (May 1)
+:gate-lammas: Lammas (August 1)
+:gate-samhain: Samhain (November 1)
+
+// Season ranges
+:spring: {gate-candlemas} → {gate-beltane}
+:summer: {gate-beltane} → {gate-lammas}
+:autumn: {gate-lammas} → {gate-samhain}
+:winter: {gate-samhain} → {gate-candlemas}
+
+// Status indicators
+:status-canonical: 🏛️ Canonical
+:status-adjunct: 📚 Adjunct
+:status-heretic: 🔥 Heretic
+:status-synthetic: 🤖 Synthetic
+
+// Length indicators
+:length-short: ○○○ (10-25 words)
+:length-standard: ●●○ (30-60 words)
+:length-extended: ●●● (80-120 words)
+
+// Custom roles for styling
+:role-canonical: canonical
+:role-marginalia: marginalia
+:role-sidebar: sidebar
+
+// Author citation format
+:cite-format: [{author}, {year}]
+
+// Entry metadata template
+// Usage: include at start of each entry
+// :canonical-author: William James
+// :status: canonical
+// :length-target: 8–12 pages
+
+// Cross-edition link template
+// Links adult entry to corresponding children entry
+// :children-edition: ../../../children/volumes/volume-01-mind/entries/attention.adoc
+
+// Marginalia counter (for unique IDs)
+:marginalia-count: 0
+
+// Standard acknowledgment
+:acknowledgment: This entry is part of _The Encyclopædia_, published by the Inquiry Institute.
+
+// Version tracking
+:encyclopaedia-version: 1.0
+:marginalia-spec-version: 1.0
+
+// Build information (populated by CI)
+:build-date: {localdate}
+:build-time: {localtime}
+
+// Publisher information
+:publisher: Inquiry Institute
+:publisher-url: https://inquiry.institute
+:license: Creative Commons Attribution 4.0 International
+
+// For children's edition
+:reading-level-note: This edition is written for young readers, with the same depth of ideas presented at a gentler pace.
+
+// Pedagogical markers for children's edition
+:thinking-prompt: 💭 _What do you notice?_
+:try-this: 🔬 _Try this:_
+:wonder-why: ❓ _Wonder why?_
+
+// Entry structure markers
+:section-prologue: Prologue
+:section-introduction: Introduction
+:section-main: Main Text
+:section-boundary: Boundary Considerations
+:section-closing: Closing Reflections
+:section-epilogue: Epilogue
+:section-marginalia: Marginalia Notes

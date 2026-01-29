@@ -1,0 +1,21 @@
+// Entry: not knowing (Children's Edition)
+// Canonical Author: Nicholas of Cusa
+// Faculty ID: a.cusa
+
+[[entry-not-knowing]]
+=== not knowing
+:canonical-author: Nicholas of Cusa
+:faculty-id: a.cusa
+:status: canonical
+:entry-type: closing
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/not-knowing.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

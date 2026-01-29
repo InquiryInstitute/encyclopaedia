@@ -1,0 +1,54 @@
+// Entry: Attention (Adult Edition)
+// Canonical Author: William James
+// Type: Major Entry (8–12 pages)
+// Faculty ID: a.james
+
+[[entry-attention]]
+=== Attention
+:canonical-author: William James
+:faculty-id: a.james
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/attention.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore attention as "the taking possession by the mind, in clear and vivid form, of one out of what seem several simultaneously possible objects or trains of thought."
+
+Topics to cover:
+- Focalization and concentration of consciousness
+- Voluntary vs. involuntary attention
+- The selective nature of attention
+- The stream of consciousness and attentional focus
+- Attention and the will
+- Educational implications of attentional capacity
+====
+
+[role=marginalia,
+ type=objection,
+ author="Herbert A. Simon",
+ status="adjunct",
+ year="1971",
+ length="42",
+ targets="paragraph:4",
+ scope="local"]
+====
+Attention functions less as a faculty than as an economic constraint,
+limited by complexity and bounded rationality.
+====
+
+[role=marginalia,
+ type=heretic,
+ author="Simone Weil",
+ status="heretic",
+ year="1947",
+ length="21",
+ targets="entry:Attention",
+ scope="global"]
+====
+Attention is not effort, but the suspension of the self.
+====

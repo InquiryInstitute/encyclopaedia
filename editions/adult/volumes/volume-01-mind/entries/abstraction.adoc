@@ -1,0 +1,28 @@
+// Entry: Abstraction (Adult Edition)
+// Canonical Author: Alfred North Whitehead
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.whitehead
+
+[[entry-abstraction]]
+=== Abstraction
+:canonical-author: Alfred North Whitehead
+:faculty-id: a.whitehead
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/abstraction.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore abstraction as the selective attention to certain features of experience while ignoring others—the "fallacy of misplaced concreteness" when abstractions are mistaken for the full reality from which they were drawn.
+
+Topics to cover:
+- The nature of abstractive hierarchies
+- High abstractions and low abstractions
+- The fallacy of misplaced concreteness
+- Abstraction and scientific method
+- The concrete and the abstract in philosophy
+====

@@ -1,0 +1,29 @@
+// Entry: Perception (Adult Edition)
+// Canonical Author: Maurice Merleau-Ponty
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.merleauponty
+
+[[entry-perception]]
+=== Perception
+:canonical-author: Maurice Merleau-Ponty
+:faculty-id: a.merleauponty
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/perception.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore perception as the primordial contact with the world—the bodily engagement through which meaning emerges before reflective thought.
+
+Topics to cover:
+- The primacy of perception
+- The lived body (corps propre)
+- The phenomenal field
+- Motor intentionality
+- The chiasm of perceiver and perceived
+- Perception and expression
+====

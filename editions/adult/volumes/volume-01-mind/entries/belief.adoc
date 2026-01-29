@@ -1,0 +1,29 @@
+// Entry: Belief (Adult Edition)
+// Canonical Author: Charles Sanders Peirce
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.peirce
+
+[[entry-belief]]
+=== Belief
+:canonical-author: Charles Sanders Peirce
+:faculty-id: a.peirce
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/belief.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore belief as the settlement of doubt—a habit of action that guides our conduct until irritated into inquiry by the unexpected.
+
+Topics to cover:
+- The fixation of belief
+- Doubt as the irritation that spurs inquiry
+- Belief as habit of action
+- Methods of fixing belief
+- The community of inquiry
+- Fallibilism and the growth of belief
+====

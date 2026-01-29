@@ -1,0 +1,21 @@
+// Entry: artificial mind (Children's Edition)
+// Canonical Author: Alan Turing
+// Faculty ID: a.turing
+
+[[entry-artificial-mind]]
+=== artificial mind
+:canonical-author: Alan Turing
+:faculty-id: a.turing
+:status: canonical
+:entry-type: boundary
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/artificial-mind.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

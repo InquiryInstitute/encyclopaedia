@@ -1,0 +1,28 @@
+// Entry: Ignorance (Mental) (Adult Edition)
+// Canonical Author: Socrates
+// Type: Closing Entry (2–4 pages)
+// Faculty ID: a.socrates
+
+[[entry-ignorance-mental]]
+=== Ignorance (Mental)
+:canonical-author: Socrates
+:faculty-id: a.socrates
+:status: canonical
+:entry-type: closing
+:length-target: 2–4 pages
+:word-target: 1000–2000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/ignorance-mental.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the wisdom of knowing that one does not know—the Socratic recognition that awareness of our ignorance is the beginning of inquiry.
+
+Topics to cover:
+- The oracle and the examined life
+- Knowing that one does not know
+- Elenchus and the exposure of false knowledge
+- Ignorance as the beginning of wisdom
+- The gadfly and the unexamined life
+====

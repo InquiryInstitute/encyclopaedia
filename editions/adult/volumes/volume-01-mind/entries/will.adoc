@@ -1,0 +1,29 @@
+// Entry: Will (Adult Edition)
+// Canonical Author: Arthur Schopenhauer
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.schopenhauer
+
+[[entry-will]]
+=== Will
+:canonical-author: Arthur Schopenhauer
+:faculty-id: a.schopenhauer
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/will.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the will as the thing-in-itself—the blind, ceaseless striving that underlies all representation and manifests in every phenomenon from stone to human.
+
+Topics to cover:
+- The world as will and representation
+- Will as the inner nature of phenomena
+- The objectification of will
+- The denial of the will to live
+- Will and suffering
+- Aesthetic contemplation and the will
+====

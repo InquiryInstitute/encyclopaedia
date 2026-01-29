@@ -1,0 +1,21 @@
+// Entry: consciousness (Children's Edition)
+// Canonical Author: Henri Bergson
+// Faculty ID: a.bergson
+
+[[entry-consciousness]]
+=== consciousness
+:canonical-author: Henri Bergson
+:faculty-id: a.bergson
+:status: canonical
+:entry-type: major
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/consciousness.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

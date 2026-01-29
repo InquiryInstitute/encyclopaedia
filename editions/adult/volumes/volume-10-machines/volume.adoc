@@ -1,0 +1,58 @@
+= The Encyclopædia
+:volume: X
+:volume-title: Machines
+:season: Samhain → Candlemas (Winter)
+:edition: Adult
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume X: Machines
+
+// Major Entries (8–12 pages)
+include::entries/machine.adoc[]
+include::entries/tool.adoc[]
+include::entries/automation.adoc[]
+include::entries/computation.adoc[]
+
+// Standard Entries (4–6 pages)
+include::entries/mechanism.adoc[]
+include::entries/engine.adoc[]
+include::entries/lever.adoc[]
+include::entries/wheel.adoc[]
+include::entries/clock.adoc[]
+include::entries/instrument.adoc[]
+include::entries/apparatus.adoc[]
+include::entries/system.adoc[]
+include::entries/process.adoc[]
+include::entries/algorithm.adoc[]
+include::entries/program.adoc[]
+include::entries/data.adoc[]
+include::entries/information.adoc[]
+include::entries/signal.adoc[]
+include::entries/feedback.adoc[]
+include::entries/control.adoc[]
+include::entries/interface.adoc[]
+include::entries/network.adoc[]
+
+== Boundary Entries
+include::entries/robot.adoc[]
+include::entries/cyborg.adoc[]
+include::entries/artificial-intelligence.adoc[]
+include::entries/automaton.adoc[]
+
+== Closing Entries
+include::entries/breakdown.adoc[]
+include::entries/obsolescence.adoc[]
+include::entries/ghost-in-machine.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

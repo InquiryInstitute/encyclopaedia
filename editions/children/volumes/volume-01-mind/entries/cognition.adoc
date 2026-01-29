@@ -1,0 +1,21 @@
+// Entry: cognition (Children's Edition)
+// Canonical Author: Ulric Neisser
+// Faculty ID: a.neisser
+
+[[entry-cognition]]
+=== cognition
+:canonical-author: Ulric Neisser
+:faculty-id: a.neisser
+:status: canonical
+:entry-type: standard
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/cognition.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

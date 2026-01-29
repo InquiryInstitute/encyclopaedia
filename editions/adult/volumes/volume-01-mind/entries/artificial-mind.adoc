@@ -1,0 +1,29 @@
+// Entry: Artificial Mind (Adult Edition)
+// Canonical Author: Alan Turing
+// Type: Boundary Entry (8–10 pages)
+// Faculty ID: a.turing
+
+[[entry-artificial-mind]]
+=== Artificial Mind
+:canonical-author: Alan Turing
+:faculty-id: a.turing
+:status: canonical
+:entry-type: boundary
+:length-target: 8–10 pages
+:word-target: 4000–5000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/artificial-mind.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the imitation game—the question of whether machines can think, and what it would mean for a machine to give answers indistinguishable from a human's.
+
+Topics to cover:
+- The imitation game (Turing test)
+- Objections and replies
+- The digital computer as universal machine
+- Learning machines
+- The question of consciousness in machines
+- Thinking and computation
+====

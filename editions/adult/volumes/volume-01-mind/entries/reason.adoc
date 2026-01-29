@@ -1,0 +1,29 @@
+// Entry: Reason (Adult Edition)
+// Canonical Author: Immanuel Kant
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.kant
+
+[[entry-reason]]
+=== Reason
+:canonical-author: Immanuel Kant
+:faculty-id: a.kant
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/reason.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore reason as the faculty of principles—the power to seek the unconditioned, to unify experience under ever higher principles, and to regulate (though not constitute) knowledge.
+
+Topics to cover:
+- Pure and practical reason
+- The architectonic of reason
+- The regulative use of ideas
+- The antinomies of pure reason
+- Reason and freedom
+- The limits of reason
+====

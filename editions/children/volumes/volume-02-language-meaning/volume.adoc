@@ -1,0 +1,58 @@
+= The Children's Encyclopædia
+:volume: II
+:volume-title: Language & Meaning
+:season: Candlemas → Beltane (Spring)
+:edition: Children
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume II: Language & Meaning
+
+// Major Entries
+include::entries/language.adoc[]
+include::entries/meaning.adoc[]
+include::entries/symbol.adoc[]
+include::entries/interpretation.adoc[]
+
+// Standard Entries
+include::entries/sign.adoc[]
+include::entries/reference.adoc[]
+include::entries/grammar.adoc[]
+include::entries/syntax.adoc[]
+include::entries/semantics.adoc[]
+include::entries/pragmatics.adoc[]
+include::entries/metaphor.adoc[]
+include::entries/rhetoric.adoc[]
+include::entries/persuasion.adoc[]
+include::entries/translation.adoc[]
+include::entries/writing.adoc[]
+include::entries/speech.adoc[]
+include::entries/dialogue.adoc[]
+include::entries/narrative.adoc[]
+include::entries/definition.adoc[]
+include::entries/name.adoc[]
+include::entries/truth-linguistic.adoc[]
+include::entries/communication.adoc[]
+
+== Boundary Entries
+include::entries/animal-communication.adoc[]
+include::entries/artificial-language.adoc[]
+include::entries/silence.adoc[]
+include::entries/ineffable.adoc[]
+
+== Closing Entries
+include::entries/babel.adoc[]
+include::entries/misunderstanding.adoc[]
+include::entries/unsayable.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

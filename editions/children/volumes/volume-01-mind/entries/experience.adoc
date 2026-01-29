@@ -1,0 +1,21 @@
+// Entry: experience (Children's Edition)
+// Canonical Author: John Dewey
+// Faculty ID: a.dewey
+
+[[entry-experience]]
+=== experience
+:canonical-author: John Dewey
+:faculty-id: a.dewey
+:status: canonical
+:entry-type: major
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/experience.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

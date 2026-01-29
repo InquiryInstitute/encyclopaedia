@@ -1,0 +1,71 @@
+= Front Matter
+:doctype: article
+
+== Welcome to Volume I
+
+This is *Mind*, the first volume of _The Children's Encyclopædia_.
+
+In these pages, we will explore questions about how you think, feel, and notice things. What happens when you pay attention? Where do your dreams come from? What makes you, *you*?
+
+These are not simple questions with easy answers. The writers in this book—some who lived long ago—spent their whole lives thinking about them. We share their ideas with you, not to tell you what to believe, but to help you think.
+
+== How to Read This Book
+
+=== The Main Text
+
+Each entry is written by a thinker who cared deeply about these questions. Their words appear in the center of the page.
+
+=== Side Notes
+
+Sometimes you'll see notes in the margin. These are extra thoughts—like a friend whispering a hint or asking another question.
+
+=== Questions
+
+Many entries end with a question. You don't have to answer it right away. You might carry it with you for a while.
+
+== A Note for Readers
+
+The ideas in this book are the same ideas as in the Adult Edition—we haven't made them smaller or simpler. We've just taken more time to explain them, used more examples, and made the sentences easier to follow.
+
+You might not understand everything the first time you read it. That's okay. Understanding grows over time.
+
+== Volume Contents
+
+[cols="1,2"]
+|===
+| Entry | Author
+
+| Attention | William James
+| Consciousness | Henri Bergson
+| Experience | John Dewey
+| Intelligence | Jean Piaget
+| Abstraction | Alfred North Whitehead
+| Affect | Baruch Spinoza
+| Agency | Aristotle
+| Awareness | Edmund Husserl
+| Belief | Charles Sanders Peirce
+| Cognition | Ulric Neisser
+| Dream | Sigmund Freud
+| Emotion | Charles Darwin
+| Habit | William James
+| Imagination | Samuel Taylor Coleridge
+| Memory | Henri Bergson
+| Perception | Maurice Merleau-Ponty
+| Reason | Immanuel Kant
+| Self | William James
+| Sensation | Ernst Weber
+| Sleep | Aristotle
+| Thought | Hannah Arendt
+| Will | Arthur Schopenhauer
+| Animal Mind | Jakob von Uexküll
+| Artificial Mind | Alan Turing
+| Collective Mind | Émile Durkheim
+| Mind–Body Problem | René Descartes
+| Ignorance (Mental) | Socrates
+| Uncertainty (Subjective) | Blaise Pascal
+| Not-Knowing | Nicholas of Cusa
+|===
+
+== Let's Begin
+
+Turn the page, and we'll start with *Attention*—the way your mind chooses what to notice.

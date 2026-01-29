@@ -1,0 +1,21 @@
+// Entry: mind uody proulem (Children's Edition)
+// Canonical Author: René Descartes
+// Faculty ID: a.descartes
+
+[[entry-mind-body-problem]]
+=== mind uody proulem
+:canonical-author: René Descartes
+:faculty-id: a.descartes
+:status: canonical
+:entry-type: boundary
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/mind-body-problem.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

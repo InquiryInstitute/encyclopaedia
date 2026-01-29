@@ -1,0 +1,58 @@
+= The Children's Encyclopædia
+:volume: XII
+:volume-title: Limits
+:season: Samhain → Candlemas (Winter)
+:edition: Children
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume XII: Limits
+
+// Major Entries
+include::entries/limit.adoc[]
+include::entries/boundary.adoc[]
+include::entries/finitude.adoc[]
+include::entries/infinity-limits.adoc[]
+
+// Standard Entries
+include::entries/end.adoc[]
+include::entries/beginning.adoc[]
+include::entries/threshold.adoc[]
+include::entries/margin.adoc[]
+include::entries/edge.adoc[]
+include::entries/horizon.adoc[]
+include::entries/circumference.adoc[]
+include::entries/container.adoc[]
+include::entries/constraint.adoc[]
+include::entries/impossibility.adoc[]
+include::entries/incompleteness.adoc[]
+include::entries/undecidability.adoc[]
+include::entries/paradox.adoc[]
+include::entries/contradiction.adoc[]
+include::entries/aporia.adoc[]
+include::entries/antinomy.adoc[]
+include::entries/mystery.adoc[]
+include::entries/transcendence.adoc[]
+
+== Boundary Entries
+include::entries/death.adoc[]
+include::entries/nothing.adoc[]
+include::entries/absolute.adoc[]
+include::entries/infinite-regress.adoc[]
+
+== Closing Entries
+include::entries/silence-final.adoc[]
+include::entries/wonder.adoc[]
+include::entries/what-we-cannot-say.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

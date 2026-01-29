@@ -1,0 +1,264 @@
+---
+/**
+ * PDF Flipbook Component
+ * 
+ * Renders PDFs using PDF.js with a page-flip interface.
+ * Falls back to standard PDF download if JS is unavailable.
+ */
+interface Props {
+  pdfUrl: string;
+  title: string;
+  edition: 'adult' | 'children';
+}
+
+const { pdfUrl, title, edition } = Astro.props;
+---
+
+<section class="flipbook-container" data-edition={edition}>
+  <header class="flipbook-header">
+    <h1 class="flipbook-title">{title}</h1>
+    <div class="flipbook-controls">
+      <button id="prev-page" class="control-btn" aria-label="Previous page">
+        ← Prev
+      </button>
+      <span id="page-indicator" class="page-indicator">
+        Page <span id="current-page">1</span> of <span id="total-pages">?</span>
+      </span>
+      <button id="next-page" class="control-btn" aria-label="Next page">
+        Next →
+      </button>
+    </div>
+  </header>
+  
+  <div id="flipbook-viewport" class="flipbook-viewport">
+    <canvas id="pdf-canvas" class="pdf-canvas"></canvas>
+    <div id="loading-indicator" class="loading-indicator">
+      Loading PDF...
+    </div>
+  </div>
+  
+  <noscript>
+    <div class="noscript-fallback">
+      <p>JavaScript is required for the flipbook viewer.</p>
+      <p><a href={pdfUrl} download>Download the PDF</a> to read offline.</p>
+    </div>
+  </noscript>
+  
+  <footer class="flipbook-footer">
+    <a href={pdfUrl} download class="download-link">
+      📥 Download PDF
+    </a>
+  </footer>
+</section>
+
+<script define:vars={{ pdfUrl }}>
+  // PDF.js initialization
+  // Note: In production, load PDF.js from CDN or bundle
+  const PDFJS_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs';
+  const PDFJS_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
+  
+  let pdfDoc = null;
+  let pageNum = 1;
+  let pageRendering = false;
+  let pageNumPending = null;
+  let scale = 1.5;
+  
+  const canvas = document.getElementById('pdf-canvas');
+  const ctx = canvas.getContext('2d');
+  const loadingIndicator = document.getElementById('loading-indicator');
+  const currentPageSpan = document.getElementById('current-page');
+  const totalPagesSpan = document.getElementById('total-pages');
+  const prevBtn = document.getElementById('prev-page');
+  const nextBtn = document.getElementById('next-page');
+  
+  async function init() {
+    try {
+      // Dynamically import PDF.js
+      const pdfjsLib = await import(PDFJS_CDN);
+      pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
+      
+      // Load the PDF
+      const loadingTask = pdfjsLib.getDocument(pdfUrl);
+      pdfDoc = await loadingTask.promise;
+      
+      totalPagesSpan.textContent = pdfDoc.numPages;
+      loadingIndicator.style.display = 'none';
+      
+      // Render first page
+      renderPage(pageNum);
+      
+      // Set up controls
+      prevBtn.addEventListener('click', onPrevPage);
+      nextBtn.addEventListener('click', onNextPage);
+      
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') onPrevPage();
+        if (e.key === 'ArrowRight') onNextPage();
+      });
+      
+    } catch (error) {
+      console.error('Error loading PDF:', error);
+      loadingIndicator.textContent = 'Error loading PDF. Please try the download link below.';
+    }
+  }
+  
+  async function renderPage(num) {
+    pageRendering = true;
+    
+    try {
+      const page = await pdfDoc.getPage(num);
+      const viewport = page.getViewport({ scale });
+      
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+      
+      const renderContext = {
+        canvasContext: ctx,
+        viewport: viewport
+      };
+      
+      await page.render(renderContext).promise;
+      
+      pageRendering = false;
+      currentPageSpan.textContent = num;
+      
+      // Update button states
+      prevBtn.disabled = num <= 1;
+      nextBtn.disabled = num >= pdfDoc.numPages;
+      
+      if (pageNumPending !== null) {
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    } catch (error) {
+      console.error('Error rendering page:', error);
+      pageRendering = false;
+    }
+  }
+  
+  function queueRenderPage(num) {
+    if (pageRendering) {
+      pageNumPending = num;
+    } else {
+      renderPage(num);
+    }
+  }
+  
+  function onPrevPage() {
+    if (pageNum <= 1) return;
+    pageNum--;
+    queueRenderPage(pageNum);
+  }
+  
+  function onNextPage() {
+    if (pageNum >= pdfDoc.numPages) return;
+    pageNum++;
+    queueRenderPage(pageNum);
+  }
+  
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
+
+<style>
+  .flipbook-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .flipbook-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .flipbook-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .flipbook-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .control-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #2d2a24;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .control-btn:hover:not(:disabled) {
+    background: #2d2a24;
+    color: #f5f0e6;
+  }
+  
+  .control-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  
+  .page-indicator {
+    font-size: 0.9rem;
+  }
+  
+  .flipbook-viewport {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5rem;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pdf-canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .loading-indicator {
+    position: absolute;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .noscript-fallback {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .noscript-fallback a {
+    color: #8b4513;
+  }
+  
+  .flipbook-footer {
+    text-align: center;
+  }
+  
+  .download-link {
+    color: #8b4513;
+    text-decoration: none;
+  }
+  
+  .download-link:hover {
+    text-decoration: underline;
+  }
+  
+  [data-edition="children"] .flipbook-title {
+    color: #4a7c59;
+  }
+</style>

@@ -1,0 +1,21 @@
+// Entry: uncertainty suujective (Children's Edition)
+// Canonical Author: Blaise Pascal
+// Faculty ID: a.pascal
+
+[[entry-uncertainty-subjective]]
+=== uncertainty suujective
+:canonical-author: Blaise Pascal
+:faculty-id: a.pascal
+:status: canonical
+:entry-type: closing
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/uncertainty-subjective.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====

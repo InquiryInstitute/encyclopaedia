@@ -1,0 +1,28 @@
+// Entry: Awareness (Adult Edition)
+// Canonical Author: Edmund Husserl
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.husserl
+
+[[entry-awareness]]
+=== Awareness
+:canonical-author: Edmund Husserl
+:faculty-id: a.husserl
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/awareness.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore awareness through the phenomenological method—the structures of intentionality by which consciousness is always consciousness *of* something.
+
+Topics to cover:
+- Intentionality and directedness
+- Noesis and noema
+- The natural attitude and the epoché
+- Horizons of awareness
+- Pre-reflective and reflective awareness
+====

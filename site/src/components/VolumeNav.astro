@@ -1,0 +1,153 @@
+---
+/**
+ * Volume Navigation Component
+ * 
+ * Displays navigation between volumes and editions.
+ */
+interface Props {
+  currentVolume: number;
+  currentEdition: 'adult' | 'children';
+}
+
+const { currentVolume, currentEdition } = Astro.props;
+
+const volumes = [
+  { num: 1, numeral: 'I', title: 'Mind' },
+  { num: 2, numeral: 'II', title: 'Language & Meaning' },
+  { num: 3, numeral: 'III', title: 'Nature (Becoming)' },
+  { num: 4, numeral: 'IV', title: 'Measure' },
+  { num: 5, numeral: 'V', title: 'Society' },
+  { num: 6, numeral: 'VI', title: 'Art & Form' },
+  { num: 7, numeral: 'VII', title: 'Knowledge' },
+  { num: 8, numeral: 'VIII', title: 'History' },
+  { num: 9, numeral: 'IX', title: 'Ethics' },
+  { num: 10, numeral: 'X', title: 'Machines' },
+  { num: 11, numeral: 'XI', title: 'Futures' },
+  { num: 12, numeral: 'XII', title: 'Limits' },
+];
+
+const currentVolumeData = volumes.find(v => v.num === currentVolume);
+const prevVolume = volumes.find(v => v.num === currentVolume - 1);
+const nextVolume = volumes.find(v => v.num === currentVolume + 1);
+const otherEdition = currentEdition === 'adult' ? 'children' : 'adult';
+---
+
+<nav class="volume-nav">
+  <div class="nav-row">
+    {prevVolume ? (
+      <a href={`/volumes/${currentEdition}/volume-${String(prevVolume.num).padStart(2, '0')}/`} class="nav-link prev">
+        ← Vol. {prevVolume.numeral}
+      </a>
+    ) : (
+      <span class="nav-link disabled">← Prev</span>
+    )}
+    
+    <div class="current-volume">
+      <span class="volume-label">Volume {currentVolumeData?.numeral}</span>
+      <span class="volume-title">{currentVolumeData?.title}</span>
+    </div>
+    
+    {nextVolume ? (
+      <a href={`/volumes/${currentEdition}/volume-${String(nextVolume.num).padStart(2, '0')}/`} class="nav-link next">
+        Vol. {nextVolume.numeral} →
+      </a>
+    ) : (
+      <span class="nav-link disabled">Next →</span>
+    )}
+  </div>
+  
+  <div class="edition-switch">
+    <span class="switch-label">Edition:</span>
+    <a 
+      href={`/volumes/${currentEdition}/volume-${String(currentVolume).padStart(2, '0')}/`}
+      class={`edition-link ${currentEdition === 'adult' ? 'active' : ''}`}
+    >
+      Adult
+    </a>
+    <span class="separator">|</span>
+    <a 
+      href={`/volumes/${otherEdition}/volume-${String(currentVolume).padStart(2, '0')}/`}
+      class={`edition-link ${currentEdition === 'children' ? 'active' : ''}`}
+    >
+      Children's
+    </a>
+  </div>
+</nav>
+
+<style>
+  .volume-nav {
+    border-bottom: 1px solid rgba(45, 42, 36, 0.2);
+    padding: 1rem 2rem;
+    background: #ebe5d8;
+  }
+  
+  .nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 0.75rem;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+    color: #8b4513;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: #5a2d0a;
+  }
+  
+  .nav-link.disabled {
+    color: #999;
+    cursor: default;
+  }
+  
+  .current-volume {
+    text-align: center;
+  }
+  
+  .volume-label {
+    display: block;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #666;
+  }
+  
+  .volume-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .edition-switch {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  .switch-label {
+    color: #666;
+    margin-right: 0.5rem;
+  }
+  
+  .edition-link {
+    color: #8b4513;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .edition-link.active {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .separator {
+    color: #ccc;
+    margin: 0 0.25rem;
+  }
+</style>

@@ -1,0 +1,29 @@
+// Entry: Experience (Adult Edition)
+// Canonical Author: John Dewey
+// Type: Major Entry (8–10 pages)
+// Faculty ID: a.dewey
+
+[[entry-experience]]
+=== Experience
+:canonical-author: John Dewey
+:faculty-id: a.dewey
+:status: canonical
+:entry-type: major
+:length-target: 8–10 pages
+:word-target: 4000–5000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/experience.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore experience not as a subjective inner state but as the transactional relationship between organism and environment—doing and undergoing, action and consequence.
+
+Topics to cover:
+- Experience as interaction with environment
+- The continuity of experience
+- Primary and reflective experience
+- Consummatory experience and aesthetic quality
+- Experience and education
+- The reconstruction of experience
+====

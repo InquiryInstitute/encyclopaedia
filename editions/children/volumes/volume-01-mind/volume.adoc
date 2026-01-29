@@ -1,0 +1,58 @@
+= The Children's Encyclopædia
+:volume: I
+:volume-title: Mind
+:season: Candlemas → Early Spring
+:edition: Children
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume I: Mind
+
+// Major Entries
+include::entries/attention.adoc[]
+include::entries/consciousness.adoc[]
+include::entries/experience.adoc[]
+include::entries/intelligence.adoc[]
+
+// Standard Entries
+include::entries/abstraction.adoc[]
+include::entries/affect.adoc[]
+include::entries/agency.adoc[]
+include::entries/awareness.adoc[]
+include::entries/belief.adoc[]
+include::entries/cognition.adoc[]
+include::entries/dream.adoc[]
+include::entries/emotion.adoc[]
+include::entries/habit.adoc[]
+include::entries/imagination.adoc[]
+include::entries/memory.adoc[]
+include::entries/perception.adoc[]
+include::entries/reason.adoc[]
+include::entries/self.adoc[]
+include::entries/sensation.adoc[]
+include::entries/sleep.adoc[]
+include::entries/thought.adoc[]
+include::entries/will.adoc[]
+
+== Boundary Entries
+include::entries/animal-mind.adoc[]
+include::entries/artificial-mind.adoc[]
+include::entries/collective-mind.adoc[]
+include::entries/mind-body-problem.adoc[]
+
+== Closing Entries
+include::entries/ignorance-mental.adoc[]
+include::entries/uncertainty-subjective.adoc[]
+include::entries/not-knowing.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

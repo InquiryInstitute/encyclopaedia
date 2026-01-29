@@ -1,0 +1,58 @@
+= The Encyclopædia
+:volume: IV
+:volume-title: Measure
+:season: Beltane → Lammas (Summer)
+:edition: Adult
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume IV: Measure
+
+// Major Entries (8–12 pages)
+include::entries/number.adoc[]
+include::entries/quantity.adoc[]
+include::entries/measurement.adoc[]
+include::entries/probability.adoc[]
+
+// Standard Entries (4–6 pages)
+include::entries/zero.adoc[]
+include::entries/infinity.adoc[]
+include::entries/ratio.adoc[]
+include::entries/proportion.adoc[]
+include::entries/scale.adoc[]
+include::entries/magnitude.adoc[]
+include::entries/dimension.adoc[]
+include::entries/geometry.adoc[]
+include::entries/space.adoc[]
+include::entries/time-measure.adoc[]
+include::entries/calculus.adoc[]
+include::entries/statistics.adoc[]
+include::entries/average.adoc[]
+include::entries/error.adoc[]
+include::entries/precision.adoc[]
+include::entries/unit.adoc[]
+include::entries/standard.adoc[]
+include::entries/approximation.adoc[]
+
+== Boundary Entries
+include::entries/incommensurable.adoc[]
+include::entries/irrational.adoc[]
+include::entries/transfinite.adoc[]
+include::entries/quantum.adoc[]
+
+== Closing Entries
+include::entries/unmeasurable.adoc[]
+include::entries/paradox-zeno.adoc[]
+include::entries/limits-of-counting.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

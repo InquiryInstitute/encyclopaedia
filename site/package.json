@@ -1,0 +1,22 @@
+{
+  "name": "@inquiry-institute/encyclopaedia-site",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "The Encyclopædia - Seasonal multi-volume publication by Inquiry Institute",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.8.0",
+    "@astrojs/check": "^0.5.0",
+    "typescript": "^5.4.0",
+    "pdfjs-dist": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0"
+  }
+}

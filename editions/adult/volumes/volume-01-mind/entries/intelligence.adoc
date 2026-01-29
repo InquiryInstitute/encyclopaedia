@@ -1,0 +1,29 @@
+// Entry: Intelligence (Adult Edition)
+// Canonical Author: Jean Piaget
+// Type: Major Entry (8–10 pages)
+// Faculty ID: a.piaget
+
+[[entry-intelligence]]
+=== Intelligence
+:canonical-author: Jean Piaget
+:faculty-id: a.piaget
+:status: canonical
+:entry-type: major
+:length-target: 8–10 pages
+:word-target: 4000–5000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/intelligence.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore intelligence as adaptation—the progressive equilibration between assimilation and accommodation that structures cognitive development.
+
+Topics to cover:
+- Sensorimotor origins of intelligence
+- The construction of schemes
+- Assimilation and accommodation
+- Stages of cognitive development
+- Operations and reversibility
+- The genesis of logical structures
+====

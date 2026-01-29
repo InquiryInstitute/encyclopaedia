@@ -1,0 +1,286 @@
+---
+// The Encyclopædia - Home Page
+const volumes = [
+  { num: 'I', title: 'Mind', season: 'Spring', status: 'in-progress' },
+  { num: 'II', title: 'Language & Meaning', season: 'Spring', status: 'planned' },
+  { num: 'III', title: 'Nature (Becoming)', season: 'Spring', status: 'planned' },
+  { num: 'IV', title: 'Measure', season: 'Summer', status: 'planned' },
+  { num: 'V', title: 'Society', season: 'Summer', status: 'planned' },
+  { num: 'VI', title: 'Art & Form', season: 'Summer', status: 'planned' },
+  { num: 'VII', title: 'Knowledge', season: 'Autumn', status: 'planned' },
+  { num: 'VIII', title: 'History', season: 'Autumn', status: 'planned' },
+  { num: 'IX', title: 'Ethics', season: 'Autumn', status: 'planned' },
+  { num: 'X', title: 'Machines', season: 'Winter', status: 'planned' },
+  { num: 'XI', title: 'Futures', season: 'Winter', status: 'planned' },
+  { num: 'XII', title: 'Limits', season: 'Winter', status: 'planned' },
+];
+
+const seasons = {
+  Spring: { gate: 'Candlemas → Beltane', color: '#4a7c59' },
+  Summer: { gate: 'Beltane → Lammas', color: '#d4a373' },
+  Autumn: { gate: 'Lammas → Samhain', color: '#9c4a1a' },
+  Winter: { gate: 'Samhain → Candlemas', color: '#2d3047' },
+};
+---
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Encyclopædia | Inquiry Institute</title>
+  <meta name="description" content="A seasonal, multi-volume Encyclopædia demonstrating and inspiring inquiry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-parchment: #f5f0e6;
+      --color-ink: #2d2a24;
+      --color-rust: #8b4513;
+      --color-gold: #c9a227;
+      --color-shadow: rgba(45, 42, 36, 0.1);
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'EB Garamond', Georgia, serif;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: var(--font-body);
+      background: var(--color-parchment);
+      color: var(--color-ink);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    
+    header {
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+      border-bottom: 1px solid var(--color-shadow);
+      background: linear-gradient(180deg, #ebe5d8 0%, var(--color-parchment) 100%);
+    }
+    
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      color: var(--color-ink);
+    }
+    
+    .subtitle {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--color-rust);
+      letter-spacing: 0.05em;
+    }
+    
+    .intro {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      text-align: center;
+      font-size: 1.15rem;
+    }
+    
+    .editions {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0 3rem;
+      flex-wrap: wrap;
+    }
+    
+    .edition-badge {
+      padding: 0.5rem 1.5rem;
+      border: 1px solid var(--color-ink);
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    
+    .edition-badge.adult {
+      background: var(--color-ink);
+      color: var(--color-parchment);
+    }
+    
+    .edition-badge.children {
+      background: transparent;
+      color: var(--color-ink);
+    }
+    
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .seasons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    
+    .season-section {
+      padding: 1.5rem;
+      border: 1px solid var(--color-shadow);
+      background: white;
+      box-shadow: 2px 2px 8px var(--color-shadow);
+    }
+    
+    .season-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid currentColor;
+    }
+    
+    .season-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .season-gate {
+      font-size: 0.85rem;
+      font-style: italic;
+      opacity: 0.8;
+    }
+    
+    .volume-list {
+      list-style: none;
+    }
+    
+    .volume-item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--color-shadow);
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    
+    .volume-item:last-child {
+      border-bottom: none;
+    }
+    
+    .volume-num {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      min-width: 2rem;
+    }
+    
+    .volume-title {
+      flex: 1;
+      font-size: 1.05rem;
+    }
+    
+    .volume-status {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .status-in-progress {
+      background: var(--color-gold);
+      color: var(--color-ink);
+    }
+    
+    .status-planned {
+      background: var(--color-shadow);
+      color: var(--color-ink);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      margin-top: 3rem;
+      border-top: 1px solid var(--color-shadow);
+      font-size: 0.9rem;
+    }
+    
+    footer a {
+      color: var(--color-rust);
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .publishing-note {
+      max-width: 600px;
+      margin: 0 auto 1rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Encyclopædia</h1>
+    <p class="subtitle">A Publication of the Inquiry Institute</p>
+    <div class="editions">
+      <span class="edition-badge adult">Adult Edition</span>
+      <span class="edition-badge children">Children's Edition</span>
+    </div>
+  </header>
+  
+  <section class="intro">
+    <p>
+      Twelve volumes forming an annual set, released one per month, 
+      revised each Candlemas. Canonical texts by public domain faculty, 
+      with marginalia from adjunct, heretic, and synthetic voices.
+    </p>
+  </section>
+  
+  <main>
+    <div class="seasons-grid">
+      {Object.entries(seasons).map(([seasonName, seasonData]) => (
+        <article class="season-section" style={`color: ${seasonData.color}`}>
+          <header class="season-header">
+            <h2 class="season-name">{seasonName}</h2>
+            <span class="season-gate">{seasonData.gate}</span>
+          </header>
+          <ul class="volume-list">
+            {volumes.filter(v => v.season === seasonName).map(volume => (
+              <li class="volume-item">
+                <span class="volume-num">{volume.num}</span>
+                <span class="volume-title">{volume.title}</span>
+                <span class={`volume-status status-${volume.status}`}>
+                  {volume.status === 'in-progress' ? 'In Progress' : 'Planned'}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </main>
+  
+  <footer>
+    <p class="publishing-note">
+      Canon must stand alone if all marginalia is removed.<br />
+      Marginalia: clarification, objection, extension, heretic, synthetic.
+    </p>
+    <p>
+      <a href="https://inquiry.institute">Inquiry Institute</a> · 
+      CC BY 4.0 · 
+      <a href="https://github.com/InquiryInstitute/encyclopaedia">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>

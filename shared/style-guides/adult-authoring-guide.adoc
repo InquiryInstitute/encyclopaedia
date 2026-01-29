@@ -1,0 +1,181 @@
+= Adult Edition Authoring Guide
+:doctype: article
+:toc:
+:toclevels: 2
+
+== Overview
+
+This guide provides standards for authoring entries in The Encyclopædia (Adult Edition). Entries are written by canonical PD (Public Domain) Faculty members, with marginalia contributions from adjunct, heretic, and synthetic voices.
+
+== Voice and Tone
+
+=== Canonical Voice
+
+Each entry is written in the authentic voice of its assigned Faculty author:
+
+* Draw from the author's known corpus and characteristic style
+* Maintain historical accuracy in vocabulary and rhetoric
+* Present ideas as the author would have understood them
+* Avoid anachronisms in concepts or language
+
+=== Scholarly Standards
+
+* Use precise, technical language appropriate to the discipline
+* Cite sources using [Author, Year] format
+* Acknowledge uncertainty where appropriate
+* Present arguments with rigor and clarity
+
+== Entry Structure
+
+=== Required Sections
+
+[source,asciidoc]
+----
+[[entry-{slug}]]
+=== {Title}
+:canonical-author: {Author Name}
+:status: canonical
+:length-target: {X–Y pages}
+
+[role=canonical]
+====
+{CANONICAL TEXT}
+====
+
+// Marginalia blocks follow
+----
+
+=== Section Flow
+
+1. **Anchor and Metadata**: Entry ID, author, status, length target
+2. **Canonical Block**: The primary text (stands alone)
+3. **Marginalia**: Annotations targeting specific passages
+4. **Cross-references**: Links to related entries
+
+== Length Guidelines
+
+[cols="1,2,2"]
+|===
+| Entry Type | Page Target | Word Estimate
+
+| Major Entry
+| 8–12 pages
+| 4,000–6,000 words
+
+| Standard Entry
+| 4–6 pages
+| 2,000–3,000 words
+
+| Boundary Entry
+| 6–10 pages
+| 3,000–5,000 words
+
+| Closing Entry
+| 2–4 pages
+| 1,000–2,000 words
+|===
+
+== AsciiDoc Conventions
+
+=== Headings
+
+* Use `===` for entry title (level 3)
+* Use `====` for major sections within entry (level 4)
+* Use `=====` for subsections (level 5)
+
+=== Citations
+
+Use inline citations: `[James, 1890]` or `[Darwin, 1859]`
+
+=== Cross-references
+
+Link to other entries: `xref:entries/consciousness.adoc[Consciousness]`
+
+=== Special Characters
+
+* Use typographic quotes: "quoted text"
+* Use en-dash for ranges: 8–12 pages
+* Use em-dash for breaks: thought—interrupted—continues
+
+== Marginalia Integration
+
+=== Placement
+
+Marginalia blocks appear after the canonical text they annotate. Target attributes link them to specific passages.
+
+=== Balance
+
+* Aim for 3–8 marginalia notes per major entry
+* Mix of types: at least one objection, one clarification, one extension
+* Include at least one heretic voice where appropriate
+
+== Review Process
+
+1. Submit entry with canonical text only
+2. Receive peer review as marginalia (not hidden reports)
+3. Respond to review through additional marginalia or revision
+4. Final editorial review for compliance
+
+== Example Entry
+
+[source,asciidoc]
+----
+[[entry-attention]]
+=== Attention
+:canonical-author: William James
+:status: canonical
+:length-target: 8–12 pages
+
+[role=canonical]
+====
+Attention is the taking possession by the mind, in clear and vivid form, 
+of one out of what seem several simultaneously possible objects or trains 
+of thought. Focalization, concentration, of consciousness are of its essence. 
+It implies withdrawal from some things in order to deal effectively with others.
+
+The things thus ignored drop from consciousness; they become objects to which 
+we are insensible. The field of distinct consciousness is a minimum; 
+the field of total consciousness is enormously greater. At each moment, 
+we may be said to have a penumbra of marginal elements, some of which 
+become explicitly considered.
+====
+
+[role=marginalia,
+ type=objection,
+ author="Herbert A. Simon",
+ status="adjunct",
+ year="1971",
+ length="42",
+ targets="paragraph:1",
+ scope="local"]
+====
+Attention functions less as a faculty than as an economic constraint,
+limited by complexity and bounded rationality. We attend to what our 
+limited processing capacity permits, not what consciousness chooses.
+====
+
+[role=marginalia,
+ type=heretic,
+ author="Simone Weil",
+ status="heretic",
+ year="1947",
+ length="21",
+ targets="entry:Attention",
+ scope="global"]
+====
+Attention is not effort, but the suspension of the self.
+====
+----
+
+== Quality Checklist
+
+Before submission, verify:
+
+* [ ] Entry follows anchor/metadata format
+* [ ] Canonical text stands alone without marginalia
+* [ ] Length within target range
+* [ ] Citations properly formatted
+* [ ] Cross-references functional
+* [ ] Marginalia meets spec requirements
+* [ ] Voice consistent with canonical author
+* [ ] No anachronisms in language or concepts

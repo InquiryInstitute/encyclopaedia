@@ -1,0 +1,29 @@
+// Entry: Emotion (Adult Edition)
+// Canonical Author: Charles Darwin
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.darwin
+
+[[entry-emotion]]
+=== Emotion
+:canonical-author: Charles Darwin
+:faculty-id: a.darwin
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/emotion.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the expression of emotions as evolved behaviors shared across species—the continuity between human emotional life and that of other animals.
+
+Topics to cover:
+- The principle of serviceable associated habits
+- The principle of antithesis
+- Direct action of the nervous system
+- The expression of emotions in man and animals
+- Universal expressions and their recognition
+- The evolution of emotional behavior
+====

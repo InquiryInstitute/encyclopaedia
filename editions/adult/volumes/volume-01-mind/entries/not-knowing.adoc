@@ -1,0 +1,30 @@
+// Entry: Not-Knowing (Adult Edition)
+// Canonical Author: Nicholas of Cusa
+// Type: Closing Entry (2–3 pages)
+// Faculty ID: a.cusa
+// Note: No marginalia in this entry
+
+[[entry-not-knowing]]
+=== Not-Knowing
+:canonical-author: Nicholas of Cusa
+:faculty-id: a.cusa
+:status: canonical
+:entry-type: closing
+:length-target: 2–3 pages
+:word-target: 1000–1500
+:children-edition: ../../../children/volumes/volume-01-mind/entries/not-knowing.adoc
+:no-marginalia: true
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore docta ignorantia—learned ignorance—the recognition that the more precisely we approach the infinite, the more our knowledge reveals its own limits.
+
+Topics to cover:
+- The coincidence of opposites
+- The infinite and the finite
+- Learned ignorance as highest wisdom
+- The limits of rational knowledge
+- God as the maximum and minimum
+====

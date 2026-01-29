@@ -1,0 +1,144 @@
+name: Build Encyclopædia Content
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - 'encyclopaedia/editions/**'
+      - 'encyclopaedia/shared/**'
+  pull_request:
+    paths:
+      - 'encyclopaedia/editions/**'
+      - 'encyclopaedia/shared/**'
+  workflow_dispatch:
+    inputs:
+      volumes:
+        description: 'Volumes to build (comma-separated, e.g., "01,02" or "all")'
+        required: false
+        default: '01'
+      editions:
+        description: 'Editions to build (adult, children, or both)'
+        required: false
+        default: 'both'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: encyclopaedia
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: false
+
+      - name: Install Asciidoctor toolchain
+        run: |
+          gem install asciidoctor -N
+          gem install asciidoctor-pdf -N
+          # Note: asciidoctor-latex requires additional setup
+          # For now, using asciidoctor-pdf as primary
+          
+      - name: Install TeX (optional, for LaTeX output)
+        if: false  # Disabled by default, enable when LaTeX pipeline is ready
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-base texlive-latex-recommended \
+            texlive-latex-extra texlive-fonts-recommended \
+            latexmk
+
+      - name: Parse build inputs
+        id: parse-inputs
+        run: |
+          # Set volumes to build
+          VOLUMES="${{ github.event.inputs.volumes || '01' }}"
+          if [ "$VOLUMES" = "all" ]; then
+            VOLUMES="01,02,03,04,05,06,07,08,09,10,11,12"
+          fi
+          echo "volumes=$VOLUMES" >> $GITHUB_OUTPUT
+          
+          # Set editions to build
+          EDITIONS="${{ github.event.inputs.editions || 'both' }}"
+          echo "editions=$EDITIONS" >> $GITHUB_OUTPUT
+
+      - name: Build content
+        run: |
+          set -euo pipefail
+          
+          OUT="dist/builds"
+          mkdir -p "$OUT/html" "$OUT/pdf"
+          
+          build_volume() {
+            local EDITION="$1"
+            local VOL_NUM="$2"
+            local VOLUME_DIR="editions/${EDITION}/volumes/volume-${VOL_NUM}-mind"  # TODO: Map vol num to name
+            local SLUG="volume-${VOL_NUM}"
+            
+            # Check if volume directory exists
+            if [ ! -d "$VOLUME_DIR" ]; then
+              echo "⚠️ Volume directory not found: $VOLUME_DIR (skipping)"
+              return 0
+            fi
+            
+            local MASTER="${VOLUME_DIR}/volume.adoc"
+            
+            if [ ! -f "$MASTER" ]; then
+              echo "⚠️ Master file not found: $MASTER (skipping)"
+              return 0
+            fi
+            
+            echo "📖 Building ${EDITION} ${SLUG}..."
+            
+            # HTML output
+            asciidoctor \
+              -D "${OUT}/html" \
+              -o "${EDITION}-${SLUG}.html" \
+              "$MASTER" || echo "⚠️ HTML build had warnings"
+            
+            # PDF output (using asciidoctor-pdf)
+            asciidoctor-pdf \
+              -D "${OUT}/pdf" \
+              -o "${EDITION}-${SLUG}.pdf" \
+              "$MASTER" || echo "⚠️ PDF build had warnings"
+            
+            echo "✅ Built ${EDITION} ${SLUG}"
+          }
+          
+          # Parse volumes
+          IFS=',' read -ra VOLS <<< "${{ steps.parse-inputs.outputs.volumes }}"
+          EDITIONS="${{ steps.parse-inputs.outputs.editions }}"
+          
+          for VOL in "${VOLS[@]}"; do
+            VOL=$(echo "$VOL" | xargs)  # Trim whitespace
+            
+            if [ "$EDITIONS" = "both" ] || [ "$EDITIONS" = "adult" ]; then
+              build_volume "adult" "$VOL"
+            fi
+            
+            if [ "$EDITIONS" = "both" ] || [ "$EDITIONS" = "children" ]; then
+              build_volume "children" "$VOL"
+            fi
+          done
+          
+          # List outputs
+          echo ""
+          echo "📁 Build outputs:"
+          ls -la "$OUT/html/" 2>/dev/null || echo "  (no HTML files)"
+          ls -la "$OUT/pdf/" 2>/dev/null || echo "  (no PDF files)"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: encyclopaedia-builds
+          path: encyclopaedia/dist/builds
+          retention-days: 30
+          if-no-files-found: warn

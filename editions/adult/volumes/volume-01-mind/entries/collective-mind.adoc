@@ -1,0 +1,29 @@
+// Entry: Collective Mind (Adult Edition)
+// Canonical Author: Émile Durkheim
+// Type: Boundary Entry (6–8 pages)
+// Faculty ID: a.durkheim
+
+[[entry-collective-mind]]
+=== Collective Mind
+:canonical-author: Émile Durkheim
+:faculty-id: a.durkheim
+:status: canonical
+:entry-type: boundary
+:length-target: 6–8 pages
+:word-target: 3000–4000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/collective-mind.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the collective consciousness—the totality of beliefs and sentiments common to the average members of a society, forming a system with its own life.
+
+Topics to cover:
+- Collective representations
+- Social facts as things
+- Mechanical and organic solidarity
+- The sacred and the profane
+- Collective effervescence
+- Society as a reality sui generis
+====

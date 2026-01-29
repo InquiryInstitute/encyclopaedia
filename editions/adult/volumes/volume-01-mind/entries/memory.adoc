@@ -1,0 +1,29 @@
+// Entry: Memory (Adult Edition)
+// Canonical Author: Henri Bergson
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.bergson
+
+[[entry-memory]]
+=== Memory
+:canonical-author: Henri Bergson
+:faculty-id: a.bergson
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/memory.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the two forms of memory: habit-memory (motor patterns inscribed in the body) and pure memory (the preservation of the past in itself).
+
+Topics to cover:
+- Habit-memory and motor mechanisms
+- Pure memory and the cone of duration
+- The survival of images
+- Recognition and attention to life
+- Memory and matter
+- The virtual and the actual
+====

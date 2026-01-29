@@ -1,0 +1,29 @@
+// Entry: Imagination (Adult Edition)
+// Canonical Author: Samuel Taylor Coleridge
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.coleridge
+
+[[entry-imagination]]
+=== Imagination
+:canonical-author: Samuel Taylor Coleridge
+:faculty-id: a.coleridge
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/imagination.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the distinction between primary and secondary imagination—the living power and prime agent of all human perception versus the echo of that power in artistic creation.
+
+Topics to cover:
+- Primary imagination as living perception
+- Secondary imagination as creative power
+- Fancy versus imagination
+- The esemplastic power
+- Imagination and poetry
+- The reconciliation of opposites
+====

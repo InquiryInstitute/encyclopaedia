@@ -1,0 +1,58 @@
+= The Children's Encyclopædia
+:volume: III
+:volume-title: Nature (Becoming)
+:season: Candlemas → Beltane (Spring)
+:edition: Children
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume III: Nature (Becoming)
+
+// Major Entries
+include::entries/nature.adoc[]
+include::entries/evolution.adoc[]
+include::entries/life.adoc[]
+include::entries/growth.adoc[]
+
+// Standard Entries
+include::entries/organism.adoc[]
+include::entries/species.adoc[]
+include::entries/adaptation.adoc[]
+include::entries/heredity.adoc[]
+include::entries/development.adoc[]
+include::entries/emergence.adoc[]
+include::entries/complexity.adoc[]
+include::entries/ecosystem.adoc[]
+include::entries/environment.adoc[]
+include::entries/matter.adoc[]
+include::entries/energy.adoc[]
+include::entries/motion.adoc[]
+include::entries/causation.adoc[]
+include::entries/chance.adoc[]
+include::entries/necessity.adoc[]
+include::entries/change.adoc[]
+include::entries/generation.adoc[]
+include::entries/decay.adoc[]
+
+== Boundary Entries
+include::entries/artifice-nature.adoc[]
+include::entries/cosmos.adoc[]
+include::entries/gaia.adoc[]
+include::entries/wilderness.adoc[]
+
+== Closing Entries
+include::entries/extinction.adoc[]
+include::entries/entropy.adoc[]
+include::entries/mystery-of-life.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

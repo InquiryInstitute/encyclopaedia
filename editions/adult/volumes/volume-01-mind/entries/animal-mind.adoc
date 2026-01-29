@@ -1,0 +1,29 @@
+// Entry: Animal Mind (Adult Edition)
+// Canonical Author: Jakob von Uexküll
+// Type: Boundary Entry (6–8 pages)
+// Faculty ID: a.uexkull
+
+[[entry-animal-mind]]
+=== Animal Mind
+:canonical-author: Jakob von Uexküll
+:faculty-id: a.uexkull
+:status: canonical
+:entry-type: boundary
+:length-target: 6–8 pages
+:word-target: 3000–4000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/animal-mind.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the Umwelt—the perceptual world unique to each species, constituted by the organism's receptors and effectors, forming a self-contained bubble of meaning.
+
+Topics to cover:
+- The concept of Umwelt
+- Functional circles (perception and action)
+- The tick as paradigmatic example
+- Species-specific worlds of meaning
+- Against anthropomorphism
+- The biological roots of subjectivity
+====

@@ -1,0 +1,58 @@
+= The Children's Encyclopædia
+:volume: VIII
+:volume-title: History
+:season: Lammas → Samhain (Autumn)
+:edition: Children
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume VIII: History
+
+// Major Entries
+include::entries/history.adoc[]
+include::entries/time.adoc[]
+include::entries/memory-historical.adoc[]
+include::entries/tradition.adoc[]
+
+// Standard Entries
+include::entries/event.adoc[]
+include::entries/epoch.adoc[]
+include::entries/period.adoc[]
+include::entries/chronicle.adoc[]
+include::entries/archive.adoc[]
+include::entries/document.adoc[]
+include::entries/monument.adoc[]
+include::entries/ruin.adoc[]
+include::entries/origin.adoc[]
+include::entries/progress.adoc[]
+include::entries/decline.adoc[]
+include::entries/cycle.adoc[]
+include::entries/continuity.adoc[]
+include::entries/rupture.adoc[]
+include::entries/generation-historical.adoc[]
+include::entries/inheritance.adoc[]
+include::entries/legacy.adoc[]
+include::entries/ancestor.adoc[]
+
+== Boundary Entries
+include::entries/prehistory.adoc[]
+include::entries/myth.adoc[]
+include::entries/prophecy.adoc[]
+include::entries/utopia-temporal.adoc[]
+
+== Closing Entries
+include::entries/oblivion.adoc[]
+include::entries/anachronism.adoc[]
+include::entries/end-of-history.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

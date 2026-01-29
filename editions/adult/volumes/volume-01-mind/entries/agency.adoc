@@ -1,0 +1,28 @@
+// Entry: Agency (Adult Edition)
+// Canonical Author: Aristotle
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.aristotle
+
+[[entry-agency]]
+=== Agency
+:canonical-author: Aristotle
+:faculty-id: a.aristotle
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/agency.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore agency as the capacity for self-originated action—the difference between what we do and what merely happens to us, grounded in practical reason and deliberation.
+
+Topics to cover:
+- Voluntary and involuntary action
+- Choice (prohairesis) and deliberation
+- The rational soul and its faculties
+- Character and habit in action
+- Responsibility and moral agency
+====

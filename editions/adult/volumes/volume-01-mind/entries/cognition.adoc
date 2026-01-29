@@ -1,0 +1,29 @@
+// Entry: Cognition (Adult Edition)
+// Canonical Author: Ulric Neisser
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.neisser
+
+[[entry-cognition]]
+=== Cognition
+:canonical-author: Ulric Neisser
+:faculty-id: a.neisser
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/cognition.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore cognition as the processes by which sensory input is transformed, reduced, elaborated, stored, recovered, and used—the active construction of meaning from information.
+
+Topics to cover:
+- Information processing and mental representation
+- Perception as constructive activity
+- Memory and retrieval
+- Pattern recognition and categorization
+- The ecological approach to cognition
+- Cognition in the real world
+====

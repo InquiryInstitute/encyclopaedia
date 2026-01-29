@@ -1,0 +1,29 @@
+// Entry: Dream (Adult Edition)
+// Canonical Author: Sigmund Freud
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.freud
+
+[[entry-dream]]
+=== Dream
+:canonical-author: Sigmund Freud
+:faculty-id: a.freud
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/dream.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the dream as the royal road to the unconscious—the distorted fulfillment of a repressed wish, revealed through interpretation of manifest and latent content.
+
+Topics to cover:
+- The dream as wish-fulfillment
+- Manifest and latent content
+- The dream-work: condensation, displacement, symbolization
+- Day residues and childhood memories
+- The interpretation of dreams
+- Dreams and the unconscious
+====

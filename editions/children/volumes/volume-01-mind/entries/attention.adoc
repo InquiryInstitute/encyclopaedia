@@ -1,0 +1,42 @@
+// Entry: Attention (Children's Edition)
+// Canonical Author: William James
+// Type: Major Entry (1.5–3 pages)
+// Faculty ID: a.james
+
+[[entry-attention]]
+=== Attention
+:canonical-author: William James
+:faculty-id: a.james
+:status: canonical
+:entry-type: major
+:length-target: 1.5–3 pages
+:word-target: 750–1500
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/attention.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+When you pay attention, your mind chooses one thing and lets other things fade.
+You can notice this happening.
+
+Try listening to two sounds at once. One becomes clear, and the other slips away.
+This does not mean the other sound is gone. It means your mind is not holding it.
+
+Some people think attention is a kind of strength.
+Others think it is more like a limit: you can only hold so much at one time.
+
+What do you notice your attention doing right now?
+====
+
+[role=marginalia,
+ type=clarification,
+ author="Side Note",
+ status="synthetic",
+ year="2026",
+ length="22",
+ targets="paragraph:2",
+ scope="local"]
+====
+A "limit" can still be useful. A lantern shines by not lighting everything.
+====

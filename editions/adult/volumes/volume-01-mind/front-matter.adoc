@@ -1,0 +1,74 @@
+= Front Matter
+:doctype: article
+
+== Preface to Volume I
+
+This first volume of _The Encyclopædia_ opens with *Mind*, fitting for Candlemas—the feast of light returning, when we emerge from winter's interiority to examine what has been germinating in darkness.
+
+The entries herein explore the territory of mental life: attention and its limits, consciousness and its mysteries, the interplay of thought, memory, and will. We begin where inquiry itself begins—in the activity of a mind seeking to understand.
+
+== Editorial Note
+
+This Adult Edition presents canonical texts from public domain Faculty voices. Marginalia from adjunct, heretic, and synthetic commentators appears in the margins, marked and attributed according to the _Marginalia Specification_.
+
+The canonical text stands alone. If all marginalia were removed, each entry would remain coherent and complete. The marginalia exists to show the ongoing conversation—agreements, objections, extensions—that scholarship requires.
+
+== How to Read This Volume
+
+=== Canonical Text
+
+The main body of each entry, written by the attributed Faculty author, appears in the central column. This is the authoritative treatment of the topic.
+
+=== Marginalia
+
+Annotations appear in the outer margin, linked to specific passages. Each note includes:
+
+* *Author*: Who wrote the annotation
+* *Status*: Canonical, Adjunct, Heretic, or Synthetic
+* *Type*: Clarification, Objection, Extension, etc.
+* *Year*: When the note was written or the original statement made
+
+=== Cross-References
+
+Links to related entries appear as `→ See: Entry Name`. These may point to entries within this volume or to other volumes.
+
+== Acknowledgments
+
+The editors thank the Inquiry Institute for stewarding this project, the Faculty for their voices, and the reviewers for their principled marginalia.
+
+== Volume Contents
+
+[cols="1,2,2,1"]
+|===
+| Entry | Author | Type | Pages
+
+| Attention | William James | Major | 8–12
+| Consciousness | Henri Bergson | Major | 10–12
+| Experience | John Dewey | Major | 8–10
+| Intelligence | Jean Piaget | Major | 8–10
+| Abstraction | Alfred North Whitehead | Standard | 4–6
+| Affect | Baruch Spinoza | Standard | 4–6
+| Agency | Aristotle | Standard | 4–6
+| Awareness | Edmund Husserl | Standard | 4–6
+| Belief | Charles Sanders Peirce | Standard | 4–6
+| Cognition | Ulric Neisser | Standard | 4–6
+| Dream | Sigmund Freud | Standard | 4–6
+| Emotion | Charles Darwin | Standard | 4–6
+| Habit | William James | Standard | 4–6
+| Imagination | Samuel Taylor Coleridge | Standard | 4–6
+| Memory | Henri Bergson | Standard | 4–6
+| Perception | Maurice Merleau-Ponty | Standard | 4–6
+| Reason | Immanuel Kant | Standard | 4–6
+| Self | William James | Standard | 4–6
+| Sensation | Ernst Weber | Standard | 4–6
+| Sleep | Aristotle | Standard | 4–6
+| Thought | Hannah Arendt | Standard | 4–6
+| Will | Arthur Schopenhauer | Standard | 4–6
+| Animal Mind | Jakob von Uexküll | Boundary | 6–8
+| Artificial Mind | Alan Turing | Boundary | 8–10
+| Collective Mind | Émile Durkheim | Boundary | 6–8
+| Mind–Body Problem | René Descartes | Boundary | 6–8
+| Ignorance (Mental) | Socrates | Closing | 2–4
+| Uncertainty (Subjective) | Blaise Pascal | Closing | 2–4
+| Not-Knowing | Nicholas of Cusa | Closing | 2–3
+|===

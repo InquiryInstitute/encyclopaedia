@@ -1,0 +1,29 @@
+// Entry: Self (Adult Edition)
+// Canonical Author: William James
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.james
+
+[[entry-self]]
+=== Self
+:canonical-author: William James
+:faculty-id: a.james
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/self.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the constituents of the self—the material, social, and spiritual selves, and the pure ego that knows them all.
+
+Topics to cover:
+- The empirical self and the pure ego
+- The material self (body, possessions)
+- The social self (recognition by others)
+- The spiritual self (inner subjectivity)
+- Self-seeking and self-estimation
+- The hierarchy of selves
+====

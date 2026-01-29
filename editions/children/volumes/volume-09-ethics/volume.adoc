@@ -1,0 +1,58 @@
+= The Children's Encyclopædia
+:volume: IX
+:volume-title: Ethics
+:season: Lammas → Samhain (Autumn)
+:edition: Children
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume IX: Ethics
+
+// Major Entries
+include::entries/good.adoc[]
+include::entries/right.adoc[]
+include::entries/virtue.adoc[]
+include::entries/duty.adoc[]
+
+// Standard Entries
+include::entries/conscience.adoc[]
+include::entries/intention.adoc[]
+include::entries/motive.adoc[]
+include::entries/action.adoc[]
+include::entries/consequence.adoc[]
+include::entries/responsibility.adoc[]
+include::entries/obligation.adoc[]
+include::entries/permission.adoc[]
+include::entries/prohibition.adoc[]
+include::entries/promise.adoc[]
+include::entries/fairness.adoc[]
+include::entries/desert.adoc[]
+include::entries/punishment.adoc[]
+include::entries/forgiveness.adoc[]
+include::entries/gratitude.adoc[]
+include::entries/compassion.adoc[]
+include::entries/courage.adoc[]
+include::entries/temperance.adoc[]
+
+== Boundary Entries
+include::entries/evil.adoc[]
+include::entries/tragedy.adoc[]
+include::entries/dilemma.adoc[]
+include::entries/supererogation.adoc[]
+
+== Closing Entries
+include::entries/moral-luck.adoc[]
+include::entries/akrasia.adoc[]
+include::entries/moral-blindness.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

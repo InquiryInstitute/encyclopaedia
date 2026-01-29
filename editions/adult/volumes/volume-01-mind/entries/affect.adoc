@@ -1,0 +1,29 @@
+// Entry: Affect (Adult Edition)
+// Canonical Author: Baruch Spinoza
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.spinoza
+
+[[entry-affect]]
+=== Affect
+:canonical-author: Baruch Spinoza
+:faculty-id: a.spinoza
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/affect.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore the affects (affectus) as modifications of the body's power of acting, accompanied by ideas of these modifications—the three primary affects being joy, sadness, and desire.
+
+Topics to cover:
+- Conatus and the striving to persevere
+- Joy as increase in power of acting
+- Sadness as decrease in power of acting
+- Desire as the essence of human being
+- The passions and their bondage
+- The intellectual love of God
+====

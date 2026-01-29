@@ -1,0 +1,29 @@
+// Entry: Sleep (Adult Edition)
+// Canonical Author: Aristotle
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.aristotle
+
+[[entry-sleep]]
+=== Sleep
+:canonical-author: Aristotle
+:faculty-id: a.aristotle
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/sleep.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore sleep as the privation of wakefulness—the state in which the common sense is bound, arising from the evaporation of nutriment in the heart.
+
+Topics to cover:
+- Sleep and waking as contraries
+- The common sense and sleep
+- The physiological account of sleep
+- Sleep in relation to the soul's faculties
+- Prophetic dreams and their nature
+- The necessity of sleep for animals
+====

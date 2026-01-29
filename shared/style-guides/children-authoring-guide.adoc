@@ -1,0 +1,225 @@
+= Children's Edition Authoring Guide
+:doctype: article
+:toc:
+:toclevels: 2
+
+== Mission
+
+The Children's Encyclopædia presents the same topics and canonical authors as the Adult Edition, rewritten for reading comprehension without "simplifying the idea." We adjust tempo and scaffold thinking, never reduce depth.
+
+== Core Principles
+
+=== Same Ideas, Different Pace
+
+* The idea remains complete and sophisticated
+* Sentences are shorter and more concrete
+* Transitions are made explicit
+* Examples are age-appropriate but intellectually serious
+
+=== Never Didactic
+
+* Avoid "fun facts" that trivialize
+* No false cheerfulness or condescension
+* Trust the reader's capacity to wonder
+* End with questions, not answers
+
+=== Preserve Uncertainty
+
+* Don't close what the original leaves open
+* "We don't fully know" is a valid statement
+* Questions are invitations, not tests
+* Wonder is the goal
+
+== Voice and Tone
+
+=== The Canonical Author, Gentled
+
+The same author writes the Children's Edition, but with:
+
+* Shorter sentences (typically 8–15 words)
+* Concrete examples before abstractions
+* Explicit thinking steps ("First... then... but...")
+* Direct address to the reader ("You can notice...")
+
+=== Example Transformation
+
+**Adult Edition:**
+[quote]
+____
+Attention is the taking possession by the mind, in clear and vivid form, of one out of what seem several simultaneously possible objects or trains of thought.
+____
+
+**Children's Edition:**
+[quote]
+____
+When you pay attention, your mind chooses one thing and lets other things fade. You can notice this happening.
+____
+
+== Entry Structure
+
+=== Format
+
+[source,asciidoc]
+----
+[[entry-{slug}]]
+=== {Title}
+:canonical-author: {Author Name}
+:status: canonical
+:length-target: 1.5–3 pages
+
+[role=canonical]
+====
+{CANONICAL TEXT FOR CHILDREN}
+====
+
+// Synthetic marginalia for pedagogical support
+----
+
+=== Typical Flow
+
+1. **Opening hook**: Invite the reader into the topic
+2. **Concrete example**: Something they can imagine or try
+3. **Core concept**: The idea itself, clearly stated
+4. **Exploration**: Different angles or questions
+5. **Open ending**: A question to carry away
+
+== Length Guidelines
+
+Children's entries are shorter:
+
+[cols="1,2,2"]
+|===
+| Entry Type | Page Target | Word Estimate
+
+| Major Entry
+| 1.5–3 pages
+| 750–1,500 words
+
+| Standard Entry
+| 1–2 pages
+| 500–1,000 words
+
+| Boundary Entry
+| 1.5–2.5 pages
+| 750–1,250 words
+
+| Closing Entry
+| 0.5–1 page
+| 250–500 words
+|===
+
+== Writing Techniques
+
+=== Sentence Construction
+
+* Lead with the familiar, then introduce the new
+* One idea per sentence
+* Active voice preferred
+* "You" directly addresses the reader
+
+**Avoid:** "The phenomenon of selective attention..."
+**Prefer:** "When you listen to one voice in a noisy room..."
+
+=== Paragraph Structure
+
+* Short paragraphs (3–5 sentences typically)
+* Blank line between distinct thoughts
+* Transitions at paragraph starts
+
+=== Questions as Tools
+
+Use questions to:
+* Invite reflection, not test knowledge
+* Model curiosity
+* Leave openings for further thought
+
+**Avoid:** "Can you name three types of attention?"
+**Prefer:** "What do you notice your attention doing right now?"
+
+== Marginalia in Children's Edition
+
+=== Synthetic Annotations
+
+"Side Note" synthetic voices provide gentle scaffolding:
+
+[source,asciidoc]
+----
+[role=marginalia,
+ type=clarification,
+ author="Side Note",
+ status="synthetic",
+ year="2026",
+ length="22",
+ targets="paragraph:2",
+ scope="local"]
+====
+A "limit" can still be useful. A lantern shines by not lighting everything.
+====
+----
+
+=== Fewer Marginalia
+
+* 1–3 notes per entry typically
+* Focus on clarification and extension
+* Heretic notes used sparingly, simply phrased
+
+== Example Entry
+
+[source,asciidoc]
+----
+[[entry-attention]]
+=== Attention
+:canonical-author: William James
+:status: canonical
+:length-target: 1.5–3 pages
+
+[role=canonical]
+====
+When you pay attention, your mind chooses one thing and lets other things fade.
+You can notice this happening.
+
+Try listening to two sounds at once. One becomes clear, and the other slips away.
+This does not mean the other sound is gone. It means your mind is not holding it.
+
+Some people think attention is a kind of strength.
+Others think it is more like a limit: you can only hold so much at one time.
+
+What do you notice your attention doing right now?
+====
+
+[role=marginalia,
+ type=clarification,
+ author="Side Note",
+ status="synthetic",
+ year="2026",
+ length="22",
+ targets="paragraph:2",
+ scope="local"]
+====
+A "limit" can still be useful. A lantern shines by not lighting everything.
+====
+----
+
+== Quality Checklist
+
+Before submission, verify:
+
+* [ ] Ideas are preserved, not simplified
+* [ ] Sentences average under 15 words
+* [ ] Concrete examples precede abstractions
+* [ ] Transitions are explicit
+* [ ] Entry ends with a question, not an answer
+* [ ] No didactic "fun facts" or false cheerfulness
+* [ ] Voice matches the canonical author (gentled)
+* [ ] Length within target range
+* [ ] Synthetic marginalia is clearly marked
+* [ ] Matches topic of corresponding adult entry
+
+== Reading Level Considerations
+
+Target audience: ages 8–14, but:
+* Smart children reading up
+* Adults reading gently
+* ESL readers appreciating clarity
+
+The goal is **clarity without condescension**, not a specific grade level.

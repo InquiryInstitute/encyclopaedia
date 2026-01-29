@@ -1,0 +1,58 @@
+= The Encyclopædia
+:volume: VI
+:volume-title: Art & Form
+:season: Beltane → Lammas (Summer)
+:edition: Adult
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume VI: Art & Form
+
+// Major Entries (8–12 pages)
+include::entries/art.adoc[]
+include::entries/beauty.adoc[]
+include::entries/form.adoc[]
+include::entries/expression.adoc[]
+
+// Standard Entries (4–6 pages)
+include::entries/aesthetics.adoc[]
+include::entries/taste.adoc[]
+include::entries/sublime.adoc[]
+include::entries/imitation.adoc[]
+include::entries/representation.adoc[]
+include::entries/style.adoc[]
+include::entries/craft.adoc[]
+include::entries/technique.adoc[]
+include::entries/creation.adoc[]
+include::entries/genius.adoc[]
+include::entries/inspiration.adoc[]
+include::entries/play.adoc[]
+include::entries/ornament.adoc[]
+include::entries/harmony.adoc[]
+include::entries/rhythm.adoc[]
+include::entries/composition.adoc[]
+include::entries/color.adoc[]
+include::entries/line.adoc[]
+
+== Boundary Entries
+include::entries/music.adoc[]
+include::entries/poetry.adoc[]
+include::entries/architecture.adoc[]
+include::entries/dance.adoc[]
+
+== Closing Entries
+include::entries/kitsch.adoc[]
+include::entries/silence-art.adoc[]
+include::entries/unfinished.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

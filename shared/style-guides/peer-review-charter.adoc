@@ -1,0 +1,204 @@
+= Peer Review Charter
+:doctype: article
+:toc:
+:toclevels: 2
+
+== Purpose
+
+Peer review at The Encyclopædia differs from traditional academic review. Our reviews are _visible_, appearing as marginalia rather than hidden reports. This makes inquiry public and keeps the canon calm.
+
+== Guiding Principles
+
+=== Visibility
+
+All review outputs become part of the published text:
+* Reviews are signed, dated, and attributed
+* Readers see the scholarly conversation, not just its result
+* Authors know exactly what reviewers said
+
+=== Constructive Challenge
+
+* Critique ideas, never authors
+* Strengthen arguments by testing them
+* Dissent is a gift, not an attack
+
+=== Marginalia as Output
+
+Review comments become marginalia entries:
+* Follow the marginalia specification exactly
+* Stay within length bounds
+* Target specific passages
+
+== Reviewer Roles
+
+=== Reviewer A: Sympathetic Clarifier
+
+**Purpose:** Help the reader understand the canonical text better.
+
+**Tasks:**
+* Identify passages that need clarification
+* Provide context that strengthens comprehension
+* Extend ideas where appropriate
+* Note connections to other entries
+
+**Output:** 3–8 marginalia notes
+**Types:** `clarification`, `extension`, `crossref`
+
+=== Reviewer B: Principled Dissenter
+
+**Purpose:** Test the canonical text's assumptions and claims.
+
+**Tasks:**
+* Identify settled assumptions worth questioning
+* Raise principled objections
+* Present neglected perspectives
+* Suggest tests for claims
+
+**Output:** 3–8 marginalia notes
+**Types:** `objection`, `heretic`, `correction`
+
+== Review Process
+
+=== Step 1: Assignment
+
+Editorial board assigns:
+* One Reviewer A (sympathetic)
+* One Reviewer B (dissenting)
+* Both reviewers receive the canonical text without existing marginalia
+
+=== Step 2: Independent Review
+
+Each reviewer:
+* Reads the canonical text carefully
+* Drafts marginalia following the specification
+* Does not consult the other reviewer
+
+=== Step 3: Submission
+
+Submit marginalia as AsciiDoc blocks:
+
+[source,asciidoc]
+----
+[role=marginalia,
+ type=clarification,
+ author="Jane Scholar",
+ status="adjunct",
+ year="2026",
+ length="45",
+ targets="paragraph:3",
+ scope="local"]
+====
+The author's distinction between focal and peripheral awareness
+echoes Polanyi's tacit knowledge. Readers interested in this 
+connection might consult _Personal Knowledge_ (1958).
+====
+----
+
+=== Step 4: Author Response
+
+The author may:
+* Accept marginalia as-is
+* Revise the canonical text in response
+* Add responsive marginalia (author's own clarifications)
+* Request removal of marginalia (requires editorial approval)
+
+=== Step 5: Final Compilation
+
+Editorial board:
+* Reviews all marginalia for compliance
+* Ensures length bounds are met
+* Verifies target references are accurate
+* Compiles final entry with marginalia
+
+== Marginalia Requirements
+
+=== All Review Marginalia Must:
+
+* [ ] Include all required attributes
+* [ ] Stay within length class (prefer `standard`: 30–60 words)
+* [ ] Target specific passages (not "the whole entry" without reason)
+* [ ] Be signed with reviewer's full name
+* [ ] Be dated with review year
+* [ ] Advance understanding, not just critique
+
+=== Forbidden in Reviews:
+
+* Ad hominem comments
+* Unsubstantiated claims
+* Length exceeding `extended` class without approval
+* Marginalia targeting removed passages
+* Hidden or anonymous contributions
+
+== Quality Standards
+
+=== For Reviewer A (Sympathetic Clarifier)
+
+Good clarification:
+[quote]
+____
+The term "intentionality" here follows Brentano's usage—mental directedness toward an object—rather than the everyday sense of "on purpose."
+____
+
+Poor clarification:
+[quote]
+____
+This is a good point.
+____
+
+=== For Reviewer B (Principled Dissenter)
+
+Good objection:
+[quote]
+____
+This account assumes attention is voluntary, but much research suggests automatic capture by salient stimuli. See Yantis & Jonides (1984).
+____
+
+Poor objection:
+[quote]
+____
+I disagree with this whole section.
+____
+
+== Annual Revision Process
+
+During the Candlemas revision cycle:
+
+1. **Review marginalia effectiveness**
+   * Which notes are most consulted?
+   * Which seem outdated?
+
+2. **Promote or retire**
+   * Exceptional marginalia may be integrated into canon
+   * Obsolete marginalia may be retired (archived, not deleted)
+
+3. **Update cross-references**
+   * Ensure links to new volumes work
+   * Add connections to newly published entries
+
+== Compensation and Recognition
+
+* Reviewers are credited by name in the volume
+* Review contributions count toward scholarly service
+* Exceptional reviews may be highlighted in annual notes
+
+== Disputes and Appeals
+
+If an author disagrees with marginalia:
+
+1. Discuss with reviewer (mediated by editor)
+2. Author may add responsive marginalia
+3. Editorial board makes final decision
+4. Marginalia may be marked "disputed" if consensus is not reached
+
+All decisions are documented. Transparency is paramount.
+
+== Code of Conduct
+
+All reviewers agree to:
+
+* Provide timely reviews (within 4 weeks of assignment)
+* Maintain confidentiality until publication
+* Declare conflicts of interest
+* Treat authors and co-reviewers with respect
+* Follow the marginalia specification exactly
+* Submit work that meets scholarly standards

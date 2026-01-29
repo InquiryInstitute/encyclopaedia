@@ -1,0 +1,29 @@
+// Entry: Sensation (Adult Edition)
+// Canonical Author: Ernst Weber
+// Type: Standard Entry (4–6 pages)
+// Faculty ID: a.weber
+
+[[entry-sensation]]
+=== Sensation
+:canonical-author: Ernst Weber
+:faculty-id: a.eweber
+:status: canonical
+:entry-type: standard
+:length-target: 4–6 pages
+:word-target: 2000–3000
+:children-edition: ../../../children/volumes/volume-01-mind/entries/sensation.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will explore sensation as the elementary unit of experience—the just noticeable differences that reveal the lawful relationship between physical stimuli and psychological experience.
+
+Topics to cover:
+- Weber's law and just noticeable differences
+- The psychophysical relationship
+- Thresholds of sensation
+- The muscular sense
+- Sensory modalities
+- Sensation and measurement
+====

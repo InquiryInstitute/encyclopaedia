@@ -1,0 +1,58 @@
+= The Encyclopædia
+:volume: V
+:volume-title: Society
+:season: Beltane → Lammas (Summer)
+:edition: Adult
+:doctype: book
+:toc: left
+:toclevels: 2
+:sectnums:
+:icons: font
+
+include::../../../../shared/macros.adoc[]
+include::../../../../shared/marginalia-spec.adoc[]
+
+== Front Matter
+include::front-matter.adoc[]
+
+== Volume V: Society
+
+// Major Entries (8–12 pages)
+include::entries/society.adoc[]
+include::entries/community.adoc[]
+include::entries/power.adoc[]
+include::entries/justice.adoc[]
+
+// Standard Entries (4–6 pages)
+include::entries/institution.adoc[]
+include::entries/law.adoc[]
+include::entries/authority.adoc[]
+include::entries/legitimacy.adoc[]
+include::entries/class.adoc[]
+include::entries/status.adoc[]
+include::entries/role.adoc[]
+include::entries/norm.adoc[]
+include::entries/custom.adoc[]
+include::entries/tradition-social.adoc[]
+include::entries/contract.adoc[]
+include::entries/property.adoc[]
+include::entries/exchange.adoc[]
+include::entries/labor.adoc[]
+include::entries/solidarity.adoc[]
+include::entries/conflict.adoc[]
+include::entries/cooperation.adoc[]
+include::entries/trust.adoc[]
+
+== Boundary Entries
+include::entries/state.adoc[]
+include::entries/revolution.adoc[]
+include::entries/utopia.adoc[]
+include::entries/anarchy.adoc[]
+
+== Closing Entries
+include::entries/alienation.adoc[]
+include::entries/anomie.adoc[]
+include::entries/stranger.adoc[]
+
+== Back Matter
+include::back-matter.adoc[]

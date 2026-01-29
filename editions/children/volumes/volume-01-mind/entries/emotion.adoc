@@ -1,0 +1,21 @@
+// Entry: emotion (Children's Edition)
+// Canonical Author: Charles Darwin
+// Faculty ID: a.darwin
+
+[[entry-emotion]]
+=== emotion
+:canonical-author: Charles Darwin
+:faculty-id: a.darwin
+:status: canonical
+:entry-type: standard
+:adult-edition: ../../../adult/volumes/volume-01-mind/entries/emotion.adoc
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+This entry will present the same ideas as the Adult Edition,
+written with shorter sentences, concrete examples, and explicit transitions.
+
+The ideas are not simplified—only the pace is adjusted for younger readers.
+====
