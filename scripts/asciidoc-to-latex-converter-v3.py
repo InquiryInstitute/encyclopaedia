@@ -317,8 +317,16 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
                         marg = entry['marginalia'][marg_index]
                         marg_content = escape_simple(marg['content'])
                         latex += f"\\marginalia{{{marg['author']}}}{{{marg['type']} ({marg['year']})}}{{{marg_content}}}\n"
+                
+                # Add author signature at end of canonical text (Britannica-style)
+                # After main text, before references/marginalia
+                if entry.get('author'):
+                    latex += f"\n\\authorsignature{{{escape_simple(entry['author'])}}}\n"
             else:
                 latex += canonical_latex
+                # Add author signature even if single paragraph
+                if entry.get('author'):
+                    latex += f"\n\\authorsignature{{{escape_simple(entry['author'])}}}\n"
         else:
             # Placeholder - add note
             latex += "\\textit{[Canonical text to be generated]}\n\n"
