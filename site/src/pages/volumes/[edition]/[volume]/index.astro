@@ -51,19 +51,14 @@ if (!volumeData) {
   return Astro.redirect('/404');
 }
 
-// Group entries by type
-const entriesByType = volumeData.entries.reduce((acc: Record<string, Entry[]>, entry: Entry) => {
-  if (!acc[entry.type]) {
-    acc[entry.type] = [];
-  }
-  acc[entry.type].push(entry);
-  return acc;
-}, {} as Record<string, Entry[]>);
+// Separate main entries from closing entries
+const mainEntries = volumeData.entries
+  .filter(entry => entry.type !== 'closing')
+  .sort((a: Entry, b: Entry) => a.title.localeCompare(b.title));
 
-// Sort entries alphabetically within each type
-Object.keys(entriesByType).forEach(type => {
-  entriesByType[type].sort((a: Entry, b: Entry) => a.title.localeCompare(b.title));
-});
+const closingEntries = volumeData.entries
+  .filter(entry => entry.type === 'closing')
+  .sort((a: Entry, b: Entry) => a.title.localeCompare(b.title));
 ---
 
 <html lang="en">
@@ -195,23 +190,6 @@ Object.keys(entriesByType).forEach(type => {
       font-style: italic;
     }
     
-    /* Font weight variations by type */
-    .entry-item[data-type="major"] .entry-title {
-      font-weight: 700;
-    }
-    
-    .entry-item[data-type="standard"] .entry-title {
-      font-weight: 500;
-    }
-    
-    .entry-item[data-type="boundary"] .entry-title {
-      font-weight: 400;
-    }
-    
-    .entry-item[data-type="closing"] .entry-title {
-      font-weight: 300;
-    }
-    
     @media (max-width: 768px) {
       .entry-list {
         grid-template-columns: 1fr;
@@ -232,16 +210,24 @@ Object.keys(entriesByType).forEach(type => {
         Table of Contents
       </h2>
       
-      {Object.entries(entriesByType).map(([type, entries]) => (
+      {/* Main Entries (alphabetized, no type distinction) */}
+      <section class="toc-section">
+        <ul class="entry-list">
+          {mainEntries.map((entry) => (
+            <li class="entry-item" data-type={entry.type}>
+              <span class="entry-title">{entry.title}</span>
+              <span class="entry-author">{entry.author}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+      
+      {/* Closing Entries (separate section) */}
+      {closingEntries.length > 0 && (
         <section class="toc-section">
-          <h3 class="toc-section-title">
-            {type === 'major' ? 'Major Entries' : 
-             type === 'standard' ? 'Standard Entries' :
-             type === 'boundary' ? 'Boundary Entries' :
-             'Closing Entries'}
-          </h3>
+          <h3 class="toc-section-title">Closing Entries</h3>
           <ul class="entry-list">
-            {(entries as Entry[]).map((entry) => (
+            {closingEntries.map((entry) => (
               <li class="entry-item" data-type={entry.type}>
                 <span class="entry-title">{entry.title}</span>
                 <span class="entry-author">{entry.author}</span>
@@ -249,7 +235,7 @@ Object.keys(entriesByType).forEach(type => {
             ))}
           </ul>
         </section>
-      ))}
+      )}
     </div>
   </div>
 </body>
