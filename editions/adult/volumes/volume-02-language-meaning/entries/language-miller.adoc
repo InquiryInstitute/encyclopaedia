@@ -1,0 +1,30 @@
+// Entry: language-miller (volume-02-language-meaning)
+// Canonical Author: George A. Miller
+// Type: Major Entry
+// Faculty ID: a.miller
+
+[[entry-language-miller]]
+=== Language Miller
+:canonical-author: George A. Miller
+:faculty-id: a.miller
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:language-miller",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

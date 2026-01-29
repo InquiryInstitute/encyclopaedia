@@ -1,0 +1,30 @@
+// Entry: future-zamyatin (volume-11-futures)
+// Canonical Author: Yevgeny Zamyatin
+// Type: Major Entry
+// Faculty ID: a.zamyatin
+
+[[entry-future-zamyatin]]
+=== Future Zamyatin
+:canonical-author: Yevgeny Zamyatin
+:faculty-id: a.zamyatin
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:future-zamyatin",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

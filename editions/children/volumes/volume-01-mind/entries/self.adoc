@@ -4,8 +4,8 @@
 
 [[entry-self]]
 === self
-:canonical-author: William James
-:faculty-id: a.james
+:canonical-author: Sigmund Freud
+:faculty-id: a.freud
 :status: canonical
 :entry-type: standard
 :adult-edition: ../../../adult/volumes/volume-01-mind/entries/self.adoc

@@ -1,0 +1,30 @@
+// Entry: ethics-kant (volume-09-ethics)
+// Canonical Author: Immanuel Kant
+// Type: Major Entry
+// Faculty ID: a.kant
+
+[[entry-ethics-kant]]
+=== Ethics Kant
+:canonical-author: Immanuel Kant
+:faculty-id: a.kant
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:ethics-kant",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

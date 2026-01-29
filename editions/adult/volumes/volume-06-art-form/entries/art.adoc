@@ -1,7 +1,7 @@
 [[entry-art]]
 === Art
-:canonical-author: Leo Tolstoy
-:faculty-id: a.tolstoy
+:canonical-author: Leon Battista Alberti
+:faculty-id: a.alberti
 :status: canonical
 :entry-type: major
 :length-target: 8–12 pages

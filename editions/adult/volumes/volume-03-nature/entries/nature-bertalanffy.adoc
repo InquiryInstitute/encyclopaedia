@@ -1,0 +1,30 @@
+// Entry: nature-bertalanffy (volume-03-nature)
+// Canonical Author: Ludwig von Bertalanffy
+// Type: Major Entry
+// Faculty ID: a.bertalanffy
+
+[[entry-nature-bertalanffy]]
+=== Nature Bertalanffy
+:canonical-author: Ludwig von Bertalanffy
+:faculty-id: a.bertalanffy
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:nature-bertalanffy",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

@@ -1,0 +1,30 @@
+// Entry: limit (volume-12-limits)
+// Canonical Author: Socrates
+// Type: Major Entry
+// Faculty ID: a.socrates
+
+[[entry-limit]]
+=== Limit
+:canonical-author: Socrates
+:faculty-id: a.socrates
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:limit",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

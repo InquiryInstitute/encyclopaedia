@@ -1,0 +1,30 @@
+// Entry: risk (volume-11-futures)
+// Canonical Author: Blaise Pascal
+// Type: Major Entry
+// Faculty ID: a.pascal
+
+[[entry-risk]]
+=== Risk
+:canonical-author: Blaise Pascal
+:faculty-id: a.pascal
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:risk",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

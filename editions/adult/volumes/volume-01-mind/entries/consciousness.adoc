@@ -5,8 +5,8 @@
 
 [[entry-consciousness]]
 === Consciousness
-:canonical-author: Henri Bergson
-:faculty-id: a.bergson
+:canonical-author: Edmund Husserl
+:faculty-id: a.husserl
 :status: canonical
 :entry-type: major
 :length-target: 10–12 pages

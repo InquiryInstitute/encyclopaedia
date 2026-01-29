@@ -1,0 +1,30 @@
+// Entry: technology-shelley (volume-10-machines)
+// Canonical Author: Mary Shelley
+// Type: Major Entry
+// Faculty ID: a.shelley
+
+[[entry-technology-shelley]]
+=== Technology Shelley
+:canonical-author: Mary Shelley
+:faculty-id: a.shelley
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:technology-shelley",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

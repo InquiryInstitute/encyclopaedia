@@ -5,8 +5,8 @@
 
 [[entry-self]]
 === Self
-:canonical-author: William James
-:faculty-id: a.james
+:canonical-author: Sigmund Freud
+:faculty-id: a.freud
 :status: canonical
 :entry-type: standard
 :length-target: 4–6 pages

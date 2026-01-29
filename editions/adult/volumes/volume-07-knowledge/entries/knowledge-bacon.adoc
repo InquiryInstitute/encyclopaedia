@@ -1,0 +1,30 @@
+// Entry: knowledge-bacon (volume-07-knowledge)
+// Canonical Author: Francis Bacon
+// Type: Major Entry
+// Faculty ID: a.bacon
+
+[[entry-knowledge-bacon]]
+=== Knowledge Bacon
+:canonical-author: Francis Bacon
+:faculty-id: a.bacon
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:knowledge-bacon",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

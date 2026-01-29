@@ -1,0 +1,30 @@
+// Entry: time (volume-04-measure)
+// Canonical Author: Albert Einstein
+// Type: Major Entry
+// Faculty ID: a.einstein
+
+[[entry-time]]
+=== Time
+:canonical-author: Albert Einstein
+:faculty-id: a.einstein
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:time",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

@@ -1,0 +1,30 @@
+// Entry: evolution-waddington (volume-03-nature)
+// Canonical Author: Conrad Hal Waddington
+// Type: Major Entry
+// Faculty ID: a.waddington
+
+[[entry-evolution-waddington]]
+=== Evolution Waddington
+:canonical-author: Conrad Hal Waddington
+:faculty-id: a.waddington
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:evolution-waddington",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

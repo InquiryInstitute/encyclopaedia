@@ -1,0 +1,30 @@
+// Entry: number-pythagoras (volume-04-measure)
+// Canonical Author: Pythagoras
+// Type: Major Entry
+// Faculty ID: a.pythagoras
+
+[[entry-number-pythagoras]]
+=== Number Pythagoras
+:canonical-author: Pythagoras
+:faculty-id: a.pythagoras
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:number-pythagoras",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

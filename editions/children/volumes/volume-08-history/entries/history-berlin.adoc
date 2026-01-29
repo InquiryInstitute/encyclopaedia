@@ -1,0 +1,30 @@
+// Entry: history-berlin (volume-08-history)
+// Canonical Author: Isaiah Berlin
+// Type: Major Entry
+// Faculty ID: a.berlin
+
+[[entry-history-berlin]]
+=== History Berlin
+:canonical-author: Isaiah Berlin
+:faculty-id: a.berlin
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:history-berlin",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

@@ -1,0 +1,30 @@
+// Entry: symbol (volume-02-language-meaning)
+// Canonical Author: Charles Sanders Peirce
+// Type: Major Entry
+// Faculty ID: a.peirce
+
+[[entry-symbol]]
+=== Symbol
+:canonical-author: Charles Sanders Peirce
+:faculty-id: a.peirce
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:symbol",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

@@ -1,0 +1,30 @@
+// Entry: number (volume-04-measure)
+// Canonical Author: Euclid
+// Type: Major Entry
+// Faculty ID: a.euclid
+
+[[entry-number]]
+=== Number
+:canonical-author: Euclid
+:faculty-id: a.euclid
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:number",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

@@ -1,0 +1,30 @@
+// Entry: limit-heisenberg (volume-12-limits)
+// Canonical Author: Werner Heisenberg
+// Type: Major Entry
+// Faculty ID: a.heisenberg
+
+[[entry-limit-heisenberg]]
+=== Limit Heisenberg
+:canonical-author: Werner Heisenberg
+:faculty-id: a.heisenberg
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:limit-heisenberg",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

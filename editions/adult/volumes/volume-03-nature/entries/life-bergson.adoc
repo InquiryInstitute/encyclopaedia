@@ -1,0 +1,30 @@
+// Entry: life-bergson (volume-03-nature)
+// Canonical Author: Henri Bergson
+// Type: Major Entry
+// Faculty ID: a.bergson
+
+[[entry-life-bergson]]
+=== Life Bergson
+:canonical-author: Henri Bergson
+:faculty-id: a.bergson
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:life-bergson",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

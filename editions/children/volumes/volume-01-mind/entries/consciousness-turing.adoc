@@ -1,0 +1,30 @@
+// Entry: consciousness-turing (volume-01-mind)
+// Canonical Author: Alan Turing
+// Type: Major Entry
+// Faculty ID: a.turing
+
+[[entry-consciousness-turing]]
+=== Consciousness Turing
+:canonical-author: Alan Turing
+:faculty-id: a.turing
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:consciousness-turing",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

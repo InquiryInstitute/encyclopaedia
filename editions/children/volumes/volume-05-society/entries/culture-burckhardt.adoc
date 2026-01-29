@@ -1,0 +1,30 @@
+// Entry: culture-burckhardt (volume-05-society)
+// Canonical Author: Jacob Burckhardt
+// Type: Major Entry
+// Faculty ID: a.burckhardt
+
+[[entry-culture-burckhardt]]
+=== Culture Burckhardt
+:canonical-author: Jacob Burckhardt
+:faculty-id: a.burckhardt
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:culture-burckhardt",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

@@ -1,0 +1,30 @@
+// Entry: memory-warburg (volume-08-history)
+// Canonical Author: Aby Warburg
+// Type: Major Entry
+// Faculty ID: a.warburg
+
+[[entry-memory-warburg]]
+=== Memory Warburg
+:canonical-author: Aby Warburg
+:faculty-id: a.warburg
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:memory-warburg",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

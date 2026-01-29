@@ -1,0 +1,30 @@
+// Entry: number-smith (volume-04-measure)
+// Canonical Author: Adam Smith
+// Type: Major Entry
+// Faculty ID: a.smith
+
+[[entry-number-smith]]
+=== Number Smith
+:canonical-author: Adam Smith
+:faculty-id: a.smith
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:number-smith",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====

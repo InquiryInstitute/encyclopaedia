@@ -1,0 +1,30 @@
+// Entry: beauty-hume (volume-06-art-form)
+// Canonical Author: David Hume
+// Type: Major Entry
+// Faculty ID: a.hume
+
+[[entry-beauty-hume]]
+=== Beauty Hume
+:canonical-author: David Hume
+:faculty-id: a.hume
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+:word-target: 4000–6000
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+====
+
+[role=marginalia,
+ type=objection,
+ author="Reviewer",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:beauty-hume",
+ scope="local"]
+====
+[MARGINALIA TO BE GENERATED]
+====
