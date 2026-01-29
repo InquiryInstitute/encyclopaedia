@@ -1,0 +1,46 @@
+[[entry-art]]
+=== Art
+:canonical-author: Leo Tolstoy
+:faculty-id: a.tolstoy
+:status: canonical
+:entry-type: major
+:length-target: 8–12 pages
+
+[role=canonical]
+====
+[CANONICAL TEXT TO BE GENERATED]
+
+// Tolstoy's theory of art as communication of feeling
+// Art as the transmission of emotion from artist to audience
+// Distinction between true art and counterfeit art
+// The moral function of art
+// Universal accessibility as a criterion of genuine art
+====
+
+[role=marginalia,
+ type=objection,
+ author="Clive Bell",
+ status="adjunct",
+ year="1914",
+ length="48",
+ targets="paragraph:2",
+ scope="local"]
+====
+Art has nothing to do with the communication of feeling. Significant form alone—
+the relations and combinations of lines and colors—constitutes the essential 
+quality that moves us aesthetically. Tolstoy confuses art with mere emotional contagion.
+====
+
+[role=marginalia,
+ type=extension,
+ author="R.G. Collingwood",
+ status="adjunct",
+ year="1938",
+ length="52",
+ targets="paragraph:4",
+ scope="local"]
+====
+Tolstoy rightly emphasizes expression but misunderstands its nature. Art is not 
+the arousal of emotion but its clarification—the imaginative activity by which 
+we come to understand what we feel. Expression is discovery, not transmission.
+====
