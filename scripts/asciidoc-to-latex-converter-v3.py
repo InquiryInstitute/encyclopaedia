@@ -100,6 +100,10 @@ def parse_entry(entry_content):
     faculty_id_match = re.search(r':faculty-id:\s*(.+)', entry_content)
     faculty_id = faculty_id_match.group(1).strip() if faculty_id_match else None
     
+    # Extract author image/portrait path
+    author_image_match = re.search(r':author-image:\s*(.+)', entry_content)
+    author_image = author_image_match.group(1).strip() if author_image_match else None
+    
     # Use canonical-author if available, otherwise try to derive from faculty-id
     author_name = canonical_author
     if not author_name and faculty_id:
@@ -150,6 +154,7 @@ def parse_entry(entry_content):
         'title': title,
         'canonical': canonical_text,
         'author': author_name,
+        'author_image': author_image,
         'marginalia': marginalia_blocks
     }
 

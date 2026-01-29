@@ -77,12 +77,27 @@
   }%
 }
 
-% Author signature (Britannica-style: end of entry, restrained)
-% Usage: \authorsignature{Author Name}
-\newcommand{\authorsignature}[1]{%
+% Author signature with frontal bust (Britannica-style: end of entry, restrained)
+% Usage: \authorsignature{Author Name}{Image Path}
+% If image path is empty, just shows name
+\newcommand{\authorsignature}[2]{%
   \vspace*{0.5\baselineskip}
   \begin{center}
-    \textsc{--- #1}
+    \ifthenelse{\equal{#2}{}}{%
+      % No image, just name
+      \textsc{--- #1}
+    }{%
+      % With frontal bust portrait
+      \begin{minipage}{0.15\textwidth}
+        \centering
+        \includegraphics[width=\textwidth,height=2cm,keepaspectratio]{#2}
+      \end{minipage}%
+      \hspace{0.5em}%
+      \begin{minipage}{0.8\textwidth}
+        \centering
+        \textsc{--- #1}
+      \end{minipage}
+    }
   \end{center}
   \vspace*{0.3\baselineskip}
 }
