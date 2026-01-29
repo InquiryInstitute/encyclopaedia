@@ -9,24 +9,64 @@ import sys
 from pathlib import Path
 
 def escape_latex(text):
-    """Escape LaTeX special characters"""
-    replacements = {
-        '\\': '\\textbackslash{}',
-        '&': '\\&',
-        '%': '\\%',
-        '$': '\\$',
-        '#': '\\#',
-        '^': '\\textasciicircum{}',
-        '_': '\\_',
-        '{': '\\{',
-        '}': '\\}',
-        '~': '\\textasciitilde{}',
-        '<': '\\textless{}',
-        '>': '\\textgreater{}',
-    }
-    for char, replacement in replacements.items():
-        text = text.replace(char, replacement)
-    return text
+    """Escape LaTeX special characters, but preserve LaTeX commands"""
+    # Don't escape if text already contains LaTeX commands (like \textbf, \textit)
+    if '\\' in text and any(cmd in text for cmd in ['\\textbf', '\\textit', '\\section', '\\entry', '\\marginalia']):
+        # Text already has LaTeX - only escape non-command special chars
+        # Protect LaTeX commands by temporarily replacing them
+        protected = []
+        protected_idx = 0
+        
+        # Find and protect LaTeX commands
+        cmd_pattern = r'\\(?:textbf|textit|section|entry|marginalia|textbackslash|&|%|\$|#|textasciicircum|_|\{|\}|textasciitilde|textless|textgreater)\{[^}]*\}|\\(?:textbf|textit|section|entry|marginalia|textbackslash|&|%|\$|#|textasciicircum|_|\{|\}|textasciitilde|textless|textgreater)'
+        for match in re.finditer(cmd_pattern, text):
+            placeholder = f"__LATEX_CMD_{protected_idx}__"
+            protected.append((placeholder, match.group(0)))
+            text = text.replace(match.group(0), placeholder, 1)
+            protected_idx += 1
+        
+        # Now escape remaining special characters
+        replacements = {
+            '&': '\\&',
+            '%': '\\%',
+            '$': '\\$',
+            '#': '\\#',
+            '^': '\\textasciicircum{}',
+            '_': '\\_',
+            '{': '\\{',
+            '}': '\\}',
+            '~': '\\textasciitilde{}',
+            '<': '\\textless{}',
+            '>': '\\textgreater{}',
+        }
+        # Only escape if not part of a protected command
+        for char, replacement in replacements.items():
+            text = text.replace(char, replacement)
+        
+        # Restore protected commands
+        for placeholder, original in protected:
+            text = text.replace(placeholder, original)
+        
+        return text
+    else:
+        # No LaTeX commands - escape everything
+        replacements = {
+            '\\': '\\textbackslash{}',
+            '&': '\\&',
+            '%': '\\%',
+            '$': '\\$',
+            '#': '\\#',
+            '^': '\\textasciicircum{}',
+            '_': '\\_',
+            '{': '\\{',
+            '}': '\\}',
+            '~': '\\textasciitilde{}',
+            '<': '\\textless{}',
+            '>': '\\textgreater{}',
+        }
+        for char, replacement in replacements.items():
+            text = text.replace(char, replacement)
+        return text
 
 def process_includes(content, base_dir):
     """Process include:: directives recursively"""
