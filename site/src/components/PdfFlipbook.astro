@@ -53,7 +53,7 @@ const { pdfUrl, title, edition } = Astro.props;
 
 <script is:inline define:vars={{ pdfUrl }}>
   // Load PageFlip library from CDN (St.PageFlip)
-  // Try multiple CDN sources for reliability
+  // Using the correct CDN URL for st-pageflip
   const PAGEFLIP_CDN = 'https://cdn.jsdelivr.net/npm/st-pageflip@1.0.0/dist/st-pageflip.min.js';
   const PAGEFLIP_CDN_ALT = 'https://unpkg.com/st-pageflip@1.0.0/dist/st-pageflip.min.js';
   
