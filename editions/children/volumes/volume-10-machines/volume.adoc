@@ -6,7 +6,6 @@
 :doctype: book
 :toc: left
 :toclevels: 2
-:sectnums:
 :icons: font
 
 include::../../../../shared/macros.adoc[]
