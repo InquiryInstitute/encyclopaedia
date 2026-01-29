@@ -52,10 +52,9 @@ const { pdfUrl, title, edition } = Astro.props;
 </section>
 
 <script is:inline define:vars={{ pdfUrl }}>
-  // Load PageFlip library from CDN (St.PageFlip)
-  // Using the correct CDN URL for st-pageflip
-  const PAGEFLIP_CDN = 'https://cdn.jsdelivr.net/npm/st-pageflip@1.0.0/dist/st-pageflip.min.js';
-  const PAGEFLIP_CDN_ALT = 'https://unpkg.com/st-pageflip@1.0.0/dist/st-pageflip.min.js';
+  // Load PageFlip library locally
+  // Using page-flip library (more reliable than st-pageflip)
+  const PAGEFLIP_LOCAL = '/js/page-flip.browser.min.js';
   
   // PDF.js initialization using CDN
   const PDFJS_VERSION = '4.0.379';
@@ -111,9 +110,8 @@ const { pdfUrl, title, edition } = Astro.props;
       let pageFlipLoaded = false;
       try {
         await loadScript(PAGEFLIP_LOCAL);
-        // Check if St.PageFlip is available
-        const PageFlipClass = (typeof window !== 'undefined' && window.St && window.St.PageFlip) 
-          || (typeof St !== 'undefined' && St.PageFlip);
+        // Check if PageFlip is available (page-flip library uses window.PageFlip)
+        const PageFlipClass = (typeof window !== 'undefined' && window.PageFlip);
         
         if (PageFlipClass) {
           pageFlipLoaded = true;
