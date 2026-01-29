@@ -240,26 +240,33 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
 
 \\cleardoublepage
 
+% Start two-column layout
+\\twocolumn
+
 """
     
     # Add each entry
     for entry in entries:
-        # Entry title spanning both columns
+        # Entry title spanning both columns (using \entry command)
         latex += f"\\entry{{{entry['title']}}}\n\n"
         
         # Convert canonical text (skip if placeholder)
         if entry['canonical'] and entry['canonical'] != "[CANONICAL TEXT TO BE GENERATED]":
             canonical_latex = convert_canonical_to_latex(entry['canonical'])
-            latex += canonical_latex + "\n\n"
+            # Add marginalia inline with canonical text (they'll appear in margin)
+            if entry['marginalia']:
+                # Insert marginalia at appropriate points in text
+                # For now, add them after the canonical text
+                latex += canonical_latex + "\n\n"
+                # Add marginalia after the text (they'll float to margin)
+                for marg in entry['marginalia']:
+                    marg_content = escape_simple(marg['content'])
+                    latex += f"\\marginalia{{{marg['author']}}}{{{marg['type']} ({marg['year']})}}{{{marg_content}}}\n"
+            else:
+                latex += canonical_latex + "\n\n"
         else:
             # Placeholder - add note
             latex += "\\textit{[Canonical text to be generated]}\n\n"
-        
-        # Add marginalia (only if canonical text exists)
-        if entry['canonical'] and entry['canonical'] != "[CANONICAL TEXT TO BE GENERATED]":
-            for marg in entry['marginalia']:
-                marg_content = escape_simple(marg['content'])
-                latex += f"\\marginalia{{{marg['author']}}}{{{marg['type']} ({marg['year']})}}{{{marg_content}}}\n"
         
         latex += "\n\\clearpage\n\n"
     
