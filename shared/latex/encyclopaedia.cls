@@ -83,10 +83,11 @@
 \newcommand{\authorsignature}[2]{%
   \vspace*{0.5\baselineskip}
   \begin{center}
-    \ifthenelse{\equal{#2}{}}{%
+    \def\temp{#2}%
+    \ifx\temp\empty
       % No image, just name
       \textsc{--- #1}
-    }{%
+    \else
       % With frontal bust portrait
       \begin{minipage}{0.15\textwidth}
         \centering
@@ -97,7 +98,7 @@
         \centering
         \textsc{--- #1}
       \end{minipage}
-    }
+    \fi
   \end{center}
   \vspace*{0.3\baselineskip}
 }
