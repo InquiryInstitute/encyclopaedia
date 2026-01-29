@@ -143,8 +143,17 @@ def convert_table_to_latex(lines):
     # Simple table conversion - for now return as formatted text
     return '\\begin{quote}\\small ' + '\\\\'.join(lines[:3]) + '\\end{quote}'
 
-def convert_canonical_to_latex(text):
+def convert_canonical_to_latex(text, entry_title=None):
     """Convert canonical text to LaTeX, preserving structure"""
+    # Remove the entry title if it appears at the start (duplicate of \entry{})
+    if entry_title:
+        # Remove title if it's the first bold text on its own line
+        title_pattern = rf'^\*\*{re.escape(entry_title)}\*\*\s*\n\n'
+        text = re.sub(title_pattern, '', text, flags=re.MULTILINE | re.IGNORECASE)
+        # Also try without the double newline
+        title_pattern2 = rf'^\*\*{re.escape(entry_title)}\*\*\s*\n'
+        text = re.sub(title_pattern2, '', text, flags=re.MULTILINE | re.IGNORECASE)
+    
     # First convert AsciiDoc/Markdown to LaTeX commands
     # Handle bold **text**
     text = re.sub(r'\*\*([^*]+?)\*\*', r'\\textbf{\1}', text)
@@ -252,18 +261,35 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
         
         # Convert canonical text (skip if placeholder)
         if entry['canonical'] and entry['canonical'] != "[CANONICAL TEXT TO BE GENERATED]":
-            canonical_latex = convert_canonical_to_latex(entry['canonical'])
-            # Add marginalia inline with canonical text (they'll appear in margin)
-            if entry['marginalia']:
-                # Insert marginalia at appropriate points in text
-                # For now, add them after the canonical text
-                latex += canonical_latex + "\n\n"
-                # Add marginalia after the text (they'll float to margin)
-                for marg in entry['marginalia']:
+            # Remove duplicate title from canonical text
+            canonical_latex = convert_canonical_to_latex(entry['canonical'], entry['title'])
+            
+            # Split canonical text into paragraphs for marginalia placement
+            # For now, add marginalia at the end of the first paragraph
+            paragraphs = canonical_latex.split('\n\n')
+            
+            if paragraphs:
+                # First paragraph
+                latex += paragraphs[0]
+                
+                # Add first marginalia after first paragraph if available
+                if entry['marginalia']:
+                    marg = entry['marginalia'][0]
                     marg_content = escape_simple(marg['content'])
                     latex += f"\\marginalia{{{marg['author']}}}{{{marg['type']} ({marg['year']})}}{{{marg_content}}}\n"
+                
+                # Rest of paragraphs
+                for para in paragraphs[1:]:
+                    latex += "\n\n" + para
+                    
+                    # Add remaining marginalia after subsequent paragraphs
+                    marg_index = paragraphs.index(para)
+                    if marg_index < len(entry['marginalia']):
+                        marg = entry['marginalia'][marg_index]
+                        marg_content = escape_simple(marg['content'])
+                        latex += f"\\marginalia{{{marg['author']}}}{{{marg['type']} ({marg['year']})}}{{{marg_content}}}\n"
             else:
-                latex += canonical_latex + "\n\n"
+                latex += canonical_latex
         else:
             # Placeholder - add note
             latex += "\\textit{[Canonical text to be generated]}\n\n"
