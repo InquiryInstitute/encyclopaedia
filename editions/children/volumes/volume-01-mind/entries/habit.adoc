@@ -1,9 +1,9 @@
-// Entry: hauit (Children's Edition)
+// Entry: Habit (Children's Edition)
 // Canonical Author: William James
 // Faculty ID: a.james
 
 [[entry-habit]]
-=== hauit
+=== Habit
 :canonical-author: William James
 :faculty-id: a.james
 :status: canonical

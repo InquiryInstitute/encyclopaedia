@@ -1,9 +1,9 @@
-// Entry: mind uody proulem (Children's Edition)
+// Entry: Mind-Body Problem (Children's Edition)
 // Canonical Author: René Descartes
 // Faculty ID: a.descartes
 
 [[entry-mind-body-problem]]
-=== mind uody proulem
+=== Mind-Body Problem
 :canonical-author: René Descartes
 :faculty-id: a.descartes
 :status: canonical

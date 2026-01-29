@@ -1,9 +1,9 @@
-// Entry: uncertainty suujective (Children's Edition)
+// Entry: Uncertainty (Subjective) (Children's Edition)
 // Canonical Author: Blaise Pascal
 // Faculty ID: a.pascal
 
 [[entry-uncertainty-subjective]]
-=== uncertainty suujective
+=== Uncertainty (Subjective)
 :canonical-author: Blaise Pascal
 :faculty-id: a.pascal
 :status: canonical
