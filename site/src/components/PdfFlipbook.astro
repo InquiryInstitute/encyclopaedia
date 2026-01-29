@@ -75,10 +75,9 @@ const { pdfUrl, title, edition } = Astro.props;
   
   async function init() {
     try {
-      // Load PageFlip library (with fallback)
-      await loadScript(PAGEFLIP_CDN, PAGEFLIP_CDN_ALT);
+      loadingIndicator.textContent = 'Loading PDF...';
       
-      // Load PDF.js from CDN
+      // Load PDF.js from CDN first
       const pdfjsLib = await import(PDFJS_CDN);
       pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
       
@@ -88,25 +87,141 @@ const { pdfUrl, title, edition } = Astro.props;
       
       totalPagesSpan.textContent = pdfDoc.numPages;
       
-      // Initialize PageFlip
-      await initPageFlip();
+      loadingIndicator.textContent = 'Loading page flip library...';
       
-      loadingIndicator.style.display = 'none';
+      // Try to load PageFlip library (with fallback)
+      let pageFlipLoaded = false;
+      try {
+        await loadScript(PAGEFLIP_CDN, PAGEFLIP_CDN_ALT);
+        // Check if St.PageFlip is available
+        const PageFlipClass = (typeof window !== 'undefined' && window.St && window.St.PageFlip) 
+          || (typeof St !== 'undefined' && St.PageFlip);
+        
+        if (PageFlipClass) {
+          pageFlipLoaded = true;
+          loadingIndicator.textContent = 'Initializing page flip...';
+          await initPageFlip();
+          loadingIndicator.style.display = 'none';
+          
+          // Set up controls
+          prevBtn.addEventListener('click', () => {
+            if (pageFlip) pageFlip.flipPrev();
+          });
+          nextBtn.addEventListener('click', () => {
+            if (pageFlip) pageFlip.flipNext();
+          });
+          
+          // Keyboard navigation
+          document.addEventListener('keydown', (e) => {
+            if (!pageFlip) return;
+            if (e.key === 'ArrowLeft') pageFlip.flipPrev();
+            if (e.key === 'ArrowRight') pageFlip.flipNext();
+          });
+          return;
+        }
+      } catch (scriptError) {
+        console.warn('PageFlip library failed to load, using simple two-page view:', scriptError);
+      }
       
-      // Set up controls
-      prevBtn.addEventListener('click', () => pageFlip.flipPrev());
-      nextBtn.addEventListener('click', () => pageFlip.flipNext());
-      
-      // Keyboard navigation
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') pageFlip.flipPrev();
-        if (e.key === 'ArrowRight') pageFlip.flipNext();
-      });
+      // Fallback to simple two-page view without PageFlip
+      if (!pageFlipLoaded) {
+        loadingIndicator.textContent = 'Initializing viewer...';
+        await initSimpleTwoPage();
+        loadingIndicator.style.display = 'none';
+      }
       
     } catch (error) {
       console.error('Error loading PDF:', error);
-      loadingIndicator.textContent = 'Error loading PDF. Please try the download link below.';
+      loadingIndicator.textContent = `Error: ${error.message || 'Failed to load PDF'}. Please try the download link below.`;
+      loadingIndicator.style.color = '#ff6b6b';
     }
+  }
+  
+  // Fallback: Simple two-page view without PageFlip library
+  async function initSimpleTwoPage() {
+    const numPages = pdfDoc.numPages;
+    let currentSpread = 1;
+    
+    const leftCanvas = document.createElement('canvas');
+    const rightCanvas = document.createElement('canvas');
+    leftCanvas.className = 'pdf-page-canvas';
+    rightCanvas.className = 'pdf-page-canvas';
+    
+    const leftDiv = document.createElement('div');
+    const rightDiv = document.createElement('div');
+    leftDiv.className = 'page left-page';
+    rightDiv.className = 'page right-page';
+    leftDiv.appendChild(leftCanvas);
+    rightDiv.appendChild(rightCanvas);
+    
+    container.appendChild(leftDiv);
+    container.appendChild(rightDiv);
+    
+    const ctxLeft = leftCanvas.getContext('2d');
+    const ctxRight = rightCanvas.getContext('2d');
+    
+    async function renderSpread(spreadNum) {
+      const leftPageNum = (spreadNum - 1) * 2 + 1;
+      const rightPageNum = leftPageNum + 1;
+      
+      if (leftPageNum <= numPages) {
+        const page = await pdfDoc.getPage(leftPageNum);
+        const viewport = page.getViewport({ scale: 1.2 });
+        leftCanvas.width = viewport.width;
+        leftCanvas.height = viewport.height;
+        await page.render({ canvasContext: ctxLeft, viewport }).promise;
+        leftDiv.style.display = 'block';
+      } else {
+        leftDiv.style.display = 'none';
+      }
+      
+      if (rightPageNum <= numPages) {
+        const page = await pdfDoc.getPage(rightPageNum);
+        const viewport = page.getViewport({ scale: 1.2 });
+        rightCanvas.width = viewport.width;
+        rightCanvas.height = viewport.height;
+        await page.render({ canvasContext: ctxRight, viewport }).promise;
+        rightDiv.style.display = 'block';
+      } else {
+        rightDiv.style.display = 'none';
+      }
+      
+      currentPageSpan.textContent = `${leftPageNum}${rightPageNum <= numPages ? '-' + rightPageNum : ''}`;
+      prevBtn.disabled = currentSpread <= 1;
+      nextBtn.disabled = rightPageNum >= numPages;
+    }
+    
+    prevBtn.addEventListener('click', () => {
+      if (currentSpread > 1) {
+        currentSpread--;
+        renderSpread(currentSpread);
+      }
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      const rightPageNum = currentSpread * 2;
+      if (rightPageNum < numPages) {
+        currentSpread++;
+        renderSpread(currentSpread);
+      }
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && currentSpread > 1) {
+        currentSpread--;
+        renderSpread(currentSpread);
+      }
+      if (e.key === 'ArrowRight') {
+        const rightPageNum = currentSpread * 2;
+        if (rightPageNum < numPages) {
+          currentSpread++;
+          renderSpread(currentSpread);
+        }
+      }
+    });
+    
+    await renderSpread(1);
   }
   
   function loadScript(src, altSrc = null) {
