@@ -321,28 +321,6 @@ const { pdfUrl, title, edition } = Astro.props;
   
   async function initPageFlip() {
     const numPages = pdfDoc.numPages;
-    const pages = [];
-    
-    // Create page elements
-    for (let i = 0; i < numPages; i++) {
-      const pageDiv = document.createElement('div');
-      pageDiv.className = 'page';
-      pageDiv.dataset.pageNum = i + 1;
-      
-      const canvas = document.createElement('canvas');
-      canvas.className = 'pdf-page-canvas';
-      pageDiv.appendChild(canvas);
-      
-      pages.push(pageDiv);
-      container.appendChild(pageDiv);
-    }
-    
-    // Initialize PageFlip (using page-flip library)
-    const PageFlipClass = window.PageFlip;
-    
-    if (!PageFlipClass) {
-      throw new Error('PageFlip library not available. Check console for loading errors.');
-    }
     
     // Calculate optimal size for two-page spread
     const viewport = document.getElementById('flipbook-viewport');
@@ -352,6 +330,35 @@ const { pdfUrl, title, edition } = Astro.props;
     // A4 aspect ratio is ~1.414:1, so for two pages side by side
     const optimalWidth = Math.min(maxWidth, maxHeight * 1.414 * 2);
     const optimalHeight = optimalWidth / (1.414 * 2);
+    
+    // Get first page to determine actual PDF dimensions
+    const firstPage = await pdfDoc.getPage(1);
+    const pdfViewport = firstPage.getViewport({ scale: 1.0 });
+    const pdfAspectRatio = pdfViewport.width / pdfViewport.height;
+    
+    // Calculate scale to fit
+    const scaleX = (optimalWidth / 2) / pdfViewport.width;
+    const scaleY = optimalHeight / pdfViewport.height;
+    const scale = Math.min(scaleX, scaleY, 2.0);
+    
+    const scaledWidth = pdfViewport.width * scale;
+    const scaledHeight = pdfViewport.height * scale;
+    
+    // Initialize PageFlip (using page-flip library)
+    const PageFlipClass = window.PageFlip;
+    
+    if (!PageFlipClass) {
+      throw new Error('PageFlip library not available. Check console for loading errors.');
+    }
+    
+    console.log('📖 Initializing PageFlip with:', {
+      numPages,
+      optimalWidth,
+      optimalHeight,
+      scaledWidth,
+      scaledHeight,
+      scale
+    });
     
     pageFlip = new PageFlipClass(container, {
       width: optimalWidth,
@@ -369,36 +376,80 @@ const { pdfUrl, title, edition } = Astro.props;
       maxHeight: 1600,
     });
     
-    // Load pages into PageFlip (required for flip effect)
-    pageFlip.loadFromHTML(pages);
-    
-    // Render pages as needed
-    pageFlip.on('flip', (e) => {
-      const currentPage = e.data + 1;
-      currentPageSpan.textContent = `${currentPage}${currentPage < numPages ? '-' + (currentPage + 1) : ''}`;
+    // Create and render all pages first, then load into PageFlip
+    const pages = [];
+    for (let i = 0; i < numPages; i++) {
+      const pageNum = i + 1;
+      const pageDiv = document.createElement('div');
+      pageDiv.className = 'page';
+      pageDiv.dataset.pageNum = pageNum;
+      pageDiv.style.width = `${scaledWidth}px`;
+      pageDiv.style.height = `${scaledHeight}px`;
+      pageDiv.style.background = '#fff';
+      pageDiv.style.display = 'flex';
+      pageDiv.style.justifyContent = 'center';
+      pageDiv.style.alignItems = 'center';
       
-      // Render current and adjacent pages
-      renderPageIfNeeded(currentPage);
-      if (currentPage < numPages) renderPageIfNeeded(currentPage + 1);
-      if (currentPage > 1) renderPageIfNeeded(currentPage - 1);
+      const canvas = document.createElement('canvas');
+      canvas.className = 'pdf-page-canvas';
+      canvas.width = scaledWidth;
+      canvas.height = scaledHeight;
+      pageDiv.appendChild(canvas);
+      
+      pages.push(pageDiv);
+      container.appendChild(pageDiv);
+      
+      // Render PDF page to canvas
+      try {
+        const pdfPage = await pdfDoc.getPage(pageNum);
+        const pageViewport = pdfPage.getViewport({ scale });
+        const ctx = canvas.getContext('2d');
+        
+        await pdfPage.render({
+          canvasContext: ctx,
+          viewport: pageViewport
+        }).promise;
+        
+        console.log(`✅ Rendered page ${pageNum}`);
+      } catch (error) {
+        console.error(`❌ Error rendering page ${pageNum}:`, error);
+      }
+    }
+    
+    // Load rendered pages into PageFlip (required for flip effect)
+    console.log('📚 Loading pages into PageFlip...');
+    pageFlip.loadFromHTML(pages);
+    console.log('✅ Pages loaded into PageFlip');
+    
+    // Set up event handlers
+    pageFlip.on('flip', (e) => {
+      const currentPageIndex = e.data; // 0-indexed
+      const currentPage = currentPageIndex + 1;
+      const rightPage = currentPage + 1;
+      
+      let pageText = `${currentPage}`;
+      if (rightPage <= numPages) {
+        pageText += `-${rightPage}`;
+      }
+      currentPageSpan.textContent = pageText;
+      
+      // Update button states
+      prevBtn.disabled = currentPageIndex === 0;
+      nextBtn.disabled = currentPageIndex >= numPages - 1;
     });
     
-    // Initial render
-    renderPageIfNeeded(1);
-    if (numPages > 1) renderPageIfNeeded(2);
+    // Initial button states
+    prevBtn.disabled = pageFlip.getCurrentPageIndex() === 0;
+    nextBtn.disabled = pageFlip.getCurrentPageIndex() >= numPages - 1;
     
-    // Update button states
-    pageFlip.on('flip', () => {
-      prevBtn.disabled = pageFlip.getCurrentPageIndex() === 0;
-      nextBtn.disabled = pageFlip.getCurrentPageIndex() >= numPages - 1;
-    });
-    
-    // Calculate size based on viewport
-    updatePageFlipSize();
+    // Handle resize
     window.addEventListener('resize', () => {
-      updatePageFlipSize();
-      pageFlip.update();
+      if (pageFlip) {
+        pageFlip.update();
+      }
     });
+    
+    console.log('✅ PageFlip initialized successfully');
   }
   
   function updatePageFlipSize() {
