@@ -15,10 +15,14 @@ const volumes = [
   { num: 'XII', title: 'Limits', status: 'planned', entries: 21, year: 2026 },
 ];
 
-// Unified color scheme for all volumes
-const spineColor = '#2c3e50';
-const spineAccent = '#34495e';
-const spineText = '#ecf0f1';
+// Color schemes for editions
+const adultSpineColor = '#2c3e50';
+const adultSpineAccent = '#34495e';
+const adultSpineText = '#ecf0f1';
+
+const childrenSpineColor = '#4a5d6e';
+const childrenSpineAccent = '#5a6f82';
+const childrenSpineText = '#f0f4f8';
 ---
 
 <html lang="en">
@@ -85,7 +89,18 @@ const spineText = '#ecf0f1';
     
     .shelf {
       position: relative;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
+    }
+    
+    .shelf-label {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #6a5a4a;
+      margin-bottom: 1rem;
+      padding-left: 0.5rem;
+      text-align: center;
     }
     
     
@@ -389,17 +404,38 @@ const spineText = '#ecf0f1';
   </header>
   
   <main class="bookshelf-container">
-    <!-- Single Shelf with All Volumes -->
+    <!-- Adult Edition Shelf -->
     <section class="shelf">
+      <div class="shelf-label">Adult Edition</div>
       <div class="books-row">
         {volumes.map(vol => (
-          <div class={`book ${vol.status === 'active' ? 'active' : ''}`} data-volume={vol.num}>
-            <div class="spine" style={`background: linear-gradient(135deg, ${spineColor} 0%, ${spineAccent} 100%); color: ${spineText}; --spine-height: 260px;`}>
+          <div class={`book ${vol.status === 'active' ? 'active' : ''}`} data-volume={vol.num} data-edition="adult">
+            <div class="spine" style={`background: linear-gradient(135deg, ${adultSpineColor} 0%, ${adultSpineAccent} 100%); color: ${adultSpineText}; --spine-height: 260px;`}>
               <span class="volume-num">{vol.num}</span>
               <span class="volume-title">{vol.title}</span>
               <span class="edition-mark">
                 <span class="edition-year">{vol.year}</span>
                 <span>Adult</span>
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="shelf-wood"></div>
+    </section>
+    
+    <!-- Children's Edition Shelf -->
+    <section class="shelf">
+      <div class="shelf-label">Children's Edition</div>
+      <div class="books-row">
+        {volumes.map(vol => (
+          <div class={`book ${vol.status === 'active' ? 'active' : ''}`} data-volume={vol.num} data-edition="children">
+            <div class="spine" style={`background: linear-gradient(135deg, ${childrenSpineColor} 0%, ${childrenSpineAccent} 100%); color: ${childrenSpineText}; --spine-height: 260px;`}>
+              <span class="volume-num">{vol.num}</span>
+              <span class="volume-title">{vol.title}</span>
+              <span class="edition-mark">
+                <span class="edition-year">{vol.year}</span>
+                <span>Children</span>
               </span>
             </div>
           </div>
