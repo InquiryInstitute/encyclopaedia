@@ -1,0 +1,92 @@
+---
+import PdfFlipbook from '../../../../components/PdfFlipbook.astro';
+import { getVolume, getAllVolumes } from '../../../../data/volumes';
+
+export async function getStaticPaths() {
+  const volumes = getAllVolumes();
+  const editions = ['adult', 'children'];
+  const paths = [];
+  
+  for (const edition of editions) {
+    for (const volume of volumes) {
+      paths.push({
+        params: {
+          edition,
+          volume: volume.slug,
+        },
+      });
+    }
+  }
+  
+  return paths;
+}
+
+interface Props {
+  edition: string;
+  volume: string;
+}
+
+const { edition, volume } = Astro.params;
+
+// Map volume slug to volume number
+const volumeMap: Record<string, string> = {
+  'volume-01-mind': 'I',
+  'volume-02-language-meaning': 'II',
+  'volume-03-nature': 'III',
+  'volume-04-measure': 'IV',
+  'volume-05-society': 'V',
+  'volume-06-art-form': 'VI',
+  'volume-07-knowledge': 'VII',
+  'volume-08-history': 'VIII',
+  'volume-09-ethics': 'IX',
+  'volume-10-machines': 'X',
+  'volume-11-futures': 'XI',
+  'volume-12-limits': 'XII',
+};
+
+const volumeNum = volumeMap[volume || ''] || 'I';
+const editionType = (edition === 'children' ? 'children' : 'adult') as 'adult' | 'children';
+const volumeData = getVolume(editionType, volumeNum);
+
+if (!volumeData) {
+  return Astro.redirect('/404');
+}
+
+// Construct PDF URL
+// PDFs are built to dist/builds/pdf/ and should be in site/public/builds/pdf/
+// Format: adult-volume-01.pdf or children-volume-01.pdf
+const volNumPadded = volumeNum === 'I' ? '01' : 
+                     volumeNum === 'II' ? '02' :
+                     volumeNum === 'III' ? '03' :
+                     volumeNum === 'IV' ? '04' :
+                     volumeNum === 'V' ? '05' :
+                     volumeNum === 'VI' ? '06' :
+                     volumeNum === 'VII' ? '07' :
+                     volumeNum === 'VIII' ? '08' :
+                     volumeNum === 'IX' ? '09' :
+                     volumeNum === 'X' ? '10' :
+                     volumeNum === 'XI' ? '11' :
+                     volumeNum === 'XII' ? '12' : '01';
+const pdfUrl = `/builds/pdf/${editionType}-volume-${volNumPadded}.pdf`;
+const title = `Volume ${volumeData.num}: ${volumeData.title}`;
+---
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title} - {editionType === 'adult' ? 'Adult' : 'Children\'s'} Edition PDF | The Encyclopædia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div style="padding: 1rem;">
+    <a href={`/volumes/${edition}/${volume}/`} style="color: #c9a227; text-decoration: none; font-size: 0.9rem;">
+      ← Back to Table of Contents
+    </a>
+  </div>
+  
+  <PdfFlipbook pdfUrl={pdfUrl} title={title} edition={editionType} />
+</body>
+</html>

@@ -51,11 +51,11 @@ const { pdfUrl, title, edition } = Astro.props;
   </footer>
 </section>
 
-<script define:vars={{ pdfUrl }}>
-  // PDF.js initialization
-  // Note: In production, load PDF.js from CDN or bundle
-  const PDFJS_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs';
-  const PDFJS_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
+<script is:inline define:vars={{ pdfUrl }}>
+  // PDF.js initialization using CDN
+  const PDFJS_VERSION = '4.0.379';
+  const PDFJS_CDN = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.min.mjs`;
+  const PDFJS_WORKER = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.worker.min.mjs`;
   
   let pdfDoc = null;
   let pageNum = 1;
@@ -73,7 +73,7 @@ const { pdfUrl, title, edition } = Astro.props;
   
   async function init() {
     try {
-      // Dynamically import PDF.js
+      // Load PDF.js from CDN
       const pdfjsLib = await import(PDFJS_CDN);
       pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
       

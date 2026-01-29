@@ -37,21 +37,30 @@ jobs:
           
           # Build Volume I Adult
           if [ -f "editions/adult/volumes/volume-01-mind/volume.adoc" ]; then
+            echo "📖 Building Adult Volume I HTML..."
             asciidoctor -D dist/builds/html -o adult-volume-01.html \
               editions/adult/volumes/volume-01-mind/volume.adoc || true
+            
+            echo "📄 Building Adult Volume I PDF..."
             asciidoctor-pdf -D dist/builds/pdf -o adult-volume-01.pdf \
               editions/adult/volumes/volume-01-mind/volume.adoc || true
           fi
           
           # Build Volume I Children
           if [ -f "editions/children/volumes/volume-01-mind/volume.adoc" ]; then
+            echo "📖 Building Children's Volume I HTML..."
             asciidoctor -D dist/builds/html -o children-volume-01.html \
               editions/children/volumes/volume-01-mind/volume.adoc || true
+            
+            echo "📄 Building Children's Volume I PDF..."
             asciidoctor-pdf -D dist/builds/pdf -o children-volume-01.pdf \
               editions/children/volumes/volume-01-mind/volume.adoc || true
           fi
           
-          ls -la dist/builds/ || true
+          echo ""
+          echo "📁 Build outputs:"
+          ls -lh dist/builds/pdf/ || echo "  (no PDFs)"
+          ls -lh dist/builds/html/ || echo "  (no HTML)"
 
       - name: Upload content artifacts
         uses: actions/upload-artifact@v4

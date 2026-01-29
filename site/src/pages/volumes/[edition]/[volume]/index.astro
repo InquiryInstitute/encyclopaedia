@@ -203,6 +203,11 @@ const closingEntries = volumeData.entries
       <a href="/" class="back-link">← Back to Bookshelf</a>
       <h1>Volume {volumeData.num}: {volumeData.title}</h1>
       <p class="subtitle">{editionType === 'adult' ? 'Adult' : 'Children\'s'} Edition · 2026</p>
+      <div style="margin-top: 1rem;">
+        <a href={`/volumes/${edition}/${volume}/pdf/`} class="pdf-link" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--color-gold); color: #1a1512; text-decoration: none; border-radius: 4px; font-weight: 500; transition: opacity 0.2s;">
+          📖 View PDF Flipbook
+        </a>
+      </div>
     </header>
     
     <div class="toc-container">
