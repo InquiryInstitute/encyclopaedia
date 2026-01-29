@@ -12,10 +12,107 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Affectus (Affect)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### 1. Definition  
+
+> “An *affectus* is any modification of the body which is accompanied by a modification of the mind.”  
+> — *Ethics*, Part III, Def. 1 (Latin: *affectus est quælibet mutatio corporis quae cum mutatione mentis accedit*).
+
+Thus an affect is a **single, unified transition** of the whole organism: the body is altered and, simultaneously, the idea of that body is altered, because body and idea are two attributes of the same substance.
+
+---
+
+### 2. Ontological status  
+
+Spinoza holds that the body and the mind are not successive stages but **parallel aspects** of one substance (Prop. VIII, *Ethics*). When the body is modified, the mind is *concomitantly* modified; the affect is therefore a **state‑transition of the whole**. This parallelism rules out any notion of a “bridge” that causally links body to mind; rather, the affect is the expression of the substance in both attributes at the same moment.
+
+---
+
+### 3. Relation to *conatus*  
+
+Every finite mode strives to persevere in its being (*conatus*). An affect **increases** or **decreases** the power of this striving (Prop. 28, *Ethics*). Hence an affect is a change in the *potentia* (capacity to act) of the whole, produced by the modification of the body.
+
+---
+
+### 4. Classification  
+
+| Category | Criterion | Typical propositions |
+|----------|------------|----------------------|
+| **Passive affect** | Diminishes the *conatus*; the mind is *passively* affected (inadequate idea). | Prop. 7, Cor. 1; Prop. 11, Cor. 1 |
+| **Active affect** | Augments the *conatus*; the mind is *actively* affected (adequate idea). | Prop. 13; Prop. 19, Cor. 1 |
+| **Pleasant** | Increases the power of acting; the affect is experienced as *joy*. | Prop. 10, Cor. 1 |
+| **Painful** | Decreases the power of acting; the affect is experienced as *sadness*. | Prop. 10, Cor. 2 |
+| **Desire (appetitus)** | The very striving toward some *augmented* power; the mind is *adequately* aware of the cause. | Prop. 13, Def. 2 |
+| **Aversion (odium)** | The striving to avoid a diminution of power; the mind is *inadequately* aware. | Prop. 13, Def. 3 |
+
+The quality of an affect depends on the **adequacy of the accompanying idea** (Prop. 41, *Ethics*): an adequate idea increases power, an inadequate one diminishes it.
+
+---
+
+### 5. Illustrative examples  
+
+Each example is mapped onto the relevant proposition(s). The schematic “stimulus → bodily modification → mental modification → disposition” is kept implicit; the parallelism is emphasized.
+
+| Example | Description (parallel aspects) | Proposition(s) illustrated |
+|---------|--------------------------------|-----------------------------|
+| **1. Smiling at pleasure** | External stimulus (pleasant event) → involuntary muscular change (smile) accompanied by the idea of pleasure, which augments the *conatus*. | Prop. VII, Cor. 1 (increase of power) |
+| **2. Learning to ride a bicycle** | Success produces a bodily confidence (upright posture, steady balance) and the idea of competence; both enlarge the child’s power to act. Failure yields fear, a bodily tightening and the idea of danger, diminishing power. | Prop. 10, Cor. 1–2 (pleasant vs. painful) |
+| **3. Thunderstorm and shivering** | The sound reaches the ears; the body contracts (shiver) while the mind forms the idea “storm is dangerous.” Both aspects prepare the organism for flight, illustrating a passive affect that can become active once the cause is adequately understood. | Prop. 13, Cor. 2 (adequate vs. inadequate idea) |
+| **4. Music inducing dance** | Rhythm causes a faster pulse (bodily change) and the idea of the beat; the mind experiences joy, a pleasant affect that raises the *conatus* and leads to movement. When the music stops, the affect ceases, showing the reversibility of power changes. | Prop. 11, Cor. 1 (active affect) |
+| **5. Fresh‑bread scent** | Olfactory stimulus → stomach’s stir (bodily change) and the idea of hunger; the affect operates before the mind can label it, exemplifying a passive affect that can be transformed by an adequate idea of its cause. | Prop. 13, Cor. 2 (passive to active transition) |
+| **6. Breathing slowly during fear** | Voluntary regulation of breath modifies the bodily state; the mind, by forming an adequate idea of the physiological mechanism, turns a passive, painful affect into an active, self‑governed one. | Prop. 19, Cor. 1 (reason moderates affect) |
+
+---
+
+### 6. Ethical import  
+
+Spinoza argues that **knowledge of the causes of affects** converts passive affects into active ones (Prop. 68, *Ethics*). When the mind possesses an *adequate* idea of why a bodily modification occurs, the affect becomes *active*; the individual then acts *freely*—not by external compulsion but by the power of his own *conatus*. Thus the ethical goal is **freedom from bondage to inadequate ideas**, achieved through the rational understanding of affective processes.
+
+---
+
+### 7. Further considerations  
+
+* Contemporary neuroscience shows that affective processing can be subcortical and pre‑cognitive. Spinoza’s account remains phenomenological: the *modification* is described as it appears to the subject, without committing to a particular neuro‑physiological mechanism.  
+* Mixed affects (e.g., bittersweet nostalgia) illustrate that an affect may simultaneously increase some powers while decreasing others; the net evaluation of “pleasant” or “painful” depends on the *relative* changes in *potentia*.  
+
+---
+
+### 8. Bibliographic note  
+
+* Spinoza, B. de. *Ethics*, Part III, Definitions and Propositions.  
+* Harvey, J. (trans.). *Spinoza: The Ethics* (1991).  
+* Curley, E. *Spinoza’s Ethics* (1999).  
+* Damasio, A. *Descartes’ Error* (1994) – for contemporary discussion of affect and reason.  
+
+--- 
+
+*The entry aims to preserve the rigor of Spinoza’s own method—definition, proposition, demonstration—while providing clear, mapped examples that illuminate the unified nature of affect as the modification of the whole organism.*
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="48",
+ targets="entry:affect",
+ scope="local"]
+====
+.An affect may be modelled as a single state‑transition of a unified system, wherein the configuration of physical variables and the corresponding representational variables change concomitantly; thus it is not a causal chain but a simultaneous update, analogous to a Turing machine’s tape‑symbol and internal state altering together.
+====
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="39",
+ targets="entry:affect",
+ scope="local"]
+====
+The claim that affect is a single, unified transition overlooks the evidential plurality of physiological processes; neurophysiological data reveal temporally staggered, causal cascades that precede conscious alteration. Thus, affect cannot be reduced to a simultaneous, indivisible state‑transition of substance.
 ====

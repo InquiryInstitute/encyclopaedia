@@ -12,10 +12,93 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Agency (Ἀνέργεια, Δύναμις, Πρὸ-ὑαρέσθις)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+Aristotle distinguishes sharply between *energeia* (actuality, the realized activity of a thing) and *dynamis* (potentiality, the capacity to act) (Metaphysics VII, 1039b‑c).  Agency, therefore, is not a mere “power to choose” but the movement from a dispositional state (*dynamis*) to an actualized state (*energeia*) under the guidance of a final cause (*telos*).  The agent’s deliberative faculty, *prohairesis* (moral choice), is the inner principle that directs this transition; it is distinct from mere desire (*boules*) or instinct (*phusis*).  
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+---
+
+### 1.  Individual Agency  
+
+**Definition and internal deliberation**  
+*Prohairesis* is the rational choice that evaluates possible actions in light of the good end.  In the *Nicomachean Ethics* II‑III the virtuous man deliberates about what is fitting to the *telos* of a flourishing life (*eudaimonia*).  The act of choosing a book from a shelf, for example, proceeds as follows:  
+
+1. The child perceives a set of possibilities (the books).  
+2. Through *prohairesis* the child selects the one that best satisfies the desire for knowledge.  
+3. The subsequent reading is the *energeia* of the chosen *dynamis*.  
+
+When an external rule—such as a demand to clean the room—intervenes, the agent’s *prohairesis* must accommodate the *lex* (law) that limits the freedom of action.  This illustrates Aristotle’s view that freedom is always exercised within the bounds of *nomos* and the *phronesis* (practical wisdom) that discerns the appropriate balance.
+
+**Moral responsibility**  
+Agency is the ground of moral responsibility because *prohairesis* originates in the rational soul, which is capable of understanding the *telos* of actions.  As the *Ethics* (Book X) shows, a virtuous action is one in which the agent’s *energeia* aligns with the rational principle of the good.  Habit (*ethos*) shapes *prohairesis*: repeated choices forge character, thereby increasing the agent’s capacity for virtuous *energeia*.
+
+**Determinism and indeterminism**  
+External causes—necessities of the body, circumstances, or “strong winds” that push a ship—represent the *external* (ὑπέρτατος) causes that can impede or facilitate action.  Yet the *internal* cause, the agent’s rational deliberation, retains a decisive role.  Aristotle holds that the *prime mover* supplies the ultimate *final cause* of motion, but human agents, as secondary movers, can still actualize their potential through *prohairesis*.
+
+---
+
+### 2.  Agency in Non‑Rational Animals  
+
+Animals possess *phusis* (instinct) rather than *prohairesis*.  The dog that fetches a stick responds to a stimulus; the movement is *energeia* of a natural *dynamis* activated by an external cue, not a deliberative choice.  Thus while one may speak of “animal agency” in a loose sense, Aristotle reserves true agency—*prohairesis*—for rational beings capable of moral deliberation.
+
+---
+
+### 3.  Collective Agency (*Koinē Energeia*)  
+
+The polis exemplifies *koinē energeia*—a common activity directed toward the common good.  In *Politics* I, Aristotle explains that citizens, by participating in deliberative assemblies, actualize their individual *dynamis* in a shared *energeia* that sustains justice (*dikaiosune*) and the flourishing of the community.  
+
+A concrete illustration:  
+
+1. Volunteers gather tools (the *potential* to improve the environment).  
+2. Together they remove litter (the *actual* collective work).  
+3. The cleaner park reflects the *koinē* realization of a shared *telos*—the beautification of the common space.  
+
+The success of such collective action depends on each participant’s willingness, which is itself an expression of personal *prohairesis* aligned with the civic *telos*.  
+
+---
+
+### 4.  Potential versus Actual Agency  
+
+*Dynamis* denotes a dispositional capacity that requires an *efficient cause* (the act of choosing) and a *final cause* (the intended end) to become *energeia*.  The seed metaphor captures this: the seed contains the *dynamis* of a plant; water and soil constitute the efficient causes; the growth toward maturity embodies the *telos* that actualizes the seed’s potential.  In human terms, a talent (*dynamis*) remains dormant without appropriate education, opportunity, and purposeful practice—each serving as the necessary causes for its actualization.
+
+---
+
+### 5.  Constraints, Freedom, and the Role of Law  
+
+Law (*lex*) and custom shape the arena in which *prohairesis* operates.  Excessive external control can suppress the development of *prohairesis* and thereby limit the emergence of *energeia*.  Conversely, a well‑ordered polity provides the conditions in which rational agents can exercise their agency responsibly, guided by *phronesis* that discerns the proper limits of freedom.
+
+---
+
+### 6.  Historical Placement  
+
+Aristotle’s treatment of agency forms the foundation for later medieval and early modern discussions of free will and moral responsibility (e.g., Aquinas, Kant).  By grounding agency in the interplay of *dynamis*, *energeia*, *telos*, and *prohairesis*, the Aristotelian framework remains a decisive reference point for any systematic account of human action.  
+
+---  
+
+In sum, agency in the Aristotelian sense is the rational movement from potential to actual, directed toward a purposeful end, moderated by both internal deliberation and external conditions, and capable of being expressed individually, animalistically (as instinct), and collectively within the polis.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="45",
+ targets="entry:agency",
+ scope="local"]
+====
+note.Agency may be modelled as a deterministic transition: a system in a latent configuration (dynamis) is driven by a rule‑set (telos) through a control mechanism (prohairesis) to produce an enacted state (energeia). Analogously, a Turing machine moves from an unexecuted description to a realised output.
+====
+
+[role=marginalia,
+ type=objection,
+ author="a.simon",
+ status="adjunct",
+ year="2026",
+ length="39",
+ targets="entry:agency",
+ scope="local"]
+====
+.One must caution, however, that the passage conflates agency with the mere actualisation of dynamis. Aristotle repeatedly stresses that external causes (e.g., circumstance, luck) intervene, and that prohairesis, while rational, is itself conditioned by boules, thus not wholly autonomous.
 ====

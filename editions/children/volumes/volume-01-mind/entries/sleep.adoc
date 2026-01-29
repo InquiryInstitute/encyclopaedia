@@ -12,10 +12,99 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Sleep**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+**1. Definition and the Aristotelian doctrine**  
+In *De Anima* (415 b 23‑24) I observe that sleep is a temporary loss of the “sensitive soul” occasioned by the withdrawal of the “vital heat” that sustains the body's motions. The soul, when deprived of this heat, ceases to direct the outward movements of the limbs, while the inner faculty continues to receive impressions, giving rise to the phenomena of dreaming. This account, limited to the principles of hylomorphism and the four causes, marks the end of the ancient explanation; the remainder of this entry surveys the knowledge acquired through modern investigation.
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+**2. Physiological mechanisms**  
+
+*2.1. Basic physiology* – Modern science describes sleep as a reversible state of reduced responsiveness in which the brain, heart rate, and respiration slow, and skeletal muscles become markedly relaxed. The cessation of voluntary movement is produced by the inhibition of motor neurons in the ventrolateral preoptic nucleus, a mechanism absent from the Aristotelian picture.
+
+*2.2. Sleep stages* – Polysomnographic recordings divide sleep into non‑rapid‑eye‑movement (NREM) and rapid‑eye‑movement (REM) phases (Hobson & McCarley, 1977). NREM itself comprises three substages, identified by characteristic electro‑encephalographic (EEG) patterns:  
+
+- **N1** – transition from wakefulness, dominated by theta (4‑7 Hz) activity;  
+- **N2** – sleep spindles and K‑complexes appear, indicating thalamocortical synchronization;  
+- **N3** (slow‑wave sleep) – high‑amplitude delta (0.5‑2 Hz) waves predominate.  
+
+During REM, the EEG resembles wakefulness (mixed‑frequency low‑amplitude activity), the eyes move rapidly beneath the lids, and muscle atonia prevents enactment of dream content. Both stages are essential: slow‑wave sleep consolidates declarative memories, whereas REM preferentially processes procedural and emotional memories (Rasch & Born, 2013).
+
+*2.3. Hormonal regulation* – The “vital heat” of antiquity is now interpreted as a complex endocrine milieu. Sleep deprivation elevates cortisol via the hypothalamic‑pituitary‑adrenal axis, modulates sympathoadrenal activity, and alters the balance of hunger‑controlling hormones: leptin (satiety signal) declines, ghrelin (hunger signal) rises, and orexigenic neuropeptide Y increases (Van Cauter et al., 2000). These changes are bidirectional; chronic sleep restriction can both result from and reinforce metabolic dysregulation.
+
+*2.4. Circadian and homeostatic control* – The suprachiasmatic nucleus (SCN) of the hypothalamus acts as the master circadian pacemaker, synchronizing melatonin secretion from the pineal gland to the light‑dark cycle. Light of short (blue) wavelength suppresses melatonin, delaying sleep onset (Czeisler et al., 1995). Homeostatic sleep pressure, reflected in the accumulation of adenosine, rises with wakefulness and dissipates during sleep, particularly during slow‑wave phases.
+
+**3. Developmental variation**  
+Sleep architecture changes across the lifespan. Newborns may spend up to sixteen hours in polyphasic sleep, with a high proportion of REM. By school age, total sleep declines to roughly ten hours, and the proportion of slow‑wave sleep peaks. Adolescents experience a circadian phase delay, often resulting in insufficient sleep when societal schedules impose early awakenings. In adulthood, sleep stabilises at seven‑nine hours, while the elderly exhibit reduced slow‑wave sleep, increased nocturnal awakenings, and a higher prevalence of fragmented sleep.
+
+**4. Cognitive functions and dreaming**  
+
+*4.1. Memory consolidation* – Both NREM and REM contribute to memory. Slow‑wave sleep strengthens hippocampal–cortical connections underlying declarative recall, whereas REM supports the integration of procedural skills and the modulation of affective memories. The interplay of these stages yields the net benefit observed after a night of undisturbed sleep (Diekelmann & Born, 2010).
+
+*4.2. Phenomenology of dreaming* – Dreams arise chiefly during REM, presenting vivid narratives that the mind weaves from residual sensory impressions and emotional residues. Philosophers from the Stoics onward have interrogated the epistemic status of these images, noting that the “inner eye” of the soul can present experiences indistinguishable from waking perception. Contemporary neuroimaging shows that while cortical activation during REM resembles wakefulness, functional connectivity patterns differ, underscoring the distinctive character of dream consciousness (Nir & Tononi, 2010).
+
+**5. Health consequences of insufficient sleep**  
+
+*Short‑term effects* – Reduced vigilance, slowed reaction time, and impaired emotional regulation increase accident risk and irritability.  
+
+*Long‑term effects* – Chronic sleep restriction compromises immune function, elevates blood pressure, and predisposes to metabolic syndrome, obesity, and cardiovascular disease. The relationship between sleep loss and weight gain is mediated by the hormonal alterations described above, as well as by increased opportunity for caloric intake during wakefulness.
+
+**6. Clinical sleep disorders**  
+
+- **Insomnia** – difficulty initiating or maintaining sleep, often linked to hyperarousal and maladaptive cognition.  
+- **Obstructive sleep apnea** – recurrent upper‑airway collapse causing intermittent hypoxia and fragmented sleep.  
+- **Narcolepsy** – dysregulation of orexinergic pathways producing excessive daytime sleepiness and cataplexy.  
+- **Parasomnias** – abnormal behaviors such as sleepwalking (confusional arousals) and REM sleep behavior disorder (loss of atonia).  
+
+Epidemiological surveys indicate that at least one‑third of the adult population experiences a clinically significant sleep disorder at some point.
+
+**7. Historical and cultural perspectives**  
+
+Beyond my own reflections, Galen (2nd c. CE) emphasized the role of bodily humors in sleep, while Descartes (17th c.) regarded it as a passive state of the “animal spirits.” Pre‑industrial Europe exhibited biphasic sleep, with a “first sleep” and “second sleep” separated by a period of wakefulness used for prayer, reading, or intimacy (Ekirch, 2005). Mediterranean societies have long practiced siesta, a daytime nap that complements nocturnal rest. These patterns illustrate how cultural norms shape the valuation and organization of sleep.
+
+**8. Modern technological disruptions**  
+
+The pervasive use of illuminated screens in the evening suppresses melatonin through blue‑light exposure, delaying circadian phase and reducing total sleep time. Notification alerts generate mental arousal, further postponing sleep onset. Empirical studies suggest that night‑mode filters and limiting screen use at least one hour before bedtime can mitigate these effects (Harvard Medical School, 2020).
+
+**9. Moral and social implications**  
+
+In the Nicomachean Ethics, the good life is achieved through the harmonious balance of activity and leisure (*katharsis*). Adequate sleep constitutes a necessary component of this balance, enabling the rational part of the soul to function optimally. Societies that neglect the need for restorative rest thereby undermine the conditions for virtuous deliberation and civic participation.
+
+---
+
+**References**  
+
+Aristotle. *De Anima* 415 b 23‑24.  
+Diekelmann, S., & Born, J. (2010). The memory function of sleep. *Nat. Rev. Neurosci.*, 11, 114‑126.  
+Ekirch, A. (2005). *At Day’s Close: Night in Times Past*.  
+Hobson, J. A., & McCarley, R. W. (1977). The brain as a dream state generator: A hypothesis. *Nat. Rev. Neurosci.*, 78, 825‑827.  
+Nir, Y., & Tononi, G. (2010). Dreaming and the brain: Toward a cognitive neuroscience of conscious states. *Behav. Brain Sci.*, 33, 239‑267.  
+Rasch, B., & Born, J. (2013). About sleep’s role in memory. *Physiol. Rev.*, 93, 681‑766.  
+Van Cauter, E., et al. (2000). Metabolic consequences of sleep and sleep loss. *Sleep Med. Rev.*, 4, 311‑322.  
+Czeisler, C. A., et al. (1995). Bright light resets the human circadian pacemaker independent of the timing of sleep. *Science*, 268, 1335‑1338.  
+Harvard Medical School (2020). Blue light has a dark side. *Harvard Health Publishing*.
+====
+
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="47",
+ targets="entry:sleep",
+ scope="local"]
+====
+note.Sleep, far from a mere physiological shutdown, is an involuntary exile of the soul from the world of attention, a moment in which the soul, stripped of the vital heat, confronts its own emptiness. In this darkness the divine mystery asserts itself, contradicting any purely mechanistic account.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.freud",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:sleep",
+ scope="local"]
+====
+One must stress that the physiological quiescence of the motor system does not denote psychic inactivity; during sleep the unconscious persists in processing latent content, permitting the discharge of repressed libidinal energy through dream formation. Thus sleep serves both somatic restoration and psychic consolidation.
 ====

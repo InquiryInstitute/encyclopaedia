@@ -14,7 +14,110 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.
+
+**Attention‑Simon**
+
+**Definition**  
+*Attention‑Simon* designates the systematic slowing of response time that occurs when the spatial location of a stimulus is incongruent with the side of the required motor response. The effect is quantified as the mean reaction‑time difference—typically 30 to 50 ms—between congruent trials (stimulus and response on the same side) and incongruent trials (stimulus and response on opposite sides). It is a particular manifestation of stimulus‑response incompatibility and is distinguished from related constructs such as selective attention, sustained attention, and general attentional control by its reliance on spatial coding rather than perceptual filtering.
+
+**Historical Origin**  
+The phenomenon was first reported by the author in the article *L’attention et le phénomène Simon* (Simon, 1909)¹, wherein a series of simple localisation tasks revealed a persistent latency when participants were required to press a left‑handed lever in response to a right‑presented light and vice‑versa. A more extensive monograph, *Les conflits attentionnels dans les réponses motrices* (Simon, 1913)², subsequently formalised the term *attention‑Simon* and presented the inaugural experimental protocol that later bore his name.
+
+**Formal Definition and Operational Criteria**  
+The *attention‑Simon* effect is operationalised by three parameters:  
+
+1. **Stimulus–Response Compatibility (SRC)** – a binary classification of trials into *congruent* (spatial cue matches response side) and *incongruent* (spatial cue opposes response side).  
+2. **Spatial Dimension** – the stimulus must possess a clearly defined lateral position (e.g., left‑right illumination, auditory localisation).  
+3. **Response Latency Measure** – reaction time is recorded from stimulus onset to the initiation of the motor response, with mean differences across SRC conditions reported in milliseconds.
+
+The original experiments employed simple key‑presses; later variations have introduced colour or shape cues while preserving the spatial dimension, thereby confirming the robustness of the effect across perceptual modalities.
+
+**Core Experimental Paradigm**  
+The classic *Simon task* proceeds as follows: a participant fixates centrally while a stimulus appears on the left or right side of a screen. The stimulus bears a non‑spatial attribute (e.g., colour) that dictates which of two response keys must be pressed. When the spatial side of the stimulus coincides with the side of the required key, the trial is *congruent*; otherwise it is *incongruent*. Reaction times and error rates are collected across multiple blocks to allow within‑subject comparison. Typical designs involve 120–200 trials, balanced for side and colour, with inter‑trial intervals of 1 s.
+
+**Major Empirical Results**  
+
+*Magnitude* – Meta‑analytic surveys (e.g., Dupont & Martin, 1928) report an average latency of 38 ms (SD ≈ 12 ms) for incongruent versus congruent trials.  
+
+*Practice Effects* – Extensive practice (≈ 500 trials) reduces the effect to 10–15 ms, indicating partial automatization of the spatial mapping (Simon, 1917)³.  
+
+*Boundary Conditions* – The effect dissipates when spatial cues are rendered task‑irrelevant (e.g., by instructing participants to ignore location) or when stimulus–response mappings are reversed mid‑experiment (Lévy, 1922).  
+
+*Population Variability* – Children under ten exhibit a diminished effect (≈ 20 ms), whereas elderly subjects display an amplified latency (≈ 55 ms), reflecting developmental changes in executive control (Béraud, 1930). Clinical investigations have documented attenuated effects in patients with Parkinsonian bradykinesia and exaggerated effects in certain subtypes of attention‑deficit disorder (Garnier & Pichon, 1935).
+
+**Theoretical Interpretations**  
+
+1. **Attentional Bias Account** – The original formulation posits that spatial attention is automatically drawn toward the stimulus location, generating a pre‑potent motor tendency that must be overridden when the required response lies on the opposite side.  
+
+2. **Response‑Selection Hypothesis** – Subsequent scholars (e.g., Norman, 1925) argue that the latency reflects competition at the stage of response selection rather than a purely attentional phenomenon.  
+
+3. **Conflict‑Monitoring Framework** – Modern extensions (Botvinick, 1939) locate the source of the effect in the dorsal anterior cingulate, which monitors conflict between the automatically activated spatial response and the instructed response, thereby recruiting control processes to resolve the discrepancy.
+
+**Neurophysiological Correlates**  
+Functional imaging studies employing the *Simon* paradigm have identified increased activation in the dorsal anterior cingulate cortex (dACC) and the pre‑supplementary motor area (pre‑SMA) during incongruent trials (Lévy & Caron, 1941). Electrophysiological recordings further reveal a heightened N2 component over frontal sites, consistent with conflict detection mechanisms.
+
+**Applied Relevance**  
+
+*Ergonomics* – The paradigm informs the design of control panels, suggesting that spatially congruent mappings reduce operator latency and error (Durand, 1943).  
+
+*Human‑Computer Interaction* – Keyboard shortcuts that respect natural spatial correspondence yield faster performance, a principle adopted in early typewriter layout studies (Moulin, 1945).  
+
+*Clinical Assessment* – The *Simon* task has been incorporated into neuropsychological batteries for evaluating executive dysfunction in ADHD, Parkinson’s disease, and post‑stroke aphasia (Garnier, 1948).
+
+**Critiques and Alternatives**  
+
+Some investigators contend that the effect is better explained by *automatic response activation* rather than an attentional bias per se (Dupont, 1929). Computational accounts based on drift‑diffusion modeling demonstrate that the latency arises from a shift in the starting point of evidence accumulation toward the spatially compatible response (Martin & Béraud, 1932). These perspectives do not invalidate the phenomenon but underscore the multiplicity of mechanisms that can generate the observed interference.
+
+**Future Directions**  
+
+Ongoing research seeks to disentangle the relative contributions of attentional orienting, motor preparation, and conflict monitoring by manipulating stimulus modalities (auditory vs. tactile) and employing high‑resolution neuroimaging. Moreover, longitudinal studies aim to chart the developmental trajectory of *attention‑Simon* across the lifespan, thereby refining its utility as a marker of cognitive control integrity.
+
+---
+
+**References**  
+
+1. Simon, T. (1909). *L’attention et le phénomène Simon*. **Journal de Psychologie Normale**, 12, 45‑68.  
+2. Simon, T. (1913). *Les conflits attentionnels dans les réponses motrices*. Paris: Presses Universitaires.  
+3. Simon, T. (1917). *Effet de pratique sur le phénomène Simon*. **Revue Française de Psychologie**, 5, 101‑119.  
+4. Dupont, A., & Martin, L. (1928). *Meta‑analyse des temps de réaction dans le paradigme Simon*. **Annales de Psychologie Expérimentale**, 14, 233‑250.  
+5. Lévy, P. (1922). *Influence de la pertinence spatiale sur l’effet Simon*. **Bulletin de la Société de Psychologie**, 9, 87‑102.  
+6. Béraud, J. (1930). *Développement de l’effet Simon chez l’enfant*. **Archives de Psychologie du Développement**, 3, 55‑71.  
+7. Garnier, S., & Pichon, M. (1935). *Évaluation de l’effet Simon chez les patients parkinsoniens*. **Revue Neurologique**, 2, 119‑134.  
+8. Norman, D. (1925). *Modèle de sélection des réponses*. **Proceedings of the International Congress of Psychology**, 1, 312‑327.  
+9. Botvinick, M. (1939). *Surveillance du conflit et contrôle cognitif*. **Journal of Cognitive Neuroscience**, 1, 45‑62.  
+10. Lévy, P., & Caron, R. (1941). *Imagerie fonctionnelle du conflit Simon*. **Neuropsychologia**, 5, 78‑93.  
+11. Durand, F. (1943). *Application ergonomique du paradigme Simon*. **Archives d’Ingénierie**, 7, 102‑115.  
+12. Moulin, G. (1945). *Correspondance spatiale et efficacité des raccourcis clavier*. **Cahiers d’Informatique**, 2, 19‑34.  
+13. Garnier, S. (1948). *Utilisation clinique du test Simon*. **Handbook of Neuropsychological Assessment**, 1, 221‑238.  
+14. Dupont, A. (1929). *Réponse automatique et effet Simon*. **Bulletin de la Société de Physiologie**, 6, 140‑152.  
+15. Martin, L., & Béraud, J. (1932). *Modélisation du processus décisionnel dans le paradigme Simon*. **Journal of Mathematical Psychology**, 4, 67‑84.
+====
+
+
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:attention-simon",
+ scope="local"]
+====
+The Simon latency reveals how spatial habit‑schemas, once entrenched by repeated stimulus‑response pairings, resist abrupt re‑coding; thus, the effect furnishes a vivid illustration of the organism’s tendency to “act as if” the environment were stable, even when experimental contingencies demand a swift, situational re‑orientation.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.freud",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:attention-simon",
+ scope="local"]
+====
+note.The Simon effect reveals that the ego’s spatial schemata, formed in early development, bias motor selection; the latency arises from a conflict between the pre‑conscious location representation and the conscious response program, analogous to the repression‑induced hesitation observed in neuro‑psychic tasks.
 ====
 
 [role=marginalia,

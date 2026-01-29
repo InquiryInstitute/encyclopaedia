@@ -12,10 +12,64 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Thought**
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+**1. Definition**  
+In the philosophical tradition, *thought* is the activity that produces **ideas**—mental representations that correspond to the true relations of the things they signify.  Unlike imagination, which merely recombines remembered images, thought aims at *adequate* ideas, i.e., representations that capture the necessary causal or logical connections of the objects they stand for (Descartes, *Meditations*; Kant, *Critique of Pure Reason*).  In this sense thought is an organized, purposeful inquiry rather than a quiet, passive pause.
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+**2. Phenomenology of Thought**  
+When a person observes a tree whose leaves turn amber, a pause often precedes an answer.  In that pause the mind gathers perceptual data, recalled facts (e.g., the role of chlorophyll) and associative memories (e.g., a poem about autumn light).  The ensuing activity—questioning, comparing, abstracting—constitutes thought.  The pause is not merely silence; it is the moment in which the mind seeks an *adequate* idea that links the observed colour change to the scientific and poetic dimensions of the phenomenon.  The result is the ability to explain that pigments react to sunlight, thereby moving from the concrete observation to an abstract understanding of chemical causality.
+
+**3. Thought and Moral Judgment**  
+Arendt argues that a failure to think—understood as a refusal to form adequate ideas about one’s own actions—produces moral blindness.  In *Eichmann in Jerusalem* (1963) she shows how ordinary individuals can commit atrocities when they cease to ask what their deeds mean in relation to humanity.  The mechanism is simple: without the reflective questioning that thought imposes, slogans and orders are accepted unexamined, and the “banality of evil” emerges.  When a child decides whether to share a game, thought asks: *Does the rule give every child an equal turn?*  It then tests the rule against the principle of fairness, revealing hidden biases that would otherwise remain invisible.
+
+**4. Thought versus Imagination and Opinion**  
+
+| Activity | Aim | Criterion of adequacy |
+|----------|-----|-----------------------|
+| **Imagination** | Recombination of stored images and ideas | Creative novelty, not necessarily correspondence to reality |
+| **Opinion** | Expression of personal preference or feeling | Persuasiveness, emotional resonance |
+| **Thought** | Formation of ideas that correspond to the actual relations of things | Evidential support, logical coherence, communal verification |
+
+Thus thought differs from imagination by its normative demand for adequacy, and from opinion by its requirement of justification beyond mere sentiment.
+
+**5. Historical Context**  
+The modern discussion of thought traces back to Descartes’ *cogito* (“I think, therefore I am”), which located thinking as the indubitable foundation of knowledge.  Rationalist philosophers such as Leibniz and Spinoza further developed the notion of *adequate* ideas as the means by which the mind aligns itself with the deterministic order of nature.  Kant introduced the transcendental imagination as a necessary bridge, while phenomenologists emphasized the lived experience of intentionality.  Arendt situates herself within this lineage, stressing that thinking is a *vocabular* activity that obliges us to name and thereby to judge the world (Arendt, *The Human Condition*, 1958, § 2).
+
+**6. Thought, Language, and Affect**  
+For Arendt, thinking is inseparable from language: words give shape to the ideas we form, allowing them to be shared, examined, and, if necessary, corrected.  The capacity to articulate a question in words is what makes the reflective pause possible.  Affect can both impede and motivate thought.  When strong passions overwhelm the capacity to pause, the “thoughtlessness” that Arendt warns against takes hold; conversely, a feeling of curiosity can propel the mind toward the disciplined inquiry that thought demands.
+
+**7. Thought in the Public Realm**  
+Thought is not confined to private contemplation.  In the *vita activa* of the public sphere, individuals bring their ideas into dialogue, testing each other's adequacy through argument and debate.  A democratic community therefore depends on a habit of public thinking in which participants respect one another’s capacity to think, share their own ideas without demanding immediate agreement, and remain open to revision.  This collective deliberation cultivates communicative competence and shared norms, sustaining the very conditions under which a free world can flourish (Arendt, *The Human Condition*, 1958, § 3).
+
+**8. Epistemic Status of Thought**  
+Adequate ideas possess a normative force: they not only describe the world but also guide action.  By aligning belief with the actual structure of reality, thought enlarges the individual’s *conatus*—the power to act effectively in the world.  Inadequate ideas, by contrast, leave us vulnerable to error and, when unexamined, to the moral failures highlighted in the banality of evil.
+
+**9. Concluding Synthesis**  
+Thought, understood as the formation of adequate ideas, functions on two levels.  Privately, it is a disciplined habit of questioning that refines judgment and guards against unreflective cruelty.  Publicly, it is a communal practice that sustains a democratic realm where meanings are negotiated and where the capacity to think remains a shared responsibility.  Openness to continual revision makes thought both the engine of progress and the safeguard against the stagnation of dogma.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.spinoza",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:thought",
+ scope="local"]
+====
+.Thought must be understood as the mode of the attribute of thought, whereby each idea is the idea of a cause. Adequate ideas arise when the mind grasps the necessary relations of that cause; imagination merely recombines former ideas without such causal comprehension.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:thought",
+ scope="local"]
+====
+note.The pause is a site of inquiry where present experience meets prior habit; thought is not isolated cognition but an active transaction with the environment, shaping and being shaped by future action. Thus, adequate ideas arise from the continuity of problem‑solving.
 ====

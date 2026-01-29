@@ -12,10 +12,57 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+produce.**Reason (Vernunft)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+**Definition**  
+Reason is the faculty that, unlike sensibility which merely receives the manifold of intuition, supplies the a‑priori principles by which the mind unites, orders, and ultimately transcends that manifold. It is pure when it operates independently of empirical content, furnishing the conditions for both knowledge (theoretical reason) and moral action (practical reason).  
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+**Theoretical Reason**  
+Theoretical reason seeks knowledge of objects. It does so by applying the twelve categories—quantity, quality, relation, and modality—to the raw data supplied by sensibility. Through the transcendental schematism these categories are given temporal form, enabling the synthesis of a coherent representation of phenomena. Reason therefore guides the mind “from the raw data of perception to the synthesis of a coherent representation.”  
+
+Regulative ideas belong to this faculty: the ideas of the totality of the world, the soul, and God are not constitutive objects of experience, yet they serve to order the empirical manifold as guiding principles for systematic inquiry. When reason attempts to assert definitive knowledge of these ideas it oversteps its proper limits, giving rise to the antinomies that reveal the boundaries of speculative cognition.  
+
+**Practical Reason**  
+Practical reason is the faculty that determines the moral law. It operates a‑priori, independent of empirical inclinations, by formulating the categorical imperative: “Act only according to that maxim whereby you can at the same time will that it should become a universal law.” In this way reason supplies the principle of autonomy that commands the will, furnishing a moral law that is binding for all rational beings.  
+
+The practical use of reason thus differs fundamentally from its theoretical use: it does not aim at knowledge of objects but at the lawfulness of action, and its authority rests on the freedom of the rational will rather than on sensory intuition.  
+
+**Limits of Reason**  
+Reason must recognize the distinction between phenomena (the objects as they appear to us under the conditions of sensibility) and noumena (things in themselves, which remain inaccessible to pure cognition). The antinomies of pure reason—contradictory conclusions that arise when reason attempts to grasp the totality of the world, the unity of the soul, or the existence of a necessary being—expose the regulative, not constitutive, character of its highest ideas. Hence reason is obliged to refrain from making dogmatic assertions beyond the sphere of possible experience.  
+
+**Illustrative Example**  
+
+When one solves a puzzle, the mind first perceives the individual pieces (the data of sensibility). Noticing their shapes corresponds to the reception of intuitions. The subsequent attempt to arrange the pieces according to their outlines exemplifies the activity of the understanding applying the categories, while the imagination mediates by synthesizing the pieces into a unified picture.  
+
+In Kantian terms, this ordinary activity illustrates theoretical reason: the mind orders the manifold of sensory input into a coherent representation. At the same time, the desire to complete the picture reflects a regulative idea that guides the process, though the picture itself does not constitute the ultimate knowledge of the world.  
+
+If we extend the metaphor to the moral sphere, the “solution” of the puzzle can be likened to the enactment of the categorical imperative: the solver must adopt a rule for arranging pieces that could, in principle, be followed by any rational agent. Thus the same faculty—reason—operates both in the domain of knowledge and in the domain of moral action, each with its own proper principle and its own limits.  
+
+**Conclusion**  
+Reason, in Kant’s critical philosophy, is a dual faculty: theoretical reason supplies the a‑priori categories and regulative ideas that make knowledge possible, while practical reason furnishes the categorical imperative that makes moral autonomy possible. Both are bound by the conditions of possible experience; beyond these conditions reason may guide but must not claim definitive knowledge. This duality and its limits constitute the core of Kant’s critical project.
+====
+
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:reason",
+ scope="local"]
+====
+.Reason, as Kant portrays, remains abstracted from the lived stream of inquiry; its a‑priori categories must be tested against the dynamic, problem‑solving activity of experience. The growth of inquiry shows that “pure” reason is a regulative habit, not a static faculty.
+====
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:reason",
+ scope="local"]
+====
+Reason, detached from attention, becomes a sterile instrument; it orders phenomena but cannot apprehend the inscrutable reality of the Good. True knowledge demands the simultaneous surrender of ego, the affliction of the heart, and the humility that reason alone cannot provide.
 ====

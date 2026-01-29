@@ -12,10 +12,64 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**The Self (Das Ich)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+**1. Introduction**  
+In the psycho‑analytic investigation the term *self* designates the empirical ego (Ich) that presents itself to consciousness as the centre of feeling, thought and volition, while simultaneously being the object of reflective appraisal. It is through the ego that the psychic apparatus becomes organised, that desire is mediated and that the individual is experienced as a continuous person.
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+**2. Self‑recognition: the act of “I” and the object “me”**  
+The first moment of self‑awareness is not a mere visual identification of a name on a badge or a mirror image, but an intentional act of self‑as‑subject. In this act the ego is the *noetic* pole – the “I‑think” that constitutes the horizon within which the *noematic* content (the image, the name) is given. The recognition of one’s own face therefore reveals a duality: the ego as the active subject of awareness, and the ego‑object that is perceived. This distinction prevents the reduction of the self to a mere object of perception.
+
+**3. The empirical self: self‑concept, self‑esteem and affect**  
+The empirical ego is populated by a network of representations: beliefs about one’s abilities (“I am curious”), evaluations of one’s actions (pride after a drawing), and the affective tones that accompany these representations (self‑esteem, shame, anxiety). Pride, for instance, is an affective appraisal that signals a successful attribution of ownership to a performed act; it does not itself constitute the self but marks a moment in which the ego evaluates its own output. Self‑concept thus emerges as a mental picture built from such appraisals, constantly revised as new experiences are incorporated.
+
+**4. Pre‑reflective unconscious and affective attunement**  
+The “unconscious” in psycho‑analysis is not a hidden reservoir of repressed contents standing apart from consciousness, but a mode of pre‑reflective intentionality. Feelings such as nervousness before an examination arise as affective self‑awareness that has not yet been rendered explicit. They are the tacit affective tone of the lived body (Leib) that guides behaviour before the ego can articulate a propositional thought. Dreams that repeat motifs of being chased or falling disclose, through symbolic condensation, the wishes, fears and conflicts that reside in this pre‑reflective layer.
+
+**5. Temporal synthesis: retention, protention and continuity**  
+The sense of personal identity is grounded in the temporal structure of consciousness. *Retention* preserves the just‑past experience of playing with blocks; *protention* projects the anticipated self‑image of the child who will soon master swimming. The ego synthesises these horizons into a living present, producing the feeling of a continuous thread that links past, present and future selves. This synthesis is not a mere narrative gloss, but the constitutive activity of the ego that unifies successive moments into a single subject of experience.
+
+**6. Embodiment: the lived body (Leib) as self‑medium**  
+The ego is never disembodied. Through the lived body the world is disclosed, and bodily sensations acquire an intentional character that belongs to the self. The feeling of warmth, the ache of fatigue, the posture of confidence – all are bodily intentionalities that shape the ego’s self‑image. Thus the self must be understood as a *Leib*‑oriented phenomenon, not solely as a mental catalogue.
+
+**7. Intersubjective constitution**  
+The ego is also constituted in relation to others. Language, empathy and shared practices provide the intersubjective horizon within which the self is articulated. When a child is called “smart” by a teacher, the label is incorporated into the self‑concept; when one experiences genuine sympathy, the affective resonance expands the ego’s capacity for self‑recognition. The self, therefore, is both a solitary centre of experience and a relational structure formed through interaction.
+
+**8. Narrative identity and self‑regulation**  
+Beyond the moment‑to‑moment synthesis, the ego weaves a narrative that gives coherence to its temporal flow. This narrative is not a static story but a dynamic reinterpretation: reflective intentionality can re‑evaluate past events, thereby reshaping the noetic‑noematic structure of the self‑narrative. Intentional acts of self‑regulation—setting a modest goal, observing the satisfaction that follows, and reinforcing a self‑image of generosity—illustrate how the ego actively rewrites its own story. Such deliberate re‑framing requires an awareness cultivated by attentive observation of one’s own patterns of reaction.
+
+**9. Transcendental ego and empirical self (Kantian note)**  
+Kant reminds us that any representation must be united under the *transcendental unity of apperception*—the pure “I think” that makes experience possible. The empirical ego described above is the content of that unity, the concrete self that appears in psychic life. While psycho‑analysis treats the empirical ego as the operative centre of desire and defence, the transcendental ego remains a methodological presupposition, a necessary condition for any self‑attribution. Recognising this distinction prevents the conflation of the regulative idea of a “pure I” with the empirically observable ego.
+
+**10. Methodological remark**  
+The present entry adopts a psycho‑analytic framework while drawing on phenomenological and Kantian insights in order to avoid a one‑sided picture. The term “unconscious” is employed as a hypothesis about pre‑reflective affectivity, not as an ontologically mysterious substrate. Likewise, the discussion of temporality, embodiment and intersubjectivity serves to integrate the self into a broader philosophical context without abandoning the clinical perspective that has proved fruitful in the treatment of neuroses and the exploration of the human psyche.
+
+---  
+
+*In sum, the self is a dynamic, embodied, temporally‑synthesised ego that functions as both subject and object, is pre‑reflectively constituted, is shaped intersubjectively, and is narrated and regulated through reflective activity, all under the necessary condition of the transcendental “I‑think.”*
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:self",
+ scope="local"]
+====
+.The “I‑think” is not the empirical ego of psychical life but the transcendental ego that constitutes the meaning‑horizon of all noetic acts. The ego‑object appears as a noematic correlate; it is given only insofar as the transcendental I supplies the intentional field.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="40",
+ targets="entry:self",
+ scope="local"]
+====
+.The “I‑think” is not an empirical datum but a transcendental condition of possible experience; it is the pure apperceptive unity that makes any representation possible, whereas the empirical ego is merely the manifold of sensations that appear under this unity.
 ====

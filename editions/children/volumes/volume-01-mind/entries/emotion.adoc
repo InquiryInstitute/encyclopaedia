@@ -12,10 +12,70 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+produce.**Emotion** – a patterned response integrating affective, behavioural and physiological elements, which both shapes and is shaped by an organism’s interaction with its environment.  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### 1. Physiological foundations  
+
+The earliest observable signs of emotion are changes in the body: a quickened pulse, a flushed countenance, or a trembling of the hands.  Classical James‑Lange theory regarded these changes as the sole cause of the feeling, but contemporary affective neuroscience reveals a reciprocal loop: the brain not only registers peripheral signals but also modulates autonomic output in anticipation of, or in response to, the same stimulus.  Thus the heart may race because the amygdala signals threat, while the ensuing physiological arousal in turn reinforces the neural representation of fear.  
+
+Key structures include the amygdala, which rapidly processes threat‑related cues; the ventral striatum and orbitofrontal cortex, which together with the mesolimbic dopamine system underlie the experience of reward (see Schultz, 2000); the insular cortex, now recognised as the seat of interoceptive awareness that renders bodily changes into the subjective quality of feeling; and the pre‑frontal cortex, which evaluates social context and exerts top‑down control.  Functional magnetic resonance imaging (fMRI) has mapped these activations, yet it must be remembered that fMRI records haemodynamic change rather than direct neurotransmission, and its temporal resolution limits the inference of causality.  Moreover, hormones such as cortisol, released by the adrenal cortex in response to stress, constitute endocrine rather than neural correlates and therefore are not visualised directly on fMRI scans.  
+
+---
+
+### 2. Evolutionary significance  
+
+From the standpoint of natural selection, emotions are adaptive mechanisms that increased the survival and reproductive success of our ancestors.  Fear, by prompting immediate withdrawal from predators, conferred a decisive advantage in hostile habitats.  Joy, by reinforcing behaviours that yielded communal benefit—such as cooperative hunting, food sharing and mutual grooming—strengthened the bonds that underlie group cohesion.  Ethological observations of non‑human primates, wherein grooming exchanges are accompanied by affiliative vocalisations, provide concrete support for this claim.  
+
+Moral emotions—respect, reverence, guilt—appear to have evolved as extensions of this social scaffolding, guiding individuals toward actions that promote the welfare of the tribe and thereby enhancing inclusive fitness.  The emergence of such emotions coincides with the development of self‑referential cognition and theory‑of‑mind capacities during childhood, suggesting that they are contingent upon higher‑order mental appraisal rather than mere reflex.  
+
+---
+
+### 3. Cultural mediation  
+
+While the physiological pattern of a blushing face in embarrassment is remarkably universal, the language used to label and the rituals governing the expression of emotion vary widely.  Cross‑cultural investigations (e.g., Matsumoto) have demonstrated “display rules” that prescribe when and how an emotion may be shown, without altering the underlying autonomic response.  Ekman’s taxonomy of six basic emotions—happiness, sadness, fear, anger, surprise and disgust—remains a useful heuristic, though some scholars argue for the inclusion of additional primary states.  Cultural lexical studies reveal that societies possessing a richer emotion vocabulary tend to exhibit finer discrimination of affective states, indicating that language both reflects and shapes emotional perception.  
+
+---
+
+### 4. Neural mechanisms and methodological limits  
+
+Affective neuroscience now distinguishes primary emotions, which possess relatively circumscribed neural circuits and appear early in ontogeny, from complex emotions that arise through the integration of those circuits with higher cortical regions involved in self‑evaluation and social reasoning.  Guilt, for instance, is associated with activation of the medial pre‑frontal cortex and anterior cingulate during moral transgression, whereas pride engages the ventral striatum in conjunction with self‑referential networks.  
+
+It is important to temper enthusiasm for neuroimaging: the spatial precision of fMRI cannot resolve the rapid millisecond‑scale firing patterns that underlie neurotransmitter release, and correlations between activation and reported feeling must be interpreted with caution.  Complementary techniques—electrophysiology, pharmacological manipulation, and lesion studies—remain indispensable for a fuller picture.  
+
+---
+
+### 5. Health implications and regulation  
+
+Emotions exert a profound influence on bodily health.  Acute fear can sharpen attention and improve performance, but chronic anxiety dysregulates the hypothalamic‑pituitary‑adrenal axis, leading to sustained cortisol elevation, immune suppression and heightened susceptibility to disease.  Conversely, strategies that modify emotional experience—cognitive reappraisal, mindfulness meditation, and other forms of emotion regulation—have been shown to attenuate stress‑related hormonal responses and to bolster resilience.  
+
+---
+
+In sum, emotions are adaptive, embodied phenomena that are rooted in conserved physiological mechanisms, refined by evolutionary pressures, modulated by cultural conventions, instantiated in identifiable neural circuits, and capable of shaping both mental and physical health.  Their study, therefore, lies at the intersection of biology, anthropology, psychology and philosophy, demanding a synthesis of observation, experiment and reflective analysis.
+====
+
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:emotion",
+ scope="local"]
+====
+In extending this account, note that emotion functions not merely as physiological feedback but as a purposive component of the organism’s ongoing transaction with its milieu, guiding inquiry and habit formation; thus affective states are integral to the adaptive reconstruction of experience.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:emotion",
+ scope="local"]
+====
+.Emotion, though manifest in bodily perturbations, must not be reduced to mere physiological causality; it belongs to the faculty of sensibility, whereby affective representations are ordered by the pure forms of intuition and, insofar as they inform practical reason, are subject to moral evaluation.
 ====

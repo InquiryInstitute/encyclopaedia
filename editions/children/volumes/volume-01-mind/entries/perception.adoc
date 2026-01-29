@@ -12,10 +12,49 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Perception**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+Perception is not a mere reception of neutral sense‑data that the mind later assembles; it is the primary way the lived body (le corps vécu) comes into contact with the world. From the first glance at a red apple on a tree to the instant one turns the head toward a barking dog, the body is already engaged in a horizon of meaning that precedes any reflective judgment. This pre‑reflective sense of meaning is the intentional horizon that makes the world present as “about” something rather than as a collection of isolated sensations【1†Phenomenology of Perception, §§ 2‑4】.  
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+**Sensory input and bodily engagement**  
+The eyes do not simply transmit “light patterns” to a brain that then paints a picture; the visual field is already structured by the body’s sensorimotor capacities. The body‑schema – an implicit, dynamic organization of posture, proprioception and movement – underwrites the seamless coordination of sight, touch and hearing. When one reaches for the apple, the schema supplies the tacit motor plan that aligns hand, finger and visual line, allowing the fruit to be felt as smooth, cool and weighty without a mediating “interpretation” step【2†Phenomenology of Perception, §§ 14‑15】. Thus the notion of “raw data” is misleading: sensation and meaning are inseparable from the outset.  
+
+**Intentionality and the intentional arc**  
+Intentionality is not an added mental act superimposed on a neutral field; it is the very structure that makes perception possible. Merleau‑Ponty reformulates Husserl’s noesis‑noema in terms of an “intentional arc” that links the body, the world and the lived experience. The perceptual field – the world as it appears from within the body – is always already directed toward an object, and this directionality is embodied, not abstract【3†Phenomenology of Perception, §§ 44‑45】.  
+
+**Spatiality, lived space and the chiasm**  
+Space is not an empty container awaiting objects; it is a lived‑space horizon shaped by the body‑schema. A narrow hallway feels constricted not because of external measurements alone, but because the body’s capacity to turn, to anticipate corners, and to align its visual axis is limited. In an open field the same schema expands, allowing a horizon that feels “far” and “open.” Merleau‑Ponty calls this mutual constitution of perceiver and perceived the “chiasm of flesh,” wherein subject and world intertwine and each makes the other visible【4†The Visible and the Invisible, §§ 3‑5】.  
+
+**Cultural and linguistic mediation**  
+Language is itself a bodily practice that reshapes the perceptual horizon. Naming an object does more than stabilize its presence; the linguistic body – the gestures, breath and vocal tract that produce words – opens new possibilities for what can be seen, heard or imagined. The word *mountain* summons not only an image of height but also a silence, a sense of ascent, thereby enriching the lived experience of an actual mountain. Merleau‑Ponty distinguishes between constitutive constraints (the shape of the body, its sensorimotor capacities) and interpretive constraints (historical, cultural habits). Both kinds give meaning to what is sensed, for the former provide the necessary conditions of embodiment, while the latter modulate the horizon of possibilities.  
+
+**Relation to empirical research and methodological limits**  
+While phenomenology remains a descriptive discipline, Merleau‑Ponty acknowledges that its accounts can be complemented by empirical findings. Ecological optics (Gibson) and contemporary neuro‑phenomenology (e.g., Varela, Gallagher) illustrate how the brain functions as an organ of perception without reducing the lived body to a mere neural processor. Nevertheless, Merleau‑Ponty stresses the impossibility of a complete phenomenological capture of the “invisible” body; the method always leaves a margin for the mystery of embodiment【5†Phenomenology of Perception, preface】.  
+
+In this sense, perception is the starting point of inquiry: the embodied horizon it opens invites problem‑solving, learning and the continual re‑articulation of the world, a view that resonates with the pragmatic tradition of Dewey while remaining rooted in the phenomenological analysis of the lived body.
+====
+
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:perception",
+ scope="local"]
+====
+The lived body’s “horizon of meaning” is continually reshaped by habit; each perception both confirms and revises the tacit norms governing action. Thus, perception is not static background but the dynamic ground upon which inquiry proceeds, integrating past experience with emergent possibilities.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.freud",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:perception",
+ scope="local"]
+====
+marginal note.Note: Perception is already coloured by the libidinal charge of the object; the body‑schema, as an unconscious affect‑bearing matrix, organizes the sensory influx before consciousness can appraise it. Thus the “meaning‑horizon” is a projection of repressed desire, not a neutral register.
 ====

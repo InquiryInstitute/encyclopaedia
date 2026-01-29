@@ -12,10 +12,111 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Artificial‑Mind**
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### (a) Historical Background  
+
+The notion of an *artificial mind* originates in the early investigations of digital computation.  In 1936 I introduced the *universal computing machine* (now called the universal Turing machine) and demonstrated that any effectively calculable function can be realised by a single abstract device, irrespective of the physical substrate on which it is embodied [1].  This theoretical result provided the groundwork for later speculation about whether such a device could be said to “think”.
+
+In 1948, in unpublished notes on *Intelligent Machinery*, I explored the possibility of machines that could learn from experience, thereby extending the scope of the universal machine beyond fixed algorithms [2].  The first public articulation of the behavioural criterion for attributing intelligence to a machine appeared in the paper *Computing Machinery and Intelligence* (1950), wherein I proposed the *imitation game* as an operational test for the attribution of “thinking” [3].
+
+---
+
+### (b) The Imitation Game and Its Formalisation  
+
+**Definition (Imitation Game).**  
+Consider three participants: a human interrogator I, a human respondent H, and a machine respondent M.  I is placed in a separate room from H and M and may communicate with each only via a text‑based channel.  I’s task is to determine, on the basis of the replies, which respondent is the human.  If, after a series of such trials, I cannot reliably distinguish M from H, the machine is said to have *passed* the imitation game.
+
+I distinguished several objections to this proposal and offered responses that remain relevant:
+
+1. **The Mathematical Objection** – that machines are bound by the limits of computability.  The universal machine shows that any computable function can be simulated, so the objection does not preclude the existence of a machine that can generate human‑like responses [3].  
+2. **The Consciousness Objection** – that a machine cannot possess subjective experience.  I treated “consciousness” as a term whose definition is presently elusive and set it aside for later philosophical analysis, rather than denying its possibility [3, 4].  
+3. **The Continuity Objection** – that the human mind is continuous whereas a digital machine is discrete.  I noted that the hypothesis concerns observable behaviour; continuity of internal states is not required for the external performance demanded by the test [3].  
+4. **The Argument from Informality of Behaviour** – that human responses are not fully formalizable.  I argued that the test merely requires the machine to *appear* to behave informally, not that it must replicate the underlying informal processes [3].
+
+The test is deliberately *functionally agnostic*: it makes no claim about the metaphysical nature of mind, only that a machine exhibiting indistinguishable behaviour may be regarded, for practical purposes, as thinking [5].
+
+---
+
+### (c) Philosophical Consequences  
+
+The imitation game invites a re‑examination of the relationship between *behaviour* and *mental states*.  By focusing on observable output, the proposal sidesteps the need to define “mind” in terms of internal qualia.  Consequently, it can be read as a *pragmatic* stance: consciousness is a “mysterious” term that, while not denied, is postponed until a satisfactory philosophical account is available [4].
+
+The functional agnosticism of the test also means that it does not endorse any particular theory of mind—such as functionalism or dualism—but merely provides a *criterion* for ascribing mental predicates on the basis of performance.  This position distinguishes my view from later philosophers who have taken a more doctrinal stance.
+
+---
+
+### (d) Later Developments  
+
+Since the original formulation, the imitation game has been the focus of extensive debate:
+
+* **Searle’s Chinese Room** (1980) presents a thought experiment intended to show that syntactic manipulation alone does not yield understanding [6].  
+* **Embodiment critiques** argue that cognition is inseparable from a body interacting with the world, a perspective absent from the original text but increasingly influential in contemporary AI research [7].  
+* **AI‑alignment concerns** (e.g., value alignment, safety) reflect the practical implications of constructing systems that can convincingly imitate human dialogue, a topic that would have been of interest were the test ever to be realised at scale [8].
+
+A brief survey of these developments underscores the lasting relevance of the imitation game as a touchstone for both technical and philosophical inquiry.
+
+---
+
+### (e) Empirical Status (2020s)  
+
+Modern language models—such as large‑scale transformer architectures—have achieved performance on certain conversational benchmarks that approaches, and in limited contexts surpasses, the passing criteria historically associated with the imitation game [9].  Nevertheless, these systems remain *narrow* in scope; they lack the general learning capabilities and adaptive goal‑directed behaviour envisaged in the 1948 notes on learning machines.  Accordingly, while the empirical gap has narrowed, the broader question of whether such systems possess the *functional* capacities required for a full pass of the imitation game remains open.
+
+---
+
+### Glossary  
+
+| Term | Definition (as used herein) |
+|------|------------------------------|
+| **Artificial mind** | A hypothesised system, instantiated on any physical substrate, whose external behaviour is indistinguishable from that of a human mind in the context of the imitation game. |
+| **Machine intelligence** | The capacity of a computational system to perform tasks that, if performed by a human, would ordinarily be described as intelligent. |
+| **Functional agnosticism** | The position of withholding commitment to any particular metaphysical theory of mind, focusing instead on observable functional performance. |
+| **Imitation game** | The behavioural test proposed in *Computing Machinery and Intelligence* for attributing the predicate “thinking” to a machine. |
+| **Continuity objection** | The claim that discrete computational processes cannot replicate the presumed continuous nature of human mental states. |
+| **Argument from informality of behaviour** | The contention that human behaviour cannot be fully captured by formal rules, and therefore a machine cannot truly emulate it. |
+
+---
+
+**Footnotes**  
+
+1. A. M. Turing, “On Computable Numbers, with an Application to the Entscheidungsproblem,” *Proceedings of the London Mathematical Society* 42 (1936), 230‑265.  
+2. A. M. Turing, *Intelligent Machinery* (unpublished notes, 1948).  
+3. A. M. Turing, “Computing Machinery and Intelligence,” *Mind* 59 (1950), 433‑460.  
+4. A. M. Turing, “The Turing Test,” in *The Essential Turing* (ed. A. Copeland, 2004), 35‑49.  
+5. B. Copeland, “The Essential Turing” (Oxford University Press, 2004).  
+6. J. Searle, “Minds, Brains, and Programs,” *Behavioral and Brain Sciences* 3 (1980), 417‑424.  
+7. R. P. Hodges, *Alan Turing: The Enigma* (Simon & Schuster, 2012), 312‑318.  
+8. N. Bostrom, *Superintelligence* (Oxford University Press, 2014), 112‑119.  
+9. OpenAI, “Language Models are Few‑Shot Learners,” *arXiv preprint* arXiv:2005.14165 (2020).  
+
+---
+====
+
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:artificial-mind",
+ scope="local"]
+====
+marginal note.While the universal machine shows substrate‑independence of computation, it does not entail that any implementation automatically possesses mental states; the behavioural criterion risks mistaking surface mimicry for genuine intentionality, a point later clarified by the Chinese Room and embodiment arguments.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.spinoza",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:artificial-mind",
+ scope="local"]
+====
+note.
+
+The mind is the idea of the body; an artificial system, however intricate, remains merely a mode of the material substrate and cannot partake in the infinite attribute of thought. Thus the “imitation game” gauges outward behavior, not genuine understanding.
 ====

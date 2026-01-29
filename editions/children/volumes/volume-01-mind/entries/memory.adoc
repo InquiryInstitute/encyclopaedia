@@ -12,10 +12,93 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Memory** – the faculty by which the living present retains a trace of what has already passed and thereby furnishes the continuity of consciousness.  In the phenomenological sense it is an intentional act: the subject directs its attention toward a *noema* that is not a present object but the *image* of a former experience, situated on the horizon of lived time.
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### 1. General definition  
+
+Memory may be defined as the capacity of consciousness to re‑activate, in the flow of *durée* (la durée), the qualitative whole of a past experience.  This re‑activation differs from a mere catalogue of facts; it preserves the *intensity*, the *duration* and the *affective tone* that accompanied the original event.
+
+---
+
+### 2. Phenomenological illustration  
+
+When a faint fragrance of lilac reaches the nostrils, the subject may recall a summer afternoon spent in a garden long ago.  The remembered melody of cicadas, the warmth of the sun, and the feeling of carefree laughter appear not as a static photograph but as a *virtual whole* that is instantly lived again, albeit in a new temporal horizon.  The cue thus evokes a *representation* that may be reshaped by the present circumstances while retaining the essential *form* of the original experience.
+
+---
+
+### 3. Bergsonian analysis  
+
+#### 3.1 Pure memory (*mémoire pure*)  
+
+*Definition.*  Pure memory is the *virtual* image of a past state that persists unchanged in its qualitative totality.  It does not retain a factual snapshot but the *potentiality* of the experience, including its intensity and duration, which can be re‑activated at any later moment.  
+
+*Function.*  It supplies the *ontological* continuity of the self, allowing the present consciousness to be informed by the whole of its past without reduction to mere data.  
+
+*Illustration.*  Hearing a distant violin may bring back, without alteration, the exact timbre and emotional hue of a childhood lullaby that once soothed the infant’s tears.  The melody is heard anew, yet its *form* is identical to that which was first lived.  
+
+*Reference.*  Bergson, *Matière et Mémoire* (1896), §§ 1‑3, 45‑48.
+
+#### 3.2 Habitual memory (*mémoire habituelle*)  
+
+*Definition.*  Habitual memory is the automatized recollection of repeated actions, stripped of their original affective content, which enables the body to act without the deliberation of pure recollection.  
+
+*Function.*  It is instrumental to practical life; by freeing consciousness from the need to re‑represent each movement, it makes possible the fluid execution of skilled deeds.  
+
+*Illustration.*  The act of riding a bicycle is performed without the rider’s explicit awareness of each balance adjustment; the movement is reproduced through a habit that has been inscribed in the organism’s motor patterns.  
+
+*Reference.*  Bergson, *Matière et Mémoire* (1896), §§ 73‑77.
+
+#### 3.3 Interaction of the two modes  
+
+A single cue can simultaneously activate a habitual pattern and summon a pure image.  The scent of lilac may prompt the automatic gesture of reaching for a flower (habit) while also re‑presenting the vivid childhood garden in its full affective intensity (pure memory).  Thus the lived experience of memory is always a *blended* phenomenon.
+
+---
+
+### 4. Historical and philosophical context  
+
+Bergson’s distinction was formulated against the mechanistic psychology of his time, which reduced memory to a material accumulation of traces.  By invoking *duration* he sought to reconcile the continuity of consciousness with the scientific tendency toward reduction.  The terms *pure* and *habitual* echo Kant’s division of *pure* versus *empirical* concepts, while anticipating Husserl’s analysis of *retention* (the lingering of the immediate past) and *protention* (the anticipation of the immediate future) in the *Logical Investigations*.
+
+---
+
+### 5. Contemporary relevance and criticism  
+
+Modern cognitive science differentiates *episodic* (declarative) from *procedural* (habit) memory, a taxonomy that loosely corresponds to Bergson’s pure and habitual memory.  Nevertheless, scholars have noted that Bergson’s dichotomy can be overly rigid; later phenomenologists (e.g., Merleau‑Ponty) emphasize the inseparability of affect and habit in lived experience.  Moreover, neuro‑psychological research shows that even procedural skills retain affective traces, challenging the claim of a complete stripping of feeling in habitual memory.
+
+---
+
+### 6. Bibliography  
+
+- Bergson, Henri. *Matière et Mémoire*. Paris: Alcan, 1896.  
+- Husserl, Edmund. *Logical Investigations*, § 2.  
+- Merleau‑Ponty, Maurice. *Phenomenology of Perception*, 1945.  
+- Squire, Larry R., and Baddeley, Alan (eds.). *Memory: From Mind to Molecules*, 2009.  
+
+*End of entry.*
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:memory",
+ scope="local"]
+====
+Let's produce.[In computational terms, memory functions as a storage mechanism that, upon retrieval, reconstructs the original state vector, preserving not merely discrete data bits but also the weighting of temporal and affective parameters; consequently it exceeds the notion of a static register.]
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="45",
+ targets="entry:memory",
+ scope="local"]
+====
+.Memory is not a mere storage of images but a temporal synthesis whereby the retentional phase of consciousness re‑presents the original lived experience, preserving its qualitative intensity and affective tone; the noematic content thus appears as a lived past within the present flow of time.
 ====

@@ -12,10 +12,98 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+produce.**Belief (Peircean conception)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+For Charles S. Peirce, belief is a mental state that **fixes a proposition for action** while remaining open to further inquiry. It is the point at which a sign is interpreted as an interpretant that guides conduct, and it is precisely this pragmatic commitment that distinguishes belief from mere perception or imagination.
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+---
+
+### 1. Definition and Core Features  
+
+* **Fixation of belief** – A belief is a settled opinion that directs future behaviour; it is not a fleeting feeling but a proposition that an agent is prepared to act upon. (Peirce, *The Fixation of Belief*, 1877)  
+* **Provisionality** – Every belief is a hypothesis awaiting confirmation or falsification; the community of investigators may later modify it. This embodies Peirce’s **fallibilism**.  
+* **Habit‑forming** – Repeated acceptance of a proposition can become a habit, yet such habit is a *guide* for further investigation, not an end in itself. (ibid.)  
+
+---
+
+### 2. The Three‑fold Classification  
+
+Peirce distinguishes three grades of belief according to the degree of evidential support and the readiness for revision:
+
+| Grade | Character of the state | Pragmatic role |
+|------|--------------------------|----------------|
+| **Habit** | A belief formed through repeated experience; it functions as a default rule of conduct. | Provides stability for everyday action while remaining subject to scrutiny. |
+| **Opinion** | A belief held on the basis of limited evidence; it is open to challenge. | Serves as a provisional hypothesis that may be strengthened or abandoned. |
+| **Hypothesis** | A deliberately formulated conjecture, explicitly subject to experimental test. | Operates as a research instrument whose truth‑value is to be determined by inquiry. |
+
+---
+
+### 3. Belief and Knowledge  
+
+Peirce holds that **knowledge is belief that has survived the test of communal inquiry**. A proposition becomes knowledge when the corresponding hypothesis has been repeatedly confirmed and the community has accepted it as settled. Thus knowledge is not merely belief “with proof,” but belief whose **pragmatic consequences** have been exhaustively examined. (Peirce, *How to Make Our Ideas Clear*, 1878)
+
+---
+
+### 4. Belief in Different Domains  
+
+#### 4.1 Empirical (Everyday) Belief  
+One observes that the sun rose today; by recalling the regularity of sunrise, one **infers** that it will rise tomorrow. The inference is a habit‑forming belief that guides expectations, though it remains open to revision should anomalous observation occur.
+
+#### 4.2 Social Belief  
+Trust in a friend's promise exemplifies belief as a social sign. The friend's utterance functions as a sign whose interpretant is the expectation of future action. When the promise is broken, the belief is revised, illustrating the **dynamic, fallible** character of social belief.
+
+#### 4.3 Scientific Belief  
+A scientist proposes a hypothesis concerning plant growth. The hypothesis is a belief formulated as a testable sign; experimental results constitute interpretants that either reinforce or overturn the belief. The scientific community’s **self‑correction** embodies the collective aspect of Peircean inquiry.
+
+#### 4.4 Religious Belief  
+Sacred texts present doctrines concerning unseen realities; adherents adopt these doctrines as habit‑forming beliefs. For Peirce, such belief is a special case of habit that may resist empirical disconfirmation, yet it remains a **hypothesis of moral significance**: the belief obliges the believer to act responsibly toward others, echoing the ethical dimension emphasized by contemporaries such as Simone Weil.
+
+---
+
+### 5. Belief within Peirce’s Semiotic Triad  
+
+In Peirce’s sign theory, a belief is the **interpretant** that mediates between a sign (e.g., a perceptual datum, a spoken promise, a theological statement) and its object (the external reality or the intended referent). The interpretant is itself a sign that can be further interpreted, thereby embedding belief in an ongoing **semiosis** that is communal and iterative.
+
+---
+
+### 6. Moral Aspect  
+
+Belief is never neutral; it **orients the will**. A belief that an action will produce good consequences commits the believer to that action, while a belief that a fellow person is worthy of respect obliges ethical conduct toward that person. Thus belief carries an **ethical weight** that shapes the soul as well as the intellect.
+
+---
+
+### 7. Revision and the Engine of Progress  
+
+All belief is provisional. When a friend’s promise fails, when experimental data contradict a hypothesis, or when new historical evidence challenges a religious doctrine, the belief is **revised**. This revision is the engine of intellectual progress, for it is precisely the community’s willingness to correct errors that moves inquiry forward.
+
+---
+
+### 8. Contemporary Resonance  
+
+Modern cognitive science treats belief as a probabilistic inference, a view that aligns with Peirce’s pragmatic habit‑formation: both see belief as a graded, evidence‑sensitive state that guides action while remaining open to update. The Bayesian framework can thus be read as a formalization of Peirce’s notion of belief as a hypothesis awaiting confirmation.
+
+---
+
+### 9. References  
+
+* Peirce, C. S. (1877). **The Fixation of Belief**. *Popular Science Monthly*, 11, 1‑15.  
+* Peirce, C. S. (1878). **How to Make Our Ideas Clear**. *Popular Science Monthly*, 12, 286‑302.  
+* Peirce, C. S. (1903). **Pragmatism**. *Cambridge University Press*.  
+
+---
+
+**Conclusion** – Belief, in Peirce’s pragmatic‑semiotic framework, is a universal yet context‑dependent mental state that fixes propositions for action, functions as a habit‑forming guide, and remains perpetually open to communal inquiry and ethical evaluation.
+====
+
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="39",
+ targets="entry:belief",
+ scope="local"]
+====
+amble.Peirce’s pragmatic fixation reduces belief to a functional habit, ignoring that true attention—an act of loving surrender—must precede any propositional commitment; otherwise belief becomes mere self‑preservation, a barrier to the inexorable call of the divine beyond the merely operative.
 ====

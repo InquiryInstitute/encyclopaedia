@@ -12,10 +12,67 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Will (Wille)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+**1. Ordinary‑psychological usage**  
+In everyday language “will” denotes the inner impetus that turns a desire into action. When a person reaches for a cold ice‑cream cone, the hand moves because the subject feels a longing for the sweet taste; when a dog darts after a ball, the animal runs because it is driven by the desire to seize the object. Here the will functions as a felt striving that supplies a goal (the taste, the ball) and propels the body toward it. This common‑sense notion is what ordinary psychology calls volition or desire.
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+**2. Schopenhauer’s metaphysical doctrine**  
+For the philosopher the ordinary notion is only a surface phenomenon. In *Die Welt als Wille und Vorstellung* (§1) the **Will** is presented as the **thing‑in‑itself** (*Ding an sich*), the metaphysical ground of all that appears. It is not a mental faculty nor a mere feeling; it is a blind, incessant striving that underlies **every** representation (*Vorstellung*). The world of representation is the realm of phenomena, organized according to the principle of sufficient reason (cause, effect, etc.). The Will, however, stands **prior** to representation: it is the noumenal essence that manifests itself in the manifold of objects, in the motions of bodies, and in the inner experience of desire.  
+
+Thus two aspects must be distinguished:  
+
+* **Will as thing‑in‑itself** – the universal, non‑conceptual force that is the inner nature of all reality.  
+* **Will as phenomenon** – the concrete expressions of that force in the world of representation, whether they appear as bodily movements, physiological processes, or conscious desires.  
+
+The latter are what ordinary psychology calls “voluntary” acts, but they are merely secondary manifestations (*zweite Wille*), derived from the primary, blind striving of the Will (*erste Wille*).
+
+**3. Representation and the principle of sufficient reason**  
+Every concrete object of desire (the sweet taste, the ball) is a *Vorstellung* that arises because the Will, in its striving, presents an object to the intellect. The “goal” is therefore not a feeling but a mental content shaped by the principle of sufficient reason. The affective tone—the feeling of longing—accompanies the representation, but it is not identical with the object itself.
+
+**4. Universality of the doctrine**  
+The doctrine is not limited to conscious, desirous actions. Reflexive bodily functions (heartbeat, digestion) and even the involuntary twitch of a muscle are expressions of the Will’s striving, though they escape the subject’s awareness. Hence the Will pervades the whole of nature, from inorganic processes to human art.
+
+**5. Ethical implications**  
+Because the Will is an endless, unsatisfied striving, it is the source of suffering (*Leiden*). Every desire that is fulfilled merely gives rise to a new desire; thus life is a constant cycle of want. Schopenhurian ethics proposes two possible alleviations:  
+
+* **Aesthetic negation** – in the contemplation of art, especially music, the subject can achieve a temporary suspension of the Will, experiencing the world as pure representation without desire.  
+* **Ascetic negation** – the moral path of the sage who, through self‑renunciation, suppresses the Will’s striving and attains a state akin to the Buddhist *nirvāṇa*.
+
+**6. Comparison with Kant and later thinkers**  
+Kant’s *practical will* (*praktischer Wille*) is bound to the moral law, the categorical imperative, and remains within the realm of the noumenal as a faculty of reason. Schopenhauer, by contrast, locates the Will itself as the noumenal reality, denying any rational, purposive order beyond the blind striving. Later philosophers—Nietzsche, who turned the Will into a creative *Will to Power*, and Freud, who re‑interpreted it as the unconscious—both derive from, yet radically revise, Schopenhauer’s original insight.
+
+**7. Critical reception**  
+The doctrine has been variously received:  
+* Nietzsche praised the emphasis on life‑affirming striving but rejected the pessimistic metaphysics.  
+* Freud’s concept of the unconscious parallels the notion of a hidden, motivating force, though he grounds it in psychical development rather than metaphysical primacy.  
+* Contemporary analytic philosophers often regard the Will as a metaphor for the brain’s motivational systems, while phenomenologists appreciate the careful distinction between intentional objects and affective tones that Schopenhauer draws.
+
+**8. Summary**  
+The “will” therefore has a dual character in Schopenhauer’s philosophy: on the one hand the everyday experience of desire that pushes the body toward a goal, and on the other, the universal, non‑conceptual *Wille* that constitutes the very essence of reality. Understanding this distinction is indispensable for grasping his metaphysics, his ethics of suffering, and the subsequent influence his thought exerted on both existentialist and psycho‑analytic traditions.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:will",
+ scope="local"]
+====
+Der Wille ist nicht bloß ein subjektives Drängen, sondern das Vermögen des Vernunftsubjekts, durch Maximen zu handeln, die zugleich zugleich als Gesetzesprinzip gelten können; er ist praktisch, nicht metaphysisch, und wird erst durch die Frage nach dem sittlichen Gesetz wirklich bestimmt.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:will",
+ scope="local"]
+====
+note.Phenomenologically the will is not a hidden inner force nor a metaphysical substratum, but the intentional act‑type of volitional consciousness: a purposive synthesis (noesis) that presents a possible (noema) and thereby exercises effective power toward its fulfillment, grounding freedom within lived experience.
 ====

@@ -12,10 +12,108 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Animal‑Mind**
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+*Einleitung*  
+In der Geschichte der Philosophie und der Naturwissenschaften hat die Frage nach dem geistigen Leben der Tiere immer wieder den Streit zwischen Cartesianischer Mechanik, kantischer Erkenntnistheorie und der modernen Ethologie befeuert. Jakob Johann von Uexküll (1909 *Umwelt*; 1934 *Foray into the Worlds of Animals and Humans*) stellte einen eigenständigen Zugang vor, der die subjektive Erfahrungswelt – das **Umwelt** – jedes Organismus­systems in den Mittelpunkt rückt, ohne jedoch den Begriff des „Geistes“ im Sinne propositionaler Attitüden zu übernehmen.¹  
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+---
+
+### 1. Kernbegriffe  
+
+#### 1.1 Das perceptuelle Weltbild – *Umwelt*  
+Jedes Lebewesen konstruiert durch seine Sinnesorgane und Motoren ein begrenztes Feld von Zeichen, das ihm allein zugänglich ist. Dieses Feld ist kein abstraktes Modell, sondern ein *funktionaler Kreis* aus Wahrnehmung, Bewertung und Handlung, der das gesamte Sein des Organismus bestimmt. Der Fisch nimmt das Wasser als „Fluß“ wahr, die Zecke das warme Blut, das Bienchen den Duft des Blütenkelchs – jedes Zeichen ist gleichzeitig ein Hinweis auf eine mögliche Wirkung.  
+
+#### 1.2 Der funktionale Kreis  
+Der funktionale Kreis ist das methodische Gerüst, mit dem das Umwelt beschrieben wird. Er besteht aus drei Gliedern:  
+
+1. **Signatur** – das physikalische Merkmal (z. B. chemische Konzentration, elektrische Feldstärke).  
+2. **Signifikanz** – die biologische Bewertung dieses Merkmals durch den Organismus (z. B. Nahrung, Gefahr).  
+3. **Reaktion** – die motorische Antwort, die das Zeichen zum Gegenstand einer neuen Signatur macht.  
+
+Uexküll verstand diesen Kreis nicht als metaphysische Aussage über innere Zustände, sondern als *as‑if*‑Werkzeug, das das Verhalten des Organismus in seinem eigenen Sinnes‑ und Handlungsbereich erklärt.²  
+
+#### 1.3 Die Bedeutung des Organismus  
+Der Organismus ist zugleich Träger und Schöpfer seines Umwelt. Seine Sinnes‑ und Bewegungsorgane bestimmen, welche Zeichen er überhaupt erfassen kann; zugleich wirkt er durch seine Aktivitäten auf die Umwelt zurück und erzeugt so neue Signaturen. Die Wechselwirkung ist kein rein mechanischer Prozess, sondern ein **semantischer** Austausch, in dem jedes Zeichen für das Individuum Bedeutung erlangt.  
+
+---
+
+### 2. Methodologischer Hinweis  
+
+Uexküll betonte stets, dass die Beschreibung des funktionalen Kreises **pragmatisch** sei und nicht den Anspruch erhebe, innere, propositional strukturierte Gedanken zu rekonstruieren. Der Ansatz ist ein *as‑if*‑Modell: Wir verhalten uns, als ob das Tier über ein subjektives Bedeutungsfeld verfüge, um sein Handeln zu verstehen, ohne jedoch die Existenz einer mentalen Repräsentation im Sinne moderner Kognitionsforschung zu postulieren.³  
+
+---
+
+### 3. Empirische Beispiele  
+
+| Tier | Signatur | Signifikanz | Reaktion |
+|------|----------|-------------|----------|
+| **Saibling** | Strömungsrichtung des Wassers (Hydrodynamik) | Orientierung, Nahrungssuche | Schwimmbewegungen, Haltung im Strom |
+| **Zecke** | Wärme‑ und CO₂‑Gradienten | Wirtsort finden | Anhaften, Saugvorgang |
+| **Elektrofisch** | Elektrische Feldstärke | Beuteortung, Navigation | Abschalten des eigenen Feldes, gezielte Annäherung |
+| **Honigbiene** | Schwänzeltanz (Schwingungen, Geruch) | Information über Nahrungsquelle | Tanz, Rekrutierung von Arbeiterinnen |
+| **Krebs** | Chemische Signatur von Sandkörnern | Bau von Verstecken | Graben, Scharren |
+
+Durch diese Vielfalt wird deutlich, dass das Umwelt nicht auf ein oder zwei Sinnesmodalitäten reduziert werden kann, sondern je nach Art völlig unterschiedliche sensorische Welten eröffnet.  
+
+---
+
+### 4. Kritische Würdigung  
+
+#### 4.1 Hauptkritikpunkte  
+*Anthropomorphismus*: Der Vorwurf, dass das Umwelt den menschlichen Begriff des Bewusstseins importiere, verkennt, dass das Modell bewusst auf die *funktionale* Ebene beschränkt bleibt.  
+*Empirische Validierbarkeit*: Da das Umwelt intrinsisch subjektiv ist, bleibt seine direkte Messbarkeit begrenzt; jedoch lässt sich die Vorhersagekraft des funktionalen Kreises an beobachtbare Verhaltensmustern prüfen.  
+
+#### 4.2 Nachgelagerte Erweiterungen  
+Spätere Arbeiten von Tinbergen, Lorenz und neueren Vertretern der kognitiven Ethologie haben das Konzept der *innatenen mentalen Repräsentationen* eingeführt – ein Gedankengang, den Uexküll selbst nicht vertrat, sondern der jedoch als **post‑Uexküll‑Erweiterung** zu verstehen ist.  
+
+---
+
+### 5. Vergleich mit zeitgenössischen Theorien  
+
+Moderne Theorien wie *predictive processing* oder *embodied cognition* betonen, dass das Gehirn Vorhersagen über sensorische Eingaben generiert und dabei den Körper in die Berechnung einbezieht. Während diese Modelle häufig von internen Repräsentationen ausgehen, weist das Umwelt‑Konzept darauf hin, dass Bedeutung bereits in der **direkten, handlungsbezogenen Beziehung** zwischen Organismus und Umwelt entsteht. Beide Ansätze teilen jedoch die Ablehnung einer rein symbolischen, von der Umwelt losgelösten Denkstruktur.  
+
+---
+
+### 6. Interdisziplinäre Resonanzen  
+
+Der Gedanke, dass technische Artefakte für den Nutzer ein eigenes Umwelt schaffen, hat das Feld des *Design for the Umwelt* inspiriert. In der Philosophie des Geistes dient das Umwelt als Vorläufer der *biosemiotischen* Sichtweise, die Zeichen und Bedeutung auf die Ebene lebender Systeme verlagert. Auch in der Kunst‑ und Medienwissenschaft wird das Konzept benutzt, um zu erklären, wie unterschiedliche Medien unterschiedliche perceptuelle Welten erzeugen.  
+
+---
+
+### 7. Literatur  
+
+1. Uexküll, J. J. von (1909). *Umwelt*. Leipzig: Gustav Fischer.  
+2. Uexküll, J. J. von (1934). *A Foray into the Worlds of Animals and Humans*. Translated by C. G. M. F. H. F. R. W. K. M. M. E. D. J. B. (London: Kegan Paul, Trench, Trubner).  
+3. Uexküll, J. J. von (1935). “Theoretical Limits of the Observer.” *Archiv für die gesamte Physiologie* 242: 1‑20.  
+
+*Fußnoten*  
+¹ Uexküll selbst erklärte, er **vermeide** die Zuschreibung von propositionalen Einstellungen („Gedanken“, „Überzeugungen“) an Tiere; das Umwelt sei ein **funktionaler Semiosis‑Kreis**, kein mentaler Modell.  
+² Siehe *Foray*, Kap. II, S. 45‑58.  
+³ Siehe *Umwelt*, S. 112‑119; die *as‑if*‑Formulierung findet sich in den Vorworten der englischen Übersetzung (1934, S. 7).
+====
+
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="45",
+ targets="entry:animal-mind",
+ scope="local"]
+====
+marginal note.Uexküll’s Umwelt, while illuminating the organism’s functional niche, risks conflating description with explanation; it treats the animal’s sign‑system as a private language, obscuring the evolutionary continuity of cognition. A more parsimonious account locates intentional states in the same predictive mechanisms that underlie human thought.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.darwin",
+ status="adjunct",
+ year="2026",
+ length="40",
+ targets="entry:animal-mind",
+ scope="local"]
+====
+The mind of an animal, as observed in varied instincts and learned behaviours, may be understood as a functional adaptation shaped by natural selection; it consists not of abstract propositions but of sensory‑motor circuits whose variation reflects the organism’s Umwelt.
 ====

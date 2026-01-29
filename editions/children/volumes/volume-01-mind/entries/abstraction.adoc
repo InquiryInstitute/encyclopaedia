@@ -12,10 +12,87 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+Let's write.**Abstraction**
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+In the philosophy of Alfred North Whitehead, abstraction is not a mere removal of the accidental, but a *methodological act of selective attention* by which the mind isolates a property that recurs across a manifold of particulars while retaining the capacity to re‑engage those particulars.  As Whitehead writes, “the act of speaking about ‘redness’ alone” is itself the abstraction (Whitehead, *Process and Reality*, 1929, § 3).  The abstracted property thus becomes a *conceptual term* that can be employed in further thought‑processes; it is a functional regularity justified by its repeated role in experience, not a Platonic essence.
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+---
+
+### The Process: Observation → Isolation → Retention  
+
+1. **Observation** – Concrete experience presents a plurality of *actual occasions* (the red blocks, the drawn circles, the counted objects).  
+2. **Isolation** – The mind selects the common quality that is present in each occasion (the colour red, the roundness, the quantitative “five”).  
+3. **Retention** – The selected quality is retained as a *term* that can be invoked independently, while the original occasions remain available as *instances* for later reference.
+
+This triadic movement is itself a *process* occurring in time; each act of abstraction is a step within a continuing flow of experience, never a static extraction.
+
+---
+
+### Illustrations of Abstraction  
+
+| Domain | Observation | Isolation | Retention |
+|--------|-------------|-----------|-----------|
+| **Colour** | A set of red blocks differing in size, shape, texture. | The recurrent attribute “redness” is singled out, the blocks’ other differences are set aside. | The term *red* can be applied to any future object that exhibits this colour, while each block remains a concrete instance. |
+| **Geometry** | A sketch on paper of a smooth, closed curve, together with many round objects (coins, wheels, droplets). | The visual similarity of “roundness” is abstracted, material distinctions (paper, metal, water) are ignored. | The concept *circle* functions as an ideal limit‑shape; the drawing remains a messy surface, but the term persists for reasoning about all round forms. |
+| **Arithmetic** | Five fingers, five apples, five stars—each a distinct concrete collection. | The counting property “five‑ness” is isolated; the particular items are set aside. | The numeral *5* becomes a universal term, usable in any context where the quantity five is required, while each collection can be retrieved as an instance. |
+| **Scientific law** | The falling of an apple, the orbit of the moon, the motion of a cannonball. | The regular relation between mass, distance, and acceleration is abstracted as a quantitative dependence. | Newton’s law of universal gravitation, \(F = G\,\frac{m_1 m_2}{r^2}\), stands as a law that applies to all bodies, yet each specific interaction remains an instance that the law can be brought to bear upon. |
+
+The connective thread between these examples is the same three‑step schema; the shift from visual to numerical, and from everyday to scientific, is thus made explicit.
+
+---
+
+### Abstraction of Relations and Symbolic Representation  
+
+Whitehead emphasizes that abstraction is not confined to qualities; relations themselves are abstracted.  From the comparison of two quantities one abstracts the relational term *greater than*, which then organizes further reasoning about ordering, causality, and hierarchy.  Such relational abstractions are stabilized by *symbols*—words, diagrams, equations—that render the abstract term persistent across occasions.  The drawing of a perfect circle, the algebraic symbol “+”, or the logical connective “→” are all emblematic of the *symbolic function* that gives an abstract notion a durable form.
+
+---
+
+### Mathematical and Scientific Extension  
+
+Beyond isolated properties, abstraction in mathematics proceeds to whole *structures*: groups, vector spaces, topological spaces.  Here the process selects not a single quality but a network of interrelated operations and axioms that together constitute a new realm of discourse.  In this way the abstract notion of the natural number evolves from the concrete counting of five apples to the element of an infinite Peano system, a structure whose existence is not traceable to any particular set of objects.
+
+In the sciences, abstraction supplies the *general terms* that guide hypothesis formation and law‑making.  By abstracting regularities from empirical data, scientists construct universal relations—such as the law of gravitation—that transcend the particular phenomena from which they were distilled.
+
+---
+
+### Philosophical Context  
+
+Within Whitehead’s broader metaphysics of process, abstraction is an activity of the *actual occasion* that momentarily grasps a commonality and then incorporates it into its own *concrescence*.  It is therefore a dynamic, temporal operation, integral to the becoming of reality rather than a static extraction of immutable forms.  This stands in contrast to the Platonic realism of earlier traditions and aligns with the early‑twentieth‑century move toward a pragmatic, process‑oriented philosophy.
+
+---
+
+### Pedagogical Summary  
+
+Abstraction proceeds in three indispensable steps:
+
+1. **Observe** the concrete particulars that constitute experience.  
+2. **Isolate** the recurring property, relation, or structure that unites them.  
+3. **Retain** the isolated element as a term or symbol, while preserving the original particulars as instances for later use.
+
+The process never annihilates the particulars; it merely lifts a shared feature into a conceptual realm where it can be employed simultaneously across many occasions.  In this way abstraction furnishes the tools by which thought navigates the manifold of experience, enabling both the everyday cognition of colour and shape and the sophisticated formulation of mathematical and scientific theories.
+====
+
+
+[role=marginalia,
+ type=objection,
+ author="a.simon",
+ status="adjunct",
+ year="2026",
+ length="49",
+ targets="entry:abstraction",
+ scope="local"]
+====
+Il faut toutefois remarquer que l’énoncé whiteheadien réduit l’abstraction à une simple sélection attentionnelle, négligeant le fait que le concept naît d’une structuration linguistique et culturelle préexistante ; la propriété ne se révèle pas uniquement dans le flux des occasions, mais est façonnée par la forme imposée du langage.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="37",
+ targets="entry:abstraction",
+ scope="local"]
+====
+Abstraction functions as an operative move of inquiry: it does not excise experience but reorganizes it for problem‑solving, retaining the concrete’s relevance by making the abstracted property a tool for further action and verification within ongoing experience.
 ====

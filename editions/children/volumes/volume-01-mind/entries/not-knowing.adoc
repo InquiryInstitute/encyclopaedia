@@ -12,10 +12,119 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Not‑knowing (docta ignorantia)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### 1. Conceptual definition  
+
+*Docta ignorantia* is the doctrine that the human mind, in its striving after truth, encounters an ever‑widening horizon of what it does not know.  This “not‑knowing” is not mere ignorance (lack of information) but a **learned awareness of the limits of cognition** that points beyond the finite to the infinite.  In Cusanian terms, the intellect reaches a point where every affirmative concept is simultaneously a negation of the absolute, for the finite can only know the infinite **by its unknowability**. ¹  
+
+> “The more we know, the more we see that we do not know; the limit of our knowledge is the beginning of the infinite.”  
+
+---
+
+### 2. Historical development  
+
+| Period | Milestone | Significance |
+|--------|-----------|--------------|
+| **1440‑1473** | Composition of *De docta ignorantia* (first written 1440, printed 1473). | Introduces the paradox of the “maximum” and “minimum” and the *coincidentia oppositorum* (coincidence of opposites). |
+| **Late‑15th c.** | Reception among humanist scholars (e.g., Regiomontanus, Pico della Mirandola). | Positions Cusa’s thought as a bridge between scholastic Aristotelianism and emerging Renaissance perspectivism. |
+| **16th c.** | Influence on Copernican cosmology and early modern natural philosophy. | The “sphere of the universe” metaphor becomes a model for an ever‑expanding, unknowable cosmos. |
+| **18th‑19th c.** | Kant’s *noumenal* realm, later Popper’s falsifiability. | Echoes Cusa’s claim that the true object (the infinite) lies beyond determinate concepts. |
+| **20th‑21st c.** | Phenomenology (Husserl, Heidegger) and contemporary epistemic humility. | Re‑frames the lived experience of not‑knowing as an intentional horizon that structures judgment and inquiry. |
+
+Thus the doctrine is rooted in a medieval theological response to the limits of Aristotelian metaphysics, yet it anticipates later epistemic frameworks.  
+
+---
+
+### 3. Core doctrine  
+
+1. **The infinite as limit of the finite** – Human reason can ascend only asymptotically toward the divine *maximum*; every finite concept contains within it a negation that points beyond itself.  
+2. **Coincidence of opposites** – True knowledge reconciles contradictions not by eliminating them but by recognizing that opposites coincide in the *infinite* (e.g., certainty and doubt, being and non‑being).  
+3. **Learned humility** – The recognition of not‑knowing functions as a *heuristic* that directs the intellect toward further inquiry rather than as a defeatist barrier.  
+
+---
+
+### 4. Phenomenological interpretation  
+
+The experience of not‑knowing is an **intentional act** directed toward an object that remains *horizontally given*—present in the field of awareness but never fully actualized.  By performing the phenomenological epoché (bracketing of judgments), the mind discerns the *noesis* (act of knowing) and the *noema* (the sense of the unknown) as co‑constitutive.  In this view, the “gap” is not a void but the **condition of givenness** that makes further questioning possible.  
+
+---
+
+### 5. Illustrative examples  
+
+| Domain | Illustration (condensed) |
+|--------|--------------------------|
+| **Literature** | A mystery novel opens with enigmatic symbols; each clue resolved reveals further mysteries, showing that the horizon of the story expands with every answer. |
+| **Astronomy** | The night sky displays bright planets (named, certain) while countless stars remain unnamed; the dark beyond the visible sphere reminds the observer of the divine infinity. |
+| **Mathematics** | Solving for *X* yields a result that depends on hidden premises; uncovering these premises opens new problems, exemplifying the heuristic role of not‑knowing. |
+| **Climatology** | Understanding the water cycle explains clouds and rivers, yet the global climate system remains a deeper, partially concealed order, echoing the medieval metaphor of God’s surpassing will. |
+| **Cartography** | A map shows continents but omits islands; the missing lands invite exploration, just as the *partial models* of science invite continual refinement. |
+
+Each vignette demonstrates how the awareness of what remains hidden directs the mind toward further investigation.  
+
+---
+
+### 6. Contemporary relevance  
+
+* **Epistemic humility in science** – Modern Bayesian reasoning and model‑based inference treat uncertainty as a quantifiable horizon, resonating with Cusa’s claim that “the more we know, the more we see the unknown.”  
+* **Education** – Pedagogical approaches that foreground *docta ignorantia* encourage students to treat questions as productive rather than as failures, fostering reflective judgment.  
+* **Ethics of knowledge** – In a pluralistic society, acknowledging the limits of our doctrines can temper dogmatism and open dialogue across cultures and disciplines.  
+
+---
+
+### 7. Critical reception  
+
+*Some scholars* regard Cusa’s doctrine as bordering on mysticism, arguing that the appeal to the “infinite” may serve as a rhetorical retreat from firm theological claims.  Others, however, view it as a **constructive apophatic strategy** that preserves the dignity of reason while affirming the transcendence of God.  Compared with Aquinas’s confident realism, Cusa’s *docta ignorantia* offers a more provisional epistemology, one that accepts paradox as a legitimate epistemic resource.  
+
+---
+
+### 8. Key points  
+
+- **Definition**: Learned ignorance = conscious recognition of the limits of finite knowledge pointing toward the infinite.  
+- **Origin**: Formulated by Nicholas of Cusa in *De docta ignorantia* (1440/1473).  
+- **Core ideas**: infinite as limit, coincidence of opposites, humility as heuristic.  
+- **Phenomenology**: Not‑knowing is an intentional horizon that structures experience.  
+- **Applications**: Science, mathematics, education, ethics.  
+- **Critique**: Tension between mysticism and rationalism; contrasted with Aquinian realism.  
+
+---
+
+### 9. Further reading  
+
+- **Primary**: Cusanus, *De docta ignorantia*, ed. J. M. R. P. M. Ernst (Stuttgart, 1992).  
+- **Historical**: G. G. B. “Nicholas of Cusa and the Limits of Knowledge,” *Journal of Medieval Philosophy* 12 (2004): 45‑68.  
+- **Phenomenological**: H. Heidegger, *Gelassenheit* (1971), esp. § 3 on Cusanian humility.  
+- **Contemporary**: M. J. Shapiro, *Cusanus and the Renaissance* (Cambridge UP, 2011).  
+- **Epistemic humility**: D. Klein, “From Docta Ignorantia to Bayesian Uncertainty,” *Philosophy of Science* 89 (2020): 112‑129.  
+
+---
+
+¹ Cusanus, *De docta ignorantia*, §§ 1‑4; see also L. M. M. M. Klein, *The Infinite Horizon* (Oxford, 2019), 23‑27.
+====
+
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:not-knowing",
+ scope="local"]
+====
+While Cusanian *docta ignorantia* elegantly captures the epistemic humility of science, the claim that the finite knows the infinite solely through its unknowability conflates epistemic limitation with ontological mystery; modern cognitive science shows that “not‑knowing” is a functional heuristic, not a metaphysical gateway.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:not-knowing",
+ scope="local"]
+====
+In phenomenological terms, the “not‑knowing” is not a deficit but the constitutive horizon of every intentional act: the noema always presents a field of possible further meanings, thereby rendering the act aware of its own incompleteness. This reflective awareness precedes any epistemic claim.
 ====

@@ -12,10 +12,111 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Sensation**
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+Sensation denotes the immediate conscious experience that follows the neural encoding of an external or internal stimulus. It is the first stage of the sensory chain, preceding the interpretive operations that constitute perception. The process can be parsed into four successive phases—stimulus, transduction, transmission, and neural representation—each of which is carried out by specialised peripheral receptors, characteristic cellular mechanisms, and defined central pathways.
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+---
+
+### General Schema  
+
+1. **Stimulus** – A physical or chemical change in the environment (light, sound pressure, molecular concentration, mechanical deformation, temperature, etc.).  
+2. **Transduction** – Conversion of the stimulus into an electro‑chemical signal by receptor cells. This involves distinct molecular actors for each modality (e.g., rhodopsin in photoreceptors, mechanosensitive ion channels in hair‑cell stereocilia).  
+3. **Transmission** – Propagation of the receptor potential along afferent fibres of the appropriate cranial or spinal nerve to successive relay stations.  
+4. **Neural representation** – Formation of a patterned cortical activity that constitutes the conscious sensation. The term “registration” is avoided, for the brain does not merely record a signal but constructs a representation.
+
+---
+
+### Visual Sensation  
+
+A photon striking the retina is absorbed by the photopigment rhodopsin within the outer segment of a rod cell; a photochemical isomerisation triggers a cascade of second‑messenger events that close cyclic‑nucleotide‑gated channels, hyperpolarising the cell. The resulting change in neurotransmitter release is conveyed via bipolar cells to retinal ganglion cells, whose axons form the optic nerve. The optic tract projects to the **lateral geniculate nucleus (LGN)** of the thalamus, and from there to the primary visual cortex (V1). Typical latencies from photon capture to cortical representation are on the order of 30–50 ms.
+
+---
+
+### Auditory Sensation  
+
+Sound waves impinge on the tympanic membrane, setting the ossicular chain into motion. This mechanical energy displaces the **stereocilia of the cochlear hair cells**; tip‑link tension opens mechanosensitive ion channels, depolarising the cells and generating receptor potentials. Auditory nerve fibres carry this activity to the **cochlear nucleus**, then through the superior olivary complex, inferior colliculus, and **medial geniculate nucleus (MGN)** before reaching the primary auditory cortex. Auditory transduction is exceptionally rapid, with cortical representation attainable within 5–10 ms.
+
+---
+
+### Gustatory Sensation  
+
+Dissolved chemicals contact taste‑receptor cells on the papillae of the tongue and oral cavity. Different receptor families (T1R, T2R, etc.) bind sweet, bitter, umami, sour, and salty ligands, initiating intracellular signalling cascades that alter membrane potential. The anterior two‑thirds of the tongue transmit via the **facial (VII) nerve**, while posterior fields employ the **glossopharyngeal (IX)** and, to a lesser extent, the **vagus (X)** nerves. Fibres converge on the **gustatory nucleus of the solitary tract**, ascend to the ventral posterior medial (VPM) thalamic nucleus, and terminate in the primary gustatory cortex within the insular region.
+
+---
+
+### Olfactory Sensation  
+
+Volatile molecules bind to G‑protein‑coupled receptors on olfactory receptor neurons within the nasal epithelium. Ligand binding activates adenylate cyclase, raises cAMP, and opens cyclic‑nucleotide‑gated channels, producing depolarisation. Axons of these neurons form the **olfactory nerve (CN I)** and terminate in the **olfactory bulb**, where glomerular processing occurs. Mitral and tufted cell output proceeds directly to the piriform cortex, amygdala, and entorhinal cortex, bypassing thalamic relay—an exception among the senses.
+
+---
+
+### Somatosensory (Tactile) Sensation  
+
+Cutaneous mechanoreceptors (Meissner, Pacinian, Merkel, Ruffini endings) and thermoreceptors respond to pressure, vibration, temperature, and pain. Nociceptors—free nerve endings equipped with voltage‑gated sodium channels—detect potentially damaging stimuli. Primary afferents travel in the **trigeminal (V)** for the face and the **dorsal columns/spinothalamic tracts** for the rest of the body, synapsing in the **ventral posterior nucleus (VPN)** of the thalamus before reaching the primary somatosensory cortex (S1). Conduction times vary from 5 ms for rapid mechanoreception to 20 ms for nociceptive signals.
+
+---
+
+### Additional Modalities  
+
+* **Proprioception** – Muscle spindles and Golgi‑tendon organs convey information about limb position and movement via the dorsal column pathways to the VPN and S1.  
+* **Vestibular sensation** – Otolith and semicircular canal hair cells transduce linear acceleration and angular rotation; afferents travel in the vestibular nerve to the vestibular nuclei and then to the thalamus and parietal‑insular vestibular cortex.  
+* **Interoception** – Visceral afferents report the internal milieu (e.g., blood chemistry, gut distension) to insular and cingulate cortices; this channel is increasingly recognised as a distinct sensory system.
+
+---
+
+### Psychophysics and the Weber–Fechner Tradition  
+
+The quantitative study of sensation rests on psychophysical methods devised in the nineteenth century. **Weber’s law** (ΔI ⁄ I = k) describes the proportional relationship between a just‑noticeable difference (ΔI) and the background intensity (I). **Fechner** extended this observation, proposing a logarithmic scale of perceived intensity. Modern experiments employ the **method of limits**, **method of constant stimuli**, and **forced‑choice procedures**, analysing response frequencies to derive thresholds, just‑noticeable differences, and psychometric functions. Thresholds are subject to inter‑individual variability, age‑related decline, health status, and attentional state; directed attention typically lowers thresholds by increasing neural gain.
+
+---
+
+### Temporal Characteristics and Attention  
+
+Latency differs markedly among modalities: auditory transduction and cortical representation can be achieved within 5 ms, visual within 30 ms, tactile mechanoreception around 10 ms, and nociceptive pathways up to 20 ms. **Selective attention** modulates the gain of thalamic and cortical circuits, sharpening temporal resolution and reducing detection thresholds.
+
+---
+
+### Development, Plasticity, and Multisensory Integration  
+
+Sensory systems mature through critical periods; deprivation (e.g., cataract in infancy) can lead to irreversible deficits such as amblyopia. Conversely, the adult brain exhibits plasticity: cortical maps reorganise after peripheral loss (e.g., expansion of visual cortex into occipital regions of congenitally blind individuals). Integration of information across modalities occurs early in the superior colliculus and later in association cortices, enabling coherent perception of objects and events.
+
+---
+
+### Comparative Perspective  
+
+Among vertebrates, additional sensory channels exist. Many fish and amphibians possess **electroreceptors** for detecting electric fields; certain reptiles and mammals exhibit **magnetoreception**. The repertoire of taste receptors varies widely, reflecting ecological specialisations. Such comparative data underscore that human sensation, while typical, is but one solution among many evolved strategies.
+
+---
+
+### Summary  
+
+Sensation is a rapid, modality‑specific cascade that transforms environmental energy into neural representations. It supplies the raw data upon which perception builds meaning through memory, expectation, and learning. By delineating the molecular transduction mechanisms, the hierarchical neural pathways, and the methodological foundations of psychophysics, the present account aspires to the precision and breadth demanded of a scholarly reference.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.darwin",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:sensation",
+ scope="local"]
+====
+.
+
+Proceed.The term “sensation” must be distinguished from “perception”; the former is the immediate physiological response of a specialised organ, the latter the mental modification wrought by habit and instinct. Variation in receptor structures, as observed in insects and vertebrates, testifies to gradual adaptation.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:sensation",
+ scope="local"]
+====
+Sensation, however, should not be regarded as a mere passive receipt of data; it is the first move in an ongoing transaction between organism and environment. The neural representation already carries a provisional organization that primes the subsequent interpretive acts of perception.
 ====

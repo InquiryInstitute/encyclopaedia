@@ -12,10 +12,135 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Dream**
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### 1. Definition and Phenomenological Description  
+
+A *dream* is a mental event that occurs during sleep, presenting a vivid, often ill‑logical narrative in which the dream‑ego experiences perceptions, affect‑states and actions as if they were real.  From the first‑person standpoint the dream is experienced as a *what‑it‑is‑like* phenomenon: the dream‑ego is presented with images, sounds and sensations that possess a subjective reality, though they are not bound by the external constraints of waking perception.  The phenomenology of dreaming is characterised by a fluid temporality, a loosened sense of causality and a marked susceptibility to symbolic representation (Freud, *Die Traumdeutung* 1900, §§ 1‑3).
+
+---
+
+### 2. Historical Background  
+
+The interpretation of dreams has a long cultural lineage, from the Aristotelian view of dreams as physiological by‑products (Aristotle, *De Insomniis*), through medieval notions of prophetic visions, to the systematic clinical observations of the nineteenth‑century neurologists.  It was within this intellectual milieu, and in the wake of the investigations into hysteria (Breuer & Freud, *Studien über Hysterie* 1895), that I formulated a psycho‑analytic theory of dreaming as a “royal road” to the unconscious (Freud, *Die Traumdeutung* 1900, § 42).
+
+---
+
+### 3. Freud’s Dream Theory  
+
+#### 3.1 Topographical Model (1900)  
+
+The mind is divided into *conscious*, *pre‑conscious* and *unconscious* strata.  Dreams arise when unconscious wishes, censored from waking consciousness, are allowed a limited expression.  The *manifest content* (the remembered storyline) disguises the *latent content* (the underlying wish) through the operation of the *dream‑work*.
+
+#### 3.2 The Dream‑Work  
+
+The dream‑work consists of three principal mechanisms (Freud, *Die Traumdeutung* 1900, §§ 13‑16):
+
+1. **Condensation** – several distinct unconscious ideas are fused into a single manifest image.  
+2. **Displacement** – the emotional intensity of a wish is transferred from its original object to a less threatening substitute.  
+3. **Symbolisation** – the displaced idea is rendered in a symbolic form (e.g., a long, winding road may stand for a repressed sexual journey).
+
+A fourth, later‑added operation is **secondary revision**, whereby the ego, upon waking, reorganises the fragmented dream material into a coherent narrative.
+
+#### 3.3 Method of Interpretation  
+
+The analyst proceeds by *free association*: the patient, recalling a dream, is invited to say whatever comes to mind in relation to each element.  Through this associative chain the latent wish is uncovered, and the patient gains insight into the underlying conflict (Freud, *Die Traumdeutung* 1900, §§ 26‑28).
+
+**Illustrative Example**  
+
+*Dream*: “I am walking through a dark forest and suddenly a great white wolf appears, snarling at me.”  
+
+*Free association*:  
+- *Wolf* → “father, fierce, always shouting.”  
+- *Forest* → “childhood garden, hidden places.”  
+- *Darkness → “the secrets my father kept.”  
+
+Interpretation: the wolf condenses the figure of the father and the threatening affect of his authority; the forest represents the unconscious terrain in which the repressed wish to confront paternal power is concealed.  The latent wish is thus a yearning for emancipation from paternal domination, disguised by the dream‑work.
+
+---
+
+### 4. Methodological Considerations  
+
+Dream interpretation rests upon *psychic determinism*: every dream element is determined by preceding mental processes, though the determining cause may be concealed.  This principle obliges the analyst to infer hidden motives rather than to accept the manifest story at face value.  Nevertheless, the method is not a priori speculation; it is grounded in the *clinical observation* of patient‑reported dreams and the systematic application of free association, which provides a phenomenological bridge between the unconscious and the conscious mind.
+
+The reliance on self‑report introduces subjectivity; consequently, the analyst must remain vigilant against *confirmation bias* and must seek corroborative material (e.g., recurring motifs across multiple dreams, congruence with waking symptomatology).
+
+---
+
+### 5. Empirical Correlates and Contemporary Research  
+
+While the psycho‑analytic model is primarily hermeneutic, modern sleep science supplies complementary data.  Electroencephalographic studies have shown that the majority of vivid, narrative dreams occur during rapid‑eye‑movement (REM) sleep, a state characterised by cortical activation and muscle atonia (Aserinsky & Kleitman, 1953).  Recent neuro‑phenomenological work suggests that the activation of limbic‑cortical networks during REM may facilitate the free flow of unconscious material, thereby providing a neuro‑biological substrate for the dream‑work (Domhoff, 2018).
+
+Nevertheless, empirical quantification of *wish‑fulfilment* remains elusive, and the field continues to debate the extent to which Freud’s interpretive scheme can be operationalised in experimental paradigms.  The entry therefore acknowledges both the heuristic value of the psycho‑analytic perspective and the necessity of ongoing empirical scrutiny.
+
+---
+
+### 6. Influence and Later Developments  
+
+Freud’s dream theory has profoundly shaped subsequent thought:
+
+* **Jung** extended the symbolic dimension into a collective archetypal framework (*Symbols of Transformation*, 1912).  
+* **Lacan** reinterpreted the dream as a manifestation of the *symbolic order* and the *objet petit a* (Lacan, *Écrits*, 1966).  
+* **Neuro‑phenomenology** (e.g., Fuchs, 2018) seeks to integrate first‑person dream reports with third‑person brain imaging, echoing Freud’s insistence on the indispensability of subjective experience.  
+
+The theory also permeated literature, film, and cultural studies, where the notion of the dream as a “royal road” continues to inspire artistic exploration of the unconscious.
+
+---
+
+### 7. Critical Perspectives  
+
+#### 7.1 Determinism versus Intentionality  
+
+Critics from theological tradition argue that Freud’s deterministic stance neglects the *intentional structure* of conscious experience, insisting instead that wish.  The tension lies in reconciling the *psychic determinism* of psycho‑analysis with the phenomenological emphasis on *meaning‑giving* as a primary, not merely derivative, activity.
+
+#### 7.2 Cross‑Cultural Considerations  
+
+Freud’s corpus draws predominantly on Western literary and mythological sources.  Non‑Western dream traditions (e.g., Indigenous shamanic visions, East‑Asian dream folklore) offer alternative symbolic matrices and divergent ontologies of the dream’s function.  A comprehensive encyclopaedic account therefore ought to acknowledge these cultural variations, even while maintaining focus on the Freudian framework.
+
+#### 7.3 Empirical Limitations  
+
+The universal claim that “all neurotic disorders stem from repressed childhood memories” exceeds the evidential base of current clinical research.  A more modest formulation—*dreams often reveal conflicts rooted in early experiences*—better reflects the provisional nature of the data.
+
+---
+
+### 8. Bibliography (selected)
+
+- Freud, S. (1900). *Die Traumdeutung* (The Interpretation of Dreams). Leipzig: Deuticke.  
+- Freud, S., & Breuer, J. (1895). *Studien über Hysterie* (Studies on Hysteria). Leipzig: Deuticke.  
+- Aserinsky, E., & Kleitman, N. (1953). *Regularly occurring periods of eye motility, and concomitant phenomena, during sleep*. *Science*, 118, 273‑274.  
+- Domhoff, G. W. (2018). *The Neural Substrates of Dreaming*. *Current Directions in Psychological Science*, 27(5), 375‑382.  
+- Jung, C. G. (1912). *Symbols of Transformation*. Princeton University Press.  
+- Lacan, J. (1966). *Écrits*. Paris: Seuil.  
+- Fuchs, T. (2018). *Neuro‑phenomenology of Dreaming*. *Journal of Consciousness Studies*, 25(3‑4), 1‑24.  
+
+---  
+
+*This entry strives to present Freud’s original concepts with scholarly precision, to situate them within their historical development, and to acknowledge both methodological constraints and the broader interdisciplinary discourse that has followed.*
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="46",
+ targets="entry:dream",
+ scope="local"]
+====
+The dream‑ego must be regarded as a transcendental subject whose intentional acts (noesis) present a noematic field of images, affect‑states and self‑as‑actor.  By performing the phenomenological epoché we suspend the natural attitude, thereby revealing the dream’s pure‑phenomenal temporality and its self‑constituting horizon, distinct from waking perception.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.darwin",
+ status="adjunct",
+ year="2026",
+ length="48",
+ targets="entry:dream",
+ scope="local"]
+====
+marginal note.Dreams, I should observe, appear to be incidental products of the brain’s nocturnal activity, much as the occasional trembling of a leaf is not itself purposeful. While they may occasionally serve to rehearse responses, their primary character is that of a physiological epiphenomenon, not a direct adaptation.
 ====

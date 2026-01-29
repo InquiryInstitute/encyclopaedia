@@ -12,10 +12,117 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Consciousness (Bewusstsein)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+*Husserlian phenomenology*  
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+---
+
+### 1. Definition  
+
+In Husserl’s terminology *Bewusstsein* designates the **act of consciousness**—the intentional directedness of a living mind—whereas *Inhalts‑Bewusstsein* denotes the **content** that is presented to that act. Accordingly, consciousness is not a monolithic “thing” but a **structure of intentionality**: an act (*noesis*) that is always *about* something (*noema*), the latter being the object‑as‑intended, i.e. the sense‑giving horizon in which the act is situated.¹  
+
+---
+
+### 2. Historical Background  
+
+| Period | Main Works | Character of Consciousness |
+|--------|------------|----------------------------|
+| **Early (1890s‑1901)** | *Philosophy of Arithmetic* (1891), *Logical Investigations* (1900‑1901) | Consciousness is treated descriptively, as a **psychological** field of meanings and signs. The focus lies on *intentionality* as a “law of mental phenomena.” |
+| **Transcendental turn (1913‑1931)** | *Ideas I* (1913), *Cartesian Meditations* (1931) | The **phenomenological reduction** (epoché) is introduced to suspend the natural attitude, thereby exposing the *transcendental* structures of consciousness—most notably the **transcendental ego** that constitutes the noematic sense of all objects. |
+| **Late (1934‑1938)** | *The Crisis of European Sciences* (1934) | The **lifeworld** (*Lebenswelt*) emerges as the pre‑theoretical horizon that grounds all intentional acts, emphasizing the historic and cultural embedding of consciousness. |
+
+Thus Husserl’s conception evolves from a **psychological description** to a **transcendental analysis**, while retaining the central insight that consciousness is always intentional.²  
+
+---
+
+### 3. Core Phenomenological Concepts  
+
+#### 3.1 Epoché and Phenomenological Reduction  
+The **epoché** (bracketing) is a methodological suspension of the *natural attitude*—the everyday belief that the world exists independently of our experience. By performing the reduction, the phenomenologist “puts aside” the presuppositions of natural science in order to **describe** the *pure* structures of intentional acts. The reduction thereby reveals the *constitutive* role of consciousness in the givenness of objects.³  
+
+#### 3.2 Intentionality: Noesis–Noema  
+*Noesis* (the act) and *noema* (the object‑as‑intended) form a dyadic structure:
+
+- **Noesis** includes the *mode of givenness* (perception, imagination, judgment, etc.) and the *subjective* pole of the act.  
+- **Noema** is not the external object itself but the **sense** that the act endows it with, comprising a *meaning‑sense* and a *referential sense* within a horizon of possible further experience.⁴  
+
+Example: In the perception of a **red apple**, the noesis is the perceptual act of seeing; the noema is the *apple‑as‑red*—the sense that the apple is presented as a red, bounded, edible thing within the perceptual horizon.  
+
+#### 3.3 Time‑Consciousness  
+Husserl’s analysis of **inner time‑consciousness** (see *Ideas I*, §§ 2‑12) distinguishes three interrelated moments:
+
+- **Retention** (the immediate past of the lived present),  
+- **Presentification** (the living now),  
+- **Protention** (the anticipatory horizon toward the immediate future).  
+
+These moments constitute the **temporal flow** of consciousness, allowing us to experience a continuous stream rather than isolated snapshots. The structure of retention‑protention grounds the *horizon* of any noematic sense.⁵  
+
+#### 3.4 The Lifeworld (Lebenswelt)  
+The **lifeworld** is the pre‑theoretical, everyday world of lived experience that serves as the *ground* for all intentional acts. It is not a mere collection of objects but a **semantic field** that provides the background of meanings, norms, and practices within which consciousness operates. The lifeworld becomes explicit when the phenomenological reduction lifts the veil of natural attitude and reveals its constitutive role.⁶  
+
+---
+
+### 4. Implications, Comparative Remarks, and Criticisms  
+
+#### 4.1 Relation to Other Traditions  
+- **Franz Brentano** introduced *descriptive psychology* and the notion of intentionality, but he remained within a *psychological* framework, lacking Husserl’s transcendental reduction.  
+- **Martin Heidegger** transformed Husserl’s intentional analysis into an *existential* analytic of Dasein, foregrounding *being‑in‑the‑world* rather than the transcendental ego.  
+
+#### 4.2 Major Criticisms  
+
+| Critique | Husserlian Response |
+|----------|---------------------|
+| **Solipsism** – the focus on the transcendental ego seems to deny the existence of a world independent of consciousness. | The **lifeworld** and the *inter‑subjective* constitution of meaning demonstrate that consciousness is always already *world‑bound* and *inter‑subjectively* constituted. |
+| **Methodological Circularity** – the reduction presupposes the very consciousness it aims to describe. | The epoché is a *reflective suspension* that does not assume a metaphysical ego but uncovers the *constitutive* acts that *make possible* any claim to knowledge. |
+| **Transcendental Turn** – the shift from psychological to transcendental phenomenology is alleged to be an unjustified metaphysical leap. | The turn is justified by the **phenomenological insight** that the *givenness* of objects cannot be explained without revealing the *constituting* activity of consciousness itself. |
+
+#### 4.3 Scope and Limits  
+Husserl acknowledges that phenomenology **describes** the *structures* of experience but does **not**, by itself, settle *ontological* questions about the ultimate nature of the world. Its aim is a *rigorous, presupposition‑free* exposition of the *ways* in which the world appears to us.⁷  
+
+#### 4.4 Contemporary Relevance  
+
+- **Embodied cognition**: Husserl’s analysis of the body as the *medium* of perception anticipates current research on sensorimotor grounding.  
+- **Neurophenomenology** (Varela, Thompson & Rosch): The call for a *first‑person* methodological complement to third‑person neuroscience echoes Husserl’s insistence on the *phenomenological description* of lived experience.  
+- **The “hard problem” of consciousness**: While Husserl does not address qualia in the analytic sense, his *noetic–noematic* schema offers a way to articulate the *intentional structure* of subjective experience without reducing it to physical processes.  
+
+---
+
+### 5. Bibliographic Guide  
+
+- **Primary Sources**  
+  - *Logical Investigations* (1900‑1901), §§ 1‑50.  
+  - *Ideas I* (1913), §§ 1‑12, 2‑12 (time‑consciousness).  
+  - *Cartesian Meditations* (1931), §§ 2‑5.  
+  - *The Crisis of European Sciences* (1934), §§ 45‑48 (lifeworld).  
+
+- **Secondary Literature**  
+  - Dan Zahavi, *Husserl’s Phenomenology* (2003).  
+  - Robert S. Moran, *Introduction to Phenomenology* (2000).  
+  - Dermot Moran (ed.), *The Routledge Companion to Phenomenology* (2009).  
+
+---
+
+**Footnotes**  
+
+1. Husserl, *Ideas I*, § 1.  
+2. See also *Logical Investigations*, §§ 1‑6 (early) and *Ideas I*, §§ 2‑5 (transcendental).  
+3. Husserl, *Cartesian Meditations*, §§ 2‑3.  
+4. Husserl, *Ideas I*, §§ 3‑5; see also Zahavi, 2003, ch. 2.  
+5. Husserl, *Ideas I*, §§ 2‑12.  
+6. Husserl, *The Crisis*, §§ 45‑48.  
+7. Husserl, *Cartesian Meditations*, § 6 (limits of phenomenology).
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:consciousness",
+ scope="local"]
+====
+. Good.Bewusstsein must be grasped phenomenologically as a transcendental act; the noesis supplies the sense‑giving horizon, while the noema is the object as it appears within that horizon. The act is not a mere mental event but the constitutive source of meaning.
 ====

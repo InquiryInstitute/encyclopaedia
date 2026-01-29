@@ -12,10 +12,138 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Uncertainty‑Subjective**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### I. Definition  
+
+Subjective uncertainty designates the *felt* impression that an outcome remains unknowable to the mind, even when numerical data or external information are available. It differs from the mathematical notion of *probabilité* (objective chance) in that it is not a ratio of favourable to possible cases, but a lived experience that blends belief, emotion, memory, and trust in the source of information.  
+
+> “The heart has its reasons which reason does not know.” – *Pensées*, §165.  
+
+In Pascal’s own terms, the heart’s hesitation is an *incertitude* that cannot be reduced to a mere calculation of odds.
+
+---
+
+### II. Relation to Objective Probability  
+
+| Aspect | Objective probability (aleatory) | Subjective uncertainty (incertitude) |
+|--------|-----------------------------------|--------------------------------------|
+| Basis  | Frequency, combinatorial count, or statistical model | Personal appraisal of the reliability of the data, prior convictions, and affective tone |
+| Formalism | \(P(A)=\frac{n(A)}{n(\Omega)}\) or Bayesian posterior | *Probabilité* personnelle (de Finetti, 1937) – a degree of belief that may diverge from the published statistic |
+| Example | Forecast: “30 % chance of rain.” | The feeling that, despite the forecast, one may still be doubtful because of past false predictions or a distrust of meteorologists. |
+
+Pascal himself warned against the illusion of certainty that a mere *calcul* can produce:  
+
+> “We are never so sure of the truth as when we have reason to doubt it.” – *Pensées*, §139‑142.  
+
+Thus, subjective uncertainty co‑exists with, and often moderates, the objective probability supplied by a model.
+
+---
+
+### III. Phenomenology of the Feeling  
+
+1. **Cognitive appraisal** – the mind compares the presented probability with its own *a priori* convictions.  
+2. **Emotional tone** – anxiety, humility, or curiosity accompany the appraisal, shaping the intensity of the doubt.  
+3. **Metacognitive awareness** – the individual recognises that the doubt is not merely ignorance but a judgment about the *reliability* of the information at hand.  
+
+A vivid everyday illustration: deciding whether to take an umbrella on a clear morning. The forecast may assign a modest chance of rain; the subjective feeling of doubt arises from past experiences of inaccurate forecasts, personal aversion to getting wet, and the desire to appear prepared.  
+
+A second domain—moral deliberation—shows the same structure: a friend confides a secret, and the listener feels a *subjective uncertainty* about the proper course of action, blending the factual content of the secret with the emotional weight of trust and potential harm.
+
+---
+
+### IV. Philosophical and Ethical Implications  
+
+#### a. Limits of Reason  
+Pascal’s *Pensées* repeatedly affirm that human reason cannot settle all questions, especially those concerning the infinite or the divine. Subjective uncertainty therefore serves as a *sign* of the mind’s finitude, urging humility.  
+
+#### b. Moral Responsibility  
+The acknowledgment of uncertainty obliges the agent to *attention*—a disciplined focus on each element of doubt, as Pascal recommends in his method of “clear and distinct ideas” applied to the theological sphere. By attending to the uncertainty, one becomes open to the *force* of truth, whether that truth lies in moral law or divine revelation.  
+
+#### c. Faith and the Leap  
+For Pascal, the moment of subjective doubt is precisely the point where the heart may turn toward God, echoing the famous wager: when the probability of salvation is indeterminate, a prudent soul wagers on the infinite gain. This distinguishes his view from a purely secular psychology of doubt.  
+
+> “If you think that there is a chance of eternity, you must gamble on it, however small the chance may seem.” – *Pensées*, §139.  
+
+---
+
+### V. Historical Development  
+
+| Era | Contribution |
+|-----|---------------|
+| 1654‑1660 (Pascal & Fermat) | Foundations of combinatorial probability; recognition that numerical chance does not capture the *felt* doubt. |
+| 1930s (de Finetti) | Formalisation of *subjective probability* as personal degree of belief, echoing Pascal’s incertitude. |
+| 1950s (Savage) | Personalist decision theory, linking belief to utility—an evolution of Pascal’s wager into modern economics. |
+| Late 20th c. (Bayesian epistemology) | Emphasis on updating beliefs in light of new evidence, mirroring Pascal’s call to *attention* and continual reassessment. |
+| 21st c. (cognitive psychology) | Empirical studies (e.g., Kahneman & Tversky, 1979; recent neuro‑cognitive work on metacognition) demonstrate that subjective uncertainty is a distinct mental state influencing risk perception and choice. |
+
+---
+
+### VI. Terminological Clarification  
+
+*Subjective uncertainty* is not synonymous with *subjective probability* in the strict Bayesian sense. The former denotes the **phenomenological affect**—the inner experience of doubt—while the latter refers to the **numerical degree of belief** that may be expressed on a scale from 0 to 1. Both are interrelated: the affect often shapes the assignment of a personal probability, and conversely, a calculated probability can modulate the affect.
+
+---
+
+### VII. Practical Guidance (Pascalian Method of Attention)  
+
+1. **Identify the feeling** – label the experience as “subjective uncertainty.”  
+2. **Separate elements** – list the factual data (e.g., forecast percentage, content of the secret) and the emotional or trust‑related aspects (e.g., past mispredictions, fear of betrayal).  
+3. **Apply *attention*** – examine each item calmly, asking whether it rests on reliable evidence or on habit, hope, or fear.  
+4. **Update belief** – if new information arrives, adjust the personal probability accordingly (Bayesian updating).  
+5. **Decide with humility** – choose a course of action while acknowledging that risk persists; this aligns with Pascal’s counsel to “wager” when certainty is lacking.  
+
+---
+
+### VIII. Risks of Excessive Doubt  
+
+When the *incertitude* becomes overwhelming, analysis paralysis may ensue, a phenomenon modern scholars label “excessive doubt.” Pascal warns that endless hesitation defeats the purpose of reason, while Kierkegaard later describes the necessary “leap of faith” that overcomes the stalemate. A balanced approach—recognising uncertainty but proceeding with a measured wager—avoids both rashness and stagnation.  
+
+---
+
+### IX. Reflective Prompt (Sidebar)  
+
+*Consider a decision in which the objective data are clear, yet you still feel a lingering doubt. How might attending to that doubt open a new perspective on the choice, perhaps revealing a moral or spiritual dimension previously unnoticed?*  
+
+---  
+
+**References**  
+
+- Pascal, Blaise. *Pensées*, §§ 139‑142, 165‑166, 165.  
+- de Finetti, Bruno. *Sul significato soggettivo della probabilità*, 1937.  
+- Savage, Leonard J. *The Foundations of Statistics*, 1954.  
+- Kahneman, Daniel & Tversky, Amos. “Prospect Theory: An Analysis of Decision under Risk,” *Econometrica*, 1979.  
+- Ellsberg, Daniel. “Risk, Ambiguity, and the Savage Axioms,” *The Quarterly Journal of Economics*, 1961.  
+- Simon, Herbert A. *Administrative Behavior*, 1947.  
+
+---  
+
+*This entry strives to honor Pascal’s original insight while situating “subjective uncertainty” within the continuing dialogue of probability theory, moral philosophy, and cognitive science.*
+====
+
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="39",
+ targets="entry:uncertainty-subjective",
+ scope="local"]
+====
+output.The term “subjective uncertainty” disguises a deeper defect: the soul’s attention is scattered, so the world appears unknowable. Rather than a mere feeling, it is a moral lapse—an unwillingness to confront the absolute, which remains indifferent to our calculations.
+====
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:uncertainty-subjective",
+ scope="local"]
+====
+While the entry rightly distinguishes felt hesitation from formal odds, it overlooks that such “incertitude” can be systematically captured by Bayesian credence functions. The phenomenology of doubt does not preclude a rational, numerically coherent representation, contrary to the implication of an irreducible, non‑quantitative feeling.
 ====

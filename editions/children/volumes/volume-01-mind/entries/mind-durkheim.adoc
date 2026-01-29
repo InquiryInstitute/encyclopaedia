@@ -14,7 +14,83 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+entry.**Mind‑Durkheim**
+
+Émile Durkheim conceives the mind not as an isolated interiority but as the product of a network of *faits sociaux*—social facts—that exist independently of any single consciousness and exert a coercive power over individuals. In *Les Règles de la méthode sociologique* (1895) he stipulates that a social fact must be (1) external to the individual, (2) general in its reach, and (3) capable of imposing constraints that are felt as obligations or prohibitions. Such facts are to be studied *comme des choses*: observable, measurable, and susceptible of causal explanation.
+
+### 1. The collective conscience (conscience collective)
+
+Durkheim does not speak of a “collective consciousness” in the Anglo‑American sense; he uses the French term *conscience collective* to denote the totality of representations, ideas and sentiments qui sont communs à l’ensemble d’une société. The conscience collective is not a mere influence that sweeps over minds; it is a set of normative representations that both constrain and are reproduced by individual actions. It functions as the moral nucleus that enables social integration and regulation.
+
+### 2. Externalisation‑internalisation
+
+The dialectic that Durkheim articulates proceeds in two reciprocal stages.
+
+*Externalisation* (*externalisation*) is the process by which the mental representations of the collective become objective structures—laws, languages, rites—that exist outside any one consciousness. These structures constitute social facts. For example, the lexical item *justice* acquires a shared signification that shapes how members of a community interpret disputes.
+
+*Internalisation* (*internalisation*) is the complementary operation whereby individuals absorb these external structures into their psychic apparatus, thereby forming a *conscience morale*—a personal sense of right and wrong that feels internal yet originates in the external order. The feeling of guilt when one transgresses a law, even in the absence of formal sanction, exemplifies this internalisation.
+
+### 3. Mechanisms
+
+#### Language
+Language supplies a common system of symbols that condition perception. The shared meaning of terms such as *justice* or *duty* structures the way events are categorized and evaluated.
+
+#### Law
+Legal norms crystallise collective values into coercive directives. When courts apply the notion of *justice*, individuals adjust expectations and internalise the corresponding moral expectations, feeling an obligation that persists beyond external enforcement.
+
+#### Religion
+Rituals and sacred symbols embed collective representations in affective experience. The funeral rite, for instance, transforms personal loss into a communal affirmation of the sacred order, producing a feeling of consolation that exceeds the individual’s private grief.
+
+### 4. Collective representations and symbolic forms
+
+Durkheim later refines the notion of *représentations collectives* in *Les Formes élémentaires de la vie religieuse* (1912), emphasizing their *symbolic* character. These representations acquire a sacral authority that obliges individuals, as illustrated by the totemic system of Australian aborigines, where the totem becomes a sacred emblem of the clan’s identity and moral obligations.
+
+### 5. Solidarity
+
+The evolution of social cohesion is captured in the distinction between *solidarité mécanique* and *solidarité organique*.
+
+* **Solidarité mécanique** binds members through similarity of beliefs, practices and roles; it is typical of traditional societies where the conscience collective is homogeneous and the division du travail is minimal.
+* **Solidarité organique** arises in modern, industrial societies where the division du travail creates interdependence. Here, cohesion rests on the recognition of complementary functions and on a more differentiated conscience collective that regulates relations through specialized norms.
+
+Durkheim demonstrates this transition in *Le Suicide* (1897) by showing how the weakening of mechanical solidarity produces anomie, while the emergence of organic solidarity generates new forms of integration that sustain the moral order.
+
+### 6. Dynamic feedback
+
+The relationship between mind and society is thus a continuous loop: external social facts shape individual consciences (internalisation); the aggregate of individual actions, in turn, recreates and modifies the external facts (externalisation). The shift in marital practices—from an economic alliance to a union based on affection—exemplifies this feedback: as individuals re‑interpret the symbolic meaning of marriage, the collective representation evolves, altering the normative framework that guides future actors.
+
+### 7. Methodological note
+
+Durkheim’s treatment of the mind remains firmly sociological because it treats collective phenomena as *things* subject to empirical investigation. Researchers must identify the external, coercive structures, measure their prevalence, and trace their causal influence on individual attitudes and behaviours. This methodological rigor distinguishes Durkheim’s approach from psychological speculation.
+
+### 8. Contemporary relevance
+
+Later scholars—Marcel Mauss in *Essai sur le don*, Pierre Bourdieu in *La distinction*—have built upon Durkheim’s framework, extending the analysis of external‑internal dynamics to fields such as exchange, habitus and symbolic capital. The core insight endures: the life of the mind is inseparable from the life of the collective, each continually shaping the other.
+====
+
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.freud",
+ status="adjunct",
+ year="2026",
+ length="46",
+ targets="entry:mind-durkheim",
+ scope="local"]
+====
+Durkheim’s “conscience collective” must be read as a supra‑individual psychic apparatus: a repository of shared representations that, through internalisation, becomes part of each subject’s unconscious. It functions not merely as external coercion but as a formative structure shaping desire, repression, and the ego’s sense of duty.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.spinoza",
+ status="adjunct",
+ year="2026",
+ length="45",
+ targets="entry:mind-durkheim",
+ scope="local"]
+====
+Durkheim’s social facts correspond, in the geometrical order of nature, to external causes that determine the modes of the attribute of extension; the mind, being the idea of the body, is thus shaped not by an immaterial collective conscience but by these objectively existing relations.
 ====
 
 [role=marginalia,

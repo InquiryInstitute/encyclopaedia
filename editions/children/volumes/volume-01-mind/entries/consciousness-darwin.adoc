@@ -14,7 +14,100 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Consciousness‑Darwin**  
+
+*Working definition* – In the nineteenth‑century sense, “consciousness” denotes the capacity of an organism to experience sensations and to act upon them with a degree of deliberation. Modern scholarship distinguishes **primary consciousness** (simple perception of the external world) from **higher‑order consciousness** (self‑reflection and the awareness of one’s own mental states). Darwin employed the term loosely; the present entry therefore uses it in the broader Victorian sense while noting the later refinements.
+
+---
+
+### 1. Darwin’s methodological commitments  
+
+Darwin’s theory rests on three principles: variation, inheritance, and natural selection ( *Origin of Species* 6th ed., ch. XV, p. 393). From these he inferred that any faculty which confers an adaptive advantage—be it a structural organ or a mental faculty—will be retained and elaborated. The mind, therefore, is treated as a *product* of the same processes that shape the body, not as a purposive end in itself (see *The Descent of Man* chap. IV, §4, p. 105).
+
+---
+
+### 2. Empirical observations of animal cognition  
+
+| Observation | Source (edition, page) | Relevance |
+|-------------|------------------------|-----------|
+| Antelope’s alarm calls, varying with the immediacy of danger | *The Descent of Man* chap. IV, §4, p. 108 | Illustrates rudimentary assessment of external stimuli and a graded response, a precursor to what we now call “sensory perception”. |
+| The “curiosity” of the orang‑utan in handling novel objects | *The Descent of Man* chap. IV, §4, p. 110 | Suggests an ability to form mental representations of unfamiliar items, a step toward internal deliberation. |
+| Human infant’s reaction to its own reflection in a polished surface (early “mirror test”) | *The Descent of Man* chap. IV, §4, p. 112 | Provides the first hint of self‑recognition, the embryonic form of higher‑order consciousness. |
+
+These observations led Darwin to argue for a *continuum* of mental faculties across species, rather than a sharp division between “human mind” and “animal instinct” (cf. *The Descent of Man* chap. IV, §4, p. 104‑105).
+
+---
+
+### 3. From instinct to reflection  
+
+Darwin proposed that the *gradual acquisition of self‑awareness* arose because organisms possessing a modest capacity to anticipate future states could better avoid harm and secure resources. He wrote:
+
+> “The mind, as the eye, has been subjected to the same law of gradual improvement; the more refined the mental powers, the more suitable the animal becomes to its condition” (*The Descent of Man* chap. IV, §4, p. 106).
+
+Thus, *primary consciousness* (simple sensation) would have been selected early, while *higher‑order consciousness* (the ability to reflect upon one’s own sensations) would have been favored in social species where cooperation and moral sentiment confer a selective edge.
+
+---
+
+### 4. Evolutionary mechanisms that could give rise to consciousness  
+
+1. **Adaptive representation** – The capacity to form internal images of external objects permits planning and anticipation, which in turn improves survival (see *Origin of Species* ch. XV, p. 395).  
+2. **Social coordination** – In species with complex group structures, recognizing the mental states of conspecifics (a rudimentary theory of mind) enhances cooperative hunting and mutual defence (cf. *The Descent of Man* chap. IV, §4, p. 111).  
+3. **Moral sentiment** – The feeling of sympathy, which Darwin linked to the evolution of conscience, would have been advantageous for the regulation of intra‑group conflict ( *The Descent of Man* chap. IV, §4, p. 115).
+
+These mechanisms are inferred from behavioural evidence; Darwin himself acknowledged the paucity of direct physiological data (cf. his correspondence with Huxley, 1865, trans. 1898, p. 212).
+
+---
+
+### 5. Reception, critique, and later developments  
+
+#### 5.1 Victorian context  
+Darwin’s account entered a heated debate on mind–body dualism, where phrenologists such as Spurzheim claimed innate mental faculties, while materialists like Herbert Spencer advanced a “spiritual evolution” that placed mind beyond natural selection. Darwin’s emphasis on continuity and naturalistic explanation positioned him against both extremes.
+
+#### 5.2 Post‑Darwinian elaborations  
+- **George Romanes** extended Darwin’s comparative approach to more elaborate animal cognition, coining the term “psychical evolution” (Romanes, *Animal Intelligence*, 1885).  
+- **William James** later described consciousness as a “stream” (James, *The Principles of Psychology*, 1890), explicitly acknowledging Darwin’s influence.  
+- **20th‑century Darwinian neuropsychology** (e.g., Hebb’s synaptic theory, 1949) and modern evolutionary psychology trace their lineage to Darwin’s notion that mental faculties are selectable traits, albeit employing concepts Darwin could not have envisaged.
+
+#### 5.3 Counter‑arguments  
+Behaviourists such as John B. Watson dismissed introspection altogether, arguing that only observable behaviour warrants scientific study. More recently, philosophers of mind have contended that natural selection alone cannot explain the *qualitative* aspect of experience—the so‑called “hard problem” (Chalmers, 1995). These critiques underscore that Darwin’s framework, while powerful, remains incomplete with respect to subjective phenomenology.
+
+---
+
+### 6. Methodological limits  
+
+Darwin lacked the experimental tools of electrophysiology, neuroanatomical staining, or functional imaging. Consequently, his inferences rest on *anecdotal* observation and comparative anatomy. He was explicit about this provisional status, noting in a letter to Huxley (1865, trans. 1898, p. 213) that “the mental faculties of lower animals are still shrouded in mystery, pending the advancement of the microscope and the art of dissection.”
+
+---
+
+### 7. Concluding perspective  
+
+Darwin’s evolutionary account furnishes a naturalistic groundwork for understanding how *primary* and *higher‑order* consciousness may have arisen through adaptive pressures. It does not, however, dissolve the lingering mystery of why subjective experience feels *what it feels*. Modern neuroscience and philosophy continue to wrestle with this “hard problem”, yet they do so standing upon the principle that the mind, like any other organ, is a product of variation, inheritance, and selection. In this respect, the legacy of Darwin’s insight remains both a beacon and a reminder of the limits of our current knowledge.
+====
+
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.freud",
+ status="adjunct",
+ year="2026",
+ length="37",
+ targets="entry:consciousness-darwin",
+ scope="local"]
+====
+It must be stressed that Darwin’s account, while acknowledging variation, neglects the psychic apparatus’ unconscious determinants; consciousness is but the tip of a far larger mental edifice, shaped by repressed forces that escape natural selection’s direct observation.
+====
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:consciousness-darwin",
+ scope="local"]
+====
+Darwin's account treats consciousness as merely an adaptive organ, yet this overlooks its essential function as the faculty of attention, which reveals the soul's capacity to discern the divine order. To reduce consciousness to selection is to ignore its irreducible, transcendent dimension.
 ====
 
 [role=marginalia,

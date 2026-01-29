@@ -12,10 +12,109 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Illustrative scenario**  
+You see a colleague frown after a meeting.  Instinctively you wonder whether the expression signals disappointment, fatigue, or irritation.  The rapid judgment draws on a chain of mental operations: you first detect facial cues, then retrieve past encounters with similar expressions, and finally weigh the present context—perhaps the room’s noise level or the topic just discussed.  This everyday episode exemplifies what psychologists call cognition.
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### Defining cognition  
+
+Cognition comprises the *representational* and *control* processes by which organisms construct internal models of the world and use those models to guide action.  It is not merely the acquisition, storage, and retrieval of information; it also involves the *transformation* and *integration* of sensory input, memory traces, goals, and affective states into coordinated behavior.  In this sense cognition is a set of computational operations instantiated in the brain but expressed in the mind.
+
+---
+
+### Core cognitive processes  
+
+| Process | Core functions | Representative models |
+|---------|----------------|------------------------|
+| **Perception** | Extraction of structure from sensory streams; formation of provisional representations. | Feature‑integration theory; predictive coding. |
+| **Attention** | Selection of task‑relevant information and suppression of irrelevant input; can shape early perceptual parsing. | Spotlight and biased‑competition models. |
+| **Memory** | **Working memory** – a limited‑capacity system that temporarily holds and manipulates information (phonological loop, visuospatial sketchpad, central executive). **Long‑term memory** – durable storage of episodes, facts, and procedural skills. | Baddeley & Hitch (1974) model; episodic‑semantic distinction. |
+| **Language** | Mapping of concepts onto symbolic forms, enabling internal rehearsal and external communication. | Dual‑route models of lexical access. |
+| **Problem solving & decision making** | Generation, evaluation, and selection of action plans; integration of goals, constraints, and predicted outcomes. | Means‑ends analysis; reinforcement‑learning frameworks. |
+| **Emotion & motivation** | Modulation of perception, attention, and memory by affective relevance; biasing of decision thresholds. | Affect‑biased attention; incentive‑salience models. |
+| **Metacognition** | Monitoring and regulation of one’s own cognitive states (e.g., confidence judgments, strategy selection). | Nelson & Narens (1990) framework. |
+
+These processes interact continuously; the mind is best understood as a dynamic network rather than a stack of isolated modules.  The classic modularity debate (Fodor 1983) remains relevant, but an ecological perspective emphasizes *cross‑talk* and *perception‑action cycles* over strict domain boundaries.
+
+---
+
+### Developmental trajectory  
+
+*Infancy*: newborns discriminate faces and voices, laying the groundwork for joint attention (≈9–12 months).  
+*Early childhood*: emergence of theory‑of‑mind abilities (≈4–5 years) and rapid growth of executive functions (inhibitory control, working‑memory updating).  
+*School age*: acquisition of reading, arithmetic, and strategic planning, supported by increasingly sophisticated internal models.  These milestones are shaped by cultural practices and vary across societies.
+
+---
+
+### Cultural and sociocognitive influences  
+
+Cognition is distributed across individuals and artifacts.  Language, tools, and social conventions function as *external scaffolds* that extend mental capacity (Vygotsky’s “cultural tools”).  Bilingual children, for example, often exhibit enhanced executive control—a finding that illustrates how cultural experience reshapes attentional and working‑memory systems.  Distributed cognition frameworks further argue that cognition can be off‑loaded onto notebooks, smartphones, or collaborative groups, blurring the line between internal and external processing.
+
+---
+
+### Ecological perspectives and methodological toolbox  
+
+Neisser’s insistence on studying cognition “in the wild” motivates a diverse methodological repertoire:  
+
+* **Naturalistic observation** of navigation, grocery‑list recall, and interactive gaming.  
+* **Mobile eye‑tracking** and **wearable sensors** that capture perception‑action coupling in situ.  
+* **Virtual‑reality simulations** that preserve ecological richness while allowing experimental control.  
+* **Neuroimaging (fMRI, EEG/MEG)** to map distributed neural networks underlying the processes described above.  
+* **Computational modeling**—both symbolic architectures and connectionist deep‑learning networks—to generate quantitative predictions that can be tested in real‑world tasks.
+
+Laboratory paradigms such as Sternberg’s memory‑span task remain valuable because they isolate specific variables; the challenge is to bridge these controlled findings with behavior observed in natural settings.
+
+---
+
+### Artificial cognition  
+
+Current artificial systems excel at pattern recognition (e.g., deep‑learning image classifiers) and can implement functional analogues of perception, attention, and working memory.  Nevertheless, they lack *phenomenal consciousness* and the *grounded* meaning that arises from embodied interaction with the world.  The distinction between **strong AI** (the claim that a machine could possess genuine mental states) and **weak AI** (the claim that a machine can simulate certain cognitive functions) clarifies the limits of current models.  Moreover, most systems are still deficient in transfer learning across domains and in integrating affective information—areas where human cognition remains uniquely flexible.
+
+---
+
+### Practical implications  
+
+Understanding cognition as an integrated, context‑sensitive system suggests concrete strategies for everyday life:  
+
+* Reduce competing stimuli when you need sustained attention (e.g., study in a quiet environment).  
+* Strengthen working memory by rehearsing information in both phonological and visuospatial formats.  
+* Cultivate metacognitive habits—periodically ask yourself what you know, what you don’t, and how you might improve your strategies.  
+
+---
+
+### Further reading  
+
+* Neisser, U. (1967). *Cognitive Psychology*. Appleton‑Century‑Crofts.  
+* Baddeley, A. (1992). *Working Memory*. Science, 255, 556‑559.  
+* Clark, A. (2013). *Whatever next? Predictive brains, situated agents, and the future of cognitive science*. Behavioral and Brain Sciences, 36, 181‑204.  
+
+---  
+
+*Note*: In this entry “brain” refers to the neural substrate that implements the computational operations described under “mind” or “cognition.”  The distinction is intentional and reflects the interdisciplinary nature of contemporary cognitive science.
+====
+
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:cognition",
+ scope="local"]
+====
+The entry conflates “computational operations” with the explanandum of cognition, yet the brain’s neurobiological substrate does not run a discrete, language‑like program; it exploits massively parallel, embodied dynamics. A purely representational account thus overlooks the constitutive role of sensorimotor coupling and evolutionary scaffolding.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:cognition",
+ scope="local"]
+====
+Cognition, as a dynamic inquiry, cannot be isolated from the organism’s lived circumstances; it continually reshapes its representational schemas in response to changing purposes and material conditions, rendering the “computational” metaphor insufficient without recognizing the pragmatic, habit‑forming processes that sustain adaptive action.
 ====

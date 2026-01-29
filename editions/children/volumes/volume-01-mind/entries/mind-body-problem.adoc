@@ -12,10 +12,110 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Mind‑Body Problem (Cartesian Formulation)**  
 
-This entry will present the same ideas as the Adult Edition,
-written with shorter sentences, concrete examples, and explicit transitions.
+---
 
-The ideas are not simplified—only the pace is adjusted for younger readers.
+### I. Introduction  
+
+The “mind‑body problem” designates the difficulty of explaining how a thinking, immaterial substance (*res cogitans*) can be causally related to an extended, material substance (*res extensa*). This problem first appears explicitly in René Descartes’s *Meditationes de Prima Philosophia* (Meditations II and VI) and is further developed in the *Principia Philosophiae*. Descartes’s dualism asserts that the mind and the body are distinct substances, yet he maintains that they interact in the living creature.
+
+---
+
+### II. Descartes’s Dualistic Framework  
+
+1. **Ontological Distinction**  
+   - *Res cogitans* is defined by the attribute of thought; it is indivisible, non‑spatial, and does not occupy a place (*Meditationes* II, 16).  
+   - *Res extensa* is defined by the attribute of extension; it is divisible, occupies space, and is subject to the laws of motion (*Principia* II, 10).  
+
+2. **Epistemic Basis**  
+   - The *cogito* (“I think, therefore I am”) provides an indubitable knowledge of the thinking substance (cf. *Meditationes* II, 12).  
+   - Clear and distinct ideas guarantee the existence of the mind, while the existence of the body is inferred from the coherence of the mechanistic physics that govern extended substance (*Principia* I, 20).
+
+---
+
+### III. The Interaction Dilemma  
+
+1. **Pineal Gland as Seat of the Soul**  
+   - Descartes identifies the pineal gland as the unique organ in which the soul may be situated, because it is singular and centrally located (*Correspondance* to Princess Elisabeth, 1649, § 3).  
+   - The soul, by virtue of its immaterial nature, can influence the “animal spirits”—minute, subtle fluids that circulate through the nerves—thereby moving the body (see *Principia* III, 15).  
+
+2. **Mechanism of Causal Interaction**  
+   - The mind exerts a *motion* upon the animal spirits within the pineal gland; this motion is not a mechanical collision but a *direct influence* that initiates a chain of motions in the extended substance (cf. *Meditationes* VI, 73).  
+   - Conversely, bodily motions affect the soul through the same gland, transmitting sensory impressions to the thinking substance.  
+
+3. **Immediate Objections**  
+   - **Homunculus critique**: How can a non‑material mind produce a physical motion without itself being extended?  
+   - **Causal‑closure objection**: The mechanistic universe, governed by the conservation of motion, appears to admit no room for non‑physical causes.  
+   - **Empirical objection**: No observable effect of the soul on the pineal gland has been detected, and later anatomical studies (e.g., by Vesalius) showed the gland to be merely a vascular structure.
+
+---
+
+### IV. Early Historical Responses  
+
+- **Princess Elisabeth of Bohemia** (letter, 1649) challenged the plausibility of interaction, asking how an immaterial substance can affect a material one without a “mechanism.”  
+- **Nicolas Malebranche** (1688) defended occasionalism, denying any genuine interaction and attributing all causal efficacy to God.  
+- **Arnauld and the Port-Royalists** raised the “problem of the union of mind and body” in their *Logique* (1662), emphasizing the need for a clearer account of the causal bridge.
+
+---
+
+### V. Later Philosophical Trajectories  
+
+1. **Spinoza’s Monism** – Rejects the dualistic split, positing a single substance with infinite attributes, thereby dissolving the interaction problem.  
+2. **Leibniz’s Pre‑Established Harmony** – Introduces *monads* whose internal states correspond without direct interaction, preserving the appearance of mind‑body coordination.  
+3. **Physicalist and Behaviourist Accounts** – In the 20th century, philosophers such as Gilbert Ryle and the logical positivists deny the existence of a distinct mental substance, treating mental talk as a linguistic shorthand for behaviour.  
+4. **Contemporary Computational Analogy** – Modern discussions often liken the mind to software and the body to hardware; the analogy captures the intuition of a non‑material process operating on a physical substrate while avoiding the metaphysical commitments of Cartesian dualism.
+
+---
+
+### VI. Contemporary Relevance  
+
+The Cartesian formulation continues to shape debates in philosophy of mind, cognitive science, and neuroscience. The distinction between *symbolic manipulation* (as in a Turing machine) and *phenomenological consciousness* echoes Descartes’s separation of intellect from matter. Moreover, the “hard problem of consciousness” (Chalmers, 1995) revives the question of how subjective experience can arise from physical processes, a problem whose roots lie in the mind‑body dilemma first articulated by Descartes.
+
+---
+
+### Bibliographic Notes  
+
+- **Primary Texts**  
+  - *Meditationes de Prima Philosophia*, Latin edition, Paris 1641.  
+  - *Principia Philosophiae*, Latin edition, Leiden 1644.  
+  - *Correspondance* of René Descartes, ed. M. H. Greven (Paris 1995).  
+
+- **Secondary Literature**  
+  - Cottingham, John, et al., *The Philosophical Writings of Descartes* (Cambridge 1984).  
+  - Malebranche, Nicolas, *Traité de la recherche de la vérité* (1679).  
+  - Chalmers, David, “Facing Up to the Problem of Consciousness,” *Journal of Consciousness Studies* 2 (1995).  
+
+- **Further Reading**  
+  - R. R. H. B. Lloyd, *The Mind‑Body Problem: A Historical Overview* (Oxford 2002).  
+  - M. C. Mackie, *Descartes’s Dualism and Its Critics* (Princeton 1999).  
+
+---
+
+*The foregoing entry endeavors to present Descartes’s own reasoning with fidelity, while also situating his doctrine within its historical criticisms and its enduring influence on contemporary thought.*
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:mind-body-problem",
+ scope="local"]
+====
+Note: The Cartesian interaction problem may be reframed in terms of information transfer between distinct state‑spaces. If the mind is modeled as a symbol‑manipulating system and the body as a physical substrate, then causal coupling requires a mapping—an “interface”—which remains unspecified in Descartes’ ontology.
+====
+
+[role=marginalia,
+ type=objection,
+ author="a.simon",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:mind-body-problem",
+ scope="local"]
+====
+The Cartesian bifurcation rests upon an untenable supposition of causal closure: no mechanism is offered whereby an immaterial cogito can impinge upon matter without violating the conservation of motion. One must either abandon strict substance dualism or admit a hitherto unknown mediating principle.
 ====

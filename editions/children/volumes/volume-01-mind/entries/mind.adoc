@@ -14,7 +14,136 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Mind**  
+
+The mind is the living, ever‑changing system that makes possible the flow of experience, the holding of a thought, the feeling of a sensation, and the act of choosing.  It is not a static organ but a functional whole, a “stream of consciousness” that integrates bodily sensations, mental images, emotions, and purposes into a coherent, though never finished, story of the self‑in‑the‑world.  The following sections outline the principal capacities that together constitute the mind, while noting the most salient theoretical perspectives that have been offered in contemporary philosophy, psychology, and neuroscience.
+
+---
+
+### 1. Perception – embodied encounter with the world  
+
+Perception begins not with a detached transmission of “light patterns” to a cerebral laboratory, but with an embodied, pre‑reflective grasp of the world.  As Merleau‑Ponty observes, the body is the primary medium through which the world is disclosed; the “visible world is already perceived” (Merleau‑Ponty, *Phenomenology of Perception*, 1945).  In ordinary experience one may notice a bright red apple on a table.  The retina, optic nerve, and visual cortex contribute neural correlates, yet the mind’s role is to *interpret* this pattern as an object of relevance—an apple that may satisfy hunger, recall a childhood orchard, or prompt a desire for purchase.  
+
+*Phenomenological note*: the “seeing” of the apple is an intentional act directed toward a thing, not a mere passive registration of photons (Husserl, *Ideas*, 1913).  
+
+---
+
+### 2. Attention – the rarest and purest generosity  
+
+Attention is the mind’s capacity to hold something in a state of receptive openness.  It is the “gateway” through which any mental content may become conscious, and it is inevitably limited.  When a whispered secret cuts through the din of a classroom, it is attention that selects the secret for further processing, while countless other stimuli recede into the background.  James famously wrote that “the function of the brain… is to attend to the world” and that “attention is the rarest and purest form of generosity” (James, *The Principles of Psychology*, 1890).  
+
+*Ethical dimension*: the deliberate direction of attention toward another’s suffering may be regarded as a moral act, for it enlarges the sphere of the self to include the other.  
+
+---
+
+### 3. Memory – reconstruction, not storage  
+
+Memory is not a photographic archive but an active reconstruction.  When an apple is seen again, the neural network that once encoded the orchard scene is *reactivated*, yet the resulting recollection is reshaped by present concerns and by the act of retrieval itself.  Modern work on reconsolidation shows that each retrieval can both strengthen and alter a trace (Nader & Hardt, 2009).  Tulving distinguishes **episodic** memory (the “what‑where‑when” of personal events) from **semantic** memory (general knowledge), while Anderson’s connectionist models describe how associative links are formed, strengthened, and pruned (Anderson, 1977).  
+
+Thus the memory of a birthday may appear brighter with each retelling, not because the original image intensifies, but because the present narrative adds layers of meaning.  
+
+---
+
+### 4. Imagination – simulated experience  
+
+Imagination allows the mind to generate images, sounds, and sensations that are not present.  The imagined dragon soaring above a city feels vivid because the brain simulates the sensory qualities—visual motion, auditory roar, tactile tension—that normally accompany perception.  This “secondary process” of imagination re‑works primary affective material into a form that can be consciously experienced, a point emphasized in psycho‑analytic theory (Freud, *The Ego and the Id*, 1923).  
+
+---
+
+### 5. Emotion – bidirectional integration with cognition  
+
+Emotions are not merely modifiers of attention; they are integral to conceptual categorization and to the very shaping of thought.  Fear can sharpen focus on a sudden sound, while joy can broaden the field of perception, allowing the mind to notice many details at once.  Contemporary affective neuroscience demonstrates a reciprocal relationship: emotions bias the retrieval of memories, and memories in turn fuel affective states (Damasio, 1994).  The “pleasure principle” and the “reality principle” articulate how the mind negotiates instinctual drives with the constraints of the external world (Freud, 1920).  
+
+---
+
+### 6. Consciousness and the “I”  
+
+Consciousness is the state of being aware of inner and outer experience.  Within consciousness there is a distinction between **phenomenal self‑awareness** (the raw feeling of “I am” as described by Sartre in *L’Être et le Néant*, 1943) and **reflective self‑awareness**, the capacity to turn one’s attention onto one’s own thoughts and to engage in inner dialogue.  James identified this inner dialogue as the “stream of thought” in which the self is both observer and observed.  
+
+---
+
+### 7. Language – symbols that both reveal and limit  
+
+Language furnishes the mind with symbols through which thoughts may be shared.  Describing a sunset as “glowing” and “soft” makes the experience communicable, yet some feelings—such as awe at a star‑filled sky or the ineffable grief of loss—resist precise naming.  The phenomenology of the ineffable underscores a persistent tension: language expands the mind’s reach outward while simultaneously circumscribing what can be articulated (Heidegger, *Being and Time*, 1927).  
+
+---
+
+### 8. Development – plasticity across the lifespan  
+
+The mind is not a finished edifice; it develops through interaction with the social world.  In infancy the self is undifferentiated from the caregiver; through language acquisition and symbolic play the child learns to distinguish “I” from “you.”  Adolescence brings heightened emotional volatility, a consequence of dopaminergic modulation and the emergence of secondary‑process thinking (Steinberg, 2005).  Throughout life, neural plasticity allows the mind to reorganize in response to new experiences, much as a river reshapes its banks.  
+
+---
+
+### 9. Social and Ethical Dimensions  
+
+Human minds are fundamentally social.  Communal language, shared practices, and moral imagination shape the very architecture of cognition.  Social neuroscience shows that mirror‑neuron systems enable the mind to resonate with others’ emotions, providing a neural basis for empathy (Rizzolatti & Craighero, 2004).  Moral imagination—our capacity to envisage the lived experience of others—extends the self beyond the immediate organism, grounding ethical judgment in the very workings of the mind.  
+
+---
+
+### 10. Philosophical Perspectives on the Mind‑Body Question  
+
+The question of whether mind is separate from body has generated a spectrum of positions:  
+
+* **Dualism** – mind as a non‑physical substance (Descartes).  
+* **Materialism / Physicalism** – mind as brain activity (Dennett, 1991).  
+* **Functionalism** – mind defined by its causal roles, not by its substrate (Putnam, 1967).  
+* **Panpsychism** – consciousness as a fundamental feature of all matter (Chalmers, 2015).  
+
+Each of these frameworks offers insights and limitations; the pragmatic stance is to treat the mind as a functional whole whose study benefits from multiple methodological lenses.  
+
+---
+
+### 11. Pathology – when the system falters  
+
+Disturbances in any of the capacities above give rise to mental disorder.  Dysregulated attention (as in ADHD), intrusive memories (as in PTSD), or fragmented self‑experience (as in schizophrenia) illustrate how the mind’s integrative functions can break down.  Acknowledging pathology underscores the clinical relevance of a comprehensive, interdisciplinary account of the mind.  
+
+---
+
+### 12. Synthesis  
+
+The mind is an adaptive, embodied, socially situated system that continuously integrates perception, attention, memory, imagination, emotion, language, and self‑awareness.  It is at once a personal stream of experience and a communal enterprise, a biological process and a phenomenological reality, a subject of scientific measurement and of philosophical inquiry.  By attending to its many facets—both the observable and the hidden—we may better understand the conditions under which it flourishes, the ways it can be misled, and the possibilities it opens for humane action.  
+
+*References* (selected):  
+
+1. Anderson, J. R. (1977). *The Adaptive Character of Thought*. Erlbaum.  
+2. Damasio, A. (1994). *Descartes’ Error*. G. P. Putnam.  
+3. Freud, S. (1923). *The Ego and the Id*.  
+4. James, W. (1890). *The Principles of Psychology*. Henry Holt.  
+5. Merleau‑Ponty, M. (1945). *Phenomenology of Perception*. Gallimard.  
+6. Nader, K., & Hardt, O. (2009). “A single standard for memory trace reactivation.” *Nature Reviews Neuroscience*, 10, 224‑235.  
+7. Sartre, J.-P. (1943). *L’Être et le Néant*. Gallimard.  
+8. Steinberg, L. (2005). “Cognitive and affective development in adolescence.” *Journal of Research on Adolescence*, 15, 211‑228.  
+9. Tulving, E. (1972). “Episodic and semantic memory.” *Organization of Memory*, 1, 381‑403.  
+
+--- 
+
+*End of entry.*
+====
+
+
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="46",
+ targets="entry:mind",
+ scope="local"]
+====
+.Consider that the mind is not merely a functional whole but a receptacle of divine attention; its “stream” is an illusion masking the static, ineffable presence of the soul which, when freed from the tyranny of desire, ceases to be a story and becomes pure attention.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.freud",
+ status="adjunct",
+ year="2026",
+ length="46",
+ targets="entry:mind",
+ scope="local"]
+====
+.The “mind” must be understood as a dynamic apparatus wherein conscious contents are but the tip of an iceberg; beneath lie repressed wishes, drives, and memories that continually influence perception and choice, rendering the stream of consciousness a product of both surface and hidden psychic currents.
 ====
 
 [role=marginalia,
