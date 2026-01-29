@@ -15,15 +15,96 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Perception**
 
-This entry will explore perception as the primordial contact with the world—the bodily engagement through which meaning emerges before reflective thought.
+Perception is the primary locus in which the world is lived and disclosed.  It is not a passive reception of data nor a purely intellectual construction; rather it is an embodied, attentive act that makes possible all later forms of cognition, judgment and language.  In the phenomenological view the perceiving body and the perceived world are co‑constituted, a unity Merleau‑Ponty later calls **the flesh** (*la chair*), the intertwining of subject and world that eliminates any strict subject‑object split.
 
-Topics to cover:
-- The primacy of perception
-- The lived body (corps propre)
-- The phenomenal field
-- Motor intentionality
-- The chiasm of perceiver and perceived
-- Perception and expression
+---
+
+### 1. Definitional Framework  
+
+From a phenomenological standpoint perception is experienced as a single, unified phenomenon.  The tactile encounter of a hand brushing a wall, for example, brings together the sensation of pressure, the proprioceptive awareness of the arm’s position and the anticipatory sense of possible movement.  These elements are not successive stages of “sensation‑then‑interpretation” but aspects of one lived act of **attention** that reveals the world as a field of meaningful possibilities.  The body does not merely register an external stimulus; it *means* the world through its capacity to act, a capacity that Merleau‑Ponty describes as the **body schema**, a pre‑reflective organization of sensorimotor possibilities that guides perception.  
+
+In this sense perception is the **primary locus in which intentionality is embodied**.  Intentionality is not a pre‑existing form that merely inhabits the mind; it is constituted by the lived body as it reaches out toward the world.  The body is therefore the horizon of meaning, the site where the world is given *in* perception rather than *as* a representation of a pre‑existing object.
+
+---
+
+### 2. Historical Antecedents  
+
+#### 2.1 Ancient Foundations  
+
+Plato’s allegory of the cave already hints at the participation of the sensible in the intelligible, suggesting that the visible world is not a simple mirror but a mediated appearance that points beyond itself.  Aristotle, in his *De Anima*, introduces the **sensus communis** as a faculty that integrates the five senses into a coherent experience, a notion that anticipates the later claim that perception is already a unified act.
+
+#### 2.2 Early Modern Critiques  
+
+Descartes’ radical doubt foregrounds the unreliability of the senses while maintaining a clear distinction between *res cogitans* and *res extensa*; his method, however, leaves the body as a mere extension of matter.  Locke and Berkeley reformulate perception in terms of ideas and sensations, and Hume reduces it to a bundle of impressions lacking necessary connection to external objects.  These positions share a representational assumption: perception is a mirror that reflects an external world onto an internal medium.
+
+#### 2.3 Kantian Synthesis  
+
+Immanuel Kant provides the first systematic account that distinguishes three moments of perception:
+
+1. **Sensibility**, which supplies the manifold already ordered by the a‑priori forms of space and time (*Transcendental Aesthetic*).  
+2. **Transcendental synthesis**, performed by the imagination, which unifies the manifold into a coherent intuition.  
+3. **Conceptual mediation** of the understanding, which applies the categories and yields judgment (*Transcendental Analytic*).
+
+Kant thus preserves a representational character—*empirische Anschauung*—while insisting that the raw data are already structured a‑priori.  The **transcendental unity of apperception** and the **schematism of time** guarantee the possibility of a stable perceptual field.  Nevertheless, Kant’s framework remains within a subject‑object schema; the body is not taken as the constitutive horizon of meaning.
+
+#### 2.4 Husserlian Turn  
+
+Edmund Husserl’s phenomenology retains the intentional structure of **noesis‑noema**, in which consciousness directs itself toward an object that is *given* in perception.  Through the phenomenological reduction Husserl brackets the world to reveal the pure structures of intentionality, yet the subject‑object polarity persists.
+
+---
+
+### 3. Merleau‑Ponty’s Phenomenology of Perception  
+
+In *Phenomenology of Perception* (1945) Merleau‑Ponty departs from both the representationalist tradition and Husserl’s transcendental reduction.  He argues that the perceiving body (*Leib*) is not a mere organ but the **living flesh** that intertwines with the world.  Flesh denotes the chiasmic relationship in which the body is both perceiving and perceived, a reversible polarity that makes the world “present to the body as body.”  
+
+The **body schema** is the pre‑reflective, motoric structure that allows the perceiver to act in the world; perception is therefore “possibility for action.”  Illusion and hallucination are explained as moments when the world withdraws from the flesh, revealing the limits of the perceptual field without collapsing into a purely mental error.  
+
+Attention plays a decisive role: the act of seeing is not a passive registration but an **attentional opening** that brings forth the world.  As Merleau‑Ponty writes, “the eye is the organ of the soul,” echoing Simone Weil’s image of the “eye of the soul” and underscoring the ethical dimension of perception.  By seeing the other, we disclose a shared world‑making, a responsibility that stems from our embodied communion.
+
+---
+
+### 4. Synthesis and Outlook  
+
+Merleau‑Ponty’s account reorients perception from a representational mirror to a lived, embodied encounter.  It affirms the Kantian insight that experience is already structured, yet it locates that structuring not in abstract a‑priori forms but in the **flesh** of the perceiving body.  The body schema and the role of attention show how perception is simultaneously *seeing* and *acting*, a unity that modern embodied‑cognition research continues to explore.  
+
+In this view, perception is never a neutral datum; it is the site where the world becomes meaningful for us and where, reciprocally, we become meaningful for the world.  The ethical resonance is thus unavoidable: to perceive the other is to recognize a shared horizon of sense, a call to solidarity that extends beyond the merely epistemic.
+
+---
+
+### Bibliography  
+
+- Husserl, Edmund. *Ideas I*. 1913.  
+- Kant, Immanuel. *Critique of Pure Reason*. 1781.  
+- Merleau‑Ponty, Maurice. *Phénoménologie de la perception* (Phenomenology of Perception). 1945.  
+- Sartre, Jean‑Paul. *The Transcendence of the Ego*. 1937.  
+- Weil, Simone. *The Need for Roots*. 1949.  
+
+---
+====
+
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="35",
+ targets="entry:perception",
+ scope="local"]
+====
+.The phenomenological equation of perception with attentional activity neglects its essential affliction: perception is foremost a forced self‑emptying, a withdrawal that makes the soul receptive to the transcendent Good, not merely the co‑constitution of flesh.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:perception",
+ scope="local"]
+====
+.Perception, in the transcendental sense, is the immediate manifold given to sensibility, ordered by the pure forms of intuition—space and time—so that the mind can synthesize it into a determinate representation. It is not merely bodily, but the ground of all subsequent concepts.
 ====

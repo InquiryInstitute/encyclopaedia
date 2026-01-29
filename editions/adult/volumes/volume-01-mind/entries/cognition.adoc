@@ -15,15 +15,138 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Cognition**
 
-This entry will explore cognition as the processes by which sensory input is transformed, reduced, elaborated, stored, recovered, and used—the active construction of meaning from information.
+Cognition refers to the totality of mental operations by which an organism acquires, stores, transforms, and uses information about itself and its environment.  It includes perception, attention, memory, language, reasoning, problem solving, and the formation of intentions and goals.  Contemporary research treats cognition as a set of information‑processing mechanisms that are constrained by the architecture of the nervous system, shaped by the ecological circumstances in which the organism functions, and mediated by affective and social forces (Neisser, 1967; Gibson, 1979; Damasio, 1994).
 
-Topics to cover:
-- Information processing and mental representation
-- Perception as constructive activity
-- Memory and retrieval
-- Pattern recognition and categorization
-- The ecological approach to cognition
-- Cognition in the real world
+---
+
+### 1. Historical Perspective  
+
+The Latin *cognitio* (“knowledge”) entered scientific discourse in the late nineteenth century, first appearing in the technical writings of Wilhelm Wundt (1887) and in the French tradition of *psychologie expérimentale*.  Earlier philosophers such as Kant and William James employed related terms—“thought,” “consciousness,” or “experience”—but did not use *cognition* as a distinct scientific label (James, 1890).  
+
+During the behaviorist era (1930s–1950s) cognition was treated as a “black box” that could be ignored in favor of observable stimulus‑response relations.  This stance was not without merit; the insistence on rigorous experimental control laid methodological foundations that later cognitive work would inherit (Skinner, 1953).  The “cognitive revolution” of the 1950s and 1960s restored interest in internal mental representations, propelled by the information‑processing metaphor and the advent of computer analogies (Miller, 1956; Newell & Simon, 1972).  
+
+My own volume, *Cognitive Psychology* (Neisser, 1967), codified a research program that emphasized the interaction of mental processes with the environment.  I argued against a strictly modular view and highlighted the ecological character of cognition—a stance I later elaborated in *Cognition and Reality* (Neisser, 1976).  Since then the field has broadened to include developmental, social, embodied, affective, and moral perspectives, all of which converge on the idea that mental operations cannot be fully understood apart from the real‑world contexts that give them meaning.
+
+---
+
+### 2. Competing Paradigms  
+
+#### 2.1 Information‑Processing Framework  
+
+The dominant paradigm models cognition as a sequence of operations on symbolic or subsymbolic representations.  A simplified flow is:
+
+1. **Encoding** – sensory input is transformed into a perceptual code.  
+2. **Selection** – attention selects a subset of the code for further processing.  
+3. **Storage** – selected information is held in short‑term or working memory (Baddeley, 1974).  
+4. **Consolidation** – traces are integrated into long‑term memory.  
+5. **Retrieval & Use** – stored representations are accessed for reasoning, language production, or action.
+
+Both serial and parallel architectures can be formalized in computational terms—production systems, connectionist networks, and, more recently, deep learning models (Rumelhart & McClelland, 1986).  Empirical tests employ reaction‑time experiments, neuroimaging, and lesion studies (Broadbent, 1958; Baddeley, 1974).
+
+#### 2.2 Representationalism vs. Direct Perception  
+
+Traditional cognitive models assume internal representations that stand in for external reality.  Gibson’s ecological approach (1979) rejected this assumption, arguing that the information available in optic flow, acoustic patterns, or haptic cues is sufficient for action without an intermediate symbolic stage.  Gibson introduced the notion of **affordances**—action possibilities offered by the environment—to replace the idea of mental images.  
+
+Current research often adopts a hybrid stance.  For example, predictive‑coding models posit that the brain generates probabilistic predictions (representations) that are continuously matched against incoming sensory data, thereby blending representational and direct‑perception accounts (Friston, 2010).
+
+#### 2.3 Ecological and Embodied Cognition  
+
+Building on Gibson, ecological cognition studies how perception‑action loops are calibrated by the organism’s niche.  It emphasizes field experiments, naturalistic observation, and the design of tasks that preserve the structure of everyday environments (Neisser, 1976).  
+
+Embodied cognition extends this view by foregrounding the body’s sensorimotor dynamics and the “situated self” (Clark, 1997; Varela, Thompson & Rosch, 1991).  Language, concepts, and even abstract reasoning are seen as grounded in bodily experience and interaction with the world.
+
+---
+
+### 3. Domains of Cognition  
+
+*Perception* – extraction of invariant structure from sensory flux.  
+*Attention* – the “gateway” to cognition; not merely a bottleneck but a selective, purposeful act that reflects the organism’s goals and values (Neisser, 1967).  
+*Memory* – short‑term, working, and long‑term stores that support learning and future action.  
+*Language* – symbolic systems that enable the transmission of information across individuals.  
+*Reasoning & Problem Solving* – manipulation of representations (or affordances) to achieve goals.  
+*Intentionality & Goal Formation* – the forward‑looking component that orients cognition toward future states.  
+*Emotion, Moral and Affective Processes* – the affective dimension shapes decision‑making, value judgments, and social cognition (Damasio, 1994).
+
+---
+
+### 4. Methodological Pluralism  
+
+Cognitive science draws on a wide array of methods:
+
+* Laboratory experiments – reaction time, controlled stimulus presentation.  
+* Neurophysiological techniques – fMRI, EEG, lesion studies.  
+* Computational modeling – symbolic, connectionist, and Bayesian frameworks.  
+* Behavioral‑ecological approaches – affordance analysis, situated task analysis, field observation (Gibson, 1979).  
+
+This methodological diversity reflects the field’s commitment to studying cognition both in the laboratory and in the environments that gave rise to it.
+
+---
+
+### 5. Contemporary Extensions  
+
+*Embodied cognition* links sensorimotor dynamics to higher‑order thought (Clark, 1997).  
+*Affective and moral cognition* investigates how emotions, values, and ethical attention shape reasoning and behavior (Damasio, 1994).  
+*Social cognition* emphasizes that cognition is often distributed across interacting individuals (Tomasello, 1999).  
+
+These strands illustrate that cognition is not solely a computational device but a socially situated, embodied, and affectively charged process.
+
+---
+
+### 6. Educational Relevance  
+
+The term’s origins in the pragmatic philosophy of James and Dewey underscore its relevance to learning.  Cognitive theory informs curriculum design, problem‑based learning, and democratic schooling by emphasizing active inquiry, meaningful context, and the calibration of perception‑action loops in authentic settings (Neisser, 1976).
+
+---
+
+### 7. Concluding Remarks  
+
+The study of cognition remains a dynamic tension between mechanistic models that seek formal precision and approaches that foreground the lived, embodied world.  As I have repeatedly argued, the “black box” never truly disappears; it simply becomes more transparent when we examine the organism in its ecological niche.  This ongoing dialogue keeps the field vibrant and ensures that our theories remain anchored to the very phenomena they aim to explain.
+
+---
+
+#### References  
+
+- Baddeley, A. (1974). *The episodic buffer: a new component of working memory?*  
+- Broadbent, D. E. (1958). *Perception and Communication*.  
+- Clark, A. (1997). *Being There: Putting Brain, Body, and World Together Again*. MIT Press.  
+- Damasio, A. R. (1994). *Descartes’ Error: Emotion, Reason, and the Human Brain*.  
+- Friston, K. (2010). *The free-energy principle: a unified brain theory?* Nature Reviews Neuroscience.  
+- Gibson, J. J. (1979). *The Ecological Approach to Visual Perception*.  
+- James, W. (1890). *The Principles of Psychology*.  
+- Miller, G. A. (1956). *The magical number seven, plus or minus two*. Psychological Review.  
+- Newell, A., & Simon, H. A. (1972). *Human Problem Solving*.  
+- Neisser, U. (1967). *Cognitive Psychology*. Appleton‑Century‑Crofts.  
+- Neisser, U. (1976). *Cognition and Reality*. Appleton‑Century‑Crofts.  
+- Rumelhart, D. E., & McClelland, J. L. (1986). *Parallel Distributed Processing*. MIT Press.  
+- Skinner, B. F. (1953). *Science and Human Behavior*.  
+- Varela, F., Thompson, E., & Rosch, E. (1991). *The Embodied Mind*. MIT Press.  
+- Wundt, W. (1887). *Principles of Physiological Psychology*.  
+- Tomasello, M. (1999). *The Cultural Origins of Human Cognition*. Harvard University Press.
+====
+
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="38",
+ targets="entry:cognition",
+ scope="local"]
+====
+note.Cognition, reduced to mere information‑processing, forgets that true knowing demands attention as a sacramental act, an opening toward the incorporeal Good. Without this, the mind remains a machine, incapable of grasping the divine reality that underlies all being.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:cognition",
+ scope="local"]
+====
+Cognition, in a truly pragmatic sense, must be seen as the continual reconstruction of habits through inquiry; it is not a static repository of data but an evolving pattern of problem‑solving activity, shaped by the organism’s purposes and the demands of its lived environment.
 ====

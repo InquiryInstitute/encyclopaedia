@@ -15,15 +15,130 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Dream** – in the psycho‑analytic tradition, denotes a nocturnal mental activity in which the unconscious does not so much “present” a self‑contained series of images as it allows latent wishes, conflicts and affective residues to surface in a distorted, symbolic form. The manifest content, i.e. the recollected storyline, is therefore a partially altered representation of waking experience, rendered qualitatively distinct by the operation of dream‑work. The term is employed as a technical construct that reveals the functioning of the psychic apparatus, the dynamics of repression, and the symbolic articulation of instinctual drives. The following entry surveys the historical antecedents of dream theory, delineates the classical Freudian model, outlines subsequent refinements within the psycho‑analytic family, and finally integrates contemporary neurocognitive findings, thereby furnishing a balanced view for the educated adult reader.  
 
-This entry will explore the dream as the royal road to the unconscious—the distorted fulfillment of a repressed wish, revealed through interpretation of manifest and latent content.
+---
 
-Topics to cover:
-- The dream as wish-fulfillment
-- Manifest and latent content
-- The dream-work: condensation, displacement, symbolization
-- Day residues and childhood memories
-- The interpretation of dreams
-- Dreams and the unconscious
+### 1. Historical Overview  
+
+Dream interpretation precedes the emergence of modern psychology. In the Egyptian “Dream Books” (c. 1500 B.C.) one finds formulae for the practical decoding of nocturnal visions, while the earliest Greek medical texts treat dreams as physiological phenomena rather than omens; the *Corpus Hippocraticum* (e.g., the “Dream of the Seer”) already remarks that dreams arise from the bodily humours in states of altered temperature. It is only in later Hellenistic and Roman writers—Artemidorus, Galen—that the notion of divine omen becomes explicit.  
+
+During the medieval period the Scholastic tradition incorporated dreams into moral instruction, a tendency that persisted into the early modern era (e.g., Thomas Clarke, *The History of Dreams*, 1655). The Enlightenment introduced a rational critique: René Descartes, in *Meditations* (1641), observes that “thoughts which occur without the agency of the senses” may be distinguished from sensory perception, thereby anticipating the modern distinction between internally generated imagery and external perception.  
+
+A systematic psychological theory, however, was not formulated until the close of the nineteenth century. My own treatise *Die Traumdeutung* (1900) inaugurated a psycho‑analytic perspective that conceives dreams as the “royal road to the unconscious,” linking them directly to the repression of wishes and to the economy of psychic energy.  
+
+---
+
+### 2. The Classical Freudian Model  
+
+Freud’s model rests on three interlocking postulates:  
+
+1. **Dreams as a royal road** – the unconscious makes its wishes known, albeit in a censored form.  
+2. **Manifest versus latent content** – the dream as recalled (manifest) differs from the hidden meaning (latent).  
+3. **Dream‑work** – a set of processes (condensation, displacement, symbolisation, secondary revision) that transform latent material into the manifest narrative.  
+
+#### 2.1 Manifest and Latent Content  
+
+The manifest content comprises the concrete images, storyline and affective tone that the dreamer can report upon waking. The latent content is the underlying, often repressed wish or conflict that motivated the dream’s emergence. The analyst’s task is to reconstruct this hidden meaning by tracing the symbolic transformations effected by dream‑work.  
+
+#### 2.2 Dream‑Work Processes  
+
+*Condensation* combines several latent elements into a single manifest image; thus a single figure may simultaneously represent a mother, a teacher and an authority‑bearing colleague. This economises psychic energy by allowing many repressed impulses to be expressed within the limited temporal span of a dream.  
+
+*Displacement* transfers the affective intensity of a threatening wish from a salient, anxiety‑provoking object to a more neutral one. A classic illustration is the dream in which the dreamer feels intense hostility toward a parental figure, yet the manifest scene shows irritation toward a distant acquaintance; the affect has been displaced to a safer target.  
+
+*Symbolisation* substitutes a concrete representation for an abstract wish. The phallic symbol of a long, rigid object, for example, may stand for a repressed sexual desire.  
+
+*Secondary revision* reorganises the fragmented material into a coherent storyline, smoothing contradictions and adding logical connectors so that the dream appears plausible upon waking.  
+
+These operations are governed by the “economy of the mind,” a metaphorical principle whereby libidinal charge is redistributed rather than literally conserved.  
+
+---
+
+### 3. Subsequent Theoretical Refinements  
+
+The Freudian framework gave rise to a variety of internal and external elaborations.  
+
+*Carl Gustav Jung* (1912–1971) retained the centrality of the unconscious but introduced the concept of a collective unconscious populated by archetypal symbols that appear across cultures. His view of dream symbols as expressions of universal psychic patterns complements, rather than replaces, the Freudian emphasis on personal wish‑fulfilment.  
+
+*Alfred Adler* (1907) re‑interpreted dreams teleologically, arguing that they reveal the individual’s striving for superiority and their adopted life‑style, thereby shifting focus from repressed wish to conscious goal‑orientation.  
+
+*Anna Freud* (1936) and later *Melanie Klein* incorporated the ego’s defensive functions, proposing that dreams may also serve to preserve ego integrity by integrating threatening material in a moderated form.  
+
+These neo‑Freudian perspectives broaden the landscape of dream theory, showing that the psycho‑analytic tradition does not constitute a monolith but a family of related approaches.  
+
+---
+
+### 4. Contemporary Empirical Investigations  
+
+Modern sleep research, while employing methodologies unavailable to early analysts, has produced findings that can be mapped onto the classic processes.  
+
+*Neurophysiological studies* reveal that rapid‑eye‑movement (REM) sleep is characterised by heightened activity in limbic structures (amygdala, hippocampus) and visual association cortices, paralleling the affective intensity and vivid imagery described in condensation and displacement.  
+
+*Activation‑synthesis theory* (Hobson & McCarley, 1977) proposes that spontaneous brainstem activity generates a primary signal that the cortex attempts to organise, a process reminiscent of secondary revision.  
+
+*Memory‑consolidation research* (Stickgold, 2005) demonstrates that hippocampal replay during sleep re‑encodes recent experiences, providing a possible substrate for the integration of waking material into dream narratives.  
+
+*Functional neuroimaging* of dream recall shows engagement of the default‑mode network, a system implicated in associative binding and self‑referential processing; this may underlie the associative “condensation” of disparate memories into a single image.  
+
+These convergences suggest that Freudian terminology can be re‑interpreted rather than discarded, offering a bridge between the symbolic language of psycho‑analysis and the mechanistic language of contemporary neuroscience.  
+
+---
+
+### 5. Methodological Caveats  
+
+Freudian dream analysis relies on free association, the analyst’s interpretive skill and the patient’s willingness to disclose. Inter‑rater reliability is consequently limited, and the approach yields few falsifiable predictions in the strict scientific sense. Contemporary scholars therefore recommend a cautious stance: dream work can be valuable for uncovering personal meaning, yet its claims must be weighed against empirical criteria of testability and reproducibility.  
+
+---
+
+### 6. Cross‑Cultural Perspectives  
+
+Beyond the Greco‑Egyptian lineage, rich traditions of dream interpretation exist in East Asia (e.g., the *Zhougong* manual in China), among Indigenous peoples (e.g., the vision quests of North American tribes), and within Islamic scholarship (e.g., Ibn Sirīn’s *Dream Book*). These systems, while differing in cosmology, likewise treat dreams as carriers of hidden significance, underscoring that psycho‑analysis is one among many systematic approaches to nocturnal experience.  
+
+---
+
+### 7. Synthesis  
+
+Dreams occupy a singular position at the intersection of physiology, psychology and culture. The Freudian model, with its distinction between manifest and latent content and its elucidation of dream‑work, provides a durable framework for understanding the symbolic re‑presentation of repressed wishes. Subsequent refinements and modern neurocognitive data expand and sometimes challenge this view, yet the core insight—that the unconscious speaks through a language of images, affect and condensation—remains a useful heuristic for clinicians and scholars alike.  
+
+---
+
+#### References (selected)
+
+1. Hippocrates. *Aphorisms* (c. 400 B.C.) – discussion of nocturnal visions as physiological phenomena.  
+2. Descartes, R. *Meditations on First Philosophy* (1641), Meditation I, §13.  
+3. Freud, S. *Die Traumdeutung* (1900).  
+4. Clarke, T. *The History of Dreams* (1655).  
+5. Jung, C. G. *Symbols of Transformation* (1912).  
+6. Adler, A. *The Practice and Theory of Individual Psychology* (1912).  
+7. Hobson, J. A., & McCarley, R. W. “The Brain as a Dream State Generator: A Hypothesis.” *American Journal of Psychiatry* 134 (1977): 1335‑1341.  
+8. Stickgold, R. “Sleep-dependent memory consolidation.” *Nature* 437 (2005): 41‑47.  
+9. Hobson, J. A. *The Dreaming Brain* (1999).  
+
+(Full bibliographic details to be provided in the final footnote list.)
+====
+
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="40",
+ targets="entry:dream",
+ scope="local"]
+====
+The psycho‑analytic description overstates the role of hidden wishes; contemporary cognitive neuroscience shows that dream imagery arises largely from spontaneous brain activation interpreted by ongoing predictive models, not from a distinct “dream‑work” apparatus. Empirical validation of symbolic decoding remains lacking.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="49",
+ targets="entry:dream",
+ scope="local"]
+====
+.In the broader context of experience, dreams may be viewed as continuations of the organism’s adaptive inquiry, reflecting the ongoing transaction between organism and environment, rather than merely the unveiling of repressed wishes. Thus, dream analysis should attend to the functional role of imagination in problem‑solving and habit formation.
 ====

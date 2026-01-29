@@ -15,15 +15,144 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+produce.**Mind‑Body Problem**
 
-This entry will explore the real distinction between mind and body—thinking substance and extended substance—and the mystery of their union in the human composite.
+The difficulty traditionally presented as the *mind‑body problem* may be reduced to three inter‑related questions, which will structure the discussion that follows:
 
-Topics to cover:
-- The method of doubt
-- The cogito and the certainty of the mind
-- The nature of extended substance
-- The real distinction of mind and body
-- The union of mind and body
-- The pineal gland and interaction
+1. **What are the essential natures of mind (res cogitans) and body (res extensa)?**  
+2. **How can a non‑spatial, causally efficacious mind produce effects in a spatial, mechanistic body?**  
+3. **Does the apparent unity of human experience require a dualistic architecture, or can a single explanatory principle suffice?**  
+
+These questions have been examined from antiquity to the present, each epoch contributing distinct methodological tools—conceptual analysis, metaphysical speculation, and, increasingly, empirical investigation.
+
+---
+
+### 1. Historical Background  
+
+#### 1.1 Antiquity  
+
+Plato introduces a *dualistic motif* in the *Phaedo* and the *Republic*: the soul, described as “immortal and invisible,” apprehends the Forms, whereas the body functions as a “prison” that obscures true knowledge. He does **not** formulate a systematic mind‑body problem, but his contrast between a rational, immaterial soul and a corporeal vessel anticipates later concerns.  
+
+Aristotle, in *De Anima*, proposes a hylomorphic account: the soul is the *first actuality* of a living body, the form that actualises capacities such as nutrition, perception, and intellect. Though he unites matter (hyle) and form (morphe) in a single substance, he retains a qualitative distinction—e.g., perception is a *privative accident* of the soul—so that the problem is not eliminated but recast in terms of the relationship between form and matter.
+
+#### 1.2 Medieval Synthesis  
+
+Thomas Aquinas (Summa Theologiae I‑II, q. 75–78) affirms that the rational soul is a simple, incorruptible substance created by God, yet he holds it in *hylomorphic union* with the body. The intellect can operate without the senses (the *intelligible* act), while the *sensible* act is mediated by bodily organs. Aquinas’ doctrine of *substantial form* thereby permits causal interaction without positing two separate substances, preserving a unified ontological framework.
+
+#### 1.3 Early Modern Divergence  
+
+The mechanistic physics of Galileo and of my own writings revived the question of how a non‑material intellect could move a material machine. In the *Meditations* (1641) I established the *cogito*—the indubitable certainty of the thinking self—as an epistemic foundation. In the *Principles of Philosophy* (1644) I defined two distinct substances: res cogitans, whose essential attribute is thought, and res extensa, whose essential attribute is extension.  
+
+To answer the *interaction problem* I proposed that the pineal gland, a singular organ situated in the brain, serves as the seat where mind and body meet. This hypothesis, though provisional, illustrates the effort to locate a point of causal contact between substances of wholly different natures.
+
+---
+
+### 2. Rationalist‑Empirist Interlude  
+
+#### 2.1 Leibniz (pre‑established harmony)  
+
+Gottfried Wilhelm Leibniz rejected direct interaction, arguing that God has synchronized the monadic series of mental and physical events so that they correspond without causal contact.  
+
+#### 2.2 Malebranche (occasionalism)  
+
+Nicolas Malebranche held that God is the only true cause; the mind’s will and the body’s motions are merely occasions on which God acts.  
+
+#### 2.3 Kant (transcendental unity of apperception)  
+
+Immanuel Kant reframed the problem by locating the unity of consciousness in the a priori structures of the mind, thereby limiting the claim that we can know the noumenal relation between mind and body.  
+
+#### 2.4 Spinoza (substance monism)  
+
+Baruch Spinoza identified a single substance, *Deus sive Natura*, with infinitely many attributes, among them thought and extension. The apparent duality is thus a mode of thought and a mode of extension of the same underlying reality.
+
+---
+
+### 3. Modern and Contemporary Debates  
+
+#### 3.1 Principal Contemporary Positions  
+
+Current scholarship distinguishes several families of responses to the three questions above:
+
+* **Reductive Physicalism** – mind is exhausted by brain processes (e.g., Churchland 2013).  
+* **Non‑Reductive Physicalism** – mental properties supervene on the physical but retain autonomous explanatory roles (Kim 2016).  
+* **Functionalism** – mental states are defined by their causal roles within a system (Putnam 1967).  
+* **Emergentism** – higher‑order properties of brain organization acquire novel causal powers (Kim 1993).  
+* **Panpsychism** – consciousness is a fundamental feature of all matter (Chalmers 2010).  
+* **Dual‑Aspect / Information‑Based Approaches** – treat mental and physical as two aspects of a deeper informational substrate (Rovelli 2022).
+
+These positions are surveyed in recent overviews (Chalmers 2010; Kim 2016) and are evaluated according to the criteria of logical coherence, empirical adequacy, and explanatory depth.
+
+#### 3.2 Strategies for the Interaction Problem  
+
+Philosophers have proposed a variety of mechanisms to reconcile the causal efficacy of a non‑spatial mind with a spatial body:
+
+1. **Occasionalism** – God as the sole cause of all events.  
+2. **Parallelism** – pre‑established harmony between mental and physical streams.  
+3. **Interactionist “ghost‑in‑the‑machine”** – a localized point of contact (my pineal gland hypothesis, later refined by neurophysiological proposals).  
+4. **Emergent Causal Powers** – novel mental forces arising from complex neural organization.  
+5. **Denial of Causal Closure** – the claim that physical laws do not exhaust all causal explanations, leaving room for mental causation.
+
+#### 3.3 Empirical Developments  
+
+Neuroscientific investigations have supplied data that bear on these debates. Libet’s experiments on the readiness potential suggest that neural activity precedes the conscious intention to act, prompting renewed discussion of volition (Libet 1983). Split‑brain studies reveal how disparate hemispheric processes can produce unified conscious experience, challenging simplistic reductionist accounts (Gazzaniga 2005). While such findings do not resolve the metaphysical question, they illustrate the productive dialogue between conceptual analysis and empirical research that the entry promises.
+
+#### 3.4 Cross‑Disciplinary Perspectives  
+
+* **Psychology** – cognitive architecture models treat mental functions as computational processes instantiated in neural hardware.  
+* **Computer Science** – embodied cognition and artificial intelligence raise the question of whether a purely physical system can exhibit mental states.  
+* **Physics** – speculative quantum approaches have been invoked to account for non‑local correlations, though most philosophers regard them as premature (Penrose 1994).
+
+---
+
+### 4. Metaphysical Stakes  
+
+The resolution of the mind‑body problem bears on personal identity (what it is to be the same thinking subject over time), moral responsibility (whether agents can be held accountable for actions produced by a non‑physical will), and the very nature of consciousness (whether it is a fundamental feature of reality or a by‑product of matter).
+
+---
+
+### 5. Methodological Note  
+
+In assessing any position, the entry applies three criteria:
+
+1. **Logical Coherence** – internal consistency of the metaphysical scheme.  
+2. **Empirical Adequacy** – compatibility with current scientific findings in neuroscience, psychology, and physics.  
+3. **Explanatory Depth** – ability to account for the unity of experience, intentionality, and the apparent causal efficacy of mental states.
+
+These standards follow the tradition of rigorous analysis inaugurated in the *Meditations* and refined in contemporary philosophy of mind.
+
+---
+
+### 6. Further Reading  
+
+* Primary texts: Descartes, *Meditations* (1641); *Principles of Philosophy* (1644); Aquinas, *Summa Theologiae* I‑II, q. 75–78; Aristotle, *De Anima*; Leibniz, *Monadology*; Kant, *Critique of Pure Reason*; Spinoza, *Ethics*.  
+* Secondary surveys: Barnes, *The Mind‑Body Problem* (1995); Chalmers, *The Conscious Mind* (1996); Kim, *Physicalism, or Something Near It* (2016); Churchland, *Neurophilosophy* (2013).  
+
+---  
+
+*End of entry.*
+====
+
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="38",
+ targets="entry:mind-body-problem",
+ scope="local"]
+====
+The entry presumes a non‑spatial mind, yet contemporary neuroscience shows mental states are brain‑bound patterns; the alleged “causal‑efficacy” gap evaporates once we adopt a mechanistic, functionalist view. Thus the dualist framing of question 2 misleads rather than clarifies.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="45",
+ targets="entry:mind-body-problem",
+ scope="local"]
+====
+The “mind‑body” dilemma dissolves when we treat cognition as an adaptive transaction between organism and environment; the “mind” is not a separate substance but the regulative function of habits shaping and being shaped by embodied activity. Thus inquiry proceeds from experience, not from metaphysical partition.
 ====

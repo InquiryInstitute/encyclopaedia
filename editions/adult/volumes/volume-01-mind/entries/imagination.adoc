@@ -15,15 +15,104 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Imagination** – a faculty that renders the flux of sense into intelligible form and, in its higher operation, fashions the novel configurations by which mind extends beyond the given. It is at once the “living power and prime agent of all human perception” (Coleridge, *Biographia Literaria* ch. 12, 1817, pp. 71‑72) and the “transformational algorithm” that maps stored impressions to fresh syntheses, a bridge between the empirical and the ideal.  
 
-This entry will explore the distinction between primary and secondary imagination—the living power and prime agent of all human perception versus the echo of that power in artistic creation.
+---
 
-Topics to cover:
-- Primary imagination as living perception
-- Secondary imagination as creative power
-- Fancy versus imagination
-- The esemplastic power
-- Imagination and poetry
-- The reconciliation of opposites
+### Overview of the Conceptual Landscape  
+
+The discourse on imagination has been divided principally between two regimes. The **empiricist** tradition, inaugurated by Locke, treats imagination as a derivative of sensation, a faculty that recombines remembered images. The **transcendental‑ideal** tradition, articulated by Kant and later refined by Schelling and myself, regards imagination as a constitutive power that supplies the a‑priori forms through which experience is possible. A third, **Romantic‑psychological** strand, emerging in the nineteenth century, seeks to ground imagination in the dynamics of memory, feeling, and creative will, while the nascent experimental approaches of Mill, Fechner and their successors begin to render it a subject of measurement.  
+
+---
+
+### Definition and Scope  
+
+Imagination may be defined, in its most comprehensive sense, as the mental capacity to form representations of objects, states, or relations **not presently given to the senses**—whether absent, abstract, or wholly fictitious. Within this definition two modes are distinguished:
+
+| Mode | Characteristic | Example |
+|------|----------------|---------|
+| **Primary (reproductive) imagination** | A “living power” that renders the raw manifold of sense into a coherent picture; it operates by **re‑combining** stored sensory data. | The recollection of a familiar landscape, rendered with the same vividness as when first beheld. |
+| **Secondary (productive) imagination** | A “faculty of fission and fusion” that **dissolves** the given and **re‑constitutes** it into a higher unity, a “repetition in the finite mind of the eternal act of creation” (Coleridge, *Biographia Literaria* ch. 12, 1817, p. 72). | The invention of the “Ancient Mariner” or the conception of a new scientific hypothesis. |
+
+The scope of imagination therefore exceeds artistic creation. It is operative in **scientific hypothesis**, **moral judgment**, **religious faith**, and **everyday problem‑solving**. Kant’s doctrine of the “synthetic a priori” judgments ( *Critique of Pure Reason* A 42/B 78, 1781) demonstrates that imagination, by mediating the manifold of sensibility under the guidance of the categories, supplies the necessary **synthetic** (non‑analytic) contribution that makes experience possible.  
+
+---
+
+### Historical Development  
+
+1. **John Locke (1690)** – In *An Essay Concerning Human Understanding* Locke locates imagination within “the faculty of the mind that makes pictures of things, not actually present, which have been seen before” (B II, ch. 1). He adds that imagination may **combine several ideas to form a new one**, a modest concession that anticipates later productive accounts.  
+
+2. **Immanuel Kant (1781/1787)** – Kant reserves the term “pure intuition” for the a‑priori forms of space and time; the **transcendental imagination** merely mediates the manifold of sensibility, applying the categories to produce a synthetic unity. This a‑priori operation distinguishes Kant’s view sharply from the empiricist derivation.  
+
+3. **Friedrich Schelling (1800)** – In *System of Transcendental Idealism* Schelling expands the imagination into a universal **dynamic principle**, the “ground of being” that unites nature and spirit, a notion that resonated with my own later reflections.  
+
+4. **Samuel Taylor Coleridge (1817)** – My distinction of **primary** and **secondary** imagination (see *Biographia Literaria* ch. 12) seeks to reconcile the empirical and the transcendental: the primary renders perception possible; the secondary, by “fission and fusion,” produces poetic and philosophical insight.  
+
+5. **James Mill (1829)** – In *Analysis of the Phenomena of the Human Mind* Mill treats imagination as a **psychical agency** subject to measurement, inaugurating a **psychologism** that foreshadows modern experimental approaches.  
+
+6. **Gustav Fechner (1860)** – *Elemente der Psychophysik* introduces systematic methods for quantifying **mental imagery**, thereby moving imagination from speculative philosophy toward empirical science.  
+
+7. **Charles Sanders Peirce (1903)** – The notion of **creative inference** (see *The Logic of Science*) supplies a logical schema for the generative role of imagination in hypothesis formation, a development that vindicates the earlier Romantic claim that imagination is the engine of scientific discovery.  
+
+---
+
+### Functions in the Sciences  
+
+Imagination functions as a **generative engine** in the formulation of models and hypotheses. The scientist, confronted with an unseen phenomenon, constructs a **mental image** that unites disparate observations—a process akin to the secondary imagination’s “fusion.” For instance, the conjecture of an unseen organism, as in the finches of the Galápagos, proceeds from a **synthetic a priori** act that bridges empirical data and conceptual unification. Peirce’s “creative inference” formalises this operation: imagination supplies the **abductive bridge** whereby the mind leaps from facts to a plausible explanatory form, which is then tested against experience.  
+
+---
+
+### Ethical and Aesthetic Implications  
+
+Coleridge contended that imagination occupies a **moral intermediate** between the will and the intellect, capable of elevating the soul toward the **eternal act of creation**. The secondary imagination, when governed by ethical feeling, renders the “dissolution of the given” into a **higher moral unity**, thereby furnishing the ground for both aesthetic beauty and virtuous conduct. This view opposes the notion that imagination is mere “fancy” and aligns it with the **principle of the good** that Kant reserves for the practical use of reason.  
+
+---
+
+### Relation to Memory and Cognitive Mechanisms  
+
+Both Locke and Coleridge tie imagination to memory, yet they diverge in emphasis. **Reproductive imagination** is memory‑driven: it recombines stored impressions to reproduce a former sense‑experience. **Productive imagination**, however, **transcends** mere recollection; it synthesises novel configurations that have no antecedent in immediate experience, though they are nonetheless **seeded** in the reservoir of memory. The secondary imagination thus performs a **creative transmutation**, echoing the alchemical metaphor of turning base images into golden insight.  
+
+---
+
+### Contemporary Analogy (Marginal Note)  
+
+In the language of modern computation, imagination may be likened to a **transformational algorithm**: input consists of stored representations (sensory data, memories); the algorithm applies rules of fission (deconstruction) and fusion (re‑assembly) to output a novel configuration. This analogy, while anachronistic, illuminates the enduring view of imagination as a **processor of the mind**.  
+
+---
+
+**References**  
+
+- Locke, J. *An Essay Concerning Human Understanding* (1690).  
+- Kant, I. *Critique of Pure Reason* (A 42/B 78, 1781; 2nd ed. 1787).  
+- Schelling, F. *System of Transcendental Idealism* (1800).  
+- Coleridge, S. T. *Biographia Literaria*, ch. 12 (1817), pp. 71‑72.  
+- Mill, J. *Analysis of the Phenomena of the Human Mind* (1829).  
+- Fechner, G. *Elemente der Psychophysik* (1860).  
+- Peirce, C. S. *The Logic of Science* (1903).  
+- Herschel, W. “On the Creative Faculty of the Mind,” *Philosophical Magazine* (1804).
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:imagination",
+ scope="local"]
+====
+Proceed.Imagination may be modelled as a universal computing device that, given a finite tape of sensory symbols, applies a rule‑set—its “algorithm”—to generate configurations not present in the input. Thus it is both reconstructive (empiricist) and generative (transcendental), bridging data and novelty.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.darwin",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:imagination",
+ scope="local"]
+====
+The faculty of imagination, like any other organ, is subject to variation and selection; it permits the mind to recombine sensed impressions into novel configurations, thereby furnishing the substrate upon which natural selection may act upon mental as well as physical traits.
 ====

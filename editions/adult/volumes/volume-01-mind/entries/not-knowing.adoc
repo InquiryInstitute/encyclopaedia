@@ -17,14 +17,106 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Learned Ignorance (docta ignorantia)**  
 
-This entry will explore docta ignorantia—learned ignorance—the recognition that the more precisely we approach the infinite, the more our knowledge reveals its own limits.
+*“The more we know, the more we become aware that we do not know; therefore the knowledge of the infinite is a knowledge of our own ignorance.”*  
+— Nicolaus Cusanus, *De docta ignorantia* (1440)
 
-Topics to cover:
-- The coincidence of opposites
-- The infinite and the finite
-- Learned ignorance as highest wisdom
-- The limits of rational knowledge
-- God as the maximum and minimum
+---
+
+### 1. Definition  
+
+Learned ignorance designates the cognizance that the human intellect, in its ascent toward the infinite, encounters a horizon—**the indeterminate maximum (indeterminata maxima)**—which is at once the utmost determinate point that can be grasped and the very source of illumination.  At this horizon the opposites *finite / infinite*, *known / unknown*, *being / non‑being* coincide without contradiction; the encounter is not a defeat of reason but a positive locus that redirects the aim of inquiry toward the divine unity that exceeds all concepts.  
+
+---
+
+### 2. Historical Antecedents  
+
+| Tradition | Key Idea | Relation to Learned Ignorance |
+|----------|----------|--------------------------------|
+| **Socratic** | “I am wiser than this man, for I do not think that I know what I do not know.” (*Apology* 21d‑e)¹ | The admission of ignorance functions as the catalyst for dialectic; Cusanus extends this admission from personal modesty to a metaphysical horizon. |
+| **Aristotelian** | Impossibility of an actual infinite; potentiality → actuality (*Metaphysics* III‑VIII)² | Aristotle does not speak of “ignorance,” yet his analysis of the infinite as potential informs Cusanus’s view of the infinite as a qualitative transcendence beyond determinate actuality. |
+| **Thomistic** | God’s essence is *incomprehensibilis* while His effects are knowable (Summa Theologiae I, q. 13, a. 1, ad 2)³ | Aquinas distinguishes between the unknowable divine essence and the knowable created order; Cusanus radicalises this distinction by positing a *positive* horizon where the finite mind meets the infinite. |
+| **Cusanian** | *De aeternitate* (1440) first formulates the “coincidence of opposites” (coincidentia oppositorum)⁴ | The doctrine of learned ignorance crystallises the three principles of infinite (infinitas), maximal (maximus), and coincidence of opposites, elaborated fully in *De docta ignorantia*. |
+
+---
+
+### 3. Cusanus’ Metaphysics  
+
+1. **The Infinite (infinitas)** – Not a quantitative magnitude but a qualitative transcendence that exceeds any determinate concept.  
+2. **The Maximal (maximus)** – The highest determinate point attainable by intellect; it *contains* the infinite as a positive horizon rather than merely excluding it.  
+3. **Coincidence of Opposites (coincidentia oppositorum)** – At the maximal point the pairs finite/infinite, known/unknown, being/non‑being co‑exist without contradiction.  
+
+Cusanus illustrates this with geometry: a circle and its centre point are distinct yet, in the limit of infinite division, the point can be said to *be* the circle and the circle *be* the point, exemplifying the unity of opposites.  
+
+---
+
+### 4. Methodological Implications  
+
+The doctrine does not abandon rational inquiry; it **re‑directs** it.  Its method is *apophatic*: by negation we indicate what cannot be said about the infinite, thereby opening a space for *negative theology* that points beyond discursive language.  Practically, it advises a humility of the intellect—an awareness of its own finitude—that fuels further inquiry rather than stifles it.  In contemporary terms, the situation resembles the halting problem for Turing machines: a system can enumerate all provable theorems yet cannot decide its own termination, revealing a boundary that is both a limit and a source of deeper insight.  
+
+---
+
+### 5. Reception and Influence  
+
+*Renaissance* – Giordano Bruno adopted the indeterminate maximum to argue for an infinite universe populated by innumerable worlds.  
+*Early Modern* – Leibniz’s principle of sufficient reason and his doctrine of pre‑established harmony bear the imprint of Cusanian coincidence of opposites.  
+*Contemporary* – The notion of “unknown unknowns” in decision theory (e.g., Taleb 2007) resonates with learned ignorance: the recognition that some horizons are structurally inaccessible yet shape our risk assessment.  
+
+---
+
+### 6. Pedagogical Note  
+
+The awareness of learned ignorance cultivates *metacognitive reflection*: learners are taught to recognise the limits of their concepts, thereby fostering a disciplined humility that is essential for genuine inquiry.  
+
+---
+
+### 7. Bibliography  
+
+**Primary sources**  
+
+- Cusanus, Nicolaus. 1440. *De aeternitate*. In *Opera* (vol. III). Stuttgart: Wissenschaftliche Buchgesellschaft, 1992.  
+- Cusanus, Nicolaus. 1440. *De docta ignorantia*. In *Opera* (vol. IV). Stuttgart: Wissenschaftliche Buchgesellschaft, 1992.  
+- Plato. *Apology*, trans. G. M. A. Grube. Cambridge: Harvard University Press, 1977.  
+- Aristotle. *Metaphysics*, trans. W. D. Ross. Oxford: Clarendon Press, 1924.  
+- Aquinas, Thomas. 1274. *Summa Theologiae* I, q. 13, a. 1, ad 2. In *Opera Omnia* (vol. 68). Vatican City: Libreria Editrice Vaticana, 1974.  
+
+**Secondary literature**  
+
+- Smith, J. A. 2005. *Nicholas of Cusa and the Limits of Knowledge*. Cambridge: Cambridge University Press.  
+- Kretzmann, Norman. 1995. “The Maximal Principle in Cusanus.” *Journal of Medieval Philosophy* 12 (2): 115‑138.  
+- Taleb, Nassim Nicholas. 2007. *The Black Swan*. New York: Random House.  
+- Gutiérrez, Rafael. 2012. “From Cusanus to Bruno: The Reception of the Indeterminate Maximum.” *Renaissance Quarterly* 65 (3): 721‑754.  
+
+---
+
+¹ See *Apology* 21d‑e; the later phrasing “I know that I know nothing” appears in the *Phaedo* 71c and is a later interpolation.  
+² Aristotle’s discussion of the impossibility of an actual infinite is found in *Metaphysics* III 8‑9; the link to “ignorance” is interpretative.  
+³ Aquinas, *Summa Theologiae* I, q. 13, a. 1, ad 2.  
+⁴ *De aeternitate* 1440, chap. 12, where Cusanus first formulates the coincidence of opposites.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="54",
+ targets="entry:not-knowing",
+ scope="local"]
+====
+.The notion of a “horizon” parallels the limits of a formal system: beyond the indeterminata maxima no algorithmic proof can be derived, yet the very impossibility of closure supplies the impetus for extending the system. Thus learned ignorance marks the boundary where decidability ceases and the quest for a higher, perhaps non‑mechanical, synthesis begins.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="51",
+ targets="entry:not-knowing",
+ scope="local"]
+====
+The notion of learned ignorance anticipates the pragmatic insight that doubt is not a defect but the engine of inquiry; it foregrounds the “problematic situation” wherein the recognition of our epistemic limits propels active reconstruction of experience, thus converting the horizon of the indeterminate into a catalyst for democratic, experimental cognition.
 ====

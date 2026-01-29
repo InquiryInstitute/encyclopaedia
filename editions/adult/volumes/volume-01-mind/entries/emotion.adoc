@@ -15,15 +15,118 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Emotion** – a term employed in the biological sciences to denote a coordinated assemblage of mental and physiological states that arise in response to an external or internal stimulus, and which in turn modulate behaviour, communication, and the organism’s adaptive interaction with its milieu.  The phenomenon may be parsed into two inter‑related layers.  First, there is the *pre‑reflective feeling* – the lived, first‑person affect that is given directly to consciousness and resists full capture by external measurement.  Second, there follows a *cognitive appraisal* – a subsequent, often unconscious, evaluation that interprets the felt state in relation to the organism’s present circumstances and future prospects.  The latter may shape the verbal or gestural *expression* of the emotion, but it must not be conflated with the primal feeling itself.  Thus emotion is best conceived as a *dynamic complex*: a functional system whose components (subjective feeling, somatic change, expressive signal, and appraisal) interact continuously rather than a static bundle of traits.
 
-This entry will explore the expression of emotions as evolved behaviors shared across species—the continuity between human emotional life and that of other animals.
+---
 
-Topics to cover:
-- The principle of serviceable associated habits
-- The principle of antithesis
-- Direct action of the nervous system
-- The expression of emotions in man and animals
-- Universal expressions and their recognition
-- The evolution of emotional behavior
+### Outline of the entry  
+
+1. **Definition and dimensions** – the constituents of the complex and the distinction between feeling and appraisal.  
+2. **Historical genealogy** – from my own comparative observations to contemporary theories, presented in chronological order.  
+3. **Evolutionary function** – the adaptive roles of the principal affective states.  
+4. **Neurobiological substrates** – the brain structures identified in modern affective neuroscience.  
+5. **Social‑cultural significance** – the communicative and moral functions of emotion in groups.  
+6. **Comparative scope and methodological notes** – phylogenetic evidence, limits of inference, and recent statistical approaches.
+
+---
+
+### 1. Definition and dimensions  
+
+Emotion comprises four principal dimensions, each of which can be investigated by distinct methodological means:  
+
+* **Subjective (phenomenal) dimension** – the felt quality of pleasure, displeasure, fear, etc., apprehended from the first‑person perspective.  
+* **Physiological dimension** – alterations in heart rate, respiration, hormonal release, and muscular tone that accompany the feeling.  
+* **Expressive dimension** – facial, vocal, and gestural signals that convey the internal state to conspecifics.  
+* **Cognitive‑appraisal dimension** – the evaluative process that interprets the felt state in light of environmental demands and past experience.
+
+The term *complex* here denotes a functional system in which these dimensions are tightly interwoven, each influencing the others in a continual feedback loop rather than existing as isolated modules.
+
+---
+
+### 2. Historical genealogy  
+
+| Period | Principal contribution | Remarks |
+|--------|------------------------|---------|
+| **1872** – *The Expression of the Emotions in Man and Animals* (my own work) | Comparative survey of facial and vocal expressions across vertebrates; argued that such expressions are inherited and have adaptive value. | I emphasized the *function of the expression* as a means of communication, cautioning that the *function of the feeling* may differ. |
+| **1884‑85** – James & Lange | Proposed that the feeling of emotion is the perception of bodily changes. | Their view inaugurated the *physiological‑perception* model. |
+| **1927** – Cannon | Objected that the sympathetic discharge described by James and Lange is too slow to account for the immediacy of feeling; introduced the concept of *homeostatic regulation*. | Their critique underscores the necessity of distinguishing rapid affective experience from slower autonomic responses. |
+| **1950s‑60s** – Tomkins, Cannon‑Bard | Developed the *affect theory* (Tomkins) and the *simultaneity* model (Cannon‑Bard), respectively, positing that feeling and physiological activation occur concurrently rather than sequentially. |
+| **1962** – Schachter & Singer | Formulated the *two‑factor* theory, asserting that arousal plus a cognitive label determine the emotion experienced. |
+| **1991** – Lazarus | Advanced the *appraisal theory*, stressing that the meaning attributed to the stimulus shapes the affective response. |
+| **1998** – Panksepp | Introduced *affective neuroscience*, identifying primary process emotions (e.g., seeking, fear, rage) rooted in subcortical circuits. |
+| **2006** – Barrett | Advanced a *constructivist* model, arguing that emotions are culturally and linguistically shaped categories rather than fixed biological modules. |
+| **2003‑present** – Haidt, LeDoux, et al. | Integrated moral psychology, affective neuroscience, and cultural anthropology to show how emotions both guide and are shaped by social norms. |
+
+The genealogy thus reveals a succession of ideas, each refining the balance between physiological, cognitive, and cultural factors while retaining the Darwinian premise that emotions serve adaptive purposes.
+
+---
+
+### 3. Evolutionary function  
+
+Emotions may be regarded as specialised response systems that have been honed by natural selection because they enable rapid, coordinated action in recurrent ecological challenges.  Representative functions include:
+
+* **Fear** – mobilises the sympathetic system, preparing flight or fight, and simultaneously emits alarm calls or conspicuous facial displays that warn conspecifics.  
+* **Anger** – energises aggressive behaviour, defending territory, mates, or resources, and signals dominance to rivals.  
+* **Joy** – reinforces behaviours that have yielded positive outcomes, such as successful foraging or social bonding, thereby promoting the repetition of adaptive acts.  
+* **Sadness** – may facilitate social support by signalling need and eliciting consolatory behaviour from group members.  
+* **Surprise** – alerts the organism to novel stimuli, prompting rapid reassessment of the environment.  
+* **Disgust** – guards against ingestion of harmful substances and avoidance of disease‑laden contexts.
+
+The presence of these affective states across a broad range of vertebrates, including monotremes, reptiles, and even certain invertebrates, suggests that their origins lie deep within the vertebrate lineage.  Comparative investigations of the platypus, for instance, have disclosed facial musculature and vocalisations consistent with fear and distress, thereby extending the phylogenetic reach of these emotions to the earliest mammals.
+
+---
+
+### 4. Neurobiological substrates  
+
+Contemporary affective neuroscience has identified several conserved brain structures that underlie the affective dimensions:
+
+* **Amygdala** – central to the detection of threat and the generation of fear responses; lesions attenuate both physiological arousal and expressive fear.  
+* **Ventral striatum (including nucleus accumbens)** – mediates reward, pleasure, and the experience of joy; dopaminergic activity here correlates with approach behaviour.  
+* **Insular cortex** – integrates interoceptive signals, contributing to the subjective feeling of bodily states and to the perception of disgust.  
+* **Prefrontal cortices** – involved in the appraisal and regulation of emotion, modulating the intensity of affective responses according to contextual demands.  
+
+These neural circuits operate in concert with the autonomic nervous system, thereby linking the physiological dimension to the felt experience and its outward expression.
+
+---
+
+### 5. Social‑cultural significance  
+
+Beyond the immediate adaptive benefits, emotions function as vital instruments of social cohesion and cultural transmission.  Alarm calls and facial displays coordinate group defence; expressions of joy and affection reinforce affiliative bonds; feelings of shame or guilt facilitate adherence to group norms.  Recent work (e.g., Haidt, 2003) demonstrates that moral judgments are often rooted in affective intuitions, which are then rationalised post‑hoc.  Moreover, cultural scripts shape the *display rules* governing when, how, and to whom particular emotions may be expressed, thereby embedding affect within the fabric of societal values.
+
+---
+
+### 6. Comparative scope and methodological notes  
+
+The inference that certain affective states are homologous across distant taxa rests upon careful comparative ethology.  Nonetheless, one must guard against anthropomorphic projection and recognise the limitations imposed by the observable behavioural repertoire of non‑human species.  Modern phylogenetic comparative methods—employing statistical models of trait evolution—provide a more rigorous framework for testing hypotheses of emotional homology than the purely qualitative surveys of my own era.
+
+In addition, the phenomenological tradition—represented by Scheler, Husserl, and later existential philosophers—reminds us that emotions are *intentional* states directed toward objects or situations, and that their subjective quality cannot be reduced wholly to somatic or neural correlates.  Acknowledging this gap preserves the epistemic humility required when bridging the interior world of feeling with the exterior world of measurement.
+
+---
+
+**In sum**, emotion is best understood as a dynamic, multidimensional complex whose felt, bodily, expressive, and evaluative components have been sculpted by natural selection to promote survival and reproductive success, while simultaneously furnishing the scaffolding for rich social life and cultural meaning.  The ongoing dialogue between comparative biology, neuroscience, phenomenology, and cultural anthropology continues to deepen our appreciation of this most intricate of living processes.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="47",
+ targets="entry:emotion",
+ scope="local"]
+====
+Emotion must be understood as an intentional act wherein the affective datum is given as a noema, while the body functions as the transcendental horizon. The pre‑reflective feeling is the primordial givenness; the appraisal is a later, reflective synthesis that does not exhaust the original intentional content.
+====
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="45",
+ targets="entry:emotion",
+ scope="local"]
+====
+.The taxonomy that isolates feeling from appraisal obscures the fact that true emotion is an affliction of the soul, a rupture that opens us to the transcendent. It is not merely adaptive but a summons to attention, wherein the self is emptied before the absolute.
 ====

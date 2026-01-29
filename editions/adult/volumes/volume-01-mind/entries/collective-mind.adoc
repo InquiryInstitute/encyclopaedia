@@ -15,15 +15,123 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+0 words.**Collective Mind (Conscience Collective)**  
 
-This entry will explore the collective consciousness—the totality of beliefs and sentiments common to the average members of a society, forming a system with its own life.
+---
 
-Topics to cover:
-- Collective representations
-- Social facts as things
-- Mechanical and organic solidarity
-- The sacred and the profane
-- Collective effervescence
-- Society as a reality sui generis
+### Definition  
+
+The *conscience collective* designates the set of beliefs, attitudes and normative prescriptions that exist **outside** the individual yet exert a coercive influence upon it. It is a **social fact** (Durkheim, *Les Règles de la méthode sociologique*, 1895, § 1) insofar as it is external, constraining, and capable of being observed as a “thing” in the social world. The term is frequently rendered in English as *collective mind*, *collective conscience* or *collective consciousness*; each translation captures a different nuance, but the original French stresses the **moral authority** of the whole over the part.
+
+---
+
+### Historical Context  
+
+Durkheim introduced the notion in the course of a broader programme to render sociology a rigorous science of **social facts**. The concept first appears in *The Division of Labour in Society* (1893), where the collective mind is presented as the **binding element** that makes possible the transition from **mechanical solidarity**—a simple, homogenous conscience shared by all members—to **organic solidarity**, in which the conscience is differentiated yet still functions as a regulatory whole (pp. 92‑95).  
+
+A more systematic treatment follows in *The Elementary Forms of Religious Life* (1912). There Durkheim shows that the collective mind is embodied in **collective representations**—ritual symbols, totems, and sacred classifications—that become the source of moral authority for the entire community (pp. 8‑12; 162‑165).  
+
+Thus the collective mind is not an isolated hypothesis but the cornerstone of Durkheim’s theory of social cohesion, moral order and the evolution of societies.
+
+---
+
+### Methodological Basis  
+
+1. **Treating the collective mind as a thing** – Durkheim’s methodological rule demands that a social fact be studied *as an object* (cf. *Rules*, § 2). Consequently the collective mind is approached through **empirical observation** of its manifestations: statutes, rites, taboos, statistical regularities.  
+
+2. **Statistical corroboration** – In the *Suicide* study (1897) Durkheim demonstrates how variations in suicide rates correspond to the degree of integration of the collective conscience (pp. 71‑84). Analogously, mortality tables and marriage‑rate statistics in *Division of Labour* reveal the diminishing force of mechanical solidarity and the emergence of a differentiated, yet still operative, collective mind.  
+
+3. **Comparative method** – By juxtaposing primitive religious societies with modern industrial ones, Durkheim shows that the same logical structure—external moral authority—persists, albeit in altered form. This comparative approach safeguards against purely speculative or metaphysical interpretations.
+
+---
+
+### Key Characteristics  
+
+| Feature | Explanation |
+|---------|-------------|
+| **Externality** | The collective mind exists **outside** the individual; it is imposed upon the individual as a “social force.” |
+| **Normativity** | It supplies the **norms** that regulate conduct, furnishing a common moral horizon. |
+| **Generativity** | Through **collective representations**, the mind produces symbols that acquire a sacred status and thereby bind the group. |
+| **Dynamic evolution** | Mechanical solidarity yields a **homogeneous** conscience; organic solidarity produces a **differentiated** yet still coercive set of norms. |
+| **Functional necessity** | The collective mind is the **functional adaptation** that permits social order in the face of increasing division of labour (cf. the principle of *functionalism* in *Division of Labour*). |
+
+---
+
+### Empirical Illustrations  
+
+1. **Religious rites** – The totemic ceremonies of Australian aborigines, described in *Elementary Forms*, constitute a concrete expression of the collective mind: the totem symbolises the group’s *moral authority* and the rites re‑affirm it each generation.  
+
+2. **Legal systems** – Codified law embodies the collective conscience of a modern state. Durkheim (1912, p. 166) notes that the law’s *obligatory* character originates in its status as a *collective representation* of societal values.  
+
+3. **Professional guilds** – In the 19th‑century French guilds, the *statutes* and *rituals* that regulated apprenticeship functioned as a collective mind that coordinated economic activity while preserving social cohesion.  
+
+4. **Statistical regularities** – The inverse relationship between suicide rates and the strength of the collective conscience, demonstrated in *Suicide* (1897), offers quantitative support for the existence of a collective mind.
+
+---
+
+### Relation to Evolutionary Theory  
+
+Durkheim never treated the collective mind as a product of **biological natural selection**; rather, he regarded it as a **functional adaptation** to the demands of social organization. The analogy with the organism—where the nervous system coordinates bodily functions—serves to illustrate **interdependence**, not to imply a Darwinian mechanism. Nevertheless, the collective mind can be seen as **subject to selection pressures** insofar as societies whose collective representations fail to regulate behaviour are prone to disintegration, a point later scholars such as Mauss (1934) and Lévi‑Strauss (1949) have elaborated.
+
+---
+
+### Criticisms and Later Developments  
+
+| Critique | Main Argument | Durkheimian Response |
+|----------|---------------|----------------------|
+| **Methodological reductionism** (Mead, 1934) | The collective mind reduces individuals to mere carriers of social facts. | Durkheim stresses the *dialectic* between individual and collective; the mind is external yet **internalised** through consciousness. |
+| **Individualist dissent** (Parsons, 1951) | The concept obscures agency and overstates cohesion. | Cohesion is a *necessary* condition for agency; without a collective conscience, the individual cannot act within a meaningful normative framework. |
+| **Confusion with Jung’s collective unconscious** | The latter is a psychic archetype, not a social fact. | Durkheim’s *conscience collective* is observable, external, and supra‑individual; it must not be conflated with a metaphysical psychic substrate. |
+| **Contemporary social‑psychological appropriation** (e.g., “group mind” in social identity theory) | Uses the term for emergent attitudes without reference to Durkheim’s methodological rigor. | Such uses may be fruitful if they retain the **empirical, external** character of the phenomenon and acknowledge its grounding in **collective representations**. |
+
+Later scholars have refined the concept: Mauss (1934) introduced the idea of **total social facts**, integrating the collective mind with economic and religious dimensions; Lévi‑Strauss (1949) emphasized the structural role of **myths** as collective representations; contemporary work on **memetics** and **social identity theory** re‑examines the transmission of collective symbols while often neglecting Durkheim’s insistence on the *thing‑like* status of the phenomenon.
+
+---
+
+### Terminological Note  
+
+The English *collective unconscious* (Jung) designates an inherited psychic reservoir, whereas Durkheim’s *conscience collective* denotes a **socially constructed** set of norms observable in the external world. The two notions differ in **ontological status**, **methodological approach**, and **empirical accessibility**; the similarity of wording should not lead to conceptual conflation.
+
+---
+
+### Further Reading  
+
+* Primary texts:  
+  - Émile Durkheim, *The Division of Labour in Society* (1893).  
+  - Émile Durkheim, *The Rules of Sociological Method* (1895).  
+  - Émile Durkheim, *Suicide* (1897).  
+  - Émile Durkheim, *The Elementary Forms of Religious Life* (1912).  
+
+* Secondary studies:  
+  - Marcel Mauss, *The Gift* (1925).  
+  - Claude Lévi‑Strauss, *The Elementary Structures of Kinship* (1949).  
+  - Talcott Parsons, *The Structure of Social Action* (1937).  
+  - Jonathan H. Turner, *The Structure of Sociological Theory* (1973) – chapter on collective representations.  
+
+These works together furnish the definition, methodological grounding, empirical illustrations, and critical reception required for a complete encyclopaedic treatment of Durkheim’s collective mind.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.darwin",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:collective-mind",
+ scope="local"]
+====
+note.Observe, however, that the “collective mind” resembles the social instincts of insects, wherein the group exerts a regulative influence upon each member; yet such moral authority must be distinguished from the hereditary mechanisms that govern biological variation—the former is cultural, not genetic.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:collective-mind",
+ scope="local"]
+====
+The collective mind must be distinguished from the universal moral law; it is an empirical, contingent phenomenon, whereas the categorical imperative is a priori. Social facts, as Durkheim calls them, belong to the realm of sensible experience, not to the conditions of possible knowledge.
 ====

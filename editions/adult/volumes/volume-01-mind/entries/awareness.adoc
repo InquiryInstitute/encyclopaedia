@@ -15,14 +15,106 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Awareness**
 
-This entry will explore awareness through the phenomenological method—the structures of intentionality by which consciousness is always consciousness *of* something.
+Awareness is the primary given from which phenomenology proceeds.  It is the lived‑present in which objects are given to consciousness and the horizon of meaning is constituted.  In the Husserlian tradition, awareness is not a vague psychological state but a structured intentional act whose noetic and noematic poles reveal the essential conditions for any possible experience.
 
-Topics to cover:
-- Intentionality and directedness
-- Noesis and noema
-- The natural attitude and the epoché
-- Horizons of awareness
-- Pre-reflective and reflective awareness
+---
+
+### 1. Phenomenological Foundations  
+
+The phenomenological method begins with the **epoché**—the suspension of the natural‑attitude—not as a denial of the world’s existence but as a methodological bracketing that lets the way the world is given *through* consciousness become the focus of investigation.  By performing the epoché the phenomenologist refrains from affirming or denying the existence of the external world and instead attends to the *givenness* of objects in the stream of consciousness (Husserl, *Logical Investigations* III, § 55).  
+
+From the epoché follows the **phenomenological reduction**, which isolates the pure structures of consciousness by holding fixed the intentional relationship between act and object.  In this setting “awareness” designates the act of giving itself: a noetic pole (the act‑type) directed toward a noematic pole (the object‑as‑intended).  Brentano’s formulation of intentionality as “the mark of the mental” supplies the principle that every act is about something; Husserl refines this by distinguishing the various intentional structures—perception, imagination, memory, judgment—that underlie different modes of awareness (Brentano, 1874; Husserl, *Ideas* II, §§ 71‑73).
+
+The phenomenological description proceeds from the manifest *what‑it‑is‑like* of a datum to the transcendental constitution that renders such content possible.  In *Cartesian Meditations* Husserl shows that awareness is an active synthesis that unifies the manifold of sense‑data into a coherent object‑presentation through several interlocking syntheses:
+
+* **Passive syntheses** of **retention** (the immediate past) and **protention** (the immediate future) that constitute the living present of time‑consciousness.  
+* **Active syntheses** of categorization, meaning‑assignment, and apperceptive integration that bring the manifold under a common sense‑object.
+
+---
+
+### 2. The Intentional Structure of Awareness  
+
+#### 2.1 Noesis and Noema  
+
+Every act of awareness comprises a **noetic pole** (the act‑type) and a **noematic pole** (the object‑as‑intended).  The noesis includes the mode of givenness—perception, imagination, judgment, etc.—while the noema is the *sense‑object* constituted in the horizon of the act.  Husserl distinguishes **real noemata** (objects that are in the world and can be verified by intersubjective overlap) from **ideal noemata** (purely intentional objects such as mathematical entities or fictional characters).  This distinction prevents the impression that the noema is merely a mental image; it remains a referential correlate that can be true‑to‑itself or purely ideal (see *Ideas* II, §§ 71‑73).
+
+#### 2.2 Modes of Awareness  
+
+| Mode | Characteristic | Illustrative Example |
+|------|----------------|----------------------|
+| **Pre‑reflective** | Awareness that operates without explicit conceptualization; the bodily sense of balance while walking. | One stands on a hill and, without thinking, feels the equilibrium of posture. |
+| **Reflective** | Awareness that is turned upon itself, enabling judgment and description. | The same standing person now says, “I am on a hill overlooking the valley.” |
+| **Corporeal** | Awareness rooted in the lived body (Leib), such as proprioception or tactile feeling. | The feeling of a warm cup in the hand. |
+| **Transcendental** | Pure intentional acts that constitute meaning independently of empirical content; the apperceptive synthesis that gives a concept its sense. | The act of forming the idea of “justice” abstracted from any particular case. |
+| **Temporal** | Awareness structured by retention, primal impression, and protention, yielding the unity of past, present, and future. | Hearing a tone, retaining its pitch, and anticipating the continuation of the melody. |
+| **Spatial** | Awareness organized by the horizon of possible positions and the constitutive role of the body‑subject in delimiting space. | Seeing a table and, without moving, perceiving the space in front of it as reachable. |
+
+These distinctions follow directly from Husserl’s analysis of the *living present* (the “now‑moment” of inner time‑consciousness) and from his later work on the **transcendental ego**, which is the constituting source of the world‑sense (see *Cartesian Meditations*, §§ 13‑15).
+
+---
+
+### 3. Transcendental Constitution  
+
+In the **transcendental reduction** the phenomenologist brackets the empirical ego and arrives at the **transcendental ego**—the pure subject that performs the constituting syntheses.  It is this ego that gives the world its sense‑objecthood, thereby constituting the *world‑sense* (the horizon of meaning that makes the world appear as a coherent totality).  The transcendental ego is not a metaphysical self but the functional totality of intentional acts that underlie all possible experience (cf. *Cartesian Meditations* §§ 23‑24).
+
+---
+
+### 4. Contemporary Resonances  
+
+Husserl’s account of awareness has been taken up and transformed by later phenomenologists:
+
+* **Martin Heidegger** reinterpreted awareness as *Dasein’s* being‑in‑the‑world, emphasizing existential temporality.  
+* **Maurice Merleau‑Ponty** foregrounded the embodied, perceptual character of pre‑reflective awareness.  
+* **Jean‑Paul Sartre** highlighted the freedom of the reflective act and the “nothingness” of the noema.
+
+These developments illustrate the richness of Husserl’s original analysis and its capacity to accommodate divergent philosophical projects.
+
+---
+
+### 5. Relevance for Empirical Studies  
+
+Although phenomenology is a philosophical method, its detailed description of pre‑reflective perception, temporal synthesis, and the structure of intentionality has informed contemporary cognitive science and psychology.  Empirical investigations of the “phenomenology of perception” (e.g., studies on visual retention and protention) often draw on Husserlian concepts to articulate the lived structure of experience beyond purely neural accounts.
+
+---
+
+### 6. Bibliographic Guide  
+
+* **Primary texts**  
+  * Husserl, *Logical Investigations* (1900‑1901), III, § 55.  
+  * Husserl, *Ideas I* (1913), II, §§ 71‑73.  
+  * Husserl, *Cartesian Meditations* (1931), §§ 13‑15, 23‑24.  
+
+* **Secondary literature**  
+  * Moran, Dermot, *Introduction to Phenomenology* (2000).  
+  * Zahavi, Dan, “The Phenomenological Concept of Noema,” *Journal of the British Society for Phenomenology* 42 (2011).  
+  * Smith, David, *Husserl’s Transcendental Phenomenology* (2007).  
+
+These references enable the reader to verify the claims made herein and to pursue further study of the intricate structure of awareness.
+====
+
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="40",
+ targets="entry:awareness",
+ scope="local"]
+====
+.Awareness, for the pragmatic analyst, is not a static, transcendental “given” but a dynamic transaction wherein the organism and environment co‑constitute meaning; it is the operative basis of inquiry, habit formation, and the continual reconstruction of experience through purposeful action.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="46",
+ targets="entry:awareness",
+ scope="local"]
+====
+.Awareness, in the transcendental sense, is not merely the raw datum of consciousness but the moment wherein the pure form of intuition (space‑time) and the categories of understanding co‑determine the appearance of an object; thus it is already structured by the a priori conditions of cognition.
 ====

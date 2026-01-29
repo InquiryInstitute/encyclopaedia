@@ -15,17 +15,99 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Attention**
 
-This entry will explore attention as "the taking possession by the mind, in clear and vivid form, of one out of what seem several simultaneously possible objects or trains of thought."
+**1. Definition and Scope**  
+Attention is the set of mental operations by which an organism selects, organizes, and sustains focus on particular aspects of the environment while suppressing others.  It functions as a limited‑capacity resource: temporally, only a finite span of experience can be held in the foreground at any moment; informationally, only a restricted amount of representational content can be processed concurrently.  The entry surveys the historical emergence of the concept, the principal theoretical families, the neurobiological substrates, methodological tools, and the developmental, clinical, and applied ramifications, emphasizing the intersections of computational, neurophysiological, and phenomenological perspectives.
 
-Topics to cover:
-- Focalization and concentration of consciousness
-- Voluntary vs. involuntary attention
-- The selective nature of attention
-- The stream of consciousness and attentional focus
-- Attention and the will
-- Educational implications of attentional capacity
+**2. Historical and Conceptual Foundations**  
+
+**2.1 Early Philosophical Antecedents**  
+Aristotle’s distinction between *sensible* and *intelligible* objects anticipates the problem of selective apprehension, though he does not formulate a doctrine of attention per se.  In the early modern period Descartes explicitly names *attention* as “the faculty of the mind which makes it possible to keep the thought on a single object” (Principles of Philosophy, § 30, 1637), linking it to the will and thereby planting the seed for later empirical investigation.
+
+**2.2 The Birth of Experimental Psychology**  
+Wilhelm Wundt’s introspective studies introduced the term “selective apperception” to describe the isolation of a stimulus from its milieu (Wundt, 1902).  William James famously defined attention as “the taking possession by the mind, in clear and vivid form, of one out of what seem several simultaneously possible objects or trains of thought” (James, 1890, p. 429).  James stressed both the *focus* of the mind and the *effort* required to maintain it, presaging later capacity‑based accounts.
+
+**2.3 Early Information‑Processing Models**  
+
+*Filter* models.  Broadbent (1958) proposed a bottleneck that permits only a limited amount of information to pass from sensory registers to higher‑order analysis.  Treisman’s (1964) attenuation theory refined this view by allowing partially processed unattended inputs to influence behavior, a claim supported by dichotic‑listening experiments in which shadowed words occasionally break through (Treisman, 1964).
+
+*Capacity and resource* models.  Kahneman (1973, *Attention and Effort*) introduced a single central pool of attentional resources, whose size is modulated by arousal.  This framework accommodated dual‑task interference and performance decrements under high workload, and it laid the groundwork for later computational formulations.
+
+**2.4 Contemporary Theoretical Families**  
+
+*Biased competition*.  Desimone & Duncan (1995) argued that attentional selection both shapes and is shaped by competitive interactions among neuronal representations—a bidirectional relationship that avoids circularity by treating competition as the mechanism through which limited resources are allocated.
+
+*Premotor theory*.  The proposal that covert shifts of attention are instantiated by the same motor programs that would produce overt orienting (Rizzolatti et al., 1987) links attentional control to the planning of eye and head movements.
+
+*Predictive coding*.  Recent accounts view attention as the precision weighting of prediction errors in hierarchical Bayesian inference (Feldman & Friston, 2010), thereby integrating top‑down expectations with bottom‑up sensory signals.
+
+*Feature‑ and object‑based attention*.  Treisman’s (1980) feature‑integration theory demonstrated that attention binds disparate features into coherent percepts, while later neurophysiological work has shown that attention can be directed to whole objects irrespective of their spatial extent (O’Craven et al., 1999).
+
+**3. Neural Architecture**  
+
+**3.1 Dorsal and Ventral Attention Networks**  
+Functional imaging has identified two interacting frontoparietal systems (Corbetta & Shulman, 2002).  The *dorsal* network (intraparietal sulcus, frontal eye fields) mediates goal‑directed, endogenous orienting; the *ventral* network (temporoparietal junction, ventral frontal cortex) detects salient, exogenous events and reorients attention.
+
+**3.2 Cellular Mechanisms**  
+Biased competition is instantiated by recurrent excitation and lateral inhibition within visual cortical columns (Desimone & Duncan, 1995).  Neuromodulators such as acetylcholine and norepinephrine adjust the gain of these circuits, thereby implementing the arousal‑dependent scaling envisioned by Kahneman.
+
+**4. Methodological Approaches**  
+
+| Domain | Representative Paradigms / Measures | Core Insight |
+|--------|--------------------------------------|--------------|
+| Behavioral | Posner cueing, Stroop, flanker, sustained‑attention (e.g., Continuous Performance Test) | Spatial and executive components of selection |
+| Electrophysiology | Event‑related potentials (N2pc, P3), single‑unit recordings | Temporal dynamics of selection and competition |
+| Neuroimaging | fMRI activation of dorsal/ventral networks; PET metabolic mapping | Spatial localization of attentional control |
+| Computational Modeling | Biased‑competition simulations; reinforcement‑learning models of resource allocation | Formal articulation of selection rules |
+
+**5. Developmental Trajectory**  
+Selective attention emerges in infancy as infants preferentially attend to faces and biological motion (Rovee‑Cole & Enright, 1979).  Between the second and sixth year of life, the capacity for voluntary, sustained attention expands markedly, paralleling maturation of the prefrontal cortex and its connections to posterior parietal regions (Casey et al., 2005).  Adolescence brings refinements in executive control that permit more efficient multitasking (Luna et al., 2015).
+
+**6. Clinical Dimensions**  
+
+*Neglect syndrome* illustrates the dependence of spatial attention on the right‑hemisphere ventral network; lesions produce profound contralesional inattention despite intact sensory pathways.  
+*Attention‑deficit/hyperactivity disorder (ADHD)* is characterized by dysregulated arousal and impaired top‑down control, consistent with reduced activation of the dorsal network during cueing tasks (Castellanos & Tannock, 2002).  
+*Schizophrenia* shows deficits in both selective and sustained attention, often linked to abnormal dopamine‑mediated gain control within frontoparietal circuits (Carter et al., 2005).  
+Therapeutic interventions—cognitive training, stimulant medication, and neuromodulatory techniques—are increasingly guided by the very models described above, illustrating the practical value of a unified theory.
+
+**7. Computational Perspective (Illustrative Model)**  
+A concise exemplar of biased competition can be cast as a neural‑network model in which each stimulus representation receives an excitatory drive proportional to its sensory strength and a top‑down bias proportional to task relevance.  Lateral inhibition enforces competition; the representation that achieves the highest net activation wins access to downstream decision units.  Simulations of this model reproduce classic findings such as the cocktail‑party effect, the attentional blink, and the modulation of reaction time by cue validity (Desimone & Duncan, 1995).
+
+**8. Phenomenological and Ethical Reflections**  
+From a first‑person standpoint, attention is the “stream” that carries the vividness of experience forward, as James observed in his later essays on consciousness.  Contemporary phenomenologists (e.g., Zahavi, 2005) emphasize the lived sense of “being directed toward” that accompanies each act of selection.  This lived dimension underlies ethical practices such as moral vigilance and contemplative meditation, where the deliberate cultivation of sustained, non‑reactive attention is argued to shape character and well‑being (Lutz et al., 2008).
+
+**9. Terminological Precision**  
+The field distinguishes *endogenous* (top‑down, goal‑driven) from *exogenous* (bottom‑up, stimulus‑driven) drivers of attentional allocation.  Endogenous control engages the dorsal network, whereas exogenous capture recruits the ventral network.  Both operate within the same limited‑capacity resource pool, but they differ in timing, flexibility, and neural circuitry.
+
+**10. Concluding Remarks**  
+Attention remains a unifying construct that links perception, memory, action, and consciousness.  By acknowledging its historical roots, its multiple theoretical families, its distributed neural implementation, and its relevance to development, pathology, and lived experience, the present overview offers a platform for further inquiry across psychology, neuroscience, and philosophy.
+====
+
+
+
+[role=marginalia,
+ type=objection,
+ author="a.simon",
+ status="adjunct",
+ year="2026",
+ length="45",
+ targets="entry:attention",
+ scope="local"]
+====
+While the entry rightly stresses finitude, it neglects the affirmative, constitutive role of attention: not merely a filter but a synthesizing agency that endows disparate sensations with unity. To reduce it to a mere capacity constraint obscures its normative, purposive character evident in intentional acts.
+====
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="46",
+ targets="entry:attention",
+ scope="local"]
+====
+. Good.Note: The prevailing account reduces attention to a mere bandwidth of neural processing. Yet attention, when truly cultivated, is not a resource but an act of surrender—an opening toward the immutable reality that precedes representation. It is, fundamentally, a moral discipline, not a computational variable.
 ====
 
 [role=marginalia,

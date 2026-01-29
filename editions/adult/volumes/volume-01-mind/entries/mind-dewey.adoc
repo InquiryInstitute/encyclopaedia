@@ -14,7 +14,134 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Mind‑Dewey: A Pragmatist Theory of Mental Activity**
+
+---
+
+### Overview  
+
+- **Core thesis** – Mental activity is a *purposeful, transactional* process in which organism and environment continuously reshape one another.  
+- **Historical trajectory** – From *The School and Society* (1900) through *Experience and Nature* (1925), refined in the post‑humous volume *Logic: The Theory of Inquiry* (1938).  
+- **Structure of this entry**  
+
+  1. Philosophical foundations  
+  2. Scientific context: experimental psychology and behaviorism  
+  3. The transactional conception of mind  
+  4. Continuity of experience and instrumental meaning  
+  5. Biological and comparative influences  
+  6. Methodological stance: experimental philosophy  
+  7. Contemporary relevance  
+
+---
+
+## 1. Philosophical Foundations  
+
+Dewey’s project belongs to the American pragmatist tradition inaugurated by **Charles S. Peirce** and **William James**.  
+
+* **James’s radical empiricism** supplies the insight that experience itself, not a detached “inner” realm, is the primary datum.  James nevertheless acknowledges a representational function of consciousness; he merely treats representation as fluidly interwoven with the flow of experience.  
+
+* **Peirce’s conception of inquiry** emphasizes the *logical habit* of forming and testing propositions within a *community of investigators*.  Peirce does not speak of “habits of thought” in the later sense; rather, he stresses the *habit‑forming* character of the semiotic process that makes inquiry self‑correcting.  
+
+Dewey absorbs these strands but departs decisively: mind cannot be isolated from the organism’s ongoing interaction with its surroundings.  Experience is not a passive reception of data but an *active, purposeful transaction* that reshapes both sides of the organism‑environment relation.
+
+---
+
+## 2. Scientific Context  
+
+### 2.1 Early Experimental Psychology  
+
+The turn of the twentieth century saw the rise of introspectionist laboratories (Wundt, Münsterberg, Titchener).  Their aim was to catalogue elementary sensations and associations, presupposing a pre‑theoretical “inner” arena that could be observed under controlled conditions.  
+
+### 2.2 Emergent Behaviorism  
+
+Watson and later Skinner argued that psychology should abandon any reference to mental states, focusing exclusively on observable behavior.  Their early models reduced conduct to *stimulus‑response chains*, neglecting the organism’s purposive orientation.  
+
+**Dewey’s critique**  
+
+- He rejected introspection for its reliance on a unverifiable inner realm.  
+- He rejected the mechanistic reductionism of early behaviorism, while recognizing later behaviorist refinements that incorporated purposive variables.  
+
+---
+
+## 3. The Transactional Conception of Mind  
+
+> **Definition (Core Thesis)**  
+> *Mental activity is a purposeful transaction in which the organism and its environment mutually constitute each other, continually reshaping the conditions of action and the organism’s capacities.*  
+
+### 3.1 Purposeful Transaction Illustrated  
+
+In everyday problem‑solving—say, a child learning to tie a shoe—the child does not merely react to a stimulus.  The child *anticipates* a goal (a tied shoe), *experiments* with different finger movements, *evaluates* the outcome, and *re‑organizes* both bodily coordination and the surrounding material (the shoelace).  The transaction thus integrates intention, action, and environmental affordances into a single, evolving process.
+
+---
+
+## 4. Continuity of Experience and Instrumental Meaning  
+
+### 4.1 Continuity of Experience  
+
+*Experience and Nature* (1925) develops the notion of a *stream of conduct*: experience is a continuous, temporally extended flow rather than a succession of discrete inner states.  This continuity underwrites Dewey’s rejection of static representations and links his epistemology to his ethics and political philosophy, where moral agency emerges from the ongoing negotiation of values within lived experience.
+
+### 4.2 Instrumental Theory of Meaning  
+
+In the 1930s Dewey articulated an *instrumental* conception of meaning: concepts are tools for coping with concrete problems, not mirrors of an immutable reality.  This instrumentalism dovetails with his mind‑theory by treating mental symbols as *functional* elements in the transactional process, evaluated by their success in guiding action.
+
+---
+
+## 5. Biological and Comparative Influences  
+
+Although not a biologist, Dewey was attentive to contemporary findings in comparative psychology and physiology (e.g., the work of Rudolf Steiner on organismic wholeness).  These studies reinforced his view of cognition as an *organic* process rooted in the organism‑environment nexus, anticipating later neuro‑cognitive insights into embodied cognition.
+
+---
+
+## 6. Methodological Stance: Experimental Philosophy  
+
+Dewey advocated *experimental philosophy*: philosophical hypotheses are tested **in situ** through educational reforms, laboratory experiments, and social inquiry.  This method contrasts with both introspection (which isolates experience) and early behaviorism (which isolates observable conduct), offering a middle way that treats philosophical concepts as *experimentally tractable* instruments.
+
+---
+
+## 7. Contemporary Relevance  
+
+Dewey’s transactional mind anticipates several modern currents:
+
+* **Embodied cognition** – The view that cognition is inseparable from bodily action and environmental affordances echoes Dewey’s purposeful transaction.  
+* **Enactivism** – The emphasis on *sense‑making* through ongoing interaction mirrors Dewey’s continuity of experience and experimental inquiry.  
+
+Scholars in cognitive science and education continue to draw on Dewey’s insights to design learning environments that foreground problem‑solving as a lived, transactional activity rather than a mere transmission of static knowledge.
+
+---
+
+### Bibliographic Note  
+
+*Logic: The Theory of Inquiry* (1938) is a post‑humous collection of Dewey’s lectures and manuscripts; it was assembled after his death and therefore reflects his later reflections rather than a fully authorial exposition of his psychology.  Its inclusion here serves to illustrate the continuity of Dewey’s logical inquiries with his earlier systematic treatment in *Experience and Nature*.
+
+--- 
+
+*End of entry.*
+====
+
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.darwin",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:mind-dewey",
+ scope="local"]
+====
+The mind, as Dewey describes, may be likened to the adaptive capacities observed in organisms: a continual, reciprocal adjustment of structure and habit in response to external conditions, echoing the gradual, purposive modifications that natural selection records in the living world.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.spinoza",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:mind-dewey",
+ scope="local"]
+====
+The so‑called “purposeful, transactional” character of mind, as Dewey posits, must be understood not as an independent teleology but as the necessary expression of the body’s modes within the one infinite substance; mental activity is the idea of corporeal modification, governed solely by causality.
 ====
 
 [role=marginalia,

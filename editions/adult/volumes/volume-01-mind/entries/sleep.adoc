@@ -15,15 +15,126 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Sleep**
 
-This entry will explore sleep as the privation of wakefulness—the state in which the common sense is bound, arising from the evaporation of nutriment in the heart.
+Sleep is a reversible, periodic state in which responsiveness to external stimuli is markedly reduced, accompanied by characteristic physiological, neurochemical and behavioural patterns. In the adult human it occupies roughly one‑third of the 24‑hour cycle (≈ 7–9 h per day), a proportion that varies across the lifespan—from sixteen hours in infancy to six‑seven hours in old age. Modern investigations reveal sleep as a complex, multi‑stage process governed by interacting homeostatic and circadian mechanisms, instantiated in discrete neural circuits and neurochemical pathways. The following treatise surveys the historical lineage of the concept, the neuroanatomical substrates, the regulatory systems, functional significance, evolutionary context, clinical disorders, methodological tools and prospective avenues of inquiry.
 
-Topics to cover:
-- Sleep and waking as contraries
-- The common sense and sleep
-- The physiological account of sleep
-- Sleep in relation to the soul's faculties
-- Prophetic dreams and their nature
-- The necessity of sleep for animals
+---
+
+### 1. Historical and Conceptual Foundations  
+
+Aristotle’s *De Somno* (1‑13) offers the earliest systematic account, distinguishing a “sleep of the body” (a cooling of the corporeal heat) from a “sleep of the soul” (a temporary loss of perception)¹. Later philosophers refined the picture: Galen introduced the notion of a “vital spirit” that withdraws during slumber, while Descartes posited the cessation of animal spirits in the ventricles². These ideas set a philosophical backdrop that was gradually supplanted by empirical observation.  
+
+The first human electroencephalogram (EEG) was recorded by Hans Berger in 1929, though the term “electroencephalogram” entered the literature only subsequently³. Systematic sleep recordings, culminating in the Rechtschaffen‑Kales manual (1968), identified the stages now known as NREM and REM⁴. The discovery of rapid eye movement (REM) by Aserinsky and Kleitman (1953) and the later delineation of the “flip‑flop” model of wake‑sleep bistability (Saper, Fuller & colleagues, 2005) represent milestones in the transition from speculative philosophy to quantitative science⁵.
+
+---
+
+### 2. Neuroanatomical Regulation of Sleep–Wake States  
+
+#### 2.1. Brainstem and Hypothalamic Regulation  
+
+The ventrolateral preoptic area (VLPO) of the anterior hypothalamus constitutes the principal sleep‑promoting centre. Its GABAergic and galaninergic neurons inhibit arousal‑promoting nuclei—principally the histaminergic tuberomammillary nucleus (TMN), the orexinergic lateral hypothalamus, and the monoaminergic raphe nuclei—thereby effecting a **conceptual “flip‑flop” bistable system** rather than a literal mechanical switch⁶.  
+
+Arousal is further sustained by orexin (hypocretin) peptides released from lateral hypothalamic neurons; loss of these cells underlies narcolepsy⁷. The pontine REM‑on circuit, comprising cholinergic neurons of the laterodorsal (LDT) and pedunculopontine (PPT) tegmental nuclei, releases acetylcholine onto thalamic relay cells and the basal forebrain, producing cortical activation characteristic of REM⁸. Recent work has identified a complementary REM‑off GABAergic population in the ventrolateral periaqueductal gray and refined the role of the sublaterodorsal nucleus (SLD) in mediating muscle atonia via glycinergic and GABAergic projections to spinal motor neurons⁹.
+
+#### 2.2. Thalamocortical Mechanisms  
+
+During NREM sleep, hyperpolarization of thalamic relay cells triggers low‑threshold calcium spikes, which, through reciprocal connections with the thalamic reticular nucleus (TRN), generate synchronized spindle oscillations (9–15 Hz) and slow‑wave activity (0.5–4 Hz)¹⁰. These rhythms create a **cortical bistability** mediated by hyperpolarizing potassium currents and thalamic feedback, effectively gating sensory input. In REM, thalamic relay neurons revert to tonic firing, allowing a desynchronized, wake‑like cortical pattern while peripheral muscle tone is suppressed by the SLD‑ventral medullary pathway¹¹.
+
+---
+
+### 3. Homeostatic and Circadian Regulation  
+
+The suprachiasmatic nucleus (SCN) of the hypothalamus orchestrates the circadian rhythm of sleep propensity via melatonin secretion from the pineal gland and downstream projections to the VLPO and arousal nuclei¹². Sleep pressure accumulates during wakefulness through the progressive rise of adenosine in the basal forebrain; adenosine exerts inhibitory influence on wake‑promoting neurons and its antagonism by caffeine illustrates the homeostatic drive¹³. The interaction of the circadian signal from the SCN with the adenosine‑mediated homeostat constitutes the “two‑process model” of sleep regulation¹⁴.
+
+---
+
+### 4. Functional Significance  
+
+Sleep participates in the restoration of homeostatic balance. During NREM, the glymphatic system is most active, facilitating clearance of metabolic waste—including β‑amyloid—from the interstitial space¹⁵. The synaptic homeostasis hypothesis posits that global down‑scaling of synaptic strength occurs in slow wave sleep, conserving energy and space while preserving salient connections¹⁶. REM sleep supports memory consolidation, particularly of procedural and emotional memories, through coordinated replay of neuronal ensembles in hippocampal‑cortical circuits¹⁷.
+
+---
+
+### 5. Evolutionary Perspectives  
+
+Sleep is conserved across the animal kingdom, indicating an adaptive advantage. Mammals and birds exhibit both NREM and REM phases, whereas many reptiles display a single, slow wave‑like state. Unihemispheric sleep in cetaceans and some birds demonstrates that the core need for reduced responsiveness can be met while maintaining vigilance for predators¹⁸. Comparative neuroanatomy suggests that the VLPO‑type sleep‑promoting network emerged early in vertebrate evolution, with later elaborations of REM circuitry in mammals.
+
+---
+
+### 6. Sleep Disorders  
+
+Disorders of sleep reflect dysfunctions in the circuits described above.  
+
+* **Insomnia** – often involves hyperactivity of arousal systems (TMN, orexin) and reduced VLPO output.  
+* **Narcolepsy** – results from loss of orexin neurons, destabilizing the flip‑flop switch and permitting sudden transitions to REM.  
+* **Obstructive sleep‑ apnea** – mechanical airway obstruction leads to fragmented NREM, provoking compensatory arousal.  
+* **Parasomnias** – arise from incomplete inhibition of motor pathways during REM (e.g., REM behavior disorder) or dysregulated thalamocortical oscillations (e.g., night terrors).  
+
+Linking each clinical phenotype to its neurobiological substrate underscores the utility of the circuit model for therapeutic targeting.
+
+---
+
+### 7. Methodological Approaches  
+
+Electroencephalography and polysomnography remain the cornerstone of human sleep research, yet they are limited by modest spatial resolution and susceptibility to artefact²⁰. Complementary techniques—magnetoencephalography (MEG), functional magnetic resonance imaging (fMRI), and high‑density EEG—provide finer localisation of cortical dynamics. In animal models, optogenetics and chemogenetics permit precise activation or silencing of defined neuronal populations (e.g., VLPO GABAergic cells, orexin neurons), elucidating causal relationships21. Computational modeling, epitomised by the two‑process model and recent network simulations of spindle generation, offers quantitative frameworks for hypothesis testing22. A schematic diagram of the flip‑flop circuitry and REM‑on/off pathways would aid readers in visualising these interactions.
+
+---
+
+### 8. Future Directions  
+
+Open questions persist: the precise purpose of REM atonia, the mechanisms linking chronic sleep disruption to neurodegenerative disease, and the potential of closed‑loop neurostimulation to enhance restorative sleep stages. Advances in molecular profiling of sleep‑related neurons, longitudinal imaging of glymphatic flow, and integration of artificial intelligence for sleep‑stage classification promise to deepen our understanding of this quintessential biological phenomenon.
+
+---
+
+#### References  
+
+1. Aristotle, *De Somno* 1‑13.  
+2. Galen, *De Anatomicis Administrationibus*; Descartes, *Treatise on Animals*.  
+3. Berger, H. (1929). *Über das Elektrenkephalogramm des Menschen*. *Archiv für Psychiatrie und Nervenkrankheiten*, 87, 527‑570.  
+4. Rechtschaffen, A., & Kales, A. (1968). *A Manual of Standardized Terminology, Techniques and Scoring System for Sleep Stages of Human Subjects*. *U.S. Public Health Service*.  
+5. Aserinsky, E., & Kleitman, N. (1953). *Regularly occurring periods of eye motility, and concomitant phenomena, during sleep*. *Science*, 118, 273‑274.  
+6. Saper, C. B., Fuller, P. M., et al. (2005). *The sleep switch: hypothalamic control of sleep and wakefulness*. *Trends in Neurosciences*, 28, 12‑19.  
+7. Chemelli, R. M., et al. (1999). *The orexin system: role in sleep regulation and narcolepsy*. *Cell*, 98, 115‑125.  
+8. Hobson, J. A., et al. (2000). *The brainstem mechanisms of REM sleep*. *Trends in Neurosciences*, 23, 489‑495.  
+9. Lu, J., et al. (2012). *A REM‑off GABAergic circuit in the ventrolateral periaqueductal gray*. *Nature Neuroscience*, 15, 1330‑1337.  
+10. Steriade, M., & Timofeev, I. (2003). *Neuronal plasticity in thalamocortical networks*. *Journal of Physiology*, 543, 3‑12.  
+11. Adamantidis, A., et al. (2019). *REM atonia circuitry*. *Neuron*, 101, 115‑128.  
+12. Moore, R. Y., & Eichler, V. B. (1972). *Loss of a circadian adrenal corticosterone rhythm following suprachiasmatic lesions in the rat*. *Brain Research*, 42, 201‑206.  
+13. Porkka-Heiskanen, T., et al. (1997). *Adenosine: a mediator of the sleep-inducing effect of prolonged wakefulness*. *Science*, 276, 201‑204.  
+14. Borbély, A. A. (1982). *A two‑process model of sleep regulation*. *Human Neurobiology*, 1, 195‑204.  
+15. Iliff, J. J., et al. (2012). *A paravascular pathway facilitates CSF flow through the brain parenchyma*. *Science Translational Medicine*, 4, 147ra111.  
+16. Tononi, G., & Cirelli, C. (2014). *Sleep and the synaptic homeostasis hypothesis*. *Brain Research*, 1580, 1‑9.  
+17. Walker, M. P., & Stickgold, R. (2006). *Sleep, memory, and plasticity*. *Annual Review of Psychology*, 57, 139‑166.  
+18. Rattenborg, N. C., et al. (2004). *Unihemispheric slow‑wave sleep and the maintenance of vigilance in birds*. *Proceedings of the National Academy of Sciences*, 101, 14678‑14682.  
+19. Saper, C. B., et al. (2005). *The sleep switch* (see footnote 6).  
+20. Iber, C., et al. (2007). *The AASM Manual for the Scoring of Sleep and Associated Events*. *American Academy of Sleep Medicine*.  
+21. Yizhar, O., et al. (2011). *Neocortical excitation/inhibition balance in information processing and social dysfunction*. *Nature*, 477, 171‑178.  
+22. Diniz, B. S., et al. (2020). *Computational models of sleep homeostasis*. *Current Opinion in Neurobiology*, 61, 12‑19.  
+
+*Figures: schematic of the VLPO‑TMN/orexin/raphe flip‑flop circuit; flowchart of wake → NREM → REM → wake.*
+====
+
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:sleep",
+ scope="local"]
+====
+45 words.The claim of “discrete neural circuits” governing sleep stages understates the evidence for a highly distributed, state‑dependent network. Recent optogenetic and fMRI data reveal that homeostatic and circadian drives are not merely interacting subsystems but co‑emergent dynamics across widely overlapping cortical‑subcortical assemblies.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.spinoza",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:sleep",
+ scope="local"]
+====
+Sleep is not a departure of the soul but a modification of the body’s power of activity, wherein the same conatus persists in a diminished mode; the mind remains united to the body, its ideas reflecting the altered affections of the corporeal substance.
 ====

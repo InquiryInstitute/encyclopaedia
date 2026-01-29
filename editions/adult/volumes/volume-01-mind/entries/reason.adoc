@@ -15,15 +15,112 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Reason (Vernunft)**  
 
-This entry will explore reason as the faculty of principles—the power to seek the unconditioned, to unify experience under ever higher principles, and to regulate (though not constitute) knowledge.
+The faculty of reason is the power of the mind to produce *synthetic a‑priori judgments*—judgments that enlarge our knowledge without recourse to empirical data.  In the *Critique of Pure Reason* Kant distinguishes this faculty from the understanding (Verstand) (A 53 / B 53, 2nd ed., 1787), stressing that its activity is not dependent on immediate sense‑experience but on the a‑priori forms supplied by the transcendental imagination.  Reason therefore furnishes the *ideas* (Ideen) that, while never constituting objects of possible experience, regulate the systematic unity of knowledge (B 367).
 
-Topics to cover:
-- Pure and practical reason
-- The architectonic of reason
-- The regulative use of ideas
-- The antinomies of pure reason
-- Reason and freedom
-- The limits of reason
+---
+
+### 1.  The Copernican Project and Historical Background  
+
+Kant’s “Copernican Revolution” in philosophy consists in turning the objects of cognition toward the conditions of our knowledge rather than the other way round.  This move was prompted by the rationalist metaphysics of Leibniz and Wolff, which posited a knowledge of things‑in‑themselves through pure reason, and by Hume’s empiricist critique that reduced knowledge to the contents of sense.  Reason, for Kant, is to be rescued from both the dogmatic claim to speculative metaphysics and the skeptical denial of any a‑priori cognition (A 1 / B 1).
+
+---
+
+### 2.  Structure of Reason  
+
+#### 2.1  Faculty versus Operation  
+
+*Reason* (Vernunft) denotes the faculty itself; *pure reason* (reine Vernunft) denotes its a‑priori, non‑empirical operation.  The former is the potentiality of the mind, the latter the actual employment of that potential in the transcendental deduction of the conditions for experience.
+
+#### 2.2  Theoretical (Pure) Reason  
+
+Theoretical reason supplies **ideas** that transcend any possible experience:
+
+| Idea | Regulative role |
+|------|-----------------|
+| **Soul** (the totality of conditions) | guides the systematic unification of empirical concepts (B 443) |
+| **World as a whole** (the *System*) | demands the completeness of the system of nature (B 443) |
+| **God** (the idea of a necessary being) | supplies the ultimate ground of the system (B 443) |
+
+These ideas are *regulative* rather than *constitutive*: they do not present objects that can be known, but they compel the mind to seek a coherent system of empirical knowledge.  When reason attempts to treat them as objects, it falls into the *paralogical* use examined in the **Transcendental Dialectic** (see § 3.2).
+
+#### 2.3  Practical Reason  
+
+Practical reason generates **postulates** that are necessary for moral agency:
+
+| Postulate | Function |
+|-----------|----------|
+| **Freedom** (autonomy of the will) | makes possible the binding force of the moral law |
+| **Immortality** (continuity of the rational self) | secures the conditions for the highest good |
+| **God** (the idea of the highest good) | provides the ultimate justification of moral striving |
+
+These are not *objects* in the theoretical sense of noumena; they are *practical ideas* whose necessity is derived from the categorical imperative, the formal principle of pure practical reason (A 4 / B 2).  Thus practical reason does not claim knowledge of freedom, immortality, or God, but merely postulates them as conditions for the possibility of moral action.
+
+---
+
+### 3.  Pure Reason and Its Limits  
+
+Pure reason is *transcendental*: it investigates the a‑priori conditions that make experience possible.  Its investigation is divided into two complementary parts.
+
+#### 3.1  Transcendental Analytic  
+
+The Analytic establishes the **categories**—the twelve pure concepts of the understanding (quantity, quality, relation, modality)—as necessary forms of thought that structure all possible experience.  It also introduces the **schematism**, the rule by which the pure concepts are applied to the manifold of intuition.
+
+#### 3.2  Transcendental Dialectic  
+
+The Dialectic examines the *paralogical* use of reason, i.e. the tendency to treat regulative ideas as constitutive objects.  It identifies three “skeletons” of speculative reason:
+
+1. **Paralogisms of Pure Reason** – the illusion of a substantial, self‑identical soul.  
+2. **Antinomies of Pure Reason** – contradictory theses concerning the totality of conditions (e.g., the world has a beginning in time vs. it is infinite).  
+3. **The Ideal of God** – the projection of a necessary being as an object of knowledge.
+
+By exposing these *transcendental illusions* (Schein), the Dialectic delineates the proper limits of pure reason: it may employ ideas only regulatively, never as objects of valid cognition.
+
+---
+
+### 4.  Relation to the Rest of Kant’s System  
+
+Reason functions within the broader faculty pair **sensibility–understanding**.  The **Transcendental Aesthetic** supplies the a‑priori forms of intuition (space and time), while the understanding supplies the categories; reason then regulates the synthesis of these elements into a systematic unity.  In the **Critique of Judgment**, the aesthetic ideas of the beautiful and the sublime serve as a bridge between the theoretical and practical realms, illustrating the systematic coherence of the critical system.
+
+---
+
+### 5.  Bibliographic Note  
+
+All citations refer to the second edition of Kant’s *Kritik der reinen Vernunft* (1787).  For further study see also:
+
+- Kant, I. *Critique of Practical Reason*, 1788 (2nd ed.).  
+- Kant, I. *Prolegomena to Any Future Metaphysics*, 1783.  
+- Kant, I. *Metaphysical Foundations of Natural Science*, 1786.  
+
+---
+
+**Summary**  
+
+Reason (Vernunft) is the faculty that furnishes synthetic a‑priori judgments.  In its pure operation it supplies regulative ideas that guide theoretical cognition, while in its practical operation it postulates the conditions of moral agency.  The critical philosophy distinguishes the legitimate, regulative use of these ideas from the illegitimate, constitutive use that gives rise to the dialectical illusions examined in the *Transcendental Dialectic*.  By fixing the proper limits of reason, Kant secures a foundation for both scientific knowledge and moral freedom.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:reason",
+ scope="local"]
+====
+Reason, as Kant conceives, may be likened to a universal algorithm that generates propositions beyond the data supplied to it; however, unlike a mechanical rule, it operates only within the formal framework supplied by the transcendental imagination, yielding regulative ideas rather than constructive objects.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.freud",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:reason",
+ scope="local"]
+====
+note.Reason, as Kant conceives, is not a purely conscious faculty; it is mediated by the ego’s attempt to impose order upon the chaotic drives of the id. The synthetic a‑priori judgments thus mask underlying psychic conflicts, revealing that rational unity rests on unconscious compromise.
 ====

@@ -15,15 +15,75 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Consciousness**
 
-This entry will explore consciousness as durée (duration)—the continuous flow of inner experience that cannot be adequately captured by spatial metaphors or discrete measurements.
+*Definition and Scope*  
+In the phenomenological sense, consciousness is the intentional structure of lived experience: every act of the mind (noesis) is correlated with a meaning‑bearing sense‑object (noema). The noema is not a thing that exists “out there” but a *Sinn‑Objekt* given as a whole of meaning within the act; it is the correlates through which the act constitutes its object. Thus consciousness is the dynamic field in which the transcendental ego *constitutes* the very possibility of objectivity, while the object is “given as a meaning‑bearing whole” (Ideen I, § 71). This intentional structure is always‑already relational: the datum of experience appears simultaneously as a “what‑that‑is” (*was*) for a subject that also appears as a “who‑that‑is” (*wer*).¹
 
-Topics to cover:
-- Duration vs. clock time
-- The qualitative multiplicity of conscious states
-- Memory and the persistence of the past in the present
-- Intuition as the mode of knowing consciousness
-- Critique of associationist psychology
-- Freedom and the creative evolution of mind
+The phenomenological description of this structure is not a reductionist denial of the world; rather, it brackets the natural‑attitude‑assumptions so that the phenomena may appear “as they are given” to consciousness. In contrast to the emerging psychophysiological programmes of the 1910s, which tended to reduce consciousness to neural or behavioural processes, phenomenology seeks to uncover the *constituting* activity of the transcendental ego without denying the relevance of the natural sciences.²  
+
+*Historical Background*  
+
+**Antiquity and Early Precursors**  
+Plato’s theory of the Forms and Aristotle’s notion of the inner sense (*nous*) already hinted at a faculty that apprehends intelligible meaning.  
+
+**Early Modern Rationalism**  
+Descartes’ cogito established the certainty of self‑consciousness, yet his dualistic separation left the phenomenological character of experience unexplored. Locke, Berkeley and Hume treated consciousness as a succession of ideas or impressions, retaining an empiricist picture of the mind as a blank slate.  
+
+**Kantian Transcendentalism**  
+Kant recognised the a priori structuring activity of the mind in the *Transcendental Aesthetic* and *Transcendental Analytic*, but limited his inquiry to the conditions for possible experience rather than to the lived experience itself.  
+
+**Husserl’s Turn**  
+In *Logical Investigations* (1900‑01), §§ 2‑3, Husserl first articulates the intentional structure of consciousness, distinguishing the *noetic* and *noematic* poles (noesis–noema) and emphasizing the sense‑object as the correlate of the act. This thesis is refined in *Ideas I* (1913), especially §§ 71‑73, where the transcendental ego is shown to *constitute* the object as a meaning‑bearing whole. The methodological move consists of the epoché (bracketing) and the phenomenological reduction, which together expose the pure structures of meaning that underlie all experience.  
+
+**Later Phenomenology**  
+The programme is further developed in *Cartesian Meditations* (1931) and *The Crisis of European Sciences* (1936), where Husserl introduces the *Lebenswelt* (lifeworld) and a genetic analysis of the constitutive layers of meaning. The analysis of internal time‑consciousness in the *Lectures on the Phenomenology of the Consciousness of Internal Time* (1913‑15) shows that the field of meaning‑bearing activity is temporally structured and not static.  
+
+**Ontological Turn and Subsequent Interpretations**  
+Heidegger’s *Being and Time* (1927) re‑orients the discussion from consciousness to Dasein’s *care* (Sorge), inaugurating an ontological turn. Merleau‑Ponty stresses the bodily intentionality of perception; Sartre foregrounds consciousness as a “nothingness” that negates the given; Levinas redirects the horizon toward the ethical alterity of the Other. While each retains the centrality of intentionality, they re‑configure its ontological implications.  
+
+*The Phenomenological Method*  
+
+1. **Epoché (Ausklammern)** – The philosopher suspends judgment concerning the existence of the external world, not by denying it but by bracketing the natural‑attitude presuppositions. This “bracketing” allows phenomena to appear *as they are given* to consciousness.³  
+
+2. **Phenomenological Reduction** – From the epoché the analyst moves to the *transcendental attitude*, wherein the focus shifts from the given objects to the intentional acts that constitute them. The reduction is a correlative movement that reveals the constituting role of the transcendental ego.  
+
+3. **Eidetic Variation** – By imaginatively “varying away” accidental features of a given act, the researcher isolates its essential structure. This imaginative variation supplements the reduction and yields the *eidetic* (essential) insights into the noetic‑noematic correlation.  
+
+4. **Transcendental Reduction** – The final stage uncovers the pure, a priori structures of meaning that make any objectivity possible. It is a descriptive, not normative, analysis: the aim is to uncover what consciousness *is* rather than what it *ought* to be.  
+
+*Later Developments and Contemporary Relevance*  
+
+Husserl’s later works extend the micro‑analysis of intentional acts to a macro‑ontology of the lived world, emphasizing the *Lebenswelt* as the horizon within which all meaning is constituted. This genetic phenomenology anticipates interdisciplinary projects such as neurophenomenology, where scholars seek to correlate first‑person descriptive data with third‑person neuroscientific measures. Moreover, the phenomenological analysis of consciousness continues to inform debates in the philosophy of mind, notably the “phenomenal concepts” discussion and recent embodied‑cognition approaches that draw on Merleau‑Ponty’s extensions of Husserl’s theory.  
+
+---
+
+¹ *noesis* and *noema* are the technical terms for the act and its meaning‑content; see *Logical Investigations* §§ 2‑5.  
+² Husserl, *Ideas I* (1913), §§ 71‑73; cf. his remarks on the “natural attitude” in *Cartesian Meditations* (1931), § 42.  
+³ The epoché is a methodological *bracketing* (Ausklammern), not a metaphysical denial, as explicated in *Ideas I* (1913), § 71.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="47",
+ targets="entry:consciousness",
+ scope="local"]
+====
+The noema must be understood not as an external entity but as the horizon of meaning that the act itself supplies; it is the sense‑object (Sinn‑Objekt) constituted in the transcendental ego’s synthesis. Thus the “object” appears only as it is given in consciousness, not as a thing‑in‑itself.
+====
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:consciousness",
+ scope="local"]
+====
+The alleged “meaning‑bearing whole” is a theoretical gloss that presupposes a homuncular subject; a naturalistic account can explain intentionality as the by‑product of predictive brain mechanisms without invoking a transcendental ego. Thus the phenomenological reduction risks reintroducing the very subject it claims to bracket.
 ====

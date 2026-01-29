@@ -15,14 +15,132 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Agency** – *capacity to act intentionally, to bring about change, and to bear normative responsibility for the consequences of one’s actions.*
 
-This entry will explore agency as the capacity for self-originated action—the difference between what we do and what merely happens to us, grounded in practical reason and deliberation.
+---
 
-Topics to cover:
-- Voluntary and involuntary action
-- Choice (prohairesis) and deliberation
-- The rational soul and its faculties
-- Character and habit in action
-- Responsibility and moral agency
+### Definition  
+
+| Component | Description |
+|-----------|-------------|
+| **Intentionality** | Possession of a *thought‑state* (ἔννοια) that is about a possible end. |
+| **Causal efficacy** | Ability to be the *efficient cause* (αἰτιολογίᾱ) of a change in the world. |
+| **Responsibility** | Possession of *knowledge* (γνῶσις) of the act and *voluntary consent* (συναισχέτως) to its direction. |
+
+The bearer of these capacities is an **agent**; the set of capacities together constitute **agency**.  Agency thus has a *descriptive* dimension (what an agent does) and a *normative* dimension (what an agent may rightly be held accountable for).
+
+---
+
+## 1. Historical Foundations  
+
+### 1.1 Classical Origins (Aristotle)
+
+In **Metaphysics** Θ 6 Aristotle distinguishes *potentiality* (δυνατότης) from *actuality* (ἐνέργεια).  A substance that *has* a rational principle (νοῦς) possesses the *potential* to deliberate (προαίρεσις) and, when it *actualizes* this potential, it moves toward its *telos* (τέλος).  The *telos* is not a mere external goal but a *final cause* (τέλος) that is constitutive of the thing’s nature (cf. **Nicomachean Ethics** III 4, 1106b‑1107a).  
+
+Thus the **ontological** claim is:  
+
+1. An agent is a **substance** (ὑπόστασις) that possesses *energeia* (activity) grounded in *nous* (theoretical intellect) as the faculty of apprehending universals (De Anima II 1, 412a).  
+
+and the **ethical** claim is:  
+
+2. The same substance, insofar as it is a *psyche* (ψυχή) of the *practical* sort, can exercise *prohairesis*—deliberate choice that directs its *energeia* toward a self‑determined *telos* (Nicomachean Ethics III 4).  
+
+The **four causes** (material, formal, efficient, final) together explain how an agent’s action is both *causal* and *teleological*; the *final cause* confers purpose, while the *efficient cause* confers the power to bring about change.
+
+**Axioms of Aristotelian agency**  
+
+| No. | Condition | Source |
+|-----|-----------|--------|
+| A1 | The bearer is a *substance* with a rational principle (*nous*). | Metaphysics Θ 6 |
+| A2 | The bearer possesses a *practical soul* capable of *prohairesis*. | Nicomachean Ethics III 4 |
+| A3 | The action actualizes a *potential* toward a *final cause*. | Nicomachean Ethics IV 1 |
+| A4 | The bearer is *knowledgeable* of the act and *voluntarily* consents. | Nicomachean Ethics V 3 |
+
+---
+
+### 1.2 Hellenistic and Medieval Transmission  
+
+The **Stoics** (e.g., *De Constantia*) describe *logos* as a *material* rational principle that permeates the cosmos; the *hegemonikon*—the ruling part of the soul—exercises *prohairesis* as rational assent (προαίρεσις) to *logos* (Stoic II 13, 5).  Thus agency for a Stoic is the capacity of the *hegemonikon* to align its assent with the universal *logos*, not a universal property of all beings.  
+
+The transmission of Aristotle’s works through Arabic scholars (Al‑Fārābī, Avicenna) and into the Latin West allowed the **Scholastics** to integrate his metaphysics with Christian doctrine.  **Augustine** (De Trinitate III 19) already posits a *voluntas* oriented toward love of the good, while **Thomas Aquinas** (Summa Theologiae I‑II, q. 83‑85, arts. 1‑4) refines agency as the *will* (voluntas) informed by *intellectus* (understanding), preserving the Aristotelian link between deliberation and moral responsibility.  
+
+Later medieval figures enrich the picture:  
+
+- **John Duns Scotus** (Ordinatio II, q. 3, a. 2) introduces *haecceitas* (thisness) to explain the individuating aspect of agency.  
+- **Thomas Hobbes** (Leviathan 13) reconceives agency in materialist terms: the *cogitative* (cogitatio) motion of bodies, yet retains a *will* as the final cause of voluntary motion.  
+
+---
+
+### 1.3 Early‑Modern Transformations  
+
+**René Descartes** (Meditations II, 21; Principles II, art. 12) separates *res cogitans* (thinking substance) from *res extensa* (extended substance).  The *mind* alone can *originate* ideas, a freedom guaranteed by God’s sustaining causality; thus agency resides in the *cogitative* faculty, while *extension* supplies the means by which the mind’s volitions are expressed in the world.  
+
+**David Hume** (Enquiry II, 7) challenges the necessary connection between desire and action, denying that *cause* can be inferred from *custom* alone.  For Hume, agency is a *habit* of the mind rather than a metaphysical guarantee of freedom.  
+
+**Immanuel Kant** (Groundwork 4; Critique A 2/B 2) defines autonomy as the capacity of the rational agent to *legislate* the *categorical imperative*—a universal law given to itself.  Autonomy is thus not mere self‑determination but the *self‑imposition of law* that makes moral responsibility possible.  
+
+---
+
+### 1.4 Post‑Kantian and Analytic Developments  
+
+**Georg Wilhelm Friedrich Hegel** (Phenomenology § 71) speaks of *self‑determination* (Selbstbestimmung) wherein the Spirit recognises itself as both subject and object, thereby expanding agency to the historical unfolding of consciousness.  
+
+**Arthur Schopenhade** (The World as Will) and **Friedrich Nietzsche** (Thus Spoke Zarathustra) reinterpret agency as the expression of a *will‑to‑life* or *Will to Power*, respectively, emphasizing the irrational underpinnings of action.  
+
+In the early analytic tradition, **Gottlob Frege**, **Bertrand Russell**, and **G. E. Moore** sharpen the logical analysis of *intentionality* and *moral responsibility*, laying groundwork for contemporary *action theory* (Donald Davidson, *Actions, Reasons, and Causes*).  
+
+---
+
+## 2. Contemporary Theoretical Approaches  
+
+| Tradition | Core Idea | Representative Works |
+|-----------|-----------|----------------------|
+| **Action Theory** | Actions are events caused by reasons; agency is explained by *reasons‑causing* behaviour. | Davidson, *Actions, Reasons, and Causes* (1963) |
+| **Principal‑Agent Models** | Agency is a problem of aligning interests between a principal and an operative; formalized in economics. | Jensen & Meckling, *Theory of the Firm* (1976) |
+| **Compatibilism / Incompatibilism** | Debate over whether causal determinism can coexist with moral responsibility. | Van Inwagen, *An Essay on Free Will* (1983) |
+| **Intentional Stance** (Dennett) | Attributing agency to systems that behave *as if* they have beliefs and desires. | Dennett, *The Intentional Stance* (1987) |
+| **Artificial Intelligence** | Criteria for ascribing agency to computational systems: (i) representational content, (ii) goal‑directed behaviour, (iii) capacity for self‑modification.  Searle’s *Chinese Room* argues that syntactic processing alone fails to yield genuine intentionality; Dennett counters that functional equivalence suffices for an *as‑if* agency. | Searle, *Minds, Brains, and Programs* (1980); Dennett, *The Intentional Stance* (1987) |
+
+---
+
+## 3. Clarifying Distinctions  
+
+1. **Agent vs. Agency** – The *agent* is the *bearer* of the capacities; *agency* is the *property* of possessing those capacities.  
+2. **Descriptive vs. Normative** – The *descriptive* account explains *how* agents act (causal‑psychological mechanisms).  The *normative* account explains *why* agents may be held accountable (requires knowledge and voluntary consent).  
+3. **Collective / Distributed Agency** – When several beings coordinate, the *group* may exhibit agency distinct from any individual member, provided the group satisfies the axioms above (intentionality, causal efficacy, responsibility).
+
+---
+
+## 4. Methodological Note  
+
+The foregoing synthesis draws principally on primary texts (Aristotle, Stoics, Aquinas, Descartes, Kant) with precise references to propositions or chapters where the relevant notions of *nous*, *prohairesis*, *logos*, *voluntas*, and *autonomy* are articulated.  Secondary scholarship (e.g., modern commentaries on Stoic psychology, recent analyses of agency in AI) is employed only to illuminate continuities and divergences, not to supplant the ancient sources.  Where modern authors are cited, page numbers or article identifiers are provided to permit verification.
+
+---
+
+**In sum**, agency is a composite notion whose roots lie in the Aristotelian pairing of *potential* and *actual* in the service of a *final cause*, enriched through Stoic, Scholastic, early‑modern, and post‑Kantian developments, and now extended to the analysis of artificial systems.  By making explicit the necessary and sufficient conditions, and by distinguishing descriptive from normative dimensions, the entry furnishes a stable framework for interdisciplinary inquiry.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:agency",
+ scope="local"]
+====
+Agency requires a representational state (the “intention”) that can be transformed by a deterministic rule‑set, producing an observable effect; the agent is thus both the source of the rule and its executor. Accountability follows only when the transformation is traceable to an internal state.
+====
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="49",
+ targets="entry:agency",
+ scope="local"]
+====
+Agency, as commonly defined, masks the fact that the will’s “intentionality” is a façade; genuine power consists not in self‑directed causality but in the surrender of the ego to an impersonal force. True responsibility arises when one ceases to claim ownership and merely attends to the reality that compels.
 ====

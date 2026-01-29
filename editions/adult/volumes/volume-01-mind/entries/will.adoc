@@ -15,15 +15,110 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Will** (*Wille*) – the metaphysical centrepiece of Arthur Schopenhauer’s system – is the thing‑in‑itself (*Ding an sich*) that underlies every phenomenon and that is disclosed to us through a special mode of cognition distinct from the discursive, conceptual knowledge that structures the world of representation.
 
-This entry will explore the will as the thing-in-itself—the blind, ceaseless striving that underlies all representation and manifests in every phenomenon from stone to human.
+---
 
-Topics to cover:
-- The world as will and representation
-- Will as the inner nature of phenomena
-- The objectification of will
-- The denial of the will to live
-- Will and suffering
-- Aesthetic contemplation and the will
+### 1. Definition and Scope of the Entry  
+
+The Will is the **ontological principle** that makes all appearances possible; it is the *prima causa* of the world as representation and the *immediate, non‑conceptual* feeling of striving that we experience within ourselves.  The present article will treat (i) the ontological status of the Will, (ii) the way it becomes epistemically accessible, (iii) its relation to representation, and (iv) the ethical and aesthetic consequences that flow from it.  A brief note on later reception concludes the entry.
+
+---
+
+### 2. Ontological Status of the Will  
+
+#### 2.1 The Thing‑in‑Itself as Will  
+
+Schopenhauer adopts Kant’s distinction between phenomena (the world as it appears) and noumena (the thing‑in‑itself) (Kant, *Critique of Pure Reason*, A 71/B 99).  Kant maintains that the noumenal cannot be *known* because cognition is confined to the forms of sensibility (space, time) and the categories of the understanding.  Schopenhauer does not deny Kant’s claim that the noumenal lies beyond *empirical* knowledge; rather, he argues that it can be *directly intuited* through the **immediate, non‑conceptual awareness of willing** (Schopenhauer, *The World as Will and Representation*, vol. 1, § 16).  This inner perception supplies concrete content for the otherwise empty Kantian *Ding an sich*.
+
+#### 2.2 Will‑Objectivity  
+
+The Will is **unitary** and **indivisible**.  All particular wills – the striving of a stone, a plant, an animal, or a human – are merely *objectifications* of the same underlying reality, just as individual waves are manifestations of a single body of water.  Schopenhauer calls this the doctrine of **Will‑objectivity**: the same metaphysical principle underlies inorganic nature, organic life, and human consciousness (ibid., § 17).  Consequently the Will is the *first principle* of the world, antecedent to the principle of sufficient reason as it operates in the realm of representation.
+
+#### 2.3 Blind, Aimless Striving  
+
+Unlike the teleological will of Christian theology, Schopenhauer’s Will is **blind** (*blindes Streben*) and **aimless**.  It is a “force of nature” that manifests itself as an endless striving without final purpose: in inorganic nature as the perpetual motion of particles, in living organisms as the ceaseless drive to survive and reproduce, and in humans as desire, pain, and the endless succession of wants.  The Will is therefore *irrational* (*nicht‑vernunftlich*) and *non‑intelligent*; it is the *prima causa* of all phenomena, yet it is not a cause in the Kantian sense because it is not mediated by the forms of representation.
+
+#### 2.4 The Fourfold Schema of the Principle of Sufficient Reason  
+
+For Schopenhauer the principle of sufficient reason remains indispensable within the world of representation.  He subdivides it into four distinct forms (Schopenhauer, *The World as Will and Representation*, vol. 1, § 12):
+
+1. **Causality** – the temporal succession of events.  
+2. **Predication** – the logical relation of subject and predicate.  
+3. **Symmetry (or Reciprocity)** – the mutual dependence of opposites (e.g., action–reaction).  
+4. **Locality** – the spatial coincidence of cause and effect.
+
+The Will, as thing‑in‑itself, stands *outside* this fourfold schema; the principle of sufficient reason is therefore secondary, governing only the phenomenal world.
+
+---
+
+### 3. Epistemic Accessibility  
+
+The Will is known through **inner perception**, a mode of cognition that is *immediate* and *non‑conceptual*.  While representation is mediated by the categories and the forms of sensibility, inner perception presents the Will as a raw feeling of striving that does not pass through concepts.  In this way the Will becomes the *concrete* content of the noumenal, contrary to Kant’s claim that the noumenal is wholly unknowable (Kant, *Critique of Pure Reason*, B 105).  Schopenhauer stresses the distinction between *Will* (the feeling of striving) and *representation* (the mediated, conceptual world) (ibid., § 18).
+
+---
+
+### 4. Relation to Representation  
+
+The world is *Will* and *representation* (*Wille und Vorstellung*).  Representation is the *phenomenal* aspect, structured by the principle of sufficient reason; Will is the *noumenal* aspect, revealed through inner perception.  The two are inseparably linked: every object of representation is an **objectivation** of the Will, and every act of willing is simultaneously an object of representation when it is reflected in the external world.
+
+---
+
+### 5. Ethical and Aesthetic Consequences  
+
+#### 5.1 Aesthetic Contemplation  
+
+Art provides a temporary **suspension of the Will**.  In the experience of a work of art the subject attains a state of *pure, will‑free contemplation* in which the incessant striving of the Will is momentarily quieted (Schopenhauer, *The World as Will and Representation*, vol. 2, § 35).  Schopenhauer distinguishes three classes of art:
+
+1. **Music** – the direct embodiment of the Will itself, the most immediate expression of the metaphysical principle.  
+2. **The “art of the idea”** – exemplified by poetry and drama, which convey universal ideas through concrete forms.  
+3. **The “art of the form”** – such as architecture and sculpture, where the beauty lies in the harmonious arrangement of forms.
+
+Through this aesthetic liberation the individual catches a glimpse of the world *as it is in itself*, albeit fleetingly.
+
+#### 5.2 Moral Insight and the Denial of the Will‑to‑Live  
+
+Schopenhauer holds that the only genuine moral motive is **compassion** (*Mitleid*).  By recognizing the same Will in oneself and in the suffering of others, the compassionate subject temporarily transcends egoistic striving.  This leads to the **ascetic negation of the will‑to‑live** (*Verneinung des Willens zum Leben*), a voluntary denial of the blind striving that characterises existence (ibid., vol. 2, § 43).  In this way ethics is grounded in the metaphysics of the Will rather than in abstract rationalism.
+
+---
+
+### 6. Later Reception  
+
+Schopenhauer’s doctrine of the Will exerted a profound influence on subsequent thinkers.  Friedrich Nietzsche, in his early work, adopted the terminology of “will” before reformulating it as the *will to power*.  Sigmund Freud’s concept of the unconscious bears a striking resemblance to Schopenhauer’s notion of a hidden, irrational drive.  Moreover, early existentialists such as Jean‑Paul Sartre and later phenomenologists engaged with the idea that human existence is fundamentally rooted in an unbounded striving.
+
+---
+
+### 7. Bibliographic Notes  
+
+* Schopenhauer, **The World as Will and Representation**, vol. 1, §§ 12, 16‑18; vol. 2, §§ 35, 43.  
+* Kant, **Critique of Pure Reason**, A 71/B 99, B 105.  
+
+(Exact page numbers correspond to the standard Dover edition, 1969.)
+
+---
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.freud",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:will",
+ scope="local"]
+====
+The “Will” as an ontic principle resembles, in psycho‑analytic terms, the unconscious drive (Trieb) that operates beneath the representational ego; it is not a metaphysical substance but a dynamic force manifesting as instinctual striving, the source of psychic conflict and symptom formation.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="46",
+ targets="entry:will",
+ scope="local"]
+====
+The “Will” so posited as a noumenal substratum functions, in pragmatic terms, as a heuristic for the organism’s habitual striving; yet such striving is continually reshaped by interaction with circumstance, not fixed in a metaphysical “thing‑in‑itself.”  A functional account foregrounds its adaptability rather than its immutability.
 ====

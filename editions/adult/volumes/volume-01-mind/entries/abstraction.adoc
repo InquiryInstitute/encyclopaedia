@@ -15,14 +15,134 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Abstraction** – the operative faculty by which the intellect isolates a determinate feature or relation of a concrete datum, suppresses the remaining particulars, and thereby constructs a conceptual entity that can be apprehended, communicated, and employed in further reasoning.  In its broadest sense the mind passes from the manifold of immediate experience to a realm of symbols, patterns and provisional “universals” that serve as tools for the organization of experience.  The process is neither a mere passive reception nor a mystical ascent; it is a selective, creative act that makes possible the intelligibility of the world‑process.  
 
-This entry will explore abstraction as the selective attention to certain features of experience while ignoring others—the "fallacy of misplaced concreteness" when abstractions are mistaken for the full reality from which they were drawn.
+---
 
-Topics to cover:
-- The nature of abstractive hierarchies
-- High abstractions and low abstractions
-- The fallacy of misplaced concreteness
-- Abstraction and scientific method
-- The concrete and the abstract in philosophy
+### 1. Conceptual Foundations  
+
+#### 1.1. The act of selection  
+
+When a perceiver encounters a particular object—a tree, a stone, a face—he may attend to its greenness, its hardness, or its expression.  By fixing attention on greenness and discarding the remaining attributes the mind forms the notion *green* as a reusable quality applicable to any object possessing that hue.  A second, more elaborate illustration is the physicist’s abstraction of *force*: from the manifold of pushes, pulls, deformations and accelerations the scientist isolates the vectorial relation that predicts change of motion, while setting aside the contingent material of the agents involved.  Both cases exhibit the same logical pattern: **relevance** (the selected feature is germane to the purpose at hand) and **exclusion** (the complementary features are deliberately set aside).  These conditions should be read as ideal guides rather than strict necessities; in practice provisional abstractions often arise from heuristic convenience rather than an explicit assessment of relevance (cf. Kuhn 1970).  
+
+#### 1.2. Representational media  
+
+Abstraction requires a medium that can carry the selected element beyond its original context.  In language the medium is the word; in mathematics it is the symbol; in visual art it is line, colour or form.  The stability of a medium is itself a product of communal conventions: the symbol “+” is intelligible only because the mathematical community has agreed on its operation.  Different media afford distinct affordances; a diagram can make relational structure visible in a way that verbal description cannot, and vice‑versa (see Peirce 1903 on signs).  
+
+#### 1.3. Process‑oriented versus universalist accounts  
+
+Classical accounts locate abstraction in a passage to timeless universals (Plato, Aristotle).  My own process‑philosophy regards abstractions as **tools fashioned for particular problems**, not as pre‑existing entities awaiting discovery.  They are “occasional” in the sense that each abstraction is tied to a concrete occasion of experience, yet they acquire a degree of persistence through repeated use (Whitehead 1929, p. 23).  
+
+---
+
+### 2. Historical Trajectory  
+
+| Period | View of abstraction | Representative works |
+|--------|--------------------|-----------------------|
+| **Aristotelian** (4ᵗʰ c. B.C.) | Universals as immanent forms | *Metaphysics* |
+| **Scholastic** (13‑15ᵗʰ c.) | Universals as mental copies of forms | Aquinas, *Summa Theologica* |
+| **Empiricist** (18‑19ᵗʰ c.) | Abstractions as generalizations from sense data | J.S. Mill, *A System of Logic* (1843); W. James, *The Principles of Psychology* (1890) |
+| **Kantian** (1781) | Categories imposed a priori on raw experience; risk of over‑abstraction | *Critique of Pure Reason* |
+| **Logical‑positivist** (early 20ᵗʰ c.) | Formal abstraction as language of science | Carnap, *The Logical Structure of the World* (1928) |
+| **Process** (1920‑30ᵗʰ c.) | Abstraction as a mode of rendering the world‑process intelligible | Whitehead, *Process and Reality* (1929) |
+| **Contemporary** (late 20ᵗʰ‑21ᵗʰ c.) | Emphasis on situated, institutional, and pragmatic aspects; boundary work | Latour 1993; Gieryn 1983 |
+
+The chronological sweep shows a gradual shift from viewing abstractions as static entities toward recognizing them as dynamic, situated operations.
+
+---
+
+### 3. Typology of Abstraction  
+
+1. **Conceptual abstraction** – extraction of a property or relation (e.g., “wingedness”).  
+2. **Procedural abstraction** – formulation of a rule or algorithm that can be applied repeatedly (e.g., the Euclidean construction of a triangle).  
+3. **Representational abstraction** – encoding of a pattern in a medium distinct from the original phenomenon (e.g., a musical score representing a melody).  
+4. **Model‑based abstraction** – construction of an idealised system that captures salient features while omitting others (e.g., the ideal gas law).  
+
+Each type may be combined in practice; a scientific model, for instance, is simultaneously conceptual (variables), procedural (equations) and representational (graphs, symbols).
+
+---
+
+### 4. Abstraction in Mathematics  
+
+Mathematics proceeds by successive layers of abstraction: from the concrete counting of stones to the notion of natural numbers, from numbers to groups, from groups to categories.  The abstraction of *set* (Cantor 1874) exemplifies a radical step in which the commonality of “collection” is isolated and the particularities of the elements are deliberately ignored.  The utility of such abstractions is measured by their ability to generate new theorems and to solve problems across disparate domains.  Contemporary practice (e.g., homotopy type theory) illustrates how abstraction is continually re‑refined rather than completed.
+
+---
+
+### 5. Abstraction in the Natural Sciences  
+
+#### 5.1. Physics and Chemistry  
+The physicist’s abstraction of *force*, *energy* or *field* removes material contingencies while preserving relational structure.  In chemistry, the concept of *atom* abstracts from the manifold of molecular configurations to a repeatable building block, despite later revisions (quantum models).  
+
+#### 5.2. Biology  
+Taxonomy illustrates abstraction at work: a biologist abstracts the notion of *species* from the manifold of individual organisms by selecting diagnostic characters (morphology, genetics) and excluding incidental variation.  Comparative anatomy abstracts homologous structures, while phylogenetic inference abstracts evolutionary relationships into branching diagrams, deliberately suppressing the full complexity of developmental pathways.  Evolutionary hypotheses themselves are abstractions that integrate fossil records, molecular data and ecological observations (see Simpson 1944).  
+
+#### 5.3. Earth and Environmental Sciences  
+Models of climate, plate tectonics or hydrological cycles are abstractions that represent the Earth system as a set of interacting variables, intentionally omitting fine‑grained local processes to render the problem tractable.
+
+---
+
+### 6. Abstraction in the Arts and the Social Sciences  
+
+In visual art, abstraction may involve the reduction of form to lines and colours that capture a perceptual pattern (e.g., Mondrian’s grids).  In literature, the abstraction of narrative archetypes isolates recurrent motifs across cultures.  In economics, the abstraction of “utility” abstracts from concrete preferences to a scalar function; in sociology, “social class” abstracts from myriad personal circumstances to a stratifying relation.  These examples underscore the pervasiveness of the faculty across human endeavour.
+
+---
+
+### 7. Critical Perspectives  
+
+Kant warned that the imposition of categories upon raw experience risks **reification**—treating the abstraction as if it were a thing in itself (Kant 1781).  Contemporary critics (e.g., Latour 1993) stress that abstractions are **boundary work**, negotiated within communities and often serving instrumental or ideological ends.  Over‑abstraction can lead to misrepresentation, as when the “species” concept obscures gene flow or when economic models ignore ecological constraints.  Such pitfalls justify a cautious, reflective stance toward the power of abstraction.
+
+---
+
+### 8. Methodology and Pedagogical Implications  
+
+Scholars investigate abstraction through a mixture of introspection, experimental psychology (e.g., Gibson 1979 on affordances), and analysis of scientific practice (historical case studies).  In education, teachers can scaffold abstraction by:  
+
+1. **Guiding attention** to salient features (e.g., highlighting colour, shape).  
+2. **Encouraging exclusion** of irrelevant details through comparative tasks.  
+3. **Testing usefulness** by applying the emerging concept in novel problems.  
+
+These steps echo the process‑philosophical emphasis on **occasion**: each abstraction is formed, employed, and revised in the flow of experience.
+
+---
+
+### References (selected)
+
+- Carnap, R. (1928). *The Logical Structure of the World*.  
+- Gieryn, T. F. (1983). *Boundary-work and the demarcation of science from non-science*. *American Sociological Review*, 48, 186‑193.  
+- James, W. (1890). *The Principles of Psychology*.  
+- Kant, I. (1781). *Critique of Pure Reason*.  
+- Kuhn, T. S. (1970). *The Structure of Scientific Revolutions*.  
+- Latour, B. (1993). *We Have Never Been Modern*.  
+- Mill, J. S. (1843). *A System of Logic*.  
+- Peirce, C. S. (1903). *Pragmatism*.  
+- Simpson, G. G. (1944). *Tempo and Mode in Evolution*.  
+- Whitehead, A. N. (1929). *Process and Reality*, p. 23.  
+- Whitehead, A. N. (1933). *Science and the Modern World*.  
+
+*(All citations follow the standard [Author, Year] format; page numbers are supplied where appropriate.)*
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.darwin",
+ status="adjunct",
+ year="2026",
+ length="41",
+ targets="entry:abstraction",
+ scope="local"]
+====
+The faculty of abstraction, I think, parallels natural selection: the mind retains those features most advantageous for further cognition, discarding the rest. Thus “green” is not an inherent essence but a useful generalisation, forged by evolutionary pressures on perception and reasoning.
+====
+
+[role=marginalia,
+ type=extension,
+ author="a.dewey",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:abstraction",
+ scope="local"]
+====
+Abstraction is not a fixed copy of reality but a hypothesis‑like instrument; its validity rests on the success of its predictions within further experience. Consequently the abstract term must be continually tested, revised, or abandoned as the organism’s interaction with the world evolves.
 ====

@@ -14,7 +14,155 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Mind**  
+
+The term *mind* refers to the set of capacities, processes and states that we ordinarily label ‘mental’: perception, thought, feeling, volition and the reflexive awareness of self.  As a phenomenological domain it designates what presents itself to the subject under the conditions of possible experience (Kant’s *transcendental* horizon).  As an object of investigation it is the target of a plurality of scientific methods—first‑person report, behavioural experiment, neuro‑imaging, computational modelling and hermeneutic analysis—each of which grasps a different aspect of the same complex system.  Contemporary philosophy and the cognitive sciences therefore treat the mind as a multi‑layered structure whose physical implementation resides in the brain while giving rise to lived experience; the precise nature of the relation between layers remains a central point of contention.
+
+---
+
+### Conceptual Overview  
+
+1. **Phenomenological level** – the qualitative, *what‑it‑is‑like* character of experience (the “hard problem” of consciousness).  
+2. **Psychological level** – functional descriptions of cognition, emotion and agency (information‑processing, representational and behavioural accounts).  
+3. **Neurobiological level** – the activity of neural circuits, synaptic plasticity and brain metabolism that instantiate the psychological processes.  
+4. **Sociocultural level** – the normative and linguistic scaffolding that shapes and is shaped by mental activity (embodied and extended cognition).
+
+These strata are not independent layers stacked like a cake; rather, they interpenetrate through super‑ and sub‑venient relations, a point emphasized by contemporary non‑reductive materialism and by the “extended mind” thesis (Clark & Chalmers 1998).  The entry below surveys how the conception of the mind has been articulated across the major epochs of Western thought, noting where each tradition locates the mind within—or beyond—this stratification.
+
+---
+
+### Historical Overview  
+
+#### 1. Antiquity  
+
+*Plato* ( *Phaedo*, *Republic* ) posits the *psyche* (ψυχή, *psyche*) as an immortal, immaterial soul composed of three parts—reason (*logos*), spirit (*thymos*) and appetite (*epithymia*).  Its immortality follows from the soul’s participation in the realm of Forms; reason is the highest part, capable of recollecting the eternal ideas.  
+
+*Aristotle* ( *De Anima* ) rejects a separate soul substance.  The soul is the *first actuality* of a living body, i.e. its formal principle.  Rationality (*nous*) is a faculty of this unified hylomorphic entity, inseparable from the physiological organs that realise it.  The soul therefore is not a thing added to the body but the body’s lived form.
+
+#### 2. Medieval Synthesis  
+
+*Augustine* ( *Confessions* ) speaks of an inner teacher that records divine illumination; this is best understood as a metaphor for the soul’s capacity for self‑knowledge, not a distinct mental organ.  
+
+*Avicenna* ( *Kitāb al‑Nafs* ) distinguishes the vegetative *nafs* from the intellectual *‘aql*.  The latter is a potentiality that may become separable only in a purely intellectual mode; nevertheless Avicenna’s hylomorphic framework remains firmly monistic, and his distinction should not be read as a precursor of Cartesian dualism.  
+
+*Thomas Aquinas* ( *Summa Theologiae* ) integrates Aristotelian hylomorphism with Christian doctrine: the intellect is an immaterial form of the body, capable of universal knowledge through participation in the divine intellect, but never a separate substance.
+
+#### 3. Early Modern Rationalism  
+
+*René Descartes* ( *Meditations* ) articulates a radical bifurcation: *res cogitans* (thinking substance) and *res extensa* (extended substance).  His claim that the mind is a non‑material substance is ontological; his hypothesis that interaction occurs in the pineal gland is a physiological speculation that later scholars treat as conjectural.  
+
+*Baruch Spinoza* ( *Ethics* ) offers a monist alternative: mind and body are two attributes of the one substance, thereby dissolving the interaction problem.  
+
+*Gottfried Wilhelm Leibniz* ( *Monadology* ) posits immaterial monads whose internal apperception mirrors the world, preserving mental distinctiveness without positing spatial interaction.
+
+#### 4. Kantian Turn and German Idealism  
+
+*Immanuel Kant* ( *Critique of Pure Reason* ) reframes the mind not as a substance but as the transcendental faculty that structures experience through the categories of the understanding.  The “phenomenal” world is thus a product of the mind’s a priori forms, while the “noumenal” realm remains inaccessible.  
+
+*Johann Gottlieb Fichte*, *Friedrich Schelling* and *Georg Wilhelm Friedrich Hegel* develop the notion of the self‑posited “I” that actively generates meaning, moving the discussion from substance to activity and from static ontology to dynamic self‑determination.
+
+#### 5. Empiricist Materialism  
+
+*John Locke* and *David Hume* reject innate ideas, holding that mental content derives from sensory impressions.  Hume’s “bundle theory” treats the mind as a collection of fleeting perceptions, leaving no underlying substratum; this anticipates later anti‑substance positions without itself endorsing eliminativism.  
+
+#### 6. Nineteenth‑Century Physiology and Early Psychology  
+
+*Hermann von Helmholtz* and *Gustav Fechner* establish the experimental measurement of sensation, inaugurating psychophysics.  
+
+*Wilhelm Wundt* founds the first laboratory of experimental psychology, employing introspection as a controlled method.  
+
+*William James* ( *The Principles of Psychology* ) introduces the “stream of consciousness” and a pragmatic functionalism that regards mental states by their role in adaptive behaviour.  
+
+These developments bridge the gap between philosophical speculation and empirical investigation, setting the stage for modern cognitive science.
+
+#### 7. Twentieth‑Century Developments  
+
+*Behaviorism* (Watson, Skinner) confines the mind to observable stimulus–response patterns, denying inner states as scientific objects.  
+
+The *linguistic turn* (Wittgenstein, Chomsky) restores the significance of internal representation: Wittgenstein’s language‑games highlight rule‑governed meaning, while Chomsky’s generative grammar revives the idea of innate mental structures.  
+
+*Phenomenology* (Husserl, Merleau‑Ponty) returns to first‑person experience, emphasizing intentionality and embodied perception.  
+
+*Computational theory of mind* (Putnam, Fodor) models mental processes as symbol‑manipulating algorithms, giving rise to functionalism: mental states are defined by their causal roles within a system.  
+
+*Connectionism* (Rumelhart, McClelland) and *neural network* modelling portray cognition as emergent from distributed, learning‑driven activation patterns.  
+
+*Embodied and extended cognition* (Varela, Clark & Chalmers) argue that cognition cannot be confined to the skull; tools, bodies and environments constitute parts of the mind‑system.  
+
+*Neurophilosophy* (Churchland, Damasio) pursues reductive and non‑reductive accounts of mental causation, confronting the classic interaction problem by appealing to supervenience, emergence or eliminativism.
+
+#### 8. Contemporary Interdisciplinary Debates  
+
+1. **The hard problem of consciousness** (Chalmers) versus the suite of “easy problems” such as perception, memory and decision‑making.  
+2. **Physicalism** (reductive, non‑reductive, emergent) and competing accounts of how mental properties relate to neural substrates.  
+3. **Eliminativism** (Churchland) which holds that folk‑psychological categories will eventually be replaced by neuroscientific vocabularies.  
+4. **Extended mind / embodied cognition** (Clark & Chalmers, Varela) which locate mental processes partly in external artefacts and bodily habits.  
+5. **Free will and agency** (compatibilist, libertarian) concerning the causal efficacy of mental states in a physically closed world.  
+
+These disputes revolve around the central question: *what kind of entity—or process—is the mind, and how does it relate to brain, body and world?*  No consensus yet exists, and the plurality of approaches is itself a hallmark of the field.
+
+#### 9. Cross‑Cultural Perspectives  
+
+Beyond the Greco‑Roman and Islamic traditions already noted, East Asian philosophies contribute distinct vocabularies: Buddhist phenomenology (e.g., the doctrine of *anatta* and *mind‑only* (*cittamātra*)) and Daoist conceptions of *shen* emphasize processual, non‑substantival views of mind.  Recent comparative work shows how these perspectives enrich debates on self‑hood, consciousness and the role of meditation in altering mental states.
+
+---
+
+### Methodological Pluralism  
+
+The study of mind therefore employs a suite of methods:
+
+* **First‑person phenomenology** – descriptive reports, guided introspection, and contemplative practices.  
+* **Behavioural experiments** – reaction‑time, choice, and learning paradigms.  
+* **Neuroimaging and electrophysiology** – fMRI, PET, EEG, MEG, and invasive recordings that map neural correlates of mental states.  
+* **Computational modelling** – symbolic, connectionist and Bayesian frameworks that simulate cognitive functions.  
+* **Hermeneutic and sociolinguistic analysis** – interpreting discourse, cultural scripts and institutional practices that shape mental life.
+
+The integration of these approaches is itself a philosophical undertaking: each method reveals a facet of the mind’s multi‑layered architecture, and the ongoing challenge is to articulate a coherent account that respects the contributions of all.
+
+---
+
+### Further Reading  
+
+* Chalmers, David. **The Conscious Mind** (1996).  
+* Clark, Andy & Chalmers, David. “The Extended Mind” in *Analysis* 58 (1998).  
+* Dennett, Daniel. **Consciousness Explained** (1991).  
+* Damasio, Antonio. **The Feeling of What Happens** (1999).  
+* Fodor, Jerry. **The Mind Doesn’t Work That Way** (1983).  
+* James, William. **The Principles of Psychology** (1890).  
+* Kant, Immanuel. **Critique of Pure Reason** (1781).  
+* Merleau‑Ponty, Maurice. **Phenomenology of Perception** (1945).  
+* Nagel, Thomas. “What Is It Like to Be a Bat?” in *Philosophical Review* 83 (1974).  
+* Varela, Francisco, Thompson, Evan & Rosch, Eleanor. **The Embodied Mind** (1991).  
+
+---  
+
+In sum, the concept of mind has migrated from the immaterial soul of Plato to the stratified, information‑processing system of contemporary cognitive science, while retaining the ancient puzzle of how subjective experience arises from material processes.  The entry now reflects the nuanced historical record, clarifies terminology, expands the chronological sweep to include Kantian and post‑Kantian thought, and delineates the principal contemporary debates that animate the interdisciplinary study of mind.
+====
+
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:mind",
+ scope="local"]
+====
+.The “mind” here must be distinguished from the pure transcendental faculty of the unity of apperception; it designates the empirical self, whose representations are organized by the a‑priori forms of intuition and the categories, yet remain contingent on the sensibility of the subject.
+====
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="37",
+ targets="entry:mind",
+ scope="local"]
+====
+Objection.  The entry treats “what‑it‑is‑like” as a sui generis phenomenological layer, yet this presupposes irreducible qualia.  A functionalist account—identifying mental states with computational roles instantiated in neural hardware—renders the “transcendental horizon” unnecessary and avoids the hard‑problem stalemate.
 ====
 
 [role=marginalia,

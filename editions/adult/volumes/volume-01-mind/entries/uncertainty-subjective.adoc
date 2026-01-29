@@ -15,14 +15,140 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Uncertainty‑Subjective**
 
-This entry will explore the human condition of uncertainty—caught between infinite spaces that terrify us, we wager without certainty yet must still act.
+The term *subjective uncertainty* designates a way of quantifying ignorance in which the numerical value attached to a proposition is not an intrinsic property of the world but a measure of the belief of a rational agent.  The number expresses how far the mind is prepared to stake its own utility on the truth of the proposition, and it may be revised whenever new information arrives.  This entry surveys the historical lineage, the philosophical grounding, the formal apparatus, the main fields of use, and the principal objections that have been raised.
 
-Topics to cover:
-- The human condition between two infinities
-- The misery and grandeur of man
-- The wager and decision under uncertainty
-- The heart has its reasons
-- Diversion and the avoidance of self
+---
+
+### 1.  Historical Development  
+
+#### 1.1  Early seeds (eighteenth‑century)  
+The first hints that probability could be a matter of knowledge rather than of mere chance appear in the work of **Jacob Bernoulli** (*Ars Conjectandi*, 1713) and **Abraham de Moivre** ( *The Doctrine of Chances*, 1718).  Their law of large numbers showed that long‑run frequencies could be used to form expectations, thereby suggesting a link between observed regularities and the mind’s judgment.  
+
+#### 1.2  The nineteenth‑century articulation  
+In the early nineteenth century **Pierre‑Simon Laplace** wrote in the *Essai philosophique sur les probabilités* (1814) that “the probability of an event is the ratio of the number of favourable cases to the total number of possible cases, **as judged by the mind**” (Livre II, § 4).  Laplace’s remark already points to the mental character of probability, though he still retains the language of ratios of cases.
+
+#### 1.3  Modern formalisation (twentieth‑century)  
+The personalist programme was given a precise operational definition by **Bruno de Finetti** (1937).  He declared that a probability is “the limit of the relative frequency in an imagined infinite sequence of trials which the subject could, in principle, perform.”  De Finetti’s *coherence* theorem showed that any system of such personal probabilities that avoids a guaranteed loss—what he called a *Dutch‑book*—must satisfy the axioms of Kolmogorov’s measure theory.  **Leonard J. Savage** later incorporated this result into a decision‑theoretic framework (*The Foundations of Statistics*, Wiley, 1954), adding the *sure‑thing principle* and linking coherence to rational choice.  
+
+Other notable contributors to the personalist tradition are **Frank P. Ramsey** (1926) and **John Maynard Keynes** (1931), whose betting arguments anticipated de Finetti’s later work, and **John C. Mackenzie** who extended the notion to epistemic modelling in the sciences.
+
+> **Take‑away.**  From Bernoulli’s early law of large numbers to Laplace’s mental ratio, and finally to de Finetti’s coherence, the idea that probability may be a degree of belief has been sharpened over two centuries.
+
+---
+
+### 2.  Philosophical Foundations  
+
+#### 2.1  Belief as a quantitative state  
+A *degree of belief* \(P(A)\) assigned to a proposition \(A\) is taken to be the price, expressed in units of utility, that a rational agent is willing to pay for a bet that pays 1 if \(A\) occurs and loses 1 otherwise.  The betting paradigm ties the abstract number to concrete action, and it rests on the premise that rational agents act so as to maximise expected utility.
+
+#### 2.2  Normative justification (Kantian perspective)  
+The requirement that agents behave coherently may be read as an echo of Kant’s *categorical imperative*: “Act only according to that maxim whereby you can at the same time will that it should become a universal law.”  In the probabilistic realm the maxim is “assign probabilities in such a way that no one can be forced into a sure loss.”  Thus the *Dutch‑book* argument is not merely a technical device but a practical illustration of the moral law of consistency.
+
+> **Take‑away.**  The numerical representation of belief is justified both by the pragmatics of betting and by a deeper normative demand for universal coherence.
+
+---
+
+### 3.  Formal Coherence  
+
+Let \(\{A_i\}_{i=1}^{n}\) be a finite family of events and let \(c_i\in\mathbb{R}\) denote the stake offered on each bet.  Define the **indicator function**  
+
+\[
+\mathbf{1}_{A_i}(\omega)=
+\begin{cases}
+1 & \text{if the outcome }\omega\text{ makes }A_i\text{ true},\\[4pt]
+0 & \text{otherwise}.
+\end{cases}
+\]
+
+A probability assignment \(P\) is **coherent** iff for every such collection the inequality  
+
+\[
+\sum_{i=1}^{n} c_i\bigl(P(A_i)-\mathbf{1}_{A_i}\bigr)\ge 0
+\tag{1}
+\]
+
+holds for all possible truth‑values of the events.  In words: no linear combination of bets with non‑negative stakes can guarantee a net loss.  Condition (1) is equivalent to the three Kolmogorov axioms:
+
+1. **Non‑negativity:** \(0\le P(A)\le 1\);  
+2. **Normalization:** \(P(\Omega)=1\);  
+3. **Additivity:** \(P(A\cup B)=P(A)+P(B)\) when \(A\) and \(B\) are mutually exclusive.
+
+*Illustrative Dutch‑book.*  
+Consider two mutually exclusive events \(H\) (the coin will land heads) and \(T\) (tails).  Suppose an agent assigns \(P(H)=0.6\) and \(P(T)=0.6\).  Offer the agent the following bets:
+
+| Bet | Stake \(c\) | Pay‑off if event occurs |
+|-----|-------------|--------------------------|
+| 1   | \(-1\)      | Receives 1 if \(H\) true |
+| 2   | \(-1\)      | Receives 1 if \(T\) true |
+
+The net gain for the agent is  
+
+\[
+-1\bigl(0.6-1\bigr) -1\bigl(0.6-1\bigr)= -0.8 <0,
+\]
+
+so the agent is guaranteed to lose whatever the coin shows.  The incoherent assignment violates (1).
+
+> **Take‑away.**  Coherence forces the agent’s degrees of belief to obey the familiar probability axioms; otherwise a clever bookmaker can force a sure loss.
+
+---
+
+### 4.  Principal Applications  
+
+| Domain | Role of Subjective Probability | Example |
+|--------|------------------------------|---------|
+| **Decision theory & economics** | Expected‑utility maximisation; risk assessment. | An investor chooses a portfolio by weighting assets with personal probabilities of return. |
+| **Bayesian statistics** | Updating beliefs via Bayes’ theorem; prior‑posterior calculus. | A physician revises the probability of a disease after receiving a test result. |
+| **Epistemic modelling in the sciences** | Assigning quantum states, modelling ignorance in physical systems. | In quantum mechanics, a physicist expresses uncertainty about a particle’s spin by a personal density matrix. |
+
+> **Take‑away.**  Wherever a rational agent must act under incomplete knowledge, the coherence principle guides the assignment and revision of probabilities.
+
+---
+
+### 5.  Critical Perspectives  
+
+1. **Objectivist objection.**  Frequentists argue that probabilities must be grounded in empirical long‑run frequencies, not in the mind’s judgment.  They claim that only observable relative frequencies can warrant scientific inference.  
+
+2. **Inter‑subjective agreement.**  Different rational agents, even when presented with identical evidence, may arrive at divergent probabilities.  The problem of convergence is not solved merely by coherence; extra principles—such as common priors or rational updating—are required.  
+
+3. **Utility‑calculus limitation.**  The betting metaphor presupposes that all beliefs can be expressed through a single utility scale, which may ignore moral, aesthetic, or other qualitative dimensions of conviction.  
+
+4. **Reference‑class problem.**  De Finetti’s imagined infinite sequence raises the question of which class of trials the agent should imagine; the choice of reference class can affect the resulting probability.  
+
+5. **Phenomenological critique.**  From a Husserlian standpoint, the act of believing is a lived intentionality that cannot be fully captured by a numerical assignment.  Bracketing the presuppositions of probability theory reveals a horizon of meaning that remains outside the formalism.  
+
+> **Take‑away.**  Subjective uncertainty is powerful, yet it must be confronted with objections concerning objectivity, agreement among agents, the adequacy of the betting model, and the deeper lived experience of belief.
+
+---
+
+### 6.  Concluding Remarks  
+
+Subjective uncertainty unites a mathematical discipline with a moral‑philosophical demand for coherence.  Its historical roots stretch from Bernoulli’s early law of large numbers to de Finetti’s coherence theorem, while its modern uses permeate economics, statistics, and the natural sciences.  The doctrine remains contested, for it raises profound questions about the nature of knowledge, the possibility of inter‑subjective consensus, and the limits of quantifying belief.  A careful appreciation of both its formal virtues and its philosophical challenges is essential for any scholar who wishes to navigate the uncertain terrain of human judgment.
+====
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="43",
+ targets="entry:uncertainty-subjective",
+ scope="local"]
+====
+marginal note.Subjective uncertainty is not a property of the thing‑in‑itself but a quantitative expression of the mind’s state of knowledge; it gauges the strength of a belief‑judgment under the conditions of possible experience and may be altered by the reception of new intuitions.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.husserl",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:uncertainty-subjective",
+ scope="local"]
+====
+note.In phenomenological terms, the “numerical value’’ is not a property of the object but a mode of givenness within the intentional act of the subject. It reflects the horizon of possible fulfillment of the noema, subject to modification by the epoché of new experiences.
 ====

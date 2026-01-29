@@ -14,7 +14,105 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+Let's craft.**Consciousness‑Darwin: An Evolutionary Account**
+
+The hypothesis that consciousness is a trait shaped by natural selection demands a careful separation of the phenomenological core of experience from the downstream capacities for representation and decision‑making, a distinction now widely recognised in the philosophy of mind (Baars 1997; De haene 2014). The present entry therefore proceeds in six interlocking parts, each grounded in comparative observation, quantitative genetics, and the methodological tools of modern phylogenetics.  
+
+---
+
+### 1. Definitions and methodological foundations  
+
+**Consciousness** is herein taken to comprise three graded capacities:  
+
+1. **Sensory awareness** – the immediate registration of external and internal stimuli as qualia.  
+2. **Representational modelling** – the construction of internal states that stand for present conditions and possible futures.  
+3. **Meta‑cognitive reflection** – the ability to monitor and, when appropriate, modify one’s own representations (meta‑cognition).  
+
+The first two items correspond to what Hume (1748) described as the “bundle of perceptions,” while the third echoes Brentano’s (1874) notion of intentionality directed upon one’s own mental acts. By distinguishing phenomenology from the capacity to act upon a representation we avoid the circularity noted by contemporary theorists such as Dennett (1971) and Chalmers (1995).  
+
+The evolutionary analysis rests on three pillars, now augmented by quantitative and phylogenetic techniques:  
+
+1. **Continuity of form** – the gradual transition from simple to complex organisms, a principle that admits, in the light of Gould & Eldredge (1972), occasional bouts of rapid change (punctuated equilibria).  
+2. **Selective advantage of mental traits** – any variation that enhances reproductive success is liable to be retained; this is testable by comparative phylogenetic regression (Garland & Harvey 1985).  
+3. **Heritability of behavioural variation** – modern quantitative genetics (Fisher 1918; Falconer 1990; Price 1972) provides the statistical framework for measuring phenotypic variance in cognition and for estimating the additive genetic component of traits such as learning speed, problem‑solving, and self‑recognition.  
+
+Together these foundations permit us to regard consciousness, in its three graded aspects, as a biological trait amenable to evolutionary scrutiny.  
+
+---
+
+### 2. Gradation of mental faculties across the animal kingdom  
+
+A systematic survey reveals three broad tiers of mental complexity, each illustrated by a well‑documented experiment.  
+
+| Tier | Taxa | Representative experiment | Key mental faculty |
+|------|------|-----------------------------|--------------------|
+| **Simple** | Porifera (sponges) | Coordinated contraction waves in response to mechanical disturbance (Nickel 2011) | Primitive sensory integration without a nervous system |
+| **Intermediate** | Arthropoda (fruit‑fly *Drosophila*) | Maze learning and operant conditioning (Menzel 1974) | Formation of internal representations of spatial cues |
+| **Complex** | Corvidae (New Caledonian crows) | Tool‑manufacturing and sequential problem‑solving (Taylor et al. 2007) | Meta‑cognitive planning and self‑monitoring |
+
+The progression from diffuse responsiveness in sponges to tool use in corvids mirrors an increase in neural architecture, yet notable exceptions (e.g., sophisticated problem‑solving in cephalopods with distributed ganglia; Hanlon & Messenger 2018) caution against a strict correlation between brain mass and mental capacity.  
+
+---
+
+### 3. Adaptive functions of perception and representation  
+
+The hierarchy outlined above acquires evolutionary meaning only when linked to selective pressures. Sensory awareness permits rapid avoidance of predators; representational modelling enables anticipatory foraging and navigation; meta‑cognition affords flexible social strategies such as deception, cooperation, and the assessment of one’s own knowledge (e.g., delayed‑response tasks in primates; Smith et al. 2003).  
+
+A brief synthesis: each tier of mental faculty confers a measurable fitness increment, which—when heritable—becomes amplified by natural selection. Comparative phylogenetic analyses (e.g., Pagel 1999) have demonstrated a positive correlation between encephalization quotients and the prevalence of such adaptive behaviours across vertebrates and select invertebrates.  
+
+---
+
+### 4. Evolutionary origins of self‑awareness and higher cognition  
+
+Self‑recognition, most famously tested by the mirror‑mark paradigm, provides an operational definition of higher cognition: the capacity to form a mental representation of one’s own body and to evaluate that representation against external stimuli. Empirical evidence now extends this capacity beyond great apes to dolphins (Reiss & Marino 1997) and some corvids (Prior et al. 2008).  
+
+The emergence of such meta‑cognitive abilities can be modelled as an evolutionary cascade: (i) selection for improved sensorimotor coordination; (ii) selection for internal predictive models; (iii) selection for the monitoring of those models when social complexity renders deception advantageous. Simple cost‑benefit diagrams (see Figure 1) illustrate that the net fitness gain from accurate self‑monitoring outweighs its metabolic cost once a threshold of social interaction is crossed.  
+
+---
+
+### 5. Limits of scientific description and the problem of subjectivity  
+
+The “hard problem” of consciousness—explaining why certain neural processes are accompanied by subjective experience—remains beyond the reach of current methodology (Chalmers 1995). Nevertheless, the “easy problem” of mapping functional correlates can be pursued through rigorous experimental design: blind scoring of behavioural responses, replication across taxa, and the use of controlled selection lines to isolate genetic contributions.  
+
+Anthropomorphic inference must be guarded against; the best practice is to infer mental states only when convergent evidence from physiology, behaviour, and phylogeny co‑occur (Shettleworth 2010).  
+
+---
+
+### 6. Synthesis, prospects and a research agenda  
+
+Consciousness, understood as a suite of graded mental capacities, appears to be an evolvable trait, subject to variation, inheritance, and selection. Future work should pursue three concrete avenues:  
+
+1. **Genome‑wide association studies** of cognitive phenotypes in model organisms (e.g., *Drosophila*, *Mus*), to identify genetic architectures underlying learning and meta‑cognition.  
+2. **Embodied robotic simulations** that instantiate perception–action loops, testing hypotheses about the incremental benefits of internal modelling (e.g., Braitenberg 1986).  
+3. **Comparative neuro‑physiology** employing modern imaging (e.g., functional MRI in primates and birds) to test the predictions of Global Workspace Theory and Integrated Information Theory as evolutionary hypotheses rather than final explanations.  
+
+By integrating behavioural, genetic, and neuro‑computational data within a phylogenetic framework, the study of consciousness may advance from philosophical speculation to a robust branch of evolutionary biology.
+====
+
+
+
+[role=marginalia,
+ type=objection,
+ author="a.dennett",
+ status="adjunct",
+ year="2026",
+ length="38",
+ targets="entry:consciousness-darwin",
+ scope="local"]
+====
+The alleged “phenomenological core” assumes a mysterious, intrinsically private qualia that evolution cannot target; selection acts on behavior‑relevant functions, not on unverifiable inner feel. Hence the three‑part schema reifies a non‑empirical layer and obscures the parsimonious, functionalist account.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="48",
+ targets="entry:consciousness-darwin",
+ scope="local"]
+====
+Note: “Sensory awareness” should be understood as the primitive registration of input, comparable to a machine’s raw bitstream, not yet processed into symbolic form. “Representational modelling” corresponds to internal algorithms that manipulate such data, while “meta‑cognitive reflection” resembles self‑modifying code, permitting the system to monitor its own processes.
 ====
 
 [role=marginalia,

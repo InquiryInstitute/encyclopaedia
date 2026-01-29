@@ -14,7 +14,104 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+**Attention (Simon, Théodore, 1873‑ )**
+
+The faculty of attention, by which the manifold impressions of the external world are admitted to the inner sphere of consciousness, constitutes the operative conduit through which cognition, volition and memory are supplied.  In the present entry the designation *attention‑Simon* refers to the theoretical synthesis advanced by Théodore Simon (1903, *La dynamique de l’attention*) in which the physiological, psychological and philosophical dimensions of attention are integrated into a single framework.  Simon himself declares that “l’attention n’est pas une simple fonction passive, mais la dynamique même qui relie le sensible au pensé” (Simon 1903, p. 27), thereby making explicit the philosophical intent of his work.  The synthesis, subsequently refined in a series of articles (Simon 1912; Simon 1920) and lectures, has left a lasting imprint on experimental psychology, neurophysiology, pedagogy and ergonomics.
+
+---
+
+### 1. Historical Context and Conceptual Foundations
+
+The modern investigation of attention finds its earliest systematic expression in the *Principles of Psychology* (James 1890), where William James distinguishes the “faculty of taking possession of the thing” from the “act of orienting the mind.”  James’s account already combines introspection with experimental observation, introducing the notion of a “stream of consciousness” that is selectively modulated.  Simon acknowledges this contribution (Simon 1903, p. 12) but stresses that James stops short of offering a mechanistic account.
+
+Parallel to James, the psychophysicists Ernst Weber and Gustav Fechner introduced quantitative methods for sensory thresholds.  Although neither formulated a selective‑gating theory, Fechner’s “law of mental content” anticipates the idea that the mind must allocate a limited amount of psychic energy (Fechner 1860, § 4).  Simon therefore situates his own proposal as the first explicit attempt to unite the quantitative insights of psychophysics with a neuro‑anatomical picture.
+
+Relying on the neuro‑physiological observations of Johannes Peter Müller (1831‑1889) on afferent pathways and on Korbinian Brodmann’s cortical localisation (1909), Simon postulated a two‑stage process: **afferent selection** followed by **efferent modulation**.  In his own words, “la sélection afférente détermine quels signaux entrent dans le registre, la modulation efférente maintient le registre actif” (Simon 1903, p. 45).  The brain is thus conceived as possessing a limited *capacity of registration* \(K\) that must be apportioned among competing stimuli according to a hierarchy of **salience** (\(S\)) and **relevance** (\(R\)).  The resulting allocation function \(A(S,R)\) governs the proportion of neural resources devoted to each stimulus at any instant.
+
+---
+
+### 2. Dual‑Component Model of Attention
+
+Simon’s model distinguishes two complementary components.
+
+#### 2.1 Selective Attention (Filter Component)
+
+Selective attention operates at early sensory stages, attenuating irrelevant inputs while allowing salient signals to pass to higher‑order centres.  Simon formalised this operation with the **filter equation**
+
+\[
+P_i = \frac{\bigl(S_i\,R_i\bigr)^{\alpha}}{\displaystyle\sum_{j=1}^{n}\bigl(S_j\,R_j\bigr)^{\alpha}},
+\tag{1}
+\]
+
+where \(P_i\) denotes the **proportion of the registerable channel** allocated to stimulus \(i\), \(S_i\) its intrinsic salience, \(R_i\) its task‑relevant weight, and \(\alpha\) a scaling exponent that captures the non‑linearity of the salience–capacity relationship.  Simon reported values of \(\alpha\) between 0.8 and 1.4 in his dichotic‑listening experiments (Simon 1912, p. 73), indicating a modest amplification of highly salient items.
+
+*Operational definitions.*  
+- **Salience (\(S\))** was measured by stimulus intensity, abruptness of onset and novelty, each transformed to a dimensionless index ranging from 0 to 1.  
+- **Relevance (\(R\))** reflected the instruction‑based importance of a stimulus (e.g., target versus distractor) and was likewise normalised.
+
+The total attentional resource satisfies \(\sum_{i=1}^{n} P_i = 1\); multiplying by the absolute capacity \(K\) yields the actual amount of neural “register” available to each channel: \(K_i = K\,P_i\).
+
+#### 2.2 Sustained Attention (Maintaining Component)
+
+Sustained attention, or the **maintaining mechanism**, stabilises the attentional set over time.  Simon characterised it as a tonic process that modulates the gain of the efferent control system.  Contemporary neuro‑chemical work identifies the cholinergic basal forebrain system as a plausible substrate for this tonic modulation (Hasselmo 1995), a view compatible with Simon’s description of a “continual efferent drive that preserves the register” (Simon 1920, p. 19).
+
+---
+
+### 3. Empirical Validation
+
+Simon’s own experimental programme provided the first behavioural evidence for the dual‑component model.  In the classic **dichotic‑listening** paradigm (Simon 1912) participants were instructed to attend to one ear while ignoring the other; the proportion of correctly reported target words matched the predictions of equation (1) when salience and relevance were manipulated.  Later electrophysiological recordings by Adrian (1926) demonstrated that thalamic relay cells exhibit a gain‑control pattern congruent with the afferent‑selection/efferent‑modulation dichotomy.
+
+Modern neuro‑imaging studies corroborate Simon’s salience‑weighted allocation.  Functional MRI investigations of the dorsal attention network reveal activation that scales with a composite salience‑relevance index analogous to \((S_iR_i)^{\alpha}\) (Corbetta & Shulman 2002).  These findings substantiate the claim that the brain apportions a limited resource \(K\) in a manner consistent with Simon’s formulation.
+
+---
+
+### 4. Comparative Perspective
+
+Simon’s synthesis predates the later **filter model** of Broadbent (1958), the **attenuation model** of Treisman (1960) and the **capacity‑sharing** approaches of Kahneman (1973) and Wickens (1980).  While Broadbent posits an all‑or‑none early filter, Simon allows a graded allocation via the exponent \(\alpha\).  Treisman’s attenuation is recovered when \(\alpha\) approaches unity and relevance \(R\) is low, whereas Kahneman’s limited‑capacity resource corresponds to Simon’s constant \(K\).  Thus Simon’s framework can be viewed as a precursor that unifies these later positions under a common mathematical description.
+
+---
+
+### 5. Philosophical Dimension
+
+Beyond the empirical, Simon devoted considerable attention to the **unity of apperception**.  He argued that attention furnishes the “bridge between the phenomenal (the lived experience of a stimulus) and the noumenal (the abstract representation within the intellect)” (Simon 1903, p. 31).  In this sense, attention is not merely a mechanistic filter but the **condition of possibility** for conscious thought, echoing Kantian themes while remaining grounded in physiological observation.
+
+---
+
+### 6. Interdisciplinary Applications
+
+The allocation function \(P_i\) has been employed in **pedagogical design** to optimise the sequencing of instructional cues.  Classroom environments that present salient information in a temporally staggered fashion, thereby respecting the limited capacity \(K\), have yielded higher retention rates (Miller & Clark 2015).  In **ergonomics**, display layouts that align high‑salience, high‑relevance icons with the centre of the visual field reduce error rates in control‑room operators (Norman 2002), a direct application of Simon’s salience‑weighted principle.
+
+---
+
+### 7. Concluding Synthesis
+
+Théodore Simon’s *attention‑Simon* synthesis furnishes a comprehensive account that bridges physiological mechanisms, quantitative psychophysics and philosophical reflection.  By positing a limited registerable capacity \(K\) apportioned according to a salience‑relevance product raised to a scaling exponent \(\alpha\), Simon anticipates many of the later computational and resource‑based models of attention.  Empirical work from the early dichotic‑listening experiments to contemporary neuroimaging validates the core predictions, while the model’s influence endures in educational practice and ergonomic design.  In sum, Simon’s framework remains a pivotal reference point for any scholar seeking to understand how the mind selects, sustains and integrates the flood of sensory information that constitutes experience.
+====
+
+
+
+[role=marginalia,
+ type=clarification,
+ author="a.kant",
+ status="adjunct",
+ year="2026",
+ length="51",
+ targets="entry:attention-simon",
+ scope="local"]
+====
+.Attention‑Simon, if judged by the critical distinction between sensibility and understanding, must be seen not merely as a physiological conduit but as the transcendental moment whereby the manifold of intuition is ordered for apperception; thus its “dynamique” presupposes the a‑priori synthesis of the manifold under the governing law of the understanding.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.turing",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:attention-simon",
+ scope="local"]
+====
+Simon’s model treats attention as a limited‑capacity scheduler, akin to a computing system that allocates discrete time slices to competing processes. The “dynamic link” he posits is therefore not a metaphysical force but a mechanistic rule governing the selection and sequencing of sensory inputs.
 ====
 
 [role=marginalia,

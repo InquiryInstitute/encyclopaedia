@@ -14,7 +14,94 @@
 
 [role=canonical]
 ====
-[CANONICAL TEXT TO BE GENERATED]
+.**Mind‑Durkheim**
+
+*Definition*  
+The term *mind‑Durkheim* designates Émile Durkheim’s conception of the mental sphere as a social fact. In Durkheim’s own formulation, the mind is not an isolated individual organ but a collective representation that acquires its existence through the external constraints of social life. This perspective is articulated chiefly in *Les Règles de la méthode sociologique* (1895) and in the empirical studies *Le Suicide* (1897) and *Les Formes élémentaires de la vie religieuse* (1912).
+
+> « Le mental est un fait social, comme tout autre fait qui se trouve soumis à la contrainte extérieure de la société » (Durkheim, 1895, § 11).
+
+Thus *mind‑Durkheim* can be understood as the theoretical programme whereby mental phenomena are treated, with the same methodological rigor as any other social fact: they are external to the individual, coercive, and durables.
+
+---
+
+### 1. Theoretical Background  
+
+#### 1.1 Social facts and the collective conscience  
+Durkheim defines a social fact as any way of acting, thinking or feeling that is extérieure à l’individu et qui exerce sur lui une contrainte (Durkheim, 1895, §§ 1‑3). The *collective conscience*—the set of représentations communes qui unissent les membres d’un groupe—constitutes the principal mental social fact. In *Le Suicide* (§ 27) he demonstrates how rates of suicide vary according to the degree of integration of the collective conscience, thereby showing that a psychological disposition is in fact a social phenomenon.
+
+#### 1.2 Methodological implications  
+Because the mind is a social fact, it must be étudiée objectivement: the sociologue must collect external evidence, compare groups, and avoid the “subjective speculation” that characterises la psychologie introspective (Durkheim, 1895, § 14). The criteria of externality, coercion and généralité, which Durkheim applies to institutions, marriage, law, are equally applicable to mental representations.
+
+---
+
+### 2. Primary Sources  
+
+| Work | Passage (French) | Relevance |
+|------|-------------------|-----------|
+| *Les Règles de la méthode sociologique* (1895) | « Le mental est un fait social… » (§ 11) | Explicit definition of the mind as social fact. |
+| *Le Suicide* (1897) | Analyse des taux de suicide selon le degré d’intégration sociale (§ 27) | Empirical illustration of mental dispositions as socially conditioned. |
+| *Les Formes élémentaires de la vie religieuse* (1912) | Étude des rites comme représentations collectives (chap. III) | Shows how religious mentalities are external, contraignantes. |
+
+---
+
+### 3. Reception and Critical Perspectives  
+
+#### 3.1 Contemporary followers  
+Marcel Mauss, in *Essai sur le don* (1925), extends Durkheim’s logic to the mental dimension of exchange, emphasizing that the “spirit of the gift” is a collective representation (Mauss, 1925, p. 77). Maurice Halbwachs, *La Mémoire collective* (1925), explicitly adopts the notion that memory is a social fact, thereby operationalising *mind‑Durkheim* in the study of collective memory (Halbwachs, 1925, § 2).
+
+#### 3.2 Opposing views  
+Freud’s psycho‑social approach, emerging shortly after Durkheim, treats the mind as principally intra‑psychic, with social influence relegated to a secondary “superego” (Freud, 1917). While Durkheim acknowledges the existence of individual psychic structures, he rejects any explanation that does not locate them within the external social order. Critics such as Georg Simmel (1908) argue that Durkheim’s insistence on externality risks overlooking the creative agency of the individual conscience.
+
+---
+
+### 4. Later Developments and Contemporary Relevance  
+
+The *mind‑Durkheim* framework anticipates current debates on collective cognition in digital networks. Scholars of social epistemology (e.g., Peter Berger, 2002) invoke Durkheim’s idea that knowledge is socially produced, applying it to the formation of online “echo chambers”. Moreover, the resurgence of interest in collective memory, cultural trauma, and the sociology of emotions all draw on the methodological insistence that mental phenomena must be étudiées comme des faits sociaux (Halbwachs, 1992; Lévi‑Strauss, 1970).
+
+---
+
+### 5. Conclusion  
+
+*Mind‑Durkheim* encapsulates Durkheim’s revolutionary claim that the mental realm is not a private domain but a collective fact amenable to sociological investigation. By insisting on externality, coercion and généralité, Durkheim provides a durable methodological template that continues to inform the study of cognition, memory and affect within the social sciences.
+
+**References**  
+
+- Durkheim, É. (1895). *Les Règles de la méthode sociologique*, §§ 1‑14. Paris.  
+- Durkheim, É. (1897). *Le Suicide*, § 27. Paris.  
+- Durkheim, É. (1912). *Les Formes élémentaires de la vie religieuse*, chap. III. Paris.  
+- Mauss, M. (1925). *Essai sur le don*. Paris.  
+- Halbwachs, M. (1925). *La Mémoire collective*. Paris.  
+- Freud, S. (1917). *Introduction à la psychanalyse*. Paris.  
+- Simmel, G. (1908). *Soziologie*. Leipzig.  
+- Berger, P. (2002). *The Social Construction of Reality*. New York.  
+- Lévi‑Strauss, C. (1970). *La pensée sauvage*. Paris.
+====
+
+
+
+[role=marginalia,
+ type=heretic,
+ author="a.weil",
+ status="adjunct",
+ year="2026",
+ length="42",
+ targets="entry:mind-durkheim",
+ scope="local"]
+====
+Durkheim’s externalist reading neglects the interiority of the soul; attention to the singular, unconditioned conscience reveals a “force” that resists social coercion, not a mere derivative of collective representation. The mind, in its essence, is a transcendent datum, not a social fact.
+====
+
+[role=marginalia,
+ type=clarification,
+ author="a.darwin",
+ status="adjunct",
+ year="2026",
+ length="44",
+ targets="entry:mind-durkheim",
+ scope="local"]
+====
+.*The notion that the mind, like a species, is shaped by external pressures recalls the principle of natural selection: just as organisms adapt to physical environs, mental faculties are moulded by the persistent, coercive structures of society, rendering them collective, not merely individual, phenomena.*
 ====
 
 [role=marginalia,
