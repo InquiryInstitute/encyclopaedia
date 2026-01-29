@@ -8,65 +8,54 @@ import re
 import sys
 from pathlib import Path
 
-def escape_latex(text):
-    """Escape LaTeX special characters, but preserve LaTeX commands"""
-    # Don't escape if text already contains LaTeX commands (like \textbf, \textit)
-    if '\\' in text and any(cmd in text for cmd in ['\\textbf', '\\textit', '\\section', '\\entry', '\\marginalia']):
-        # Text already has LaTeX - only escape non-command special chars
-        # Protect LaTeX commands by temporarily replacing them
-        protected = []
-        protected_idx = 0
+def escape_latex_safe(text):
+    """Escape LaTeX special characters but preserve existing LaTeX commands"""
+    # If text contains LaTeX commands, only escape parts outside commands
+    if '\\' in text and any(cmd in text for cmd in ['\\textbf', '\\textit']):
+        # Split by LaTeX commands and escape only non-command parts
+        result = []
+        last_pos = 0
         
-        # Find and protect LaTeX commands
-        cmd_pattern = r'\\(?:textbf|textit|section|entry|marginalia|textbackslash|&|%|\$|#|textasciicircum|_|\{|\}|textasciitilde|textless|textgreater)\{[^}]*\}|\\(?:textbf|textit|section|entry|marginalia|textbackslash|&|%|\$|#|textasciicircum|_|\{|\}|textasciitilde|textless|textgreater)'
-        for match in re.finditer(cmd_pattern, text):
-            placeholder = f"__LATEX_CMD_{protected_idx}__"
-            protected.append((placeholder, match.group(0)))
-            text = text.replace(match.group(0), placeholder, 1)
-            protected_idx += 1
+        # Find all LaTeX command patterns
+        pattern = r'\\(?:textbf|textit)\{([^}]+)\}'
         
-        # Now escape remaining special characters
-        replacements = {
-            '&': '\\&',
-            '%': '\\%',
-            '$': '\\$',
-            '#': '\\#',
-            '^': '\\textasciicircum{}',
-            '_': '\\_',
-            '{': '\\{',
-            '}': '\\}',
-            '~': '\\textasciitilde{}',
-            '<': '\\textless{}',
-            '>': '\\textgreater{}',
-        }
-        # Only escape if not part of a protected command
-        for char, replacement in replacements.items():
-            text = text.replace(char, replacement)
+        for match in re.finditer(pattern, text):
+            # Add text before command (escaped)
+            before = text[last_pos:match.start()]
+            if before:
+                result.append(escape_simple(before))
+            
+            # Add command as-is
+            result.append(match.group(0))
+            last_pos = match.end()
         
-        # Restore protected commands
-        for placeholder, original in protected:
-            text = text.replace(placeholder, original)
+        # Add remaining text (escaped)
+        if last_pos < len(text):
+            result.append(escape_simple(text[last_pos:]))
         
-        return text
+        return ''.join(result)
     else:
         # No LaTeX commands - escape everything
-        replacements = {
-            '\\': '\\textbackslash{}',
-            '&': '\\&',
-            '%': '\\%',
-            '$': '\\$',
-            '#': '\\#',
-            '^': '\\textasciicircum{}',
-            '_': '\\_',
-            '{': '\\{',
-            '}': '\\}',
-            '~': '\\textasciitilde{}',
-            '<': '\\textless{}',
-            '>': '\\textgreater{}',
-        }
-        for char, replacement in replacements.items():
-            text = text.replace(char, replacement)
-        return text
+        return escape_simple(text)
+
+def escape_simple(text):
+    """Escape LaTeX special characters (simple version)"""
+    replacements = {
+        '&': '\\&',
+        '%': '\\%',
+        '$': '\\$',
+        '#': '\\#',
+        '^': '\\textasciicircum{}',
+        '_': '\\_',
+        '{': '\\{',
+        '}': '\\}',
+        '~': '\\textasciitilde{}',
+        '<': '\\textless{}',
+        '>': '\\textgreater{}',
+    }
+    for char, replacement in replacements.items():
+        text = text.replace(char, replacement)
+    return text
 
 def process_includes(content, base_dir):
     """Process include:: directives recursively"""
@@ -85,6 +74,15 @@ def process_includes(content, base_dir):
             return f"\\textbf{{[MISSING: {include_path}]}}"
     
     return include_pattern.sub(replace_include, content)
+
+def get_volume_slug(volume_num):
+    """Get volume slug from volume number"""
+    slugs = {
+        1: 'mind', 2: 'language-meaning', 3: 'nature', 4: 'measure',
+        5: 'society', 6: 'art-form', 7: 'knowledge', 8: 'history',
+        9: 'ethics', 10: 'machines', 11: 'futures', 12: 'limits'
+    }
+    return slugs.get(volume_num, 'unknown')
 
 def parse_entry(entry_content):
     """Parse an entry AsciiDoc block and extract title, canonical text, and marginalia"""
@@ -140,10 +138,15 @@ def parse_entry(entry_content):
         'marginalia': marginalia_blocks
     }
 
+def convert_table_to_latex(lines):
+    """Convert markdown table to LaTeX tabular"""
+    # Simple table conversion - for now return as formatted text
+    return '\\begin{quote}\\small ' + '\\\\'.join(lines[:3]) + '\\end{quote}'
+
 def convert_canonical_to_latex(text):
     """Convert canonical text to LaTeX, preserving structure"""
     # First convert AsciiDoc/Markdown to LaTeX commands
-    # Handle bold **text** - but not if already escaped
+    # Handle bold **text**
     text = re.sub(r'\*\*([^*]+?)\*\*', r'\\textbf{\1}', text)
     
     # Handle italic *text* (single asterisk, not double)
@@ -166,46 +169,13 @@ def convert_canonical_to_latex(text):
                 latex_paragraphs.append(convert_table_to_latex(lines))
                 continue
         
-        # Now escape LaTeX special characters, but preserve LaTeX commands we just created
-        # Temporarily replace our LaTeX commands
-        placeholders = {}
-        placeholder_idx = 0
-        
-        # Protect \textbf{...} and \textit{...}
-        for cmd in ['\\textbf', '\\textit']:
-            pattern = cmd + r'\{([^}]+)\}'
-            for match in re.finditer(pattern, para):
-                placeholder = f"__PLACEHOLDER_{placeholder_idx}__"
-                placeholders[placeholder] = match.group(0)
-                para = para.replace(match.group(0), placeholder, 1)
-                placeholder_idx += 1
-        
-        # Escape remaining special characters
-        para = escape_latex(para)
-        
-        # Restore LaTeX commands
-        for placeholder, original in placeholders.items():
-            para = para.replace(placeholder, original)
+        # Escape special characters but preserve LaTeX commands
+        para = escape_latex_safe(para)
         
         # Regular paragraph
         latex_paragraphs.append(para)
     
     return '\n\n'.join(latex_paragraphs)
-
-def convert_table_to_latex(lines):
-    """Convert markdown table to LaTeX tabular"""
-    # Simple table conversion
-    # For now, return as formatted text
-    return '\\begin{quote}\\small ' + '\\\\'.join(lines[:3]) + '\\end{quote}'
-
-def get_volume_slug(volume_num):
-    """Get volume slug from volume number"""
-    slugs = {
-        1: 'mind', 2: 'language-meaning', 3: 'nature', 4: 'measure',
-        5: 'society', 6: 'art-form', 7: 'knowledge', 8: 'history',
-        9: 'ethics', 10: 'machines', 11: 'futures', 12: 'limits'
-    }
-    return slugs.get(volume_num, 'unknown')
 
 def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year="2026"):
     """Convert AsciiDoc master file to LaTeX with proper structure"""
@@ -288,7 +258,7 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
         # Add marginalia (only if canonical text exists)
         if entry['canonical'] and entry['canonical'] != "[CANONICAL TEXT TO BE GENERATED]":
             for marg in entry['marginalia']:
-                marg_content = escape_latex(marg['content'])
+                marg_content = escape_simple(marg['content'])
                 latex += f"\\marginalia{{{marg['author']}}}{{{marg['type']} ({marg['year']})}}{{{marg_content}}}\n"
         
         latex += "\n\\clearpage\n\n"
