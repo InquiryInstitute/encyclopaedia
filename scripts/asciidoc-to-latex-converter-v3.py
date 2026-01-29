@@ -235,21 +235,35 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
         else:
             print(f"⚠️  Entry file not found: {entry_file}", file=sys.stderr)
     
-    # Build LaTeX document
+    # Build LaTeX document (Britannica-style)
+    volume_num_roman = {
+        '01': 'I', '02': 'II', '03': 'III', '04': 'IV', '05': 'V',
+        '06': 'VI', '07': 'VII', '08': 'VIII', '09': 'IX', '10': 'X',
+        '11': 'XI', '12': 'XII'
+    }.get(volume_num, 'I')
+    
     latex = f"""\\documentclass{{encyclopaedia}}
-\\title{{{doc_title}: {volume_title}}}
+
+% Volume metadata for running headers
+\\newcommand{{\\volumenum}}{{{volume_num_roman}}}
+\\newcommand{{\\volumetitle}}{{{volume_title}}}
+
+\\title{{{doc_title}}}
+\\subtitle{{Volume {volume_num_roman}: {volume_title}}}
 \\author{{The Inquiry Institute}}
 \\date{{{year}}}
 
 \\begin{{document}}
 
+% Title page (Britannica-style)
 \\maketitle
 
+% Table of contents
 \\tableofcontents
 
 \\cleardoublepage
 
-% Start two-column layout
+% Start two-column layout for entries
 \\twocolumn
 
 """

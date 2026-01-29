@@ -9,28 +9,30 @@
 \LoadClass[11pt,twocolumn,openany]{book}
 
 % Required packages
+% Britannica-style margins: generous outer margin for marginalia
 \RequirePackage[a4paper,
-  inner=30mm,        % binding + thumb space
-  outer=40mm,        % marginalia lives here
-  top=25mm,
-  bottom=30mm,
-  columnsep=8mm
+  inner=25mm,        % binding + thumb space (slightly tighter)
+  outer=45mm,        % marginalia lives here (more space)
+  top=20mm,          % tighter top for more content
+  bottom=25mm,       % adequate bottom margin
+  columnsep=10mm     % clear column separation
 ]{geometry}
 
 \RequirePackage{libertinus}
 \RequirePackage{libertinus-otf}
 
-% Line spacing and paragraph formatting
-\linespread{1.05}
+% Line spacing and paragraph formatting (Britannica-style: dense, readable)
+\linespread{1.0}
 \setlength{\parindent}{1em}
 \setlength{\parskip}{0pt}
+\setlength{\baselineskip}{1.1em}
 
 % Marginalia system
 \RequirePackage{marginnote}
 \reversemarginpar  % places notes in outer margin
 \renewcommand{\marginfont}{\footnotesize}
 
-% Entry headings
+% Entry headings (Britannica-style: bold, uppercase, centered)
 \RequirePackage{titlesec}
 
 % Entry titles span both columns
@@ -38,7 +40,7 @@
   {\normalfont\Large\bfseries}
   {}
   {0pt}
-  {\centering}
+  {\centering\MakeUppercase}
 
 % Footnotes (sparing use)
 \RequirePackage[hang,flushmargin]{footmisc}
@@ -46,34 +48,43 @@
 % Figures (future-proofed)
 \RequirePackage{graphicx}
 
-% Page numbers and running heads
+% Page numbers and running heads (Britannica-style)
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
+% Page numbers at bottom center
 \fancyfoot[C]{\thepage}
-\fancyhead[LE]{\leftmark}
-\fancyhead[RO]{\rightmark}
+% Running headers: Volume title on left, entry range on right
+\fancyhead[LE]{\small\textsc{The Encyclopædia}}
+\fancyhead[RO]{\small\textsc{Volume \volumenum: \volumetitle}}
+\fancyhead[LO]{\small\leftmark}
+\fancyhead[RE]{\small\rightmark}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% Marginalia command
+% Marginalia command (Britannica-style: compact, in outer margin)
 % Usage: \marginalia{Author}{Type (Year)}{Body text}
 \newcommand{\marginalia}[3]{%
   \marginnote{%
     \footnotesize
-    \textit{#1} \\
-    \textbf{#2} \\
+    \raggedright
+    \textit{#1}\\
+    \textbf{#2}\\
+    \vspace*{0.1em}
     #3
   }%
 }
 
-% Entry command for spanning both columns
+% Entry command for spanning both columns (Britannica-style)
 % Usage: \entry{Title}
 \newcommand{\entry}[1]{%
   \onecolumn
-  \vspace*{0.5\baselineskip}
+  \vspace*{0.3\baselineskip}
   \begin{center}
-    \Large\bfseries #1
+    \Large\bfseries\MakeUppercase{#1}
   \end{center}
-  \vspace*{0.5\baselineskip}
+  \vspace*{0.2\baselineskip}
+  \markboth{#1}{#1}  % Set running header
   \twocolumn
 }
 
