@@ -9,9 +9,66 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 cd "$REPO_ROOT"
 
-# Check for required environment variables
-if [ -z "${SUPABASE_URL:-}" ] || [ -z "${SUPABASE_SERVICE_ROLE_KEY:-}" ]; then
-  echo "❌ Error: SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set"
+# Get Supabase variables from CLI or environment
+get_supabase_vars() {
+  # Try to get from Supabase CLI
+  if command -v supabase &> /dev/null; then
+    # Check if project is linked
+    if [ -f "$REPO_ROOT/../Inquiry.Institute/supabase/.temp/project-ref" ]; then
+      PROJECT_REF=$(cat "$REPO_ROOT/../Inquiry.Institute/supabase/.temp/project-ref")
+      SUPABASE_URL="https://${PROJECT_REF}.supabase.co"
+      
+      # Try to get service role key from Supabase CLI
+      if SUPABASE_SERVICE_ROLE_KEY=$(supabase projects api-keys --project-ref "$PROJECT_REF" 2>/dev/null | grep -i "service_role" | awk '{print $NF}' | head -1); then
+        export SUPABASE_URL
+        export SUPABASE_SERVICE_ROLE_KEY
+        echo "✅ Got Supabase variables from CLI (project: $PROJECT_REF)"
+        return 0
+      fi
+    fi
+    
+    # Try to get from projects list
+    if PROJECT_REF=$(supabase projects list 2>/dev/null | grep -E "pilmscrodlitdrygabvo|xougqdomkoisrxdnagcj" | head -1 | awk '{print $1}'); then
+      SUPABASE_URL="https://${PROJECT_REF}.supabase.co"
+      if SUPABASE_SERVICE_ROLE_KEY=$(supabase projects api-keys --project-ref "$PROJECT_REF" 2>/dev/null | grep -i "service_role" | awk '{print $NF}' | head -1); then
+        export SUPABASE_URL
+        export SUPABASE_SERVICE_ROLE_KEY
+        echo "✅ Got Supabase variables from CLI (project: $PROJECT_REF)"
+        return 0
+      fi
+    fi
+  fi
+  
+  # Fall back to environment variables
+  if [ -n "${SUPABASE_URL:-}" ] && [ -n "${SUPABASE_SERVICE_ROLE_KEY:-}" ]; then
+    echo "✅ Using Supabase variables from environment"
+    return 0
+  fi
+  
+  # Try to load from .env.local in parent directory
+  if [ -f "$REPO_ROOT/../Inquiry.Institute/.env.local" ]; then
+    source "$REPO_ROOT/../Inquiry.Institute/.env.local"
+    if [ -n "${SUPABASE_URL:-}" ] && [ -n "${SUPABASE_SERVICE_ROLE_KEY:-}" ]; then
+      export SUPABASE_URL
+      export SUPABASE_SERVICE_ROLE_KEY
+      echo "✅ Loaded Supabase variables from .env.local"
+      return 0
+    fi
+  fi
+  
+  echo "❌ Error: Could not get SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY"
+  echo "   Options:"
+  echo "   1. Set environment variables:"
+  echo "      export SUPABASE_URL=..."
+  echo "      export SUPABASE_SERVICE_ROLE_KEY=..."
+  echo "   2. Link Supabase project:"
+  echo "      cd ../Inquiry.Institute && supabase link --project-ref YOUR_PROJECT_REF"
+  echo "   3. Add to .env.local in Inquiry.Institute directory"
+  return 1
+}
+
+# Get Supabase variables
+if ! get_supabase_vars; then
   exit 1
 fi
 
