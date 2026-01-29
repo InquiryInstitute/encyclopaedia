@@ -1,0 +1,55 @@
+// Front Matter: Volume II (Adult Edition)
+// Abridged template — appears in all volumes II-XII
+
+= The Encyclopædia
+
+// Volume II: Language & Meaning
+:volume-title: Language & Meaning
+:volume-number: II
+:edition: Adult
+:year: 2026
+
+// ⸻
+// ABRIDGED FRONT MATTER
+// ⸻
+
+== Volume II: Language & Meaning
+
+This volume concerns itself with language, meaning, symbol, interpretation, and related phenomena. It does not attempt to resolve debates between structuralism and pragmatism, or to synthesize competing accounts of meaning. It presents them.
+
+**What this volume does:** It presents multiple perspectives on language, meaning, symbol, interpretation, grammar, metaphor, narrative, and related topics. Each perspective speaks in its own voice. Marginalia provide objections, clarifications, extensions, and dissents.
+
+**What this volume does not do:** It does not attempt to reconcile Saussure with Wittgenstein, or to synthesize semantic and pragmatic theories of meaning. It presents both, and lets the reader hold the tension.
+
+== How to Use This Volume
+
+**Alphabetical ordering:** All entries are alphabetized by title. "Language (Structural)" appears under "L", not under "S".
+
+**Constellation topics:** Some topics (e.g., Language, Meaning, Symbol) have multiple entries representing different perspectives. These are alphabetized by their base topic.
+
+**Closing entries:** Entries marked as "closing" appear at the end of the volume, after all main entries. They are not alphabetized.
+
+**Marginalia:** Read the canonical text first, then the marginalia. Both are authoritative. Marginalia may object, clarify, extend, or dissent—but they do not replace the canonical text.
+
+**Cross-references:** Use the format `See Volume I: Mind, "Consciousness"` to navigate between volumes.
+
+**For the organization and principles governing this Encyclopædia, see Volume I.**
+
+== Faculty Contributing to This Volume
+
+The following faculty members contribute to Volume II:
+
+* a.cassirer (Ernst Cassirer)
+* a.frege (Gottlob Frege)
+* a.frankl (Viktor Frankl)
+* a.eliade (Mircea Eliade)
+* a.miller (George A. Miller)
+* a.otto (Rudolf Otto)
+* a.peirce (Charles Sanders Peirce)
+* a.saussure (Ferdinand de Saussure)
+* a.valery (Paul Valéry)
+* a.wittgenstein (Ludwig Wittgenstein)
+
+// ⸻
+// END OF VOLUME II FRONT MATTER
+// ⸻
