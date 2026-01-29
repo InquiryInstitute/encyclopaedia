@@ -29,7 +29,7 @@ This volume concerns itself with language, meaning, symbol, interpretation, and 
 
 **Closing entries:** Entries marked as "closing" appear at the end of the volume, after all main entries. They are not alphabetized.
 
-**Marginalia:** Read the canonical text first, then the marginalia. Both are authoritative. Marginalia may object, clarify, extend, or dissent—but they do not replace the canonical text.
+**Marginalia:** Notes appear in the outer margin. Read the canonical text first, then the marginalia. Both are authoritative.
 
 **Cross-references:** Use the format `See Volume I: Mind, "Consciousness"` to navigate between volumes.
 
