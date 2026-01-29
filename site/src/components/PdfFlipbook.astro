@@ -197,27 +197,48 @@ const { pdfUrl, title, edition } = Astro.props;
     const ctxLeft = leftCanvas.getContext('2d');
     const ctxRight = rightCanvas.getContext('2d');
     
-    // Calculate optimal scale to fit viewport
-    function calculateScale() {
+    // Calculate optimal scale to fit viewport without cropping
+    async function calculateOptimalScale() {
       const viewport = document.getElementById('flipbook-viewport');
-      const maxWidth = (viewport.clientWidth - 60) / 2; // Divide by 2 for two pages, minus gap
-      const maxHeight = viewport.clientHeight - 40;
+      const availableWidth = viewport.clientWidth - 60; // Account for padding and gap
+      const availableHeight = viewport.clientHeight - 40; // Account for padding
       
-      // A4 aspect ratio is approximately 1.414:1 (width:height)
-      // We want to fit both pages side by side
-      const singlePageMaxWidth = maxWidth;
-      const singlePageMaxHeight = maxHeight;
+      // Get actual page dimensions from first page
+      const firstPage = await pdfDoc.getPage(1);
+      const pageViewport = firstPage.getViewport({ scale: 1.0 });
+      const pageWidth = pageViewport.width;
+      const pageHeight = pageViewport.height;
       
-      // Calculate scale based on A4 dimensions (595pt x 842pt at 72dpi)
-      // Or use a reference page to get actual dimensions
-      return Math.min(singlePageMaxWidth / 595, singlePageMaxHeight / 842, 2.0);
+      // Calculate scale for two pages side by side
+      const maxWidthForTwoPages = availableWidth / 2; // Each page gets half the width
+      const maxHeightForPages = availableHeight;
+      
+      // Calculate scale based on both width and height constraints
+      const scaleX = maxWidthForTwoPages / pageWidth;
+      const scaleY = maxHeightForPages / pageHeight;
+      
+      // Use the smaller scale to ensure both dimensions fit
+      const optimalScale = Math.min(scaleX, scaleY, 2.5); // Cap at 2.5x for performance
+      
+      console.log('📐 Scale calculation:', {
+        availableWidth,
+        availableHeight,
+        pageWidth,
+        pageHeight,
+        scaleX,
+        scaleY,
+        optimalScale
+      });
+      
+      return optimalScale;
     }
     
     async function renderSpread(spreadNum) {
       const leftPageNum = (spreadNum - 1) * 2 + 1;
       const rightPageNum = leftPageNum + 1;
       
-      const scale = calculateScale();
+      // Calculate scale once per render
+      const scale = await calculateOptimalScale();
       
       if (leftPageNum <= numPages) {
         const page = await pdfDoc.getPage(leftPageNum);
@@ -496,11 +517,12 @@ const { pdfUrl, title, edition } = Astro.props;
     margin-bottom: 1.5rem;
     min-height: 600px;
     max-height: 90vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    overflow: hidden;
+    overflow: auto; /* Allow scrolling if needed */
   }
   
   #pageflip-container {
@@ -529,27 +551,27 @@ const { pdfUrl, title, edition } = Astro.props;
     margin: 0 10px;
     max-width: calc(50% - 20px);
     min-width: 0;
+    align-items: flex-start; /* Align to top to prevent cropping */
   }
   
   .pageflip-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align to top */
     gap: 20px;
     flex-wrap: nowrap;
     width: 100%;
-    height: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
+    min-height: 100%;
+    padding: 10px 0; /* Add vertical padding */
   }
   
   .pdf-page-canvas {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
     object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
   }
   
   .loading-indicator {
