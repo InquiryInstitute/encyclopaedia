@@ -10,7 +10,6 @@
 :icons: font
 
 include::../../../../shared/macros.adoc[]
-include::../../../../shared/marginalia-spec.adoc[]
 
 == Front Matter
 include::front-matter.adoc[]
