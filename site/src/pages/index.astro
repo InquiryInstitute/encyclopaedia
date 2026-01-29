@@ -1,26 +1,24 @@
 ---
 // The Encyclopædia - Home Page - Bookshelf View
 const volumes = [
-  { num: 'I', title: 'Mind', season: 'Spring', status: 'active', entries: 29 },
-  { num: 'II', title: 'Language & Meaning', season: 'Spring', status: 'planned', entries: 19 },
-  { num: 'III', title: 'Nature', season: 'Spring', status: 'planned', entries: 19 },
-  { num: 'IV', title: 'Measure', season: 'Summer', status: 'planned', entries: 19 },
-  { num: 'V', title: 'Society', season: 'Summer', status: 'planned', entries: 19 },
-  { num: 'VI', title: 'Art & Form', season: 'Summer', status: 'planned', entries: 19 },
-  { num: 'VII', title: 'Knowledge', season: 'Autumn', status: 'planned', entries: 20 },
-  { num: 'VIII', title: 'History', season: 'Autumn', status: 'planned', entries: 19 },
-  { num: 'IX', title: 'Ethics', season: 'Autumn', status: 'planned', entries: 20 },
-  { num: 'X', title: 'Machines', season: 'Winter', status: 'planned', entries: 20 },
-  { num: 'XI', title: 'Futures', season: 'Winter', status: 'planned', entries: 20 },
-  { num: 'XII', title: 'Limits', season: 'Winter', status: 'planned', entries: 21 },
+  { num: 'I', title: 'Mind', status: 'active', entries: 29 },
+  { num: 'II', title: 'Language & Meaning', status: 'planned', entries: 19 },
+  { num: 'III', title: 'Nature', status: 'planned', entries: 19 },
+  { num: 'IV', title: 'Measure', status: 'planned', entries: 19 },
+  { num: 'V', title: 'Society', status: 'planned', entries: 19 },
+  { num: 'VI', title: 'Art & Form', status: 'planned', entries: 19 },
+  { num: 'VII', title: 'Knowledge', status: 'planned', entries: 20 },
+  { num: 'VIII', title: 'History', status: 'planned', entries: 19 },
+  { num: 'IX', title: 'Ethics', status: 'planned', entries: 20 },
+  { num: 'X', title: 'Machines', status: 'planned', entries: 20 },
+  { num: 'XI', title: 'Futures', status: 'planned', entries: 20 },
+  { num: 'XII', title: 'Limits', status: 'planned', entries: 21 },
 ];
 
-const seasonColors: Record<string, { spine: string; accent: string; text: string }> = {
-  Spring: { spine: '#2d4a3e', accent: '#4a7c59', text: '#c4d4bc' },
-  Summer: { spine: '#8b4513', accent: '#d4a373', text: '#f5e6d3' },
-  Autumn: { spine: '#722f37', accent: '#9c4a1a', text: '#e8d4c4' },
-  Winter: { spine: '#1a1a2e', accent: '#2d3047', text: '#a8b4c4' },
-};
+// Unified color scheme for all volumes
+const spineColor = '#2c3e50';
+const spineAccent = '#34495e';
+const spineText = '#ecf0f1';
 ---
 
 <html lang="en">
@@ -28,7 +26,7 @@ const seasonColors: Record<string, { spine: string; accent: string; text: string
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Encyclopædia | Inquiry Institute</title>
-  <meta name="description" content="A seasonal, multi-volume Encyclopædia demonstrating and inspiring inquiry. 12 volumes on a shelf." />
+  <meta name="description" content="A multi-volume Encyclopædia demonstrating and inspiring inquiry. 12 volumes on a shelf." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
@@ -90,23 +88,15 @@ const seasonColors: Record<string, { spine: string; accent: string; text: string
       margin-bottom: 4rem;
     }
     
-    .shelf-label {
-      font-family: var(--font-display);
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #6a5a4a;
-      margin-bottom: 1rem;
-      padding-left: 0.5rem;
-    }
     
     .books-row {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      gap: 4px;
+      gap: 3px;
       padding: 0 1rem 0;
       min-height: 320px;
+      flex-wrap: wrap;
     }
     
     /* Wood shelf */
@@ -139,7 +129,7 @@ const seasonColors: Record<string, { spine: string; accent: string; text: string
     /* Book spine */
     .book {
       position: relative;
-      width: clamp(50px, 8vw, 85px);
+      width: clamp(45px, 6.5vw, 70px);
       cursor: pointer;
       transform-origin: bottom center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -387,42 +377,18 @@ const seasonColors: Record<string, { spine: string; accent: string; text: string
   </header>
   
   <main class="bookshelf-container">
-    <!-- Spring & Summer Shelf -->
+    <!-- Single Shelf with All Volumes -->
     <section class="shelf">
-      <div class="shelf-label">Spring · Summer</div>
       <div class="books-row">
-        {volumes.slice(0, 6).map(vol => {
-          const colors = seasonColors[vol.season];
-          return (
-            <div class={`book ${vol.status === 'active' ? 'active' : ''}`} data-volume={vol.num}>
-              <div class="spine" style={`background: linear-gradient(135deg, ${colors.spine} 0%, ${colors.accent} 100%); color: ${colors.text}; --spine-height: 260px;`}>
-                <span class="volume-num">{vol.num}</span>
-                <span class="volume-title">{vol.title}</span>
-                <span class="edition-mark">Adult</span>
-              </div>
+        {volumes.map(vol => (
+          <div class={`book ${vol.status === 'active' ? 'active' : ''}`} data-volume={vol.num}>
+            <div class="spine" style={`background: linear-gradient(135deg, ${spineColor} 0%, ${spineAccent} 100%); color: ${spineText}; --spine-height: 260px;`}>
+              <span class="volume-num">{vol.num}</span>
+              <span class="volume-title">{vol.title}</span>
+              <span class="edition-mark">Adult</span>
             </div>
-          );
-        })}
-      </div>
-      <div class="shelf-wood"></div>
-    </section>
-    
-    <!-- Autumn & Winter Shelf -->
-    <section class="shelf">
-      <div class="shelf-label">Autumn · Winter</div>
-      <div class="books-row">
-        {volumes.slice(6, 12).map(vol => {
-          const colors = seasonColors[vol.season];
-          return (
-            <div class={`book ${vol.status === 'active' ? 'active' : ''}`} data-volume={vol.num}>
-              <div class="spine" style={`background: linear-gradient(135deg, ${colors.spine} 0%, ${colors.accent} 100%); color: ${colors.text}; --spine-height: 260px;`}>
-                <span class="volume-num">{vol.num}</span>
-                <span class="volume-title">{vol.title}</span>
-                <span class="edition-mark">Adult</span>
-              </div>
-            </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
       <div class="shelf-wood"></div>
     </section>
