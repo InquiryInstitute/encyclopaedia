@@ -565,46 +565,59 @@ const entryTypeLabels: Record<string, string> = {
       padding: 1rem 1.5rem 1.5rem;
     }
     
-    .entry-type-group {
-      margin-bottom: 1rem;
-    }
-    
-    .entry-type-group:last-child { margin-bottom: 0; }
-    
-    .entry-type-label {
-      font-family: var(--font-display);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      opacity: 0.6;
-      margin-bottom: 0.5rem;
-      padding-left: 0.25rem;
-    }
-    
     .entries-list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 0.4rem;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.5rem;
     }
     
     .entry-item {
       display: flex;
       flex-direction: column;
-      padding: 0.5rem 0.75rem;
+      padding: 0.6rem 0.85rem;
       background: white;
       border: 1px solid var(--color-shadow);
       border-radius: 3px;
       font-size: 0.9rem;
+      position: relative;
     }
     
     .entry-title {
       font-weight: 500;
+      padding-right: 3.5rem;
     }
     
     .entry-author {
       font-size: 0.8rem;
       font-style: italic;
       opacity: 0.7;
+    }
+    
+    .entry-type-badge {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      font-size: 0.55rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.7;
+      background: var(--color-shadow);
+    }
+    
+    .entry-type-major .entry-type-badge {
+      background: var(--color-gold);
+      opacity: 1;
+    }
+    
+    .entry-type-boundary .entry-type-badge {
+      background: #c4b5a0;
+    }
+    
+    .entry-type-closing .entry-type-badge {
+      background: #a89080;
+      color: white;
     }
     
     footer {
@@ -709,23 +722,18 @@ const entryTypeLabels: Record<string, string> = {
                     </span>
                   </summary>
                   <div class="entries-panel">
-                    {['major', 'standard', 'boundary', 'closing'].map(type => {
-                      const typeEntries = volume.entries.filter(e => e.type === type);
-                      if (typeEntries.length === 0) return null;
-                      return (
-                        <div class="entry-type-group">
-                          <div class="entry-type-label">{entryTypeLabels[type]} Entries</div>
-                          <div class="entries-list">
-                            {typeEntries.map(entry => (
-                              <div class="entry-item">
-                                <span class="entry-title">{entry.title}</span>
-                                <span class="entry-author">{entry.author}</span>
-                              </div>
-                            ))}
+                    <div class="entries-list">
+                      {volume.entries
+                        .slice()
+                        .sort((a, b) => a.title.localeCompare(b.title))
+                        .map(entry => (
+                          <div class={`entry-item entry-type-${entry.type}`}>
+                            <span class="entry-title">{entry.title}</span>
+                            <span class="entry-author">{entry.author}</span>
+                            <span class="entry-type-badge">{entryTypeLabels[entry.type]}</span>
                           </div>
-                        </div>
-                      );
-                    })}
+                        ))}
+                    </div>
                   </div>
                 </details>
               </li>
