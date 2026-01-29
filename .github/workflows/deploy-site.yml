@@ -29,37 +29,48 @@ jobs:
       - name: Install Asciidoctor
         run: |
           gem install asciidoctor -N
-          gem install asciidoctor-pdf -N
 
-      - name: Build content
+      - name: Install TeX Live
         run: |
-          mkdir -p dist/builds/html dist/builds/pdf
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            latexmk
+
+      - name: Build content (LaTeX pipeline)
+        run: |
+          mkdir -p dist/builds/html site/public/builds/pdf
           
-          # Build Volume I Adult
+          # Build HTML
           if [ -f "editions/adult/volumes/volume-01-mind/volume.adoc" ]; then
             echo "📖 Building Adult Volume I HTML..."
             asciidoctor -D dist/builds/html -o adult-volume-01.html \
               editions/adult/volumes/volume-01-mind/volume.adoc || true
-            
-            echo "📄 Building Adult Volume I PDF..."
-            asciidoctor-pdf -D dist/builds/pdf -o adult-volume-01.pdf \
-              editions/adult/volumes/volume-01-mind/volume.adoc || true
           fi
           
-          # Build Volume I Children
           if [ -f "editions/children/volumes/volume-01-mind/volume.adoc" ]; then
             echo "📖 Building Children's Volume I HTML..."
             asciidoctor -D dist/builds/html -o children-volume-01.html \
               editions/children/volumes/volume-01-mind/volume.adoc || true
-            
-            echo "📄 Building Children's Volume I PDF..."
-            asciidoctor-pdf -D dist/builds/pdf -o children-volume-01.pdf \
-              editions/children/volumes/volume-01-mind/volume.adoc || true
           fi
+          
+          # Build PDFs via LaTeX pipeline
+          echo "📄 Building PDFs via LaTeX..."
+          chmod +x scripts/build-pdf-latex-v2.sh
+          ./scripts/build-pdf-latex-v2.sh \
+            --volumes "01" \
+            --editions "both" \
+            --output "site/public/builds/pdf" || {
+            echo "⚠️  LaTeX PDF build had errors (checking for partial outputs...)"
+          }
           
           echo ""
           echo "📁 Build outputs:"
-          ls -lh dist/builds/pdf/ || echo "  (no PDFs)"
+          ls -lh site/public/builds/pdf/ || echo "  (no PDFs)"
           ls -lh dist/builds/html/ || echo "  (no HTML)"
 
       - name: Upload content artifacts
@@ -80,6 +91,7 @@ jobs:
         with:
           name: content-builds
           path: site/public/builds
+          if-no-files-found: ignore
 
       - name: Setup Node
         uses: actions/setup-node@v4

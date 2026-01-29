@@ -1,0 +1,18 @@
+% Generated LaTeX from AsciiDoc
+% Volume: <%= attr 'volume' %>
+% Title: <%= attr 'volume-title' %>
+% Edition: <%= attr 'edition' %>
+
+\documentclass{encyclopaedia}
+
+\title{<%= doctitle %>}
+\author{The Inquiry Institute}
+\date{<%= attr 'year' || '2026' %>}
+
+\begin{document}
+
+\maketitle
+
+<%= content %>
+
+\end{document}
