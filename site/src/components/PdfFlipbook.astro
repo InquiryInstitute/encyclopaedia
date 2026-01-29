@@ -52,8 +52,10 @@ const { pdfUrl, title, edition } = Astro.props;
 </section>
 
 <script is:inline define:vars={{ pdfUrl }}>
-  // Load PageFlip library from CDN
+  // Load PageFlip library from CDN (St.PageFlip)
+  // Try multiple CDN sources for reliability
   const PAGEFLIP_CDN = 'https://cdn.jsdelivr.net/npm/st-pageflip@1.0.0/dist/st-pageflip.min.js';
+  const PAGEFLIP_CDN_ALT = 'https://unpkg.com/st-pageflip@1.0.0/dist/st-pageflip.min.js';
   
   // PDF.js initialization using CDN
   const PDFJS_VERSION = '4.0.379';
@@ -73,8 +75,8 @@ const { pdfUrl, title, edition } = Astro.props;
   
   async function init() {
     try {
-      // Load PageFlip library
-      await loadScript(PAGEFLIP_CDN);
+      // Load PageFlip library (with fallback)
+      await loadScript(PAGEFLIP_CDN, PAGEFLIP_CDN_ALT);
       
       // Load PDF.js from CDN
       const pdfjsLib = await import(PDFJS_CDN);
@@ -107,12 +109,23 @@ const { pdfUrl, title, edition } = Astro.props;
     }
   }
   
-  function loadScript(src) {
+  function loadScript(src, altSrc = null) {
     return new Promise((resolve, reject) => {
       const script = document.createElement('script');
       script.src = src;
       script.onload = resolve;
-      script.onerror = reject;
+      script.onerror = () => {
+        if (altSrc) {
+          // Try alternative CDN
+          const altScript = document.createElement('script');
+          altScript.src = altSrc;
+          altScript.onload = resolve;
+          altScript.onerror = () => reject(new Error(`Failed to load script from ${src} and ${altSrc}`));
+          document.head.appendChild(altScript);
+        } else {
+          reject(new Error(`Failed to load script from ${src}`));
+        }
+      };
       document.head.appendChild(script);
     });
   }
