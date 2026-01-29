@@ -85,15 +85,23 @@ const { pdfUrl, title, edition } = Astro.props;
       console.log('✅ PDF.js loaded');
       
       // Load the PDF
-      console.log('📖 Loading PDF document...');
+      console.log('📖 Loading PDF document from:', pdfUrl);
       const loadingTask = pdfjsLib.getDocument({
         url: pdfUrl,
         httpHeaders: {},
         withCredentials: false
       });
       
+      // Handle loading progress
+      loadingTask.onProgress = (progress) => {
+        if (progress.total > 0) {
+          const percent = Math.round((progress.loaded / progress.total) * 100);
+          console.log(`📥 PDF loading: ${percent}%`);
+        }
+      };
+      
       pdfDoc = await loadingTask.promise;
-      console.log('✅ PDF loaded:', pdfDoc.numPages, 'pages');
+      console.log('✅ PDF loaded successfully:', pdfDoc.numPages, 'pages');
       
       totalPagesSpan.textContent = pdfDoc.numPages;
       
