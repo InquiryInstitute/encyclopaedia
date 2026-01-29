@@ -1,25 +1,372 @@
 ---
 // The Encyclopædia - Home Page
 const volumes = [
-  { num: 'I', title: 'Mind', season: 'Spring', status: 'in-progress' },
-  { num: 'II', title: 'Language & Meaning', season: 'Spring', status: 'planned' },
-  { num: 'III', title: 'Nature (Becoming)', season: 'Spring', status: 'planned' },
-  { num: 'IV', title: 'Measure', season: 'Summer', status: 'planned' },
-  { num: 'V', title: 'Society', season: 'Summer', status: 'planned' },
-  { num: 'VI', title: 'Art & Form', season: 'Summer', status: 'planned' },
-  { num: 'VII', title: 'Knowledge', season: 'Autumn', status: 'planned' },
-  { num: 'VIII', title: 'History', season: 'Autumn', status: 'planned' },
-  { num: 'IX', title: 'Ethics', season: 'Autumn', status: 'planned' },
-  { num: 'X', title: 'Machines', season: 'Winter', status: 'planned' },
-  { num: 'XI', title: 'Futures', season: 'Winter', status: 'planned' },
-  { num: 'XII', title: 'Limits', season: 'Winter', status: 'planned' },
+  { 
+    num: 'I', 
+    slug: '01-mind',
+    title: 'Mind', 
+    season: 'Spring', 
+    status: 'in-progress',
+    entries: [
+      { title: 'Attention', author: 'William James', type: 'major' },
+      { title: 'Consciousness', author: 'Henri Bergson', type: 'major' },
+      { title: 'Experience', author: 'John Dewey', type: 'major' },
+      { title: 'Intelligence', author: 'Jean Piaget', type: 'major' },
+      { title: 'Abstraction', author: 'A.N. Whitehead', type: 'standard' },
+      { title: 'Affect', author: 'Baruch Spinoza', type: 'standard' },
+      { title: 'Agency', author: 'Aristotle', type: 'standard' },
+      { title: 'Awareness', author: 'Edmund Husserl', type: 'standard' },
+      { title: 'Belief', author: 'C.S. Peirce', type: 'standard' },
+      { title: 'Cognition', author: 'Ulric Neisser', type: 'standard' },
+      { title: 'Dream', author: 'Sigmund Freud', type: 'standard' },
+      { title: 'Emotion', author: 'Charles Darwin', type: 'standard' },
+      { title: 'Habit', author: 'William James', type: 'standard' },
+      { title: 'Imagination', author: 'S.T. Coleridge', type: 'standard' },
+      { title: 'Memory', author: 'Henri Bergson', type: 'standard' },
+      { title: 'Perception', author: 'M. Merleau-Ponty', type: 'standard' },
+      { title: 'Reason', author: 'Immanuel Kant', type: 'standard' },
+      { title: 'Self', author: 'Hannah Arendt', type: 'standard' },
+      { title: 'Sensation', author: 'E.H. Weber', type: 'standard' },
+      { title: 'Sleep', author: 'Aristotle', type: 'standard' },
+      { title: 'Thought', author: 'John Dewey', type: 'standard' },
+      { title: 'Will', author: 'A. Schopenhauer', type: 'standard' },
+      { title: 'Animal Mind', author: 'J. von Uexküll', type: 'boundary' },
+      { title: 'Artificial Mind', author: 'Alan Turing', type: 'boundary' },
+      { title: 'Collective Mind', author: 'Émile Durkheim', type: 'boundary' },
+      { title: 'Mind–Body Problem', author: 'René Descartes', type: 'boundary' },
+      { title: 'Ignorance', author: 'Socrates', type: 'closing' },
+      { title: 'Uncertainty', author: 'Blaise Pascal', type: 'closing' },
+      { title: 'Not-Knowing', author: 'Nicholas of Cusa', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'II', 
+    slug: '02-language-meaning',
+    title: 'Language & Meaning', 
+    season: 'Spring', 
+    status: 'planned',
+    entries: [
+      { title: 'Language', author: 'Ferdinand de Saussure', type: 'major' },
+      { title: 'Meaning', author: 'Gottlob Frege', type: 'major' },
+      { title: 'Symbol', author: 'Ernst Cassirer', type: 'major' },
+      { title: 'Interpretation', author: 'H.-G. Gadamer', type: 'major' },
+      { title: 'Sign', author: 'C.S. Peirce', type: 'standard' },
+      { title: 'Reference', author: 'Bertrand Russell', type: 'standard' },
+      { title: 'Grammar', author: 'Noam Chomsky', type: 'standard' },
+      { title: 'Metaphor', author: 'Aristotle', type: 'standard' },
+      { title: 'Rhetoric', author: 'Cicero', type: 'standard' },
+      { title: 'Translation', author: 'Walter Benjamin', type: 'standard' },
+      { title: 'Writing', author: 'Jacques Derrida', type: 'standard' },
+      { title: 'Speech', author: 'J.L. Austin', type: 'standard' },
+      { title: 'Dialogue', author: 'Mikhail Bakhtin', type: 'standard' },
+      { title: 'Narrative', author: 'Paul Ricoeur', type: 'standard' },
+      { title: 'Silence', author: 'Max Picard', type: 'boundary' },
+      { title: 'Ineffable', author: 'Ludwig Wittgenstein', type: 'boundary' },
+      { title: 'Babel', author: 'Jorge Luis Borges', type: 'closing' },
+      { title: 'Misunderstanding', author: 'F. Schleiermacher', type: 'closing' },
+      { title: 'Unsayable', author: 'Ludwig Wittgenstein', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'III', 
+    slug: '03-nature',
+    title: 'Nature (Becoming)', 
+    season: 'Spring', 
+    status: 'planned',
+    entries: [
+      { title: 'Nature', author: 'Ralph Waldo Emerson', type: 'major' },
+      { title: 'Evolution', author: 'Charles Darwin', type: 'major' },
+      { title: 'Life', author: 'Henri Bergson', type: 'major' },
+      { title: 'Growth', author: 'D\'Arcy W. Thompson', type: 'major' },
+      { title: 'Organism', author: 'A.N. Whitehead', type: 'standard' },
+      { title: 'Species', author: 'Carl Linnaeus', type: 'standard' },
+      { title: 'Adaptation', author: 'Jean-Baptiste Lamarck', type: 'standard' },
+      { title: 'Heredity', author: 'Gregor Mendel', type: 'standard' },
+      { title: 'Emergence', author: 'C. Lloyd Morgan', type: 'standard' },
+      { title: 'Complexity', author: 'Herbert A. Simon', type: 'standard' },
+      { title: 'Ecosystem', author: 'Arthur Tansley', type: 'standard' },
+      { title: 'Matter', author: 'Democritus', type: 'standard' },
+      { title: 'Energy', author: 'James Clerk Maxwell', type: 'standard' },
+      { title: 'Causation', author: 'David Hume', type: 'standard' },
+      { title: 'Cosmos', author: 'Alexander von Humboldt', type: 'boundary' },
+      { title: 'Wilderness', author: 'John Muir', type: 'boundary' },
+      { title: 'Extinction', author: 'Georges Cuvier', type: 'closing' },
+      { title: 'Entropy', author: 'Rudolf Clausius', type: 'closing' },
+      { title: 'Mystery of Life', author: 'Erwin Schrödinger', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'IV', 
+    slug: '04-measure',
+    title: 'Measure', 
+    season: 'Summer', 
+    status: 'planned',
+    entries: [
+      { title: 'Number', author: 'Pythagoras', type: 'major' },
+      { title: 'Quantity', author: 'Aristotle', type: 'major' },
+      { title: 'Measurement', author: 'Pierre-Simon Laplace', type: 'major' },
+      { title: 'Probability', author: 'Blaise Pascal', type: 'major' },
+      { title: 'Zero', author: 'Brahmagupta', type: 'standard' },
+      { title: 'Infinity', author: 'Georg Cantor', type: 'standard' },
+      { title: 'Ratio', author: 'Euclid', type: 'standard' },
+      { title: 'Geometry', author: 'Euclid', type: 'standard' },
+      { title: 'Space', author: 'Isaac Newton', type: 'standard' },
+      { title: 'Time', author: 'Isaac Newton', type: 'standard' },
+      { title: 'Calculus', author: 'G.W. Leibniz', type: 'standard' },
+      { title: 'Statistics', author: 'Karl Pearson', type: 'standard' },
+      { title: 'Error', author: 'Carl Friedrich Gauss', type: 'standard' },
+      { title: 'Precision', author: 'Henri Poincaré', type: 'standard' },
+      { title: 'Incommensurable', author: 'Hippasus', type: 'boundary' },
+      { title: 'Transfinite', author: 'Georg Cantor', type: 'boundary' },
+      { title: 'Quantum', author: 'Werner Heisenberg', type: 'boundary' },
+      { title: 'Unmeasurable', author: 'Henri Lebesgue', type: 'closing' },
+      { title: 'Zeno\'s Paradox', author: 'Zeno of Elea', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'V', 
+    slug: '05-society',
+    title: 'Society', 
+    season: 'Summer', 
+    status: 'planned',
+    entries: [
+      { title: 'Society', author: 'Émile Durkheim', type: 'major' },
+      { title: 'Community', author: 'Ferdinand Tönnies', type: 'major' },
+      { title: 'Power', author: 'Max Weber', type: 'major' },
+      { title: 'Justice', author: 'John Rawls', type: 'major' },
+      { title: 'Institution', author: 'Thorstein Veblen', type: 'standard' },
+      { title: 'Law', author: 'H.L.A. Hart', type: 'standard' },
+      { title: 'Authority', author: 'Hannah Arendt', type: 'standard' },
+      { title: 'Class', author: 'Karl Marx', type: 'standard' },
+      { title: 'Role', author: 'Erving Goffman', type: 'standard' },
+      { title: 'Norm', author: 'Émile Durkheim', type: 'standard' },
+      { title: 'Custom', author: 'Edward Westermarck', type: 'standard' },
+      { title: 'Contract', author: 'Jean-Jacques Rousseau', type: 'standard' },
+      { title: 'Property', author: 'John Locke', type: 'standard' },
+      { title: 'Labor', author: 'Karl Marx', type: 'standard' },
+      { title: 'State', author: 'Thomas Hobbes', type: 'boundary' },
+      { title: 'Revolution', author: 'Hannah Arendt', type: 'boundary' },
+      { title: 'Utopia', author: 'Thomas More', type: 'boundary' },
+      { title: 'Alienation', author: 'Karl Marx', type: 'closing' },
+      { title: 'Anomie', author: 'Émile Durkheim', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'VI', 
+    slug: '06-art-form',
+    title: 'Art & Form', 
+    season: 'Summer', 
+    status: 'planned',
+    entries: [
+      { title: 'Art', author: 'Leo Tolstoy', type: 'major' },
+      { title: 'Beauty', author: 'Immanuel Kant', type: 'major' },
+      { title: 'Form', author: 'Clive Bell', type: 'major' },
+      { title: 'Expression', author: 'R.G. Collingwood', type: 'major' },
+      { title: 'Aesthetics', author: 'Alexander Baumgarten', type: 'standard' },
+      { title: 'Taste', author: 'David Hume', type: 'standard' },
+      { title: 'Sublime', author: 'Edmund Burke', type: 'standard' },
+      { title: 'Imitation', author: 'Aristotle', type: 'standard' },
+      { title: 'Style', author: 'Heinrich Wölfflin', type: 'standard' },
+      { title: 'Craft', author: 'William Morris', type: 'standard' },
+      { title: 'Creation', author: 'Henri Bergson', type: 'standard' },
+      { title: 'Genius', author: 'Immanuel Kant', type: 'standard' },
+      { title: 'Inspiration', author: 'Plato', type: 'standard' },
+      { title: 'Play', author: 'Johan Huizinga', type: 'standard' },
+      { title: 'Music', author: 'Arthur Schopenhauer', type: 'boundary' },
+      { title: 'Poetry', author: 'Percy Bysshe Shelley', type: 'boundary' },
+      { title: 'Architecture', author: 'John Ruskin', type: 'boundary' },
+      { title: 'Kitsch', author: 'Clement Greenberg', type: 'closing' },
+      { title: 'Unfinished', author: 'Michelangelo', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'VII', 
+    slug: '07-knowledge',
+    title: 'Knowledge', 
+    season: 'Autumn', 
+    status: 'planned',
+    entries: [
+      { title: 'Knowledge', author: 'Plato', type: 'major' },
+      { title: 'Truth', author: 'Alfred Tarski', type: 'major' },
+      { title: 'Evidence', author: 'John Locke', type: 'major' },
+      { title: 'Method', author: 'René Descartes', type: 'major' },
+      { title: 'Belief', author: 'William James', type: 'standard' },
+      { title: 'Justification', author: 'Edmund Gettier', type: 'standard' },
+      { title: 'Certainty', author: 'Ludwig Wittgenstein', type: 'standard' },
+      { title: 'Doubt', author: 'René Descartes', type: 'standard' },
+      { title: 'Inquiry', author: 'John Dewey', type: 'standard' },
+      { title: 'Hypothesis', author: 'C.S. Peirce', type: 'standard' },
+      { title: 'Experiment', author: 'Francis Bacon', type: 'standard' },
+      { title: 'Observation', author: 'Ernst Mach', type: 'standard' },
+      { title: 'Proof', author: 'Euclid', type: 'standard' },
+      { title: 'Explanation', author: 'Carl Hempel', type: 'standard' },
+      { title: 'Wisdom', author: 'Aristotle', type: 'standard' },
+      { title: 'Revelation', author: 'Thomas Aquinas', type: 'boundary' },
+      { title: 'Intuition', author: 'Henri Bergson', type: 'boundary' },
+      { title: 'Tacit Knowledge', author: 'Michael Polanyi', type: 'boundary' },
+      { title: 'Skepticism', author: 'Sextus Empiricus', type: 'closing' },
+      { title: 'Fallibility', author: 'Karl Popper', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'VIII', 
+    slug: '08-history',
+    title: 'History', 
+    season: 'Autumn', 
+    status: 'planned',
+    entries: [
+      { title: 'History', author: 'Leopold von Ranke', type: 'major' },
+      { title: 'Time', author: 'Augustine of Hippo', type: 'major' },
+      { title: 'Memory', author: 'Maurice Halbwachs', type: 'major' },
+      { title: 'Tradition', author: 'Hans-Georg Gadamer', type: 'major' },
+      { title: 'Event', author: 'Fernand Braudel', type: 'standard' },
+      { title: 'Epoch', author: 'Oswald Spengler', type: 'standard' },
+      { title: 'Chronicle', author: 'Isidore of Seville', type: 'standard' },
+      { title: 'Archive', author: 'Michel Foucault', type: 'standard' },
+      { title: 'Monument', author: 'Alois Riegl', type: 'standard' },
+      { title: 'Origin', author: 'Friedrich Nietzsche', type: 'standard' },
+      { title: 'Progress', author: 'Marquis de Condorcet', type: 'standard' },
+      { title: 'Decline', author: 'Edward Gibbon', type: 'standard' },
+      { title: 'Cycle', author: 'Giambattista Vico', type: 'standard' },
+      { title: 'Legacy', author: 'Edmund Burke', type: 'standard' },
+      { title: 'Prehistory', author: 'V. Gordon Childe', type: 'boundary' },
+      { title: 'Myth', author: 'Mircea Eliade', type: 'boundary' },
+      { title: 'Prophecy', author: 'Joachim of Fiore', type: 'boundary' },
+      { title: 'Oblivion', author: 'Harald Weinrich', type: 'closing' },
+      { title: 'Anachronism', author: 'Lucien Febvre', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'IX', 
+    slug: '09-ethics',
+    title: 'Ethics', 
+    season: 'Autumn', 
+    status: 'planned',
+    entries: [
+      { title: 'Good', author: 'G.E. Moore', type: 'major' },
+      { title: 'Right', author: 'Immanuel Kant', type: 'major' },
+      { title: 'Virtue', author: 'Aristotle', type: 'major' },
+      { title: 'Duty', author: 'Immanuel Kant', type: 'major' },
+      { title: 'Conscience', author: 'Joseph Butler', type: 'standard' },
+      { title: 'Intention', author: 'G.E.M. Anscombe', type: 'standard' },
+      { title: 'Action', author: 'Hannah Arendt', type: 'standard' },
+      { title: 'Consequence', author: 'Jeremy Bentham', type: 'standard' },
+      { title: 'Responsibility', author: 'Hans Jonas', type: 'standard' },
+      { title: 'Promise', author: 'J.L. Austin', type: 'standard' },
+      { title: 'Fairness', author: 'John Rawls', type: 'standard' },
+      { title: 'Punishment', author: 'Michel Foucault', type: 'standard' },
+      { title: 'Forgiveness', author: 'Hannah Arendt', type: 'standard' },
+      { title: 'Compassion', author: 'Arthur Schopenhauer', type: 'standard' },
+      { title: 'Courage', author: 'Aristotle', type: 'standard' },
+      { title: 'Evil', author: 'Hannah Arendt', type: 'boundary' },
+      { title: 'Tragedy', author: 'Aristotle', type: 'boundary' },
+      { title: 'Dilemma', author: 'Philippa Foot', type: 'boundary' },
+      { title: 'Moral Luck', author: 'Bernard Williams', type: 'closing' },
+      { title: 'Akrasia', author: 'Aristotle', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'X', 
+    slug: '10-machines',
+    title: 'Machines', 
+    season: 'Winter', 
+    status: 'planned',
+    entries: [
+      { title: 'Machine', author: 'Lewis Mumford', type: 'major' },
+      { title: 'Tool', author: 'André Leroi-Gourhan', type: 'major' },
+      { title: 'Automation', author: 'Norbert Wiener', type: 'major' },
+      { title: 'Computation', author: 'Alan Turing', type: 'major' },
+      { title: 'Mechanism', author: 'René Descartes', type: 'standard' },
+      { title: 'Engine', author: 'James Watt', type: 'standard' },
+      { title: 'Clock', author: 'Christiaan Huygens', type: 'standard' },
+      { title: 'Instrument', author: 'Galileo Galilei', type: 'standard' },
+      { title: 'System', author: 'Ludwig von Bertalanffy', type: 'standard' },
+      { title: 'Algorithm', author: 'Al-Khwarizmi', type: 'standard' },
+      { title: 'Program', author: 'Ada Lovelace', type: 'standard' },
+      { title: 'Information', author: 'Claude Shannon', type: 'standard' },
+      { title: 'Feedback', author: 'Norbert Wiener', type: 'standard' },
+      { title: 'Control', author: 'Norbert Wiener', type: 'standard' },
+      { title: 'Network', author: 'Manuel Castells', type: 'standard' },
+      { title: 'Robot', author: 'Karel Čapek', type: 'boundary' },
+      { title: 'Cyborg', author: 'Donna Haraway', type: 'boundary' },
+      { title: 'Artificial Intelligence', author: 'Alan Turing', type: 'boundary' },
+      { title: 'Breakdown', author: 'Martin Heidegger', type: 'closing' },
+      { title: 'Obsolescence', author: 'Gilles Deleuze', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'XI', 
+    slug: '11-futures',
+    title: 'Futures', 
+    season: 'Winter', 
+    status: 'planned',
+    entries: [
+      { title: 'Future', author: 'Ernst Bloch', type: 'major' },
+      { title: 'Possibility', author: 'Gottfried Leibniz', type: 'major' },
+      { title: 'Prediction', author: 'Pierre-Simon Laplace', type: 'major' },
+      { title: 'Hope', author: 'Ernst Bloch', type: 'major' },
+      { title: 'Expectation', author: 'Reinhart Koselleck', type: 'standard' },
+      { title: 'Anticipation', author: 'Edmund Husserl', type: 'standard' },
+      { title: 'Planning', author: 'Herbert A. Simon', type: 'standard' },
+      { title: 'Goal', author: 'Aristotle', type: 'standard' },
+      { title: 'Purpose', author: 'Aristotle', type: 'standard' },
+      { title: 'Potential', author: 'Aristotle', type: 'standard' },
+      { title: 'Risk', author: 'Ulrich Beck', type: 'standard' },
+      { title: 'Scenario', author: 'Herman Kahn', type: 'standard' },
+      { title: 'Vision', author: 'Martin Luther King Jr.', type: 'standard' },
+      { title: 'Promise', author: 'Jacques Derrida', type: 'standard' },
+      { title: 'Utopia', author: 'Ernst Bloch', type: 'boundary' },
+      { title: 'Dystopia', author: 'Aldous Huxley', type: 'boundary' },
+      { title: 'Apocalypse', author: 'Günther Anders', type: 'boundary' },
+      { title: 'Singularity', author: 'Vernor Vinge', type: 'boundary' },
+      { title: 'Contingency', author: 'Richard Rorty', type: 'closing' },
+      { title: 'Fate', author: 'Sophocles', type: 'closing' },
+    ]
+  },
+  { 
+    num: 'XII', 
+    slug: '12-limits',
+    title: 'Limits', 
+    season: 'Winter', 
+    status: 'planned',
+    entries: [
+      { title: 'Limit', author: 'Immanuel Kant', type: 'major' },
+      { title: 'Boundary', author: 'Ludwig Wittgenstein', type: 'major' },
+      { title: 'Finitude', author: 'Martin Heidegger', type: 'major' },
+      { title: 'Infinity', author: 'Georg Cantor', type: 'major' },
+      { title: 'End', author: 'Aristotle', type: 'standard' },
+      { title: 'Beginning', author: 'Hannah Arendt', type: 'standard' },
+      { title: 'Threshold', author: 'Arnold van Gennep', type: 'standard' },
+      { title: 'Horizon', author: 'Hans-Georg Gadamer', type: 'standard' },
+      { title: 'Constraint', author: 'Herbert A. Simon', type: 'standard' },
+      { title: 'Impossibility', author: 'Kurt Gödel', type: 'standard' },
+      { title: 'Incompleteness', author: 'Kurt Gödel', type: 'standard' },
+      { title: 'Undecidability', author: 'Alan Turing', type: 'standard' },
+      { title: 'Paradox', author: 'Bertrand Russell', type: 'standard' },
+      { title: 'Aporia', author: 'Jacques Derrida', type: 'standard' },
+      { title: 'Mystery', author: 'Gabriel Marcel', type: 'standard' },
+      { title: 'Transcendence', author: 'Karl Jaspers', type: 'standard' },
+      { title: 'Death', author: 'Martin Heidegger', type: 'boundary' },
+      { title: 'Nothing', author: 'Martin Heidegger', type: 'boundary' },
+      { title: 'Absolute', author: 'G.W.F. Hegel', type: 'boundary' },
+      { title: 'Silence', author: 'Ludwig Wittgenstein', type: 'closing' },
+      { title: 'Wonder', author: 'Aristotle', type: 'closing' },
+    ]
+  },
 ];
 
 const seasons = {
-  Spring: { gate: 'Candlemas → Beltane', color: '#4a7c59' },
-  Summer: { gate: 'Beltane → Lammas', color: '#d4a373' },
-  Autumn: { gate: 'Lammas → Samhain', color: '#9c4a1a' },
-  Winter: { gate: 'Samhain → Candlemas', color: '#2d3047' },
+  Spring: { gate: 'Candlemas → Beltane', color: '#4a7c59', accent: '#6b9a5b' },
+  Summer: { gate: 'Beltane → Lammas', color: '#d4a373', accent: '#e8c49a' },
+  Autumn: { gate: 'Lammas → Samhain', color: '#9c4a1a', accent: '#c76a3a' },
+  Winter: { gate: 'Samhain → Candlemas', color: '#2d3047', accent: '#4a4e6a' },
+};
+
+const entryTypeLabels = {
+  major: 'Major',
+  standard: 'Standard',
+  boundary: 'Boundary',
+  closing: 'Closing',
 };
 ---
 
@@ -28,10 +375,10 @@ const seasons = {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Encyclopædia | Inquiry Institute</title>
-  <meta name="description" content="A seasonal, multi-volume Encyclopædia demonstrating and inspiring inquiry." />
+  <meta name="description" content="A seasonal, multi-volume Encyclopædia demonstrating and inspiring inquiry. 12 volumes, 348 entries by public domain authors." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
       --color-parchment: #f5f0e6;
@@ -39,15 +386,12 @@ const seasons = {
       --color-rust: #8b4513;
       --color-gold: #c9a227;
       --color-shadow: rgba(45, 42, 36, 0.1);
+      --color-shadow-dark: rgba(45, 42, 36, 0.2);
       --font-display: 'Cormorant Garamond', Georgia, serif;
       --font-body: 'EB Garamond', Georgia, serif;
     }
     
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     
     body {
       font-family: var(--font-body);
@@ -71,7 +415,6 @@ const seasons = {
       letter-spacing: 0.15em;
       text-transform: uppercase;
       margin-bottom: 0.5rem;
-      color: var(--color-ink);
     }
     
     .subtitle {
@@ -107,79 +450,90 @@ const seasons = {
       text-transform: uppercase;
     }
     
-    .edition-badge.adult {
-      background: var(--color-ink);
-      color: var(--color-parchment);
-    }
-    
-    .edition-badge.children {
-      background: transparent;
-      color: var(--color-ink);
-    }
+    .edition-badge.adult { background: var(--color-ink); color: var(--color-parchment); }
+    .edition-badge.children { background: transparent; }
     
     main {
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
       padding: 2rem;
     }
     
     .seasons-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
     }
     
     .season-section {
-      padding: 1.5rem;
-      border: 1px solid var(--color-shadow);
       background: white;
-      box-shadow: 2px 2px 8px var(--color-shadow);
+      border: 1px solid var(--color-shadow);
+      box-shadow: 2px 2px 12px var(--color-shadow);
     }
     
     .season-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
+      padding: 1.25rem 1.5rem;
       border-bottom: 2px solid currentColor;
     }
     
     .season-name {
       font-family: var(--font-display);
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
     
     .season-gate {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-style: italic;
       opacity: 0.8;
     }
     
-    .volume-list {
-      list-style: none;
-    }
+    .volume-list { list-style: none; }
     
-    .volume-item {
-      padding: 0.75rem 0;
+    /* Volume as expandable details */
+    .volume-details {
       border-bottom: 1px solid var(--color-shadow);
-      display: flex;
-      align-items: baseline;
-      gap: 1rem;
     }
     
-    .volume-item:last-child {
-      border-bottom: none;
+    .volume-details:last-child { border-bottom: none; }
+    
+    .volume-summary {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      user-select: none;
+      transition: background 0.15s ease;
+    }
+    
+    .volume-summary:hover {
+      background: rgba(0,0,0,0.02);
+    }
+    
+    .volume-summary::-webkit-details-marker { display: none; }
+    .volume-summary::marker { display: none; }
+    
+    .volume-arrow {
+      font-size: 0.7rem;
+      transition: transform 0.2s ease;
+      opacity: 0.5;
+    }
+    
+    .volume-details[open] .volume-arrow {
+      transform: rotate(90deg);
     }
     
     .volume-num {
       font-family: var(--font-display);
       font-size: 1.1rem;
       font-weight: 600;
-      min-width: 2rem;
+      min-width: 2.5rem;
     }
     
     .volume-title {
@@ -188,21 +542,69 @@ const seasons = {
     }
     
     .volume-status {
-      font-size: 0.75rem;
-      padding: 0.2rem 0.5rem;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
       border-radius: 2px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
     
-    .status-in-progress {
-      background: var(--color-gold);
-      color: var(--color-ink);
+    .status-in-progress { background: var(--color-gold); }
+    .status-planned { background: var(--color-shadow); }
+    
+    .volume-count {
+      font-size: 0.75rem;
+      opacity: 0.6;
+      font-style: italic;
     }
     
-    .status-planned {
-      background: var(--color-shadow);
-      color: var(--color-ink);
+    /* Entries panel */
+    .entries-panel {
+      background: #faf8f4;
+      border-top: 1px solid var(--color-shadow);
+      padding: 1rem 1.5rem 1.5rem;
+    }
+    
+    .entry-type-group {
+      margin-bottom: 1rem;
+    }
+    
+    .entry-type-group:last-child { margin-bottom: 0; }
+    
+    .entry-type-label {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.6;
+      margin-bottom: 0.5rem;
+      padding-left: 0.25rem;
+    }
+    
+    .entries-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.4rem;
+    }
+    
+    .entry-item {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 0.75rem;
+      background: white;
+      border: 1px solid var(--color-shadow);
+      border-radius: 3px;
+      font-size: 0.9rem;
+    }
+    
+    .entry-title {
+      font-weight: 500;
+    }
+    
+    .entry-author {
+      font-size: 0.8rem;
+      font-style: italic;
+      opacity: 0.7;
     }
     
     footer {
@@ -218,14 +620,38 @@ const seasons = {
       text-decoration: none;
     }
     
-    footer a:hover {
-      text-decoration: underline;
-    }
+    footer a:hover { text-decoration: underline; }
     
     .publishing-note {
       max-width: 600px;
       margin: 0 auto 1rem;
       font-style: italic;
+    }
+    
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--color-rust);
+    }
+    
+    .stat-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -245,6 +671,20 @@ const seasons = {
       revised each Candlemas. Canonical texts by public domain faculty, 
       with marginalia from adjunct, heretic, and synthetic voices.
     </p>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Volumes</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">348</div>
+        <div class="stat-label">Entries</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">150+</div>
+        <div class="stat-label">Authors</div>
+      </div>
+    </div>
   </section>
   
   <main>
@@ -257,12 +697,37 @@ const seasons = {
           </header>
           <ul class="volume-list">
             {volumes.filter(v => v.season === seasonName).map(volume => (
-              <li class="volume-item">
-                <span class="volume-num">{volume.num}</span>
-                <span class="volume-title">{volume.title}</span>
-                <span class={`volume-status status-${volume.status}`}>
-                  {volume.status === 'in-progress' ? 'In Progress' : 'Planned'}
-                </span>
+              <li>
+                <details class="volume-details">
+                  <summary class="volume-summary">
+                    <span class="volume-arrow">▶</span>
+                    <span class="volume-num">{volume.num}</span>
+                    <span class="volume-title">{volume.title}</span>
+                    <span class="volume-count">{volume.entries.length} entries</span>
+                    <span class={`volume-status status-${volume.status}`}>
+                      {volume.status === 'in-progress' ? 'Active' : 'Planned'}
+                    </span>
+                  </summary>
+                  <div class="entries-panel">
+                    {['major', 'standard', 'boundary', 'closing'].map(type => {
+                      const typeEntries = volume.entries.filter(e => e.type === type);
+                      if (typeEntries.length === 0) return null;
+                      return (
+                        <div class="entry-type-group">
+                          <div class="entry-type-label">{entryTypeLabels[type]} Entries</div>
+                          <div class="entries-list">
+                            {typeEntries.map(entry => (
+                              <div class="entry-item">
+                                <span class="entry-title">{entry.title}</span>
+                                <span class="entry-author">{entry.author}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </details>
               </li>
             ))}
           </ul>
