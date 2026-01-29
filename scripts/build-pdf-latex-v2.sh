@@ -15,8 +15,8 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR/.."
 
 # Check dependencies
-if ! command -v asciidoctor &> /dev/null; then
-  echo "❌ asciidoctor not found. Install with: gem install asciidoctor"
+if ! command -v python3 &> /dev/null; then
+  echo "❌ python3 not found"
   exit 1
 fi
 
@@ -176,39 +176,21 @@ build_volume() {
   
   echo "📖 Building ${EDITION} ${SLUG} via LaTeX..."
   
-  # Step 1: AsciiDoc → LaTeX
-  # First use asciidoctor to resolve includes, then convert
   local TEX_FILE="${TEMP_DIR}/${EDITION}-${SLUG}.tex"
   
-  echo "  Converting AsciiDoc to LaTeX..."
+  # Convert directly from AsciiDoc to properly structured LaTeX
+  # Skip asciidoctor conversion - use our custom converter
+  echo "  Converting AsciiDoc to structured LaTeX..."
   
-  # Use asciidoctor to convert to LaTeX (handles includes)
-  asciidoctor \
-    -b latex \
-    -a latex-class=encyclopaedia \
-    -a year=2026 \
-    -a docdate=2026 \
-    -o "${TEX_FILE}.raw" \
-    "$MASTER" 2>&1 || {
-    echo "⚠️  AsciiDoc to LaTeX conversion had warnings"
-  }
-  
-  # Step 2: Post-process LaTeX to handle marginalia properly
-  if [ -f "${TEX_FILE}.raw" ]; then
-    python3 "$SCRIPT_DIR/../scripts/asciidoc-to-latex-converter.py" \
-      "${TEX_FILE}.raw" \
-      "$TEX_FILE" \
-      "$VOL_NUM" \
-      "$EDITION" \
-      "2026" || {
-      # Fallback: use raw LaTeX
-      cp "${TEX_FILE}.raw" "$TEX_FILE"
-      echo "⚠️  Using raw LaTeX output (marginalia may not be properly formatted)"
-    }
-  else
-    echo "❌ Failed to generate LaTeX file"
+  python3 "$SCRIPT_DIR/asciidoc-to-latex-converter-v3.py" \
+    "$MASTER" \
+    "$TEX_FILE" \
+    "$VOL_NUM" \
+    "$EDITION" \
+    "2026" || {
+    echo "❌ Failed to convert AsciiDoc to LaTeX"
     return 1
-  fi
+  }
   
   if [ ! -f "$TEX_FILE" ]; then
     echo "❌ Failed to generate LaTeX file"
