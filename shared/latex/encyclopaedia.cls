@@ -18,6 +18,8 @@
   columnsep=10mm     % clear column separation
 ]{geometry}
 
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
 \RequirePackage{libertinus}
 \RequirePackage{libertinus-otf}
 
