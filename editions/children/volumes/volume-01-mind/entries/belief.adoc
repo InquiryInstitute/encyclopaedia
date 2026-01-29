@@ -1,9 +1,9 @@
-// Entry: uelief (Children's Edition)
+// Entry: Belief (Children's Edition)
 // Canonical Author: Charles Sanders Peirce
 // Faculty ID: a.peirce
 
 [[entry-belief]]
-=== uelief
+=== Belief
 :canonical-author: Charles Sanders Peirce
 :faculty-id: a.peirce
 :status: canonical
