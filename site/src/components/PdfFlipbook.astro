@@ -197,28 +197,46 @@ const { pdfUrl, title, edition } = Astro.props;
     const ctxLeft = leftCanvas.getContext('2d');
     const ctxRight = rightCanvas.getContext('2d');
     
+    // Calculate optimal scale to fit viewport
+    function calculateScale() {
+      const viewport = document.getElementById('flipbook-viewport');
+      const maxWidth = (viewport.clientWidth - 60) / 2; // Divide by 2 for two pages, minus gap
+      const maxHeight = viewport.clientHeight - 40;
+      
+      // A4 aspect ratio is approximately 1.414:1 (width:height)
+      // We want to fit both pages side by side
+      const singlePageMaxWidth = maxWidth;
+      const singlePageMaxHeight = maxHeight;
+      
+      // Calculate scale based on A4 dimensions (595pt x 842pt at 72dpi)
+      // Or use a reference page to get actual dimensions
+      return Math.min(singlePageMaxWidth / 595, singlePageMaxHeight / 842, 2.0);
+    }
+    
     async function renderSpread(spreadNum) {
       const leftPageNum = (spreadNum - 1) * 2 + 1;
       const rightPageNum = leftPageNum + 1;
       
+      const scale = calculateScale();
+      
       if (leftPageNum <= numPages) {
         const page = await pdfDoc.getPage(leftPageNum);
-        const viewport = page.getViewport({ scale: 1.2 });
+        const viewport = page.getViewport({ scale });
         leftCanvas.width = viewport.width;
         leftCanvas.height = viewport.height;
         await page.render({ canvasContext: ctxLeft, viewport }).promise;
-        leftDiv.style.display = 'block';
+        leftDiv.style.display = 'flex';
       } else {
         leftDiv.style.display = 'none';
       }
       
       if (rightPageNum <= numPages) {
         const page = await pdfDoc.getPage(rightPageNum);
-        const viewport = page.getViewport({ scale: 1.2 });
+        const viewport = page.getViewport({ scale });
         rightCanvas.width = viewport.width;
         rightCanvas.height = viewport.height;
         await page.render({ canvasContext: ctxRight, viewport }).promise;
-        rightDiv.style.display = 'block';
+        rightDiv.style.display = 'flex';
       } else {
         rightDiv.style.display = 'none';
       }
@@ -227,6 +245,15 @@ const { pdfUrl, title, edition } = Astro.props;
       prevBtn.disabled = currentSpread <= 1;
       nextBtn.disabled = rightPageNum >= numPages;
     }
+    
+    // Re-render on resize
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        renderSpread(currentSpread);
+      }, 250);
+    });
     
     prevBtn.addEventListener('click', () => {
       if (currentSpread > 1) {
@@ -491,6 +518,29 @@ const { pdfUrl, title, edition } = Astro.props;
     align-items: center;
     padding: 10px;
     box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Fallback two-page view styles */
+  .page.left-page,
+  .page.right-page {
+    display: flex;
+    flex-shrink: 0;
+    margin: 0 10px;
+    max-width: calc(50% - 20px);
+    min-width: 0;
+  }
+  
+  .pageflip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
   
   .pdf-page-canvas {
@@ -499,6 +549,7 @@ const { pdfUrl, title, edition } = Astro.props;
     width: auto;
     height: auto;
     display: block;
+    object-fit: contain;
   }
   
   .loading-indicator {
