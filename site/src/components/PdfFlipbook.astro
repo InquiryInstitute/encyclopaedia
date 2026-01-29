@@ -76,14 +76,24 @@ const { pdfUrl, title, edition } = Astro.props;
   async function init() {
     try {
       loadingIndicator.textContent = 'Loading PDF...';
+      console.log('📄 PDF URL:', pdfUrl);
       
       // Load PDF.js from CDN first
+      console.log('📦 Loading PDF.js from:', PDFJS_CDN);
       const pdfjsLib = await import(PDFJS_CDN);
       pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
+      console.log('✅ PDF.js loaded');
       
       // Load the PDF
-      const loadingTask = pdfjsLib.getDocument(pdfUrl);
+      console.log('📖 Loading PDF document...');
+      const loadingTask = pdfjsLib.getDocument({
+        url: pdfUrl,
+        httpHeaders: {},
+        withCredentials: false
+      });
+      
       pdfDoc = await loadingTask.promise;
+      console.log('✅ PDF loaded:', pdfDoc.numPages, 'pages');
       
       totalPagesSpan.textContent = pdfDoc.numPages;
       
@@ -131,8 +141,27 @@ const { pdfUrl, title, edition } = Astro.props;
       }
       
     } catch (error) {
-      console.error('Error loading PDF:', error);
-      loadingIndicator.textContent = `Error: ${error.message || 'Failed to load PDF'}. Please try the download link below.`;
+      console.error('❌ Error loading PDF:', error);
+      console.error('Error details:', {
+        message: error.message,
+        name: error.name,
+        stack: error.stack,
+        pdfUrl: pdfUrl
+      });
+      
+      // More detailed error message
+      let errorMsg = 'Failed to load PDF. ';
+      if (error.message) {
+        errorMsg += error.message;
+      } else if (error.name === 'NetworkError') {
+        errorMsg += 'Network error - PDF file may not exist or is inaccessible.';
+      } else if (error.name === 'InvalidPDFException') {
+        errorMsg += 'Invalid PDF file format.';
+      } else {
+        errorMsg += 'Please check the console for details.';
+      }
+      
+      loadingIndicator.textContent = errorMsg + ' Please try the download link below.';
       loadingIndicator.style.color = '#ff6b6b';
     }
   }
