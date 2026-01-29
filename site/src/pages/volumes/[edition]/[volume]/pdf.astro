@@ -79,10 +79,35 @@ const title = `Volume ${volumeData.num}: ${volumeData.title}`;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      background: linear-gradient(180deg, #1a1512 0%, #2a1f18 50%, #1a1512 100%);
+      color: #f5f0e6;
+      min-height: 100vh;
+    }
+    
+    .back-link {
+      padding: 1rem 2rem;
+    }
+    
+    .back-link a {
+      color: #c9a227;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+    
+    .back-link a:hover {
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
-  <div style="padding: 1rem;">
-    <a href={`/volumes/${edition}/${volume}/`} style="color: #c9a227; text-decoration: none; font-size: 0.9rem;">
+  <div class="back-link">
+    <a href={`/volumes/${edition}/${volume}/`}>
       ← Back to Table of Contents
     </a>
   </div>
