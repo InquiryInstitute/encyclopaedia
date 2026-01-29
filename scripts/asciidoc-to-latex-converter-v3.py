@@ -326,7 +326,14 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
                 # Add author signature at end of canonical text (Britannica-style)
                 # After main text, before references/marginalia
                 if entry.get('author'):
-                    latex += f"\n\\authorsignature{{{escape_simple(entry['author'])}}}\n"
+                    author_image = entry.get('author_image', '')
+                    if author_image:
+                        # Escape image path
+                        image_path = escape_simple(author_image)
+                        latex += f"\n\\authorsignature{{{escape_simple(entry['author'])}}}{{{image_path}}}\n"
+                    else:
+                        # No image, just name
+                        latex += f"\n\\authorsignature{{{escape_simple(entry['author'])}}}{{}}\n"
             else:
                 latex += canonical_latex
                 # Add author signature even if single paragraph
