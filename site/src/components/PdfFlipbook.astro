@@ -31,14 +31,7 @@ const { pdfUrl, title, edition } = Astro.props;
   </header>
   
   <div id="flipbook-viewport" class="flipbook-viewport">
-    <div id="page-container" class="page-container">
-      <div id="left-page" class="page left-page">
-        <canvas id="pdf-canvas-left" class="pdf-canvas"></canvas>
-      </div>
-      <div id="right-page" class="page right-page">
-        <canvas id="pdf-canvas-right" class="pdf-canvas"></canvas>
-      </div>
-    </div>
+    <div id="pageflip-container"></div>
     <div id="loading-indicator" class="loading-indicator">
       Loading PDF...
     </div>
@@ -59,31 +52,30 @@ const { pdfUrl, title, edition } = Astro.props;
 </section>
 
 <script is:inline define:vars={{ pdfUrl }}>
+  // Load PageFlip library from CDN
+  const PAGEFLIP_CDN = 'https://cdn.jsdelivr.net/npm/st-pageflip@1.0.0/dist/st-pageflip.min.js';
+  
   // PDF.js initialization using CDN
   const PDFJS_VERSION = '4.0.379';
   const PDFJS_CDN = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.min.mjs`;
   const PDFJS_WORKER = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VERSION}/pdf.worker.min.mjs`;
   
   let pdfDoc = null;
-  let currentSpread = 1; // Start with pages 1-2 (spread 1 = pages 1-2, spread 2 = pages 3-4, etc.)
-  let pageRendering = false;
-  let pageNumPending = null;
-  let scale = 1.0;
+  let pageFlip = null;
+  let renderedPages = new Map();
   
-  const canvasLeft = document.getElementById('pdf-canvas-left');
-  const canvasRight = document.getElementById('pdf-canvas-right');
-  const ctxLeft = canvasLeft.getContext('2d');
-  const ctxRight = canvasRight.getContext('2d');
+  const container = document.getElementById('pageflip-container');
   const loadingIndicator = document.getElementById('loading-indicator');
   const currentPageSpan = document.getElementById('current-page');
   const totalPagesSpan = document.getElementById('total-pages');
   const prevBtn = document.getElementById('prev-page');
   const nextBtn = document.getElementById('next-page');
-  const leftPage = document.getElementById('left-page');
-  const rightPage = document.getElementById('right-page');
   
   async function init() {
     try {
+      // Load PageFlip library
+      await loadScript(PAGEFLIP_CDN);
+      
       // Load PDF.js from CDN
       const pdfjsLib = await import(PDFJS_CDN);
       pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
@@ -93,19 +85,20 @@ const { pdfUrl, title, edition } = Astro.props;
       pdfDoc = await loadingTask.promise;
       
       totalPagesSpan.textContent = pdfDoc.numPages;
+      
+      // Initialize PageFlip
+      await initPageFlip();
+      
       loadingIndicator.style.display = 'none';
       
-      // Render first spread (pages 1-2)
-      renderSpread(currentSpread);
-      
       // Set up controls
-      prevBtn.addEventListener('click', onPrevSpread);
-      nextBtn.addEventListener('click', onNextSpread);
+      prevBtn.addEventListener('click', () => pageFlip.flipPrev());
+      nextBtn.addEventListener('click', () => pageFlip.flipNext());
       
       // Keyboard navigation
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') onPrevSpread();
-        if (e.key === 'ArrowRight') onNextSpread();
+        if (e.key === 'ArrowLeft') pageFlip.flipPrev();
+        if (e.key === 'ArrowRight') pageFlip.flipNext();
       });
       
     } catch (error) {
@@ -114,134 +107,135 @@ const { pdfUrl, title, edition } = Astro.props;
     }
   }
   
-  function calculateScale(pageWidth, pageHeight) {
-    const viewport = document.getElementById('flipbook-viewport');
-    if (!viewport) return 1.0;
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+  
+  async function initPageFlip() {
+    const numPages = pdfDoc.numPages;
+    const pages = [];
     
-    // Account for two pages side by side with gap
-    const maxWidth = (viewport.clientWidth - 60) / 2; // Split width, minus padding and gap
+    // Create page elements
+    for (let i = 0; i < numPages; i++) {
+      const pageDiv = document.createElement('div');
+      pageDiv.className = 'page';
+      pageDiv.dataset.pageNum = i + 1;
+      
+      const canvas = document.createElement('canvas');
+      canvas.className = 'pdf-page-canvas';
+      pageDiv.appendChild(canvas);
+      
+      pages.push(pageDiv);
+      container.appendChild(pageDiv);
+    }
+    
+    // Initialize PageFlip
+    pageFlip = new St.PageFlip(container, {
+      width: 600,
+      height: 800,
+      showCover: false,
+      maxShadowOpacity: 0.5,
+      drawShadow: true,
+      flippingTime: 1000,
+      usePortrait: true,
+      startPage: 0,
+      size: 'stretch',
+      minWidth: 300,
+      maxWidth: 1200,
+      minHeight: 400,
+      maxHeight: 1600,
+    });
+    
+    // Render pages as needed
+    pageFlip.on('flip', (e) => {
+      const currentPage = e.data + 1;
+      currentPageSpan.textContent = `${currentPage}${currentPage < numPages ? '-' + (currentPage + 1) : ''}`;
+      
+      // Render current and adjacent pages
+      renderPageIfNeeded(currentPage);
+      if (currentPage < numPages) renderPageIfNeeded(currentPage + 1);
+      if (currentPage > 1) renderPageIfNeeded(currentPage - 1);
+    });
+    
+    // Initial render
+    renderPageIfNeeded(1);
+    if (numPages > 1) renderPageIfNeeded(2);
+    
+    // Update button states
+    pageFlip.on('flip', () => {
+      prevBtn.disabled = pageFlip.getCurrentPageIndex() === 0;
+      nextBtn.disabled = pageFlip.getCurrentPageIndex() >= numPages - 1;
+    });
+    
+    // Calculate size based on viewport
+    updatePageFlipSize();
+    window.addEventListener('resize', () => {
+      updatePageFlipSize();
+    });
+  }
+  
+  function updatePageFlipSize() {
+    if (!pageFlip) return;
+    
+    const viewport = document.getElementById('flipbook-viewport');
+    const maxWidth = viewport.clientWidth - 40;
     const maxHeight = viewport.clientHeight - 40;
     
-    const widthScale = maxWidth / pageWidth;
-    const heightScale = maxHeight / pageHeight;
+    // Maintain aspect ratio (A4 is roughly 1.414:1)
+    let width = Math.min(maxWidth, maxHeight * 1.414);
+    let height = width / 1.414;
     
-    // Use the smaller scale to fit both dimensions
-    return Math.min(widthScale, heightScale, 1.2); // Cap at 1.2x for two-page view
+    if (height > maxHeight) {
+      height = maxHeight;
+      width = height * 1.414;
+    }
+    
+    pageFlip.update();
   }
   
-  async function renderSpread(spreadNum) {
-    pageRendering = true;
+  async function renderPageIfNeeded(pageNum) {
+    if (renderedPages.has(pageNum)) return;
+    
+    const pageElement = container.querySelector(`[data-page-num="${pageNum}"]`);
+    if (!pageElement) return;
+    
+    const canvas = pageElement.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
     
     try {
-      // Calculate page numbers for this spread
-      // Spread 1 = pages 1-2, Spread 2 = pages 3-4, etc.
-      const leftPageNum = (spreadNum - 1) * 2 + 1;
-      const rightPageNum = leftPageNum + 1;
+      const page = await pdfDoc.getPage(pageNum);
+      const viewport = page.getViewport({ scale: 1.0 });
       
-      // Render left page
-      if (leftPageNum <= pdfDoc.numPages) {
-        const leftPageObj = await pdfDoc.getPage(leftPageNum);
-        const leftViewport = leftPageObj.getViewport({ scale: 1.0 });
-        const optimalScale = calculateScale(leftViewport.width, leftViewport.height);
-        const scaledLeftViewport = leftPageObj.getViewport({ scale: optimalScale });
-        
-        canvasLeft.height = scaledLeftViewport.height;
-        canvasLeft.width = scaledLeftViewport.width;
-        
-        await leftPageObj.render({
-          canvasContext: ctxLeft,
-          viewport: scaledLeftViewport
-        }).promise;
-        
-        leftPage.style.display = 'block';
-      } else {
-        leftPage.style.display = 'none';
-      }
+      // Calculate scale to fit page element
+      const pageRect = pageElement.getBoundingClientRect();
+      const scale = Math.min(
+        (pageRect.width - 20) / viewport.width,
+        (pageRect.height - 20) / viewport.height,
+        2.0
+      );
       
-      // Render right page
-      if (rightPageNum <= pdfDoc.numPages) {
-        const rightPageObj = await pdfDoc.getPage(rightPageNum);
-        const rightViewport = rightPageObj.getViewport({ scale: 1.0 });
-        const optimalScale = calculateScale(rightViewport.width, rightViewport.height);
-        const scaledRightViewport = rightPageObj.getViewport({ scale: optimalScale });
-        
-        canvasRight.height = scaledRightViewport.height;
-        canvasRight.width = scaledRightViewport.width;
-        
-        await rightPageObj.render({
-          canvasContext: ctxRight,
-          viewport: scaledRightViewport
-        }).promise;
-        
-        rightPage.style.display = 'block';
-      } else {
-        rightPage.style.display = 'none';
-      }
+      const scaledViewport = page.getViewport({ scale });
       
-      pageRendering = false;
-      currentPageSpan.textContent = `${leftPageNum}${rightPageNum <= pdfDoc.numPages ? '-' + rightPageNum : ''}`;
+      canvas.height = scaledViewport.height;
+      canvas.width = scaledViewport.width;
       
-      // Update button states
-      prevBtn.disabled = currentSpread <= 1;
-      nextBtn.disabled = rightPageNum >= pdfDoc.numPages;
+      await page.render({
+        canvasContext: ctx,
+        viewport: scaledViewport
+      }).promise;
       
-      if (pageNumPending !== null) {
-        renderSpread(pageNumPending);
-        pageNumPending = null;
-      }
+      renderedPages.set(pageNum, true);
     } catch (error) {
-      console.error('Error rendering spread:', error);
-      pageRendering = false;
+      console.error(`Error rendering page ${pageNum}:`, error);
     }
   }
   
-  function queueRenderSpread(spreadNum) {
-    if (pageRendering) {
-      pageNumPending = spreadNum;
-    } else {
-      renderSpread(spreadNum);
-    }
-  }
-  
-  function onPrevSpread() {
-    if (currentSpread <= 1) return;
-    
-    // Add flip animation
-    const container = document.getElementById('page-container');
-    container.classList.add('flip-left');
-    
-    setTimeout(() => {
-      currentSpread--;
-      renderSpread(currentSpread);
-      container.classList.remove('flip-left');
-    }, 300);
-  }
-  
-  function onNextSpread() {
-    const rightPageNum = currentSpread * 2;
-    if (rightPageNum >= pdfDoc.numPages) return;
-    
-    // Add flip animation
-    const container = document.getElementById('page-container');
-    container.classList.add('flip-right');
-    
-    setTimeout(() => {
-      currentSpread++;
-      renderSpread(currentSpread);
-      container.classList.remove('flip-right');
-    }, 300);
-  }
-  
-  // Handle window resize
-  let resizeTimeout;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-      if (pdfDoc && currentSpread) {
-        renderSpread(currentSpread);
-      }
-    }, 250);
-  });
   
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
@@ -314,69 +308,32 @@ const { pdfUrl, title, edition } = Astro.props;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    overflow: auto;
-    perspective: 1500px;
+    overflow: hidden;
   }
   
-  .page-container {
+  #pageflip-container {
+    width: 100%;
+    height: 100%;
     display: flex;
-    gap: 8px;
-    align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .page-container.flip-left {
-    animation: flipLeft 0.6s ease-in-out;
-  }
-  
-  .page-container.flip-right {
-    animation: flipRight 0.6s ease-in-out;
-  }
-  
-  @keyframes flipLeft {
-    0% { transform: perspective(1500px) rotateY(0deg); }
-    50% { transform: perspective(1500px) rotateY(-10deg) scale(0.95); }
-    100% { transform: perspective(1500px) rotateY(0deg); }
-  }
-  
-  @keyframes flipRight {
-    0% { transform: perspective(1500px) rotateY(0deg); }
-    50% { transform: perspective(1500px) rotateY(10deg) scale(0.95); }
-    100% { transform: perspective(1500px) rotateY(0deg); }
+    align-items: center;
   }
   
   .page {
-    position: relative;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
   }
   
-  .left-page {
-    transform-origin: right center;
-  }
-  
-  .right-page {
-    transform-origin: left center;
-  }
-  
-  .pdf-canvas {
+  .pdf-page-canvas {
     max-width: 100%;
     max-height: 100%;
-    height: auto;
     width: auto;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    background: #fff;
+    height: auto;
     display: block;
-  }
-  
-  .left-page .pdf-canvas {
-    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.4);
-  }
-  
-  .right-page .pdf-canvas {
-    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.4);
   }
   
   .loading-indicator {
