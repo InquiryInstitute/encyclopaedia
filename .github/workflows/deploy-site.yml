@@ -3,8 +3,6 @@ name: Deploy Encyclopædia Site
 on:
   push:
     branches: ["main"]
-    paths:
-      - 'encyclopaedia/**'
   workflow_dispatch:
 
 permissions:
@@ -13,15 +11,12 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages-encyclopaedia"
+  group: "pages"
   cancel-in-progress: true
 
 jobs:
   build-content:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: encyclopaedia
     
     steps:
       - uses: actions/checkout@v4
@@ -55,19 +50,18 @@ jobs:
             asciidoctor-pdf -D dist/builds/pdf -o children-volume-01.pdf \
               editions/children/volumes/volume-01-mind/volume.adoc || true
           fi
+          
+          ls -la dist/builds/ || true
 
       - name: Upload content artifacts
         uses: actions/upload-artifact@v4
         with:
           name: content-builds
-          path: encyclopaedia/dist/builds
+          path: dist/builds
 
   build-site:
     needs: build-content
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: encyclopaedia/site
     
     steps:
       - uses: actions/checkout@v4
@@ -76,25 +70,25 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: content-builds
-          path: encyclopaedia/site/public/builds
+          path: site/public/builds
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-          cache-dependency-path: "encyclopaedia/site/package-lock.json"
 
       - name: Install dependencies
-        run: npm ci || npm install
+        working-directory: site
+        run: npm install
 
       - name: Build Astro site
+        working-directory: site
         run: npm run build
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: encyclopaedia/site/dist
+          path: site/dist
 
   deploy:
     needs: build-site
