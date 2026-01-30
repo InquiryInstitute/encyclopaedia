@@ -322,9 +322,24 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
     
     # Add each entry
     for entry in entries:
-        # Entry title spanning both columns (using \entry command)
-        # \entry{} switches to onecolumn, prints title, then switches back to twocolumn
-        latex += f"\\entry{{{escape_simple(entry['title'])}}}\n\n"
+        # Determine if entry is short (<1.5 columns)
+        # Britannica rule: span columns only if article ≥ 1.5 columns or begins new page
+        # Estimate: ~500 words per column, so <750 words = short entry
+        canonical_text = entry.get('canonical', '')
+        if canonical_text and canonical_text != "[CANONICAL TEXT TO BE GENERATED]":
+            # Rough word count estimate (split on whitespace)
+            word_count = len(canonical_text.split())
+            is_short = word_count < 750
+        else:
+            # Placeholder entries are treated as regular entries (will span)
+            is_short = False
+        
+        # Use \shortentry for short articles (run-in headword), \entry for substantial ones (spanning)
+        if is_short:
+            latex += f"\\shortentry{{{escape_simple(entry['title'])}}}\n"
+        else:
+            # Entry title spanning both columns (using \entry command)
+            latex += f"\\entry{{{escape_simple(entry['title'])}}}\n\n"
         
         # Convert canonical text (skip if placeholder)
         if entry['canonical'] and entry['canonical'] != "[CANONICAL TEXT TO BE GENERATED]":
