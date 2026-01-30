@@ -8,89 +8,101 @@
 
 ## Validation Results
 
+### Critical Issues Found
+
+1. **❌ Marginalia Specification still in TOC** (page 1)
+   - Should have been removed but still appears
+   - The include was removed from `volume.adoc`, but PDF still shows it
+   - **Status:** Need to verify the change was deployed
+
+2. **❌ Numbered chapters/sections still present**
+   - "Chapter 18. Volume I: Mind" appears in TOC
+   - "18.1. Attention", "18.2. Consciousness", etc. appear
+   - Front matter sections are being numbered
+   - **Root Cause:** Asciidoctor is processing the full `volume.adoc` file (including front matter) before our Python converter runs
+   - Our converter only processes entries, but front matter is being included from Asciidoctor's processing
+
+3. **❌ Two-column layout**: Need visual verification
+   - Text extraction doesn't show column structure
+   - Need to open PDF to verify two-column layout for entries
+   - **Status:** Cannot verify from text extraction alone
+
+4. **❌ Marginalia formatting**: Need visual verification
+   - Text extraction doesn't show marginalia placement
+   - Need to verify marginalia appears in outer margin, not as raw markup
+   - **Status:** Cannot verify from text extraction alone
+
 ### Basic PDF Properties
 - [x] PDF is valid and readable (PDF 1.4, 42 pages)
 - [x] Page count is reasonable (42 pages for Volume I)
-- [ ] Metadata is present (needs visual verification)
+- [ ] Metadata is present (needs verification)
 - [ ] A4 paper size (210 × 297 mm) - needs verification
 
 ### Page Layout (Britannica-Style)
-- [ ] Inner margin: 25mm (binding + thumb space)
-- [ ] Outer margin: 45mm (for marginalia)
-- [ ] Top margin: 20mm
-- [ ] Bottom margin: 25mm
-- [ ] Column separation: 10mm
-- [ ] Two-column layout for canonical text
+- [ ] Inner margin: 25mm (binding + thumb space) - **NEEDS VISUAL VERIFICATION**
+- [ ] Outer margin: 45mm (for marginalia) - **NEEDS VISUAL VERIFICATION**
+- [ ] Top margin: 20mm - **NEEDS VISUAL VERIFICATION**
+- [ ] Bottom margin: 25mm - **NEEDS VISUAL VERIFICATION**
+- [ ] Column separation: 10mm - **NEEDS VISUAL VERIFICATION**
+- [ ] **Two-column layout for canonical text** ⚠️ **CRITICAL - NEEDS VISUAL VERIFICATION**
 
 ### Typography
-- [ ] Libertinus font family used
-- [ ] Entry titles are uppercase and centered
-- [ ] Entry titles span both columns
-- [ ] Running headers present (volume/entry info)
-- [ ] Page numbers centered at bottom
-- [ ] Proper character encoding (special characters render correctly)
+- [ ] Libertinus font family used - **NEEDS VISUAL VERIFICATION**
+- [ ] Entry titles are uppercase and centered - **NEEDS VISUAL VERIFICATION**
+- [ ] Entry titles span both columns - **NEEDS VISUAL VERIFICATION**
+- [ ] Running headers with volume number/title and entry title - **NEEDS VISUAL VERIFICATION**
+- [ ] Page numbers centered at bottom - **NEEDS VISUAL VERIFICATION**
+- [ ] Proper character encoding (special characters render correctly) - **NEEDS VISUAL VERIFICATION**
+- [ ] **No chapter/section numbering** ❌ **FAILED - Still shows "Chapter 18", "18.1"**
 
 ### Entry Structure
-- [ ] Each entry starts on a new page
-- [ ] Entry titles use `\entry{}` command correctly
-- [ ] Canonical text in two columns
-- [ ] Marginalia appear in outer margin
-- [ ] Author signatures at end of entries
-- [ ] No duplicate titles
+- [ ] Each entry starts on a new page - **NEEDS VISUAL VERIFICATION**
+- [ ] Entry titles use `\entry{}` command correctly - **NEEDS VISUAL VERIFICATION**
+- [ ] Canonical text in two columns - **NEEDS VISUAL VERIFICATION**
+- [ ] **Marginalia appear in outer margin (not as raw markup)** ⚠️ **CRITICAL - NEEDS VISUAL VERIFICATION**
+- [ ] Author signatures at end of entries - **NEEDS VISUAL VERIFICATION**
+- [ ] No duplicate titles - **NEEDS VISUAL VERIFICATION**
 
 ### Front Matter
-- [ ] Title page with volume information
-- [ ] Table of Contents
-- [ ] Constitutional front matter (Volume I)
-- [ ] Proper page numbering starts after front matter
+- [ ] Title page with volume information - **NEEDS VISUAL VERIFICATION**
+- [ ] Table of Contents - ✅ Present
+- [ ] Constitutional front matter (Volume I only) - **NEEDS VERIFICATION**
+- [ ] Proper page numbering starts after front matter - **NEEDS VERIFICATION**
+- [ ] **No Marginalia Specification in TOC** ❌ **FAILED - Still appears on page 1**
 
-### Content Quality
-- [ ] All entries have generated content (no placeholders)
-- [ ] Inquiry-first template structure followed
-- [ ] Proper markdown/LaTeX conversion
-- [ ] Citations formatted correctly
-- [ ] Marginalia properly formatted
+## Root Cause Analysis
 
-### Issues Found
+The PDF is being generated, but it appears that:
 
-1. **❌ Marginalia Specification in Table of Contents**
-   - The Table of Contents includes "Marginalia Specification" as a section
-   - User previously stated: "I don't think we include Marginalia specifications in the frontmatter"
-   - This should be removed from the TOC
+1. **Asciidoctor is processing the full `volume.adoc` file** (including front matter) before our Python converter runs
+2. **Our Python converter only processes entries**, but the front matter sections are being included from Asciidoctor's processing
+3. **The Marginalia Specification include** was removed from `volume.adoc`, but the PDF still shows it (possibly cached or not rebuilt)
 
-2. **⚠️  Need Visual Verification**
-   - Two-column layout for canonical text
-   - Entry titles spanning both columns
-   - Running headers with volume/entry info
-   - Marginalia placement in outer margin
-   - Author signatures at end of entries
-   - Page margins (inner: 25mm, outer: 45mm, top: 20mm, bottom: 25mm)
+## Required Fixes
 
-### Recommendations
+1. **Exclude front matter from PDF generation**
+   - Option A: Process front matter separately (for HTML only)
+   - Option B: Skip front matter sections in LaTeX output
+   - Option C: Process front matter but ensure it's unnumbered
 
-1. **Remove Marginalia Specification from TOC**
-   - Check `front-matter.adoc` and ensure it's not included in the volume structure
-   - Verify the LaTeX converter doesn't include it in the TOC
+2. **Ensure Marginalia Specification is not included**
+   - Verify the include was actually removed
+   - Rebuild PDF to ensure changes take effect
 
-2. **Visual Inspection Required**
-   - Open PDF in viewer to verify:
-     - Two-column layout
-     - Entry title formatting (uppercase, centered, spanning columns)
-     - Running headers
-     - Marginalia placement
-     - Page margins
-     - Font rendering (Libertinus)
+3. **Verify two-column layout**
+   - Open PDF in viewer to verify entries are in two columns
+   - Check that `\entry{}` command is working correctly
 
-3. **Content Verification**
-   - Verify all newly generated entries appear correctly:
-     - Animal Mind (Darwin)
-     - Artificial Mind (Turing)
-     - Collective Mind (Durkheim)
-     - Ignorance (Mental) (Socrates/Plato)
+4. **Verify marginalia placement**
+   - Open PDF in viewer to verify marginalia appears in outer margin
+   - Check that marginalia is not appearing as raw markup
 
-### Next Steps
+## Next Steps
 
-1. Fix Marginalia Specification in TOC issue
-2. Perform visual inspection of PDF formatting
-3. Verify all entries render correctly
-4. Check page margins and layout match Britannica style
+1. **Fix front matter processing**: Ensure front matter is excluded or unnumbered
+2. **Rebuild PDF**: Trigger a fresh build to ensure all changes take effect
+3. **Visual inspection**: Open PDF in viewer to verify:
+   - Two-column layout
+   - Marginalia placement
+   - No numbered sections
+   - Proper margins
