@@ -6,7 +6,11 @@
 \ProvidesClass{encyclopaedia}[2026/01/29 The Encyclopædia v1]
 
 % Base class: book, 11pt, two-column, openany (chapters can start on any page)
+% twocolumn option enables two-column mode globally
 \LoadClass[11pt,twocolumn,openany]{book}
+
+% Ensure two-column mode is the default after title page and TOC
+% The twocolumn option should handle this, but we'll enforce it explicitly
 
 % Required packages
 % Britannica-style margins: generous outer margin for marginalia
@@ -37,15 +41,26 @@
 % Entry headings (Britannica-style: bold, uppercase, centered)
 \RequirePackage{titlesec}
 
-% Disable section numbering
+% Disable ALL section/chapter numbering (no labels at all)
 \setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{2}  % Still show in TOC, but unnumbered
 
-% Entry titles span both columns (unnumbered)
+% Make all sections unnumbered (no chapter/section labels)
 \titleformat{\section}
   {\normalfont\Large\bfseries}
   {}
   {0pt}
   {\centering\MakeUppercase}
+
+\titleformat{\chapter}
+  {\normalfont\Large\bfseries}
+  {}
+  {0pt}
+  {\centering\MakeUppercase}
+
+% Ensure no chapter labels appear
+\renewcommand{\@chapapp}{}
+\renewcommand{\chaptername}{}
 
 % Footnotes (sparing use)
 \RequirePackage[hang,flushmargin]{footmisc}
@@ -108,6 +123,7 @@
 
 % Entry command for spanning both columns (Britannica-style)
 % Usage: \entry{Title}
+% This temporarily switches to onecolumn for the title, then back to twocolumn
 \newcommand{\entry}[1]{%
   \onecolumn
   \vspace*{0.3\baselineskip}
@@ -116,7 +132,11 @@
   \end{center}
   \vspace*{0.2\baselineskip}
   \markboth{#1}{#1}  % Set running header
+  % Switch back to two-column mode for entry content
   \twocolumn
+  \setlength{\columnsep}{10mm}
+  % Ensure we're in two-column mode
+  \@twocolumntrue
 }
 
 % Volume metadata for running headers (set in main .tex file)

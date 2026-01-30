@@ -250,9 +250,14 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
     volume_title = volume_title_match.group(1) if volume_title_match else "Untitled"
     
     # Find all entry includes BEFORE processing includes
+    # IMPORTANT: Only process entries, skip front matter sections
+    # Front matter sections like "== Front Matter", "== Volume I: Mind", 
+    # "== Boundary Entries", "== Closing Entries" should NOT be included
+    
     entries = []
     
     # Pattern 1: include::entries/entry.adoc[] (simple pattern)
+    # Only match includes that are for entries, not front matter
     include_pattern = re.compile(r'include::entries/([^\s\[\]]+\.adoc)\[\]', re.MULTILINE)
     matches = list(include_pattern.finditer(original_content))
     
