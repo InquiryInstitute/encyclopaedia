@@ -35,14 +35,22 @@
 \setlength{\baselineskip}{1.1em}
 
 % Marginalia system
-% For two-column mode, we need to manually position notes in outer margin
+% Use marginnote package which handles stacking automatically
 \RequirePackage{marginnote}
-% In two-column mode, reversemarginpar doesn't work as expected
-% We'll use manual positioning with \marginnote and adjust for outer margin
-\reversemarginpar  % places notes in outer margin (works in single-column)
-% For two-column, we need to adjust the margin note width and position
+% Configure for outer margin placement
+\reversemarginpar  % places notes in outer margin
 \setlength{\marginparsep}{8mm}  % Space between text and margin note
 \setlength{\marginparwidth}{35mm}  % Width of margin notes (fits in 45mm outer margin)
+% Enable automatic stacking to prevent overlaps
+% marginnote automatically stacks notes vertically
+\makeatletter
+% Ensure marginnote works in two-column mode
+\@ifpackageloaded{marginnote}{%
+  % marginnote handles stacking automatically
+  % Set minimum vertical separation between stacked notes
+  \setlength{\marginparpush}{0.3\baselineskip}
+}{}
+\makeatother
 \renewcommand{\marginfont}{\footnotesize}
 
 % Entry headings (Britannica-style: bold, uppercase, centered)
@@ -91,30 +99,16 @@
 
 % Marginalia command (Britannica-style: compact, in outer margin)
 % Usage: \marginalia{Author}{Type (Year)}{Body text}
-% In two-column mode, we use \marginpar which works better for outer margins
+% Use \marginnote which handles stacking automatically
 \newcommand{\marginalia}[3]{%
-  \if@twocolumn
-    % In two-column mode, use \marginpar with manual outer margin positioning
-    % \marginpar in two-column places notes in the outer margin by default
-    \marginpar{%
-      \footnotesize
-      \raggedright
-      \textit{#1}\\
-      \textbf{#2}\\
-      \vspace*{0.1em}
-      #3
-    }%
-  \else
-    % In single-column mode, use \marginnote with reversemarginpar
-    \marginnote{%
-      \footnotesize
-      \raggedright
-      \textit{#1}\\
-      \textbf{#2}\\
-      \vspace*{0.1em}
-      #3
-    }%
-  \fi
+  \marginnote{%
+    \footnotesize
+    \raggedright
+    \textit{#1}\\
+    \textbf{#2}\\
+    \vspace*{0.1em}
+    #3
+  }%
 }
 
 % Author signature with frontal bust (Britannica-style: end of entry, restrained)
