@@ -35,15 +35,15 @@
 \setlength{\baselineskip}{1.1em}
 
 % Marginalia system
-% Use marginnote package which handles stacking automatically
+% For two-column mode, we need special handling
+% Use both marginnote (for stacking) and marginpar (for two-column positioning)
 \RequirePackage{marginnote}
-% Configure for outer margin placement
-\reversemarginpar  % places notes in outer margin
+% Configure margin dimensions
 \setlength{\marginparsep}{8mm}  % Space between text and margin note
 \setlength{\marginparwidth}{35mm}  % Width of margin notes (fits in 45mm outer margin)
-% marginnote automatically stacks notes vertically to prevent overlaps
+% In two-column mode, \marginpar places notes in outer margin automatically
 % Set minimum vertical separation between stacked notes
-\setlength{\marginparpush}{0.3\baselineskip}
+\setlength{\marginparpush}{0.5\baselineskip}
 \renewcommand{\marginfont}{\footnotesize}
 
 % Entry headings (Britannica-style: bold, uppercase, centered)
@@ -92,16 +92,31 @@
 
 % Marginalia command (Britannica-style: compact, in outer margin)
 % Usage: \marginalia{Author}{Type (Year)}{Body text}
-% Use \marginnote which handles stacking automatically
+% In two-column mode, use \marginpar which correctly places notes in outer margin
+% \marginpar automatically handles stacking to prevent overlaps
 \newcommand{\marginalia}[3]{%
-  \marginnote{%
-    \footnotesize
-    \raggedright
-    \textit{#1}\\
-    \textbf{#2}\\
-    \vspace*{0.1em}
-    #3
-  }%
+  \if@twocolumn
+    % In two-column mode, \marginpar places notes in outer margin (right on odd pages, left on even)
+    \marginpar{%
+      \footnotesize
+      \raggedright
+      \textit{#1}\\
+      \textbf{#2}\\
+      \vspace*{0.1em}
+      #3
+    }%
+  \else
+    % In single-column mode, use \marginnote with reversemarginpar
+    \reversemarginpar
+    \marginnote{%
+      \footnotesize
+      \raggedright
+      \textit{#1}\\
+      \textbf{#2}\\
+      \vspace*{0.1em}
+      #3
+    }%
+  \fi
 }
 
 % Author signature with frontal bust (Britannica-style: end of entry, restrained)
