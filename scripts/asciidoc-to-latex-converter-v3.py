@@ -322,24 +322,44 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
     
     # Add each entry
     for entry in entries:
-        # Determine if entry is short (<1.5 columns)
-        # Britannica rule: span columns only if article ≥ 1.5 columns or begins new page
-        # Estimate: ~500 words per column, so <750 words = short entry
+        # Determine article class based on word count
+        # Article class determines layout, not the other way around
         canonical_text = entry.get('canonical', '')
         if canonical_text and canonical_text != "[CANONICAL TEXT TO BE GENERATED]":
             # Rough word count estimate (split on whitespace)
             word_count = len(canonical_text.split())
-            is_short = word_count < 750
+            
+            # Article class detection (by word count):
+            # Class I (Constellation): 800-1200 words → spanning title, fresh page
+            # Class II (Major): 450-600 words → spanning title, may share page
+            # Class III (Minor): 220-300 words → run-in headword, shares page
+            # Class IV/V: handled as marginalia only
+            
+            if word_count >= 800:
+                article_class = 'constellation'  # Class I
+                use_spanning = True
+            elif word_count >= 450:
+                article_class = 'major'  # Class II
+                use_spanning = True
+            elif word_count >= 220:
+                article_class = 'minor'  # Class III
+                use_spanning = False
+            else:
+                # Very short entries treated as minor
+                article_class = 'minor'
+                use_spanning = False
         else:
-            # Placeholder entries are treated as regular entries (will span)
-            is_short = False
+            # Placeholder entries are treated as major (will span)
+            article_class = 'major'
+            use_spanning = True
         
-        # Use \shortentry for short articles (run-in headword), \entry for substantial ones (spanning)
-        if is_short:
-            latex += f"\\shortentry{{{escape_simple(entry['title'])}}}\n"
-        else:
-            # Entry title spanning both columns (using \entry command)
+        # Apply layout based on article class
+        if use_spanning:
+            # Class I (Constellation) or Class II (Major): spanning title
             latex += f"\\entry{{{escape_simple(entry['title'])}}}\n\n"
+        else:
+            # Class III (Minor): run-in headword
+            latex += f"\\shortentry{{{escape_simple(entry['title'])}}}\n"
         
         # Convert canonical text (skip if placeholder)
         if entry['canonical'] and entry['canonical'] != "[CANONICAL TEXT TO BE GENERATED]":

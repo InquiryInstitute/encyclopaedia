@@ -173,10 +173,50 @@ Write in your authentic scholarly voice. Use precise, technical language appropr
 `;
   }
 
-  prompt += `Entry type: ${config.entryType.toUpperCase()}
+  // Determine article class based on entry type and word target
+  let articleClass = 'major'; // Default
+  if (config.entryType === 'major' && config.wordTarget && config.wordTarget.includes('800')) {
+    articleClass = 'constellation'; // Class I
+  } else if (config.entryType === 'standard' || config.entryType === 'major') {
+    articleClass = 'major'; // Class II
+  } else if (config.entryType === 'boundary' || config.entryType === 'closing') {
+    articleClass = 'minor'; // Class III
+  }
+  
+  prompt += `Article Class: ${articleClass.toUpperCase()}
+Entry type: ${config.entryType.toUpperCase()}
 Word target: ${config.wordTarget || getWordTarget(config.entryType, isChildren)}
 
 `;
+  
+  // Add class-specific guidance
+  if (articleClass === 'constellation') {
+    prompt += `This is a Class I Constellation Entry. Requirements:
+- 800-1200 words
+- Survey multiple traditions
+- Establish conceptual terrain
+- Must begin on fresh page
+- Spanning title, signed, multiple marginalia allowed
+
+`;
+  } else if (articleClass === 'major') {
+    prompt += `This is a Class II Major Entry. Requirements:
+- 450-600 words
+- Present multiple perspectives
+- Leave synthesis open
+- Spanning title, signed (optional), 1-2 marginalia
+
+`;
+  } else if (articleClass === 'minor') {
+    prompt += `This is a Class III Minor Entry. Requirements:
+- 220-300 words
+- Focused, self-contained concept
+- Run-in headword (no spanning title)
+- May share page with other entries
+- Optional marginalia (max 1)
+
+`;
+  }
 
   if (config.topics && config.topics.length > 0) {
     prompt += `Topics to cover:

@@ -168,7 +168,9 @@
 
 % Entry command for spanning both columns (Britannica-style)
 % Usage: \entry{Title}
-% For substantial articles (≥1.5 columns) or when starting a new page
+% For Class I (Constellation) and Class II (Major) entries
+% Class I: 800-1200 words, must begin fresh page
+% Class II: 450-600 words, may share page
 % This temporarily switches to onecolumn for the title, then back to twocolumn
 \newcommand{\entry}[1]{%
   \twocolumn[%
@@ -184,10 +186,12 @@
   \@twocolumntrue
 }
 
-% Short entry command for brief articles (<1.5 columns)
+% Short entry command for Class III (Minor) entries
 % Usage: \shortentry{Title}
+% Class III: 220-300 words, ~1 column
 % Uses run-in headword style (column-width heading, no spanning)
 % Preserves rhythm and avoids false grandeur for short entries
+% May share page with other minor entries
 \newcommand{\shortentry}[1]{%
   % Stay in two-column mode, no spanning
   \noindent\textbf{\MakeUppercase{#1}.}\quad
