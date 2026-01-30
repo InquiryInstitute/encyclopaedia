@@ -455,6 +455,15 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
         else:
             # Placeholder - add note
             latex += "\\textit{[Canonical text to be generated]}\n\n"
+            # Add author signature even if placeholder (in a.{surname} format)
+            if entry.get('author'):
+                author_image = entry.get('author_image', '')
+                author_attribution = entry['author']  # Already in a.{surname} format
+                if author_image:
+                    image_path = escape_simple(author_image)
+                    latex += f"\n\\authorsignature{{{escape_simple(author_attribution)}}}{{{image_path}}}\n"
+                else:
+                    latex += f"\n\\authorsignature{{{escape_simple(author_attribution)}}}{{}}\n"
         
         latex += "\n\\clearpage\n\n"
     
