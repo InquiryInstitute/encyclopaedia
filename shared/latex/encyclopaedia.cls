@@ -132,8 +132,8 @@
 
 % Entry command for spanning both columns (Britannica-style)
 % Usage: \entry{Title}
+% For substantial articles (≥1.5 columns) or when starting a new page
 % This temporarily switches to onecolumn for the title, then back to twocolumn
-% Note: \twocolumn starts a new page, so we use \twocolumn[title] syntax
 \newcommand{\entry}[1]{%
   \twocolumn[%
     \vspace*{0.3\baselineskip}%
@@ -146,6 +146,16 @@
   % Ensure two-column mode is active
   \setlength{\columnsep}{10mm}
   \@twocolumntrue
+}
+
+% Short entry command for brief articles (<1.5 columns)
+% Usage: \shortentry{Title}
+% Uses run-in headword style (column-width heading, no spanning)
+% Preserves rhythm and avoids false grandeur for short entries
+\newcommand{\shortentry}[1]{%
+  % Stay in two-column mode, no spanning
+  \noindent\textbf{\MakeUppercase{#1}.}\quad
+  \markboth{#1}{#1}%  Set running header
 }
 
 % Volume metadata for running headers (set in main .tex file)
