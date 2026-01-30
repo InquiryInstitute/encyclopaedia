@@ -112,11 +112,19 @@ def parse_entry(entry_content):
         author_name = faculty_id.replace('a.', '').replace('.', ' ').title()
     
     # Extract canonical text block - handle both generated and placeholder
+    # First, remove all marginalia blocks from the content to avoid them appearing in canonical text
+    entry_content_clean = re.sub(
+        r'\[role=marginalia,([^\]]+)\]\s*\n====\s*\n.*?\n====',
+        '',
+        entry_content,
+        flags=re.DOTALL
+    )
+    
     canonical_pattern = re.compile(
         r'\[role=canonical\]\s*\n====\s*\n(.*?)\n====',
         re.DOTALL
     )
-    canonical_match = canonical_pattern.search(entry_content)
+    canonical_match = canonical_pattern.search(entry_content_clean)
     canonical_text = canonical_match.group(1).strip() if canonical_match else ""
     
     # If no canonical text but has placeholder, use empty (will be filled later)
@@ -149,6 +157,25 @@ def parse_entry(entry_content):
             'year': year,
             'content': content
         })
+    
+    # NOW extract canonical text block - AFTER removing marginalia blocks
+    # Remove all marginalia blocks from entry_content to get clean canonical text
+    entry_content_clean = marginalia_pattern.sub('', entry_content)
+    
+    canonical_pattern = re.compile(
+        r'\[role=canonical\]\s*\n====\s*\n(.*?)\n====',
+        re.DOTALL
+    )
+    canonical_match = canonical_pattern.search(entry_content_clean)
+    canonical_text = canonical_match.group(1).strip() if canonical_match else ""
+    
+    # If no canonical text but has placeholder, use empty (will be filled later)
+    if not canonical_text and '[CANONICAL TEXT TO BE GENERATED]' in entry_content_clean:
+        canonical_text = "[CANONICAL TEXT TO BE GENERATED]"
+    
+    # Remove any remaining marginalia markup that might have slipped through
+    canonical_text = re.sub(r'\[role=marginalia[^\]]*\].*?\[role=marginalia[^\]]*\]', '', canonical_text, flags=re.DOTALL)
+    canonical_text = re.sub(r'\[role=marginalia[^\]]*\]', '', canonical_text)
     
     return {
         'title': title,
