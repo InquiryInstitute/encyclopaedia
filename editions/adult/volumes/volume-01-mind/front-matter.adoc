@@ -75,7 +75,7 @@ Each volume is published seasonally, but the volumes themselves are not organize
 
 **Entry types** are not distinguished visually. All entries receive equal typographic treatment. The distinction between "Major," "Standard," and "Boundary" entries is editorial, not visual.
 
-**Marginalia** appear in the outer margin. They are parallel voices, equal in authority to the canonical text. For detailed specifications on marginalia types and conventions, see the Marginalia Specification (available separately).
+**Marginalia** appear in the outer margin. They are parallel voices, equal in authority to the canonical text. Marginalia may object, clarify, extend, or dissent—but the canonical text remains authoritative within its own perspective.
 
 **Cross-references** use the format: `See Volume II: Language & Meaning, "Translation"`.
 
