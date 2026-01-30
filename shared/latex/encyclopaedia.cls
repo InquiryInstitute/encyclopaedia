@@ -116,5 +116,27 @@
   \twocolumn
 }
 
+% Volume metadata for running headers (set in main .tex file)
+\newcommand{\volumenum}{}
+\newcommand{\volumetitle}{}
+\newcommand{\subtitle}{} % For the main title page subtitle
+
+% Custom maketitle for Britannica-style title page
+\renewcommand{\maketitle}{%
+  \thispagestyle{empty}
+  \onecolumn
+  \vspace*{\fill}
+  \begin{center}
+    {\Huge\bfseries THE ENCYCLOPÆDIA}\\[1.5\baselineskip]
+    {\Large\bfseries \@title}\\[1\baselineskip]
+    {\large\bfseries \subtitle}\\[2\baselineskip]
+    {\Large\bfseries \@author}\\[1\baselineskip]
+    {\large \@date}
+  \end{center}
+  \vspace*{\fill}
+  \cleardoublepage
+  \twocolumn
+}
+
 % End of class
 \endinput

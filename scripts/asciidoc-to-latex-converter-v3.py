@@ -269,7 +269,7 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
 \\newcommand{{\\volumetitle}}{{{volume_title}}}
 
 \\title{{{doc_title}}}
-\\subtitle{{Volume {volume_num_roman}: {volume_title}}}
+\\renewcommand{{\\subtitle}}{{Volume {volume_num_roman}: {volume_title}}}
 \\author{{The Inquiry Institute}}
 \\date{{{year}}}
 
