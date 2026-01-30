@@ -184,13 +184,13 @@ def parse_entry(entry_content):
     canonical_text = re.sub(r'\[role=marginalia[^\]]*\].*?\[role=marginalia[^\]]*\]', '', canonical_text, flags=re.DOTALL)
     canonical_text = re.sub(r'\[role=marginalia[^\]]*\]', '', canonical_text)
     
-        return {
-            'title': title,
-            'canonical': canonical_text,
-            'author': author_attribution,  # Now in a.{surname} format
-            'author_image': author_image,
-            'marginalia': marginalia_blocks
-        }
+    return {
+        'title': title,
+        'canonical': canonical_text,
+        'author': author_attribution,  # Now in a.{surname} format
+        'author_image': author_image,
+        'marginalia': marginalia_blocks
+    }
 
 def convert_table_to_latex(lines):
     """Convert markdown table to LaTeX tabular"""
