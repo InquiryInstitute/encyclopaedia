@@ -5,9 +5,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{encyclopaedia}[2026/01/29 The Encyclopædia v1]
 
-% Base class: book, 11pt, two-column, openany (chapters can start on any page)
+% Base class: book, 11pt, two-column, twoside, openany
 % twocolumn option enables two-column mode globally
-\LoadClass[11pt,twocolumn,openany]{book}
+% twoside ensures proper left/right page handling for marginalia
+\LoadClass[11pt,twocolumn,twoside,openany]{book}
 
 % Ensure two-column mode is the default after title page and TOC
 % The twocolumn option should handle this, but we'll enforce it explicitly
