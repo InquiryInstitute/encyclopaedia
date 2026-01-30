@@ -41,16 +41,9 @@
 \reversemarginpar  % places notes in outer margin
 \setlength{\marginparsep}{8mm}  % Space between text and margin note
 \setlength{\marginparwidth}{35mm}  % Width of margin notes (fits in 45mm outer margin)
-% Enable automatic stacking to prevent overlaps
-% marginnote automatically stacks notes vertically
-\makeatletter
-% Ensure marginnote works in two-column mode
-\@ifpackageloaded{marginnote}{%
-  % marginnote handles stacking automatically
-  % Set minimum vertical separation between stacked notes
-  \setlength{\marginparpush}{0.3\baselineskip}
-}{}
-\makeatother
+% marginnote automatically stacks notes vertically to prevent overlaps
+% Set minimum vertical separation between stacked notes
+\setlength{\marginparpush}{0.3\baselineskip}
 \renewcommand{\marginfont}{\footnotesize}
 
 % Entry headings (Britannica-style: bold, uppercase, centered)
