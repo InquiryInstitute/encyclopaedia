@@ -35,8 +35,14 @@
 \setlength{\baselineskip}{1.1em}
 
 % Marginalia system
+% For two-column mode, we need to manually position notes in outer margin
 \RequirePackage{marginnote}
-\reversemarginpar  % places notes in outer margin
+% In two-column mode, reversemarginpar doesn't work as expected
+% We'll use manual positioning with \marginnote and adjust for outer margin
+\reversemarginpar  % places notes in outer margin (works in single-column)
+% For two-column, we need to adjust the margin note width and position
+\setlength{\marginparsep}{8mm}  % Space between text and margin note
+\setlength{\marginparwidth}{35mm}  % Width of margin notes (fits in 45mm outer margin)
 \renewcommand{\marginfont}{\footnotesize}
 
 % Entry headings (Britannica-style: bold, uppercase, centered)
@@ -85,15 +91,30 @@
 
 % Marginalia command (Britannica-style: compact, in outer margin)
 % Usage: \marginalia{Author}{Type (Year)}{Body text}
+% In two-column mode, we use \marginpar which works better for outer margins
 \newcommand{\marginalia}[3]{%
-  \marginnote{%
-    \footnotesize
-    \raggedright
-    \textit{#1}\\
-    \textbf{#2}\\
-    \vspace*{0.1em}
-    #3
-  }%
+  \if@twocolumn
+    % In two-column mode, use \marginpar with manual outer margin positioning
+    % \marginpar in two-column places notes in the outer margin by default
+    \marginpar{%
+      \footnotesize
+      \raggedright
+      \textit{#1}\\
+      \textbf{#2}\\
+      \vspace*{0.1em}
+      #3
+    }%
+  \else
+    % In single-column mode, use \marginnote with reversemarginpar
+    \marginnote{%
+      \footnotesize
+      \raggedright
+      \textit{#1}\\
+      \textbf{#2}\\
+      \vspace*{0.1em}
+      #3
+    }%
+  \fi
 }
 
 % Author signature with frontal bust (Britannica-style: end of entry, restrained)
