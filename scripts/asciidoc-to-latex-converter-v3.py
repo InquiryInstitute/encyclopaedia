@@ -118,27 +118,7 @@ def parse_entry(entry_content):
             surname = canonical_author.split()[-1].lower()
             author_attribution = f"a.{surname}"
     
-    # Extract canonical text block - handle both generated and placeholder
-    # First, remove all marginalia blocks from the content to avoid them appearing in canonical text
-    entry_content_clean = re.sub(
-        r'\[role=marginalia,([^\]]+)\]\s*\n====\s*\n.*?\n====',
-        '',
-        entry_content,
-        flags=re.DOTALL
-    )
-    
-    canonical_pattern = re.compile(
-        r'\[role=canonical\]\s*\n====\s*\n(.*?)\n====',
-        re.DOTALL
-    )
-    canonical_match = canonical_pattern.search(entry_content_clean)
-    canonical_text = canonical_match.group(1).strip() if canonical_match else ""
-    
-    # If no canonical text but has placeholder, use empty (will be filled later)
-    if not canonical_text and '[CANONICAL TEXT TO BE GENERATED]' in entry_content:
-        canonical_text = "[CANONICAL TEXT TO BE GENERATED]"
-    
-    # Extract all marginalia blocks
+    # Extract all marginalia blocks first (before cleaning canonical text)
     marginalia_pattern = re.compile(
         r'\[role=marginalia,([^\]]+)\]\s*\n====\s*\n(.*?)\n====',
         re.DOTALL
@@ -165,8 +145,7 @@ def parse_entry(entry_content):
             'content': content
         })
     
-    # NOW extract canonical text block - AFTER removing marginalia blocks
-    # Remove all marginalia blocks from entry_content to get clean canonical text
+    # Extract canonical text block - remove all marginalia blocks first to avoid contamination
     entry_content_clean = marginalia_pattern.sub('', entry_content)
     
     canonical_pattern = re.compile(
@@ -181,8 +160,7 @@ def parse_entry(entry_content):
         canonical_text = "[CANONICAL TEXT TO BE GENERATED]"
     
     # Remove any remaining marginalia markup that might have slipped through
-    canonical_text = re.sub(r'\[role=marginalia[^\]]*\].*?\[role=marginalia[^\]]*\]', '', canonical_text, flags=re.DOTALL)
-    canonical_text = re.sub(r'\[role=marginalia[^\]]*\]', '', canonical_text)
+    canonical_text = re.sub(r'\[role=marginalia[^\]]*\].*?', '', canonical_text, flags=re.DOTALL)
     
     return {
         'title': title,
@@ -194,8 +172,38 @@ def parse_entry(entry_content):
 
 def convert_table_to_latex(lines):
     """Convert markdown table to LaTeX tabular"""
-    # Simple table conversion - for now return as formatted text
-    return '\\begin{quote}\\small ' + '\\\\'.join(lines[:3]) + '\\end{quote}'
+    # Basic table conversion - assumes simple markdown table
+    header = [h.strip() for h in lines[0].split('|') if h.strip()]
+    alignment_line = [a.strip() for a in lines[1].split('|') if a.strip()] if len(lines) > 1 else []
+    
+    # Determine column alignment (l, c, r)
+    col_align = []
+    for align_cell in alignment_line:
+        if align_cell.startswith(':') and align_cell.endswith(':'):
+            col_align.append('c')
+        elif align_cell.endswith(':'):
+            col_align.append('r')
+        else:
+            col_align.append('l')
+    
+    if not col_align:  # Fallback if alignment line is empty or malformed
+        col_align = ['l'] * len(header)
+
+    latex_table = [
+        '\\begin{center}',
+        '\\begin{tabular}{|' + '|'.join(col_align) + '|}',
+        '\\hline',
+        ' & '.join([escape_simple(h) for h in header]) + ' \\\\ \\hline'
+    ]
+    
+    for line in lines[2:]:
+        cells = [c.strip() for c in line.split('|') if c.strip()]
+        if cells:
+            latex_table.append(' & '.join([escape_simple(c) for c in cells]) + ' \\\\ \\hline')
+    
+    latex_table.append('\\end{tabular}')
+    latex_table.append('\\end{center}')
+    return '\n'.join(latex_table)
 
 def convert_canonical_to_latex(text, entry_title=None):
     """Convert canonical text to LaTeX, preserving structure"""
@@ -207,14 +215,56 @@ def convert_canonical_to_latex(text, entry_title=None):
         # Also try without the double newline
         title_pattern2 = rf'^\*\*{re.escape(entry_title)}\*\*\s*\n'
         text = re.sub(title_pattern2, '', text, flags=re.MULTILINE | re.IGNORECASE)
+        # Also handle AsciiDoc-style bold title (.**Title**)
+        title_pattern3 = rf'^\.\*\*{re.escape(entry_title)}\*\*\s*\n'
+        text = re.sub(title_pattern3, '', text, flags=re.MULTILINE | re.IGNORECASE)
     
     # First convert AsciiDoc/Markdown to LaTeX commands
     # Handle bold **text**
     text = re.sub(r'\*\*([^*]+?)\*\*', r'\\textbf{\1}', text)
     
     # Handle italic *text* (single asterisk, not double)
-    # Be careful not to match **bold**
+    # Be careful not to match **bold** or standalone asterisks
     text = re.sub(r'(?<!\*)\*([^*\n]+?)\*(?!\*)', r'\\textit{\1}', text)
+    
+    # Handle AsciiDoc-style horizontal rules (---)
+    text = re.sub(r'^---+$', '', text, flags=re.MULTILINE)
+    
+    # Handle AsciiDoc-style section headers (###, ####, etc.)
+    # Convert to bold text for now (we don't want section headers in entries)
+    text = re.sub(r'^###+ (.+)$', r'\\textbf{\1}', text, flags=re.MULTILINE)
+    
+    # Handle numbered lists (1. item)
+    def convert_numbered_list(match):
+        items = match.group(0).strip().split('\n')
+        latex_items = []
+        for item in items:
+            # Remove leading number and period
+            item_text = re.sub(r'^\d+\.\s*', '', item.strip())
+            if item_text:
+                latex_items.append(f'\\item {escape_latex_safe(item_text)}')
+        if latex_items:
+            return '\\begin{enumerate}\n' + '\n'.join(latex_items) + '\n\\end{enumerate}'
+        return ''
+    
+    # Match numbered lists (lines starting with number and period)
+    text = re.sub(r'(?:^\d+\.\s+.+(?:\n|$))+', convert_numbered_list, text, flags=re.MULTILINE)
+    
+    # Handle bullet lists (- item or * item)
+    def convert_bullet_list(match):
+        items = match.group(0).strip().split('\n')
+        latex_items = []
+        for item in items:
+            # Remove leading bullet marker
+            item_text = re.sub(r'^[-*]\s+', '', item.strip())
+            if item_text:
+                latex_items.append(f'\\item {escape_latex_safe(item_text)}')
+        if latex_items:
+            return '\\begin{itemize}\n' + '\n'.join(latex_items) + '\n\\end{itemize}'
+        return ''
+    
+    # Match bullet lists
+    text = re.sub(r'(?:^[-*]\s+.+(?:\n|$))+', convert_bullet_list, text, flags=re.MULTILINE)
     
     # Handle line breaks (double newline = paragraph break)
     paragraphs = text.split('\n\n')
@@ -223,6 +273,11 @@ def convert_canonical_to_latex(text, entry_title=None):
     for para in paragraphs:
         para = para.strip()
         if not para:
+            continue
+        
+        # Skip if it's already a LaTeX environment (lists, tables)
+        if para.startswith('\\begin{'):
+            latex_paragraphs.append(para)
             continue
         
         # Handle tables (simple markdown tables) - before escaping
