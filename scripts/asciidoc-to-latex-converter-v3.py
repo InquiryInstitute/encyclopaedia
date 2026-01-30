@@ -388,13 +388,14 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
     print(f"✅ Converted {len(entries)} entries to LaTeX")
 
 if __name__ == '__main__':
-    if len(sys.argv) != 5:
-        print("Usage: python3 asciidoc-to-latex-converter-v3.py <input.adoc> <output.tex> <volume_num> <edition>", file=sys.stderr)
+    if len(sys.argv) < 5 or len(sys.argv) > 6:
+        print("Usage: python3 asciidoc-to-latex-converter-v3.py <input.adoc> <output.tex> <volume_num> <edition> [year]", file=sys.stderr)
         sys.exit(1)
     
     input_file = sys.argv[1]
     output_file = sys.argv[2]
     volume_num = sys.argv[3]
     edition = sys.argv[4]
+    year = sys.argv[5] if len(sys.argv) > 5 else "2026"
     
-    convert_asciidoc_to_latex(input_file, output_file, volume_num, edition)
+    convert_asciidoc_to_latex(input_file, output_file, volume_num, edition, year)
