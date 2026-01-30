@@ -107,7 +107,9 @@
 % Author signature with frontal bust (Britannica-style: end of entry, restrained)
 % Usage: \authorsignature{Author Name}{Image Path}
 % If image path is empty, just shows name
+% Prevents orphan by keeping signature with content
 \newcommand{\authorsignature}[2]{%
+  \nopagebreak[4]% Prevent page break before signature (high penalty)
   \vspace*{0.5\baselineskip}
   \begin{center}
     \def\temp{#2}%
@@ -128,6 +130,7 @@
     \fi
   \end{center}
   \vspace*{0.3\baselineskip}
+  \nopagebreak[4]% Prevent page break after signature (high penalty)
 }
 
 % Entry command for spanning both columns (Britannica-style)
