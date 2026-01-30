@@ -39,9 +39,11 @@
 % For two-column mode, we need special handling
 % Use both marginnote (for stacking) and marginpar (for two-column positioning)
 \RequirePackage{marginnote}
-% Configure margin dimensions
-\setlength{\marginparsep}{8mm}  % Space between text and margin note
-\setlength{\marginparwidth}{35mm}  % Width of margin notes (fits in 45mm outer margin)
+% Configure margin dimensions for marginalia
+% Outer margin is 40mm, so we have ~30-34mm usable width
+% Absolute constraint: marginalia may not exceed 75% of margin width
+\setlength{\marginparsep}{6mm}  % Space between text and margin note
+\setlength{\marginparwidth}{32mm}  % Width of margin notes (75% of 40mm, feels intentional)
 % In two-column mode, \marginpar places notes in outer margin automatically
 % Set minimum vertical separation between stacked notes
 \setlength{\marginparpush}{0.5\baselineskip}
@@ -109,8 +111,10 @@
     % In two-column mode, \marginpar places notes in outer margin
     % Automatically aligns to baseline grid
     \marginpar{%
-      \footnotesize
-      \raggedright
+      \footnotesize  % 2-3pt smaller than body (body is 11pt, so ~8-9pt)
+      \raggedright   % Left-aligned, never justified
+      \hyphenpenalty=10000  % No hyphenation
+      \setlength{\baselineskip}{0.9\baselineskip}  % Tighter leading
       \textit{#1}\\
       \textbf{#2}\\
       \vspace*{0.1em}
@@ -120,8 +124,10 @@
     % In single-column mode, use \marginnote with reversemarginpar
     \reversemarginpar
     \marginnote{%
-      \footnotesize
-      \raggedright
+      \footnotesize  % 2-3pt smaller than body
+      \raggedright   % Left-aligned, never justified
+      \hyphenpenalty=10000  % No hyphenation
+      \setlength{\baselineskip}{0.9\baselineskip}  % Tighter leading
       \textit{#1}\\
       \textbf{#2}\\
       \vspace*{0.1em}
