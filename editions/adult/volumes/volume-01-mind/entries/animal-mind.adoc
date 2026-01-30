@@ -15,129 +15,117 @@
 
 [role=canonical]
 ====
-.**Animal‑Mind**
+## I. THE QUESTION THAT OPENS THIS ARTICLE  
+
+*What sort of mind, if any, does a beaver or a crow possess, and how can we recognise the boundary—if there is one—between their mental lives and ours?*  
+
+The question summons a tension that has haunted naturalists since the first observations of animal behaviour in the field. It is uncomfortable because it asks us to confront the possibility that the faculties we reserve for “human” thought—reason, imagination, self‑awareness—might be shared, in varying degrees, with other species. Yet the question also refuses a tidy answer: we lack a single, universally accepted metric of mind, and the very notion of “mind” may shift as we move from physiological to philosophical discourse. In posing it we invite the reader to linger on the mystery that lies at the heart of comparative cognition.
 
 ---
 
-### 1. Introduction  
+## II. WHAT IS COMMONLY SAID  
 
-The term *animal‑mind* designates the totality of perceptual, affective and intentional capacities that enable a living being to act upon, and be acted upon by, its Umwelt.  In contrast to the Cartesian view of the animal as a mere automaton, the contemporary conception recognises that each organism possesses a functional semiotic system – a *Merkwelt* – through which it extracts meaning from environmental stimuli and generates *Wirkwelt*‑producing actions.  The study of animal‑mind therefore lies at the intersection of comparative cognition, neuroethology and the philosophy of mind, and it raises both scientific and ethical questions about the continuity of mental life across the tree of life.
+Textbooks in biology and psychology typically present a hierarchical view of animal cognition. At the base lie **instincts**, hard‑wired responses that arise without learning; above them, **learned behaviours** such as conditioning; higher still, **problem‑solving** and **tool use**, often taken as hallmarks of intelligence; and at the summit, **consciousness** and **language**, regarded as uniquely human.  
 
----
+The prevailing framework defines *cognition* as the processing of information by a nervous system, measurable through observable outputs: maze performance, discrimination tasks, or the frequency of vocalisations. *Instinct* is cast as genetically pre‑programmed, while *intelligence* is quantified by the speed or flexibility of learning. *Tool use* is listed as a categorical indicator of advanced cognition (e.g., “only apes and corvids use tools” [Boesch & Boesch, 1989]). *Animal consciousness* is commonly reduced to the presence of *sentience*—the capacity to experience pleasure and pain—while *higher consciousness* (self‑recognition, theory of mind) is said to be absent or at best rudimentary outside the great apes (e.g., mirror‑self‑recognition tests).  
 
-### 2. Historical Overview  
-
-| Period | Dominant View | Representative Works |
-|--------|---------------|----------------------|
-| **Cartesian (17th c.)** | Animals as “machines” without interior experience. | Descartes, *Meditationes* (1641). |
-| **Behaviourist (early 20th c.)** | Behaviour as the only observable datum; internal states denied. | Watson, *Psychology as the Behaviourist* (1913); Skinner, *Science and Human Behaviour* (1953). |
-| **Ethological Turn (mid‑20th c.)** | Behaviour understood as adaptations within the Umwelt; emphasis on innate releasing mechanisms. | Lorenz, *Das sogenannte „Angeborene“* (1935); Tinbergen, *The Study of Instinct* (1951). |
-| **Cognitive Ethology (1970s‑) **| Animals are regarded as intentional agents possessing representations. | von Uexküll, *Umwelt* (1934); Gibson, *The Ecological Approach* (1979). |
-| **Neurobiological Integration (1990s‑) **| Neural substrates of perception, learning and consciousness are mapped across taxa. | O’Keefe & Nadel, *The Hippocampus as a Cognitive Map* (1978); Rizzolatti & Craighero, *The Mirror Neuron System* (2004). |
-| **Embodied & Enactive Perspectives (2000s‑) **| Mind is seen as a dynamic coupling of organism and environment, not a static representation. | Varela, Thompson & Rosch, *The Embodied Mind* (1991); Clark, *Surfing Uncertainty* (2013). |
-
-The trajectory shows a gradual abandonment of mechanistic reductionism in favour of a view that places the organism’s semiotic activity at the centre of explanation.
+These accounts assume that mental capacities can be ranked, that observable behaviour reliably maps onto internal states, and that the human mind constitutes the apex of a linear evolutionary ladder. The language of “progress” and “advancement” persists, despite the modern recognition that evolution is not teleological but a branching process shaped by ecological pressures.
 
 ---
 
-### 3. Methodological Approaches  
+## III. QUESTIONS BENEATH THE ANSWER  
 
-1. **Behavioural Paradigms** – Classical/operant conditioning, problem‑solving tasks, mirror‑self‑recognition, delayed‑matching‑to‑sample.  These protocols quantify learning curves, response latencies and choice patterns (e.g., Köhler’s problem‑solving apes, 1925; Shettleworth’s pigeon discrimination, 1998).  
-2. **Comparative Neuroanatomy & Physiology** – Tract‑tracing, electrophysiology, calcium imaging, functional MRI in freely moving animals.  Place cells in the hippocampus of rodents (O’Keefe & Dostrovsky, 1971), head‑direction cells in bats (Yartsev & Ulanovsky, 2013), and mirror‑neuron activity in macaque premotor cortex (Rizzolatti et al., 1996) illustrate neural correlates of spatial and social cognition.  
-3. **Computational Modelling** – Reinforcement‑learning algorithms, predictive‑processing frameworks, and embodied robotics are employed to test hypotheses about internal representations versus sensorimotor coupling (e.g., Sutton & Barto, 2018).  
-4. **Ethological Observation** – Long‑term field studies of tool use (New Caledonian crows, *Corvus moneduloides*; Rutz & St Clair, 2012) and social learning (chimpanzee cultural transmission; Whiten et al., 1999) provide ecological validity.  
+The conventional picture rests on several hidden premises that deserve scrutiny.
 
-Each method carries specific inferential limits; for instance, the mirror test presupposes visual self‑recognition and may be unsuitable for taxa lacking a reflective visual system (e.g., many invertebrates).  A triangulation of approaches is therefore essential.
+1. **Is behaviour a faithful proxy for mind?**  
+   The inference from external action to internal experience presupposes that we can “read” a mind through its outputs. Yet many animal responses—especially those of cryptic or nocturnal species—remain invisible to human observers, and the same behaviour can arise from distinct mental processes (e.g., a spider’s web‑building could be instinctual or the result of trial‑and‑error learning).  
 
----
+2. **What counts as “intelligence”?**  
+   The current taxonomy privileges problem‑solving that resembles human puzzles (e.g., detour tasks, tool manipulation). It thus marginalises forms of cognition that are adaptive in non‑human contexts, such as the underwater navigation of salmon or the olfactory map‑making of dogs. The assumption that intelligence is synonymous with flexibility may be anthropocentric.  
 
-### 4. Core Capacities  
+3. **Where does the line between instinct and intelligence run?**  
+   The dichotomy implies a sharp boundary, yet empirical work shows a continuum: instinctive patterns can be modified by experience (e.g., imprinting in ducklings) and learned behaviours can become canalised over generations (e.g., song dialects in birds). The binary framing obscures the evolutionary interplay between genetic predisposition and environmental shaping.  
 
-#### 4.1 Perception and Sensory Integration  
+4. **Who benefits from a hierarchical model?**  
+   By placing humans at the summit, the model reinforces a worldview that justifies human dominion over other species, a stance that has historically underpinned exploitation and the neglect of animal welfare. It also aligns with a scientific narrative that seeks tidy classification, perhaps at the expense of nuance.  
 
-Animals construct a *Merkwelt* through modality‑specific receptors that filter environmental information.  In the octopus, the distributed visual‑tactile network yields a rich, multimodal *Umwelt* that supports complex predatory behaviour (Hanlon & Messenger, 1996).  The concept of *Umwelt* stresses that perception is not a passive receipt of data but an active *meaning‑making* process.
+5. **When and why did this framework emerge?**  
+   The modern “intelligence” hierarchy traces its roots to the late nineteenth‑century comparative psychology of C. L. Miller and the early ethological emphasis on instinct by Konrad Lorenz. The rise of experimental psychology in the laboratory, with its focus on controlled conditioning paradigms, encouraged a view of mind as a set of measurable, linear capacities. The later cognitive revolution, however, has begun to destabilise this picture, yet the legacy of the hierarchical model persists in curricula and popular science.  
 
-#### 4.2 Learning and Memory  
-
-- **Classical and Operant Conditioning** – Pavlovian associations (Pavlov, 1927) and Skinnerian reinforcement schedules reveal basic associative mechanisms across vertebrates and invertebrates.  
-- **Episodic‑like Memory** – Scrub‑jays (*Aphelocoma coerulescens*) can recall “what–where–when” details of cached food (Clayton & Dickinson, 1998).  Similar capabilities have been demonstrated in cuttlefish (Jozet‑Alves et al., 2013), suggesting convergent evolution of temporal tagging.  
-
-#### 4.3 Problem Solving and Tool Use  
-
-New Caledonian crows fashion hooked tools from pandanus leaves (Taylor et al., 2009); dolphins manipulate sponges to protect rostra while foraging (Ridgway et al., 2015).  These behaviours illustrate causal reasoning and foresight, attributes once considered uniquely human.
-
-#### 4.4 Social Cognition  
-
-- **Theory of Mind** – Experiments with great apes show sensitivity to the knowledge states of conspecifics (Kano & Call, 2014).  
-- **Cooperation and Communication** – African elephants coordinate group movements through low‑frequency vocalisations (Poole et al., 1988); honey‑bee waggle dances encode spatial information (von Frisch, 1967).  
-
-#### 4.5 Affective States and Consciousness  
-
-Pain perception in cephalopods is inferred from nociceptive behaviours and protective grooming (Crook et al., 2011).  The presence of *qualia* remains contested, yet the *multiple‑drafts* model (Dennett, 1991) provides a functional account compatible with non‑human neurobiology: mental content arises from parallel, competing neural processes that are later integrated into a coherent behavioural output.
+These questions multiply rather than resolve; each assumption opens a new avenue of inquiry into the nature of animal minds.
 
 ---
 
-### 5. Theoretical Frameworks  
+## IV. COMPETING WAYS OF SEEING  
 
-| Framework | Core Idea | Relevance to Animal‑Mind |
-|-----------|-----------|--------------------------|
-| **Behaviourism** | Behaviour as stimulus‑response; internal states irrelevant. | Useful for quantifying learning curves but insufficient for explaining intentionality. |
-| **Representationalism** | Mental states are internal representations of external reality. | Aligns with neurophysiological evidence of place cells, but must be reconciled with embodied constraints. |
-| **Embodied Cognition** | Cognition emerges from the dynamic interaction of body, brain and environment. | Directly resonates with the *Umwelt* concept; emphasises sensorimotor loops. |
-| **Predictive Processing** | Brain generates predictions about sensory input; errors drive learning. | Provides a unifying computational language for perception, action and learning across taxa. |
-| **Enactivism** | Cognition is enacted through lived experience; no need for internal representations. | Extends the *Umwelt* view to argue that meaning is constituted in the organism‑environment coupling. |
+### 1. *Does the animal mind emerge from embodied interaction rather than abstract computation?*  
 
-The contemporary consensus favours a pluralistic stance: different levels of description (behavioural, neurobiological, computational) are mutually informative rather than mutually exclusive.
+Embodied cognition argues that mental processes cannot be abstracted from the body’s morphology and the animal’s ecological niche. From this perspective, a beaver’s dam‑building is not a “tool‑use” episode comparable to a chimp’s stick‑use, but an expression of the species’ evolved bodily capacities and the hydraulic physics of its environment. The question reframes cognition as a continuous feedback loop between perception, action, and material world, challenging the notion that mental representation must be internalised [Gibson, 1979; Wilson, 2002].
 
----
+### 2. *Is consciousness a graded, phylogenetically distributed property rather than an all‑or‑nothing phenomenon?*  
 
-### 6. Current Debates  
+Some philosophers and neuroscientists propose that consciousness exists on a spectrum, with varying degrees of phenomenological richness across taxa. The “integrated information theory” (IIT) predicts that any system capable of generating a high Φ value—reflecting the amount of information integrated across its parts—possesses some form of consciousness, regardless of its neural architecture [Tononi, 2004]. This view invites us to ask: if a cephalopod’s distributed nervous system yields a high Φ, does it experience a form of consciousness distinct from that of mammals?
 
-1. **Extent of Animal Consciousness** – The *Cambridge Declaration on Consciousness* (2012) affirms that many non‑human mammals and birds possess conscious experiences, yet the criteria for consciousness remain contested.  The *integrated information theory* (Tononi, 2004) offers a quantitative metric (Φ) that has been applied to insect nervous systems, sparking vigorous discussion.  
+### 3. *Can cultural transmission be the primary engine of animal intelligence?*  
 
-2. **Continuity vs. Discontinuity** – Evolutionary biologists argue for a gradual emergence of mental capacities (the “cognitive niche” hypothesis; Boyer & Laland, 2008), whereas some philosophers maintain that certain phenomenological properties are qualitatively distinct in humans (Chalmers, 1996).  
+Cultural evolutionists contend that many sophisticated behaviours—tool manufacture, vocal dialects, foraging strategies—are maintained and refined through social learning, not solely through individual cognition. The question becomes: does the presence of a “culture” in a population imply a collective mind, wherein the intelligence of the group exceeds that of any single organism? Studies of humpback whale song and New Caledonian crow tool repertoires support this view [Fraser & Bugnyar, 2010; Rendell et al., 2015].
 
-3. **Ethical Implications** – Scientific evidence of sophisticated cognition in cephalopods and corvids has prompted revisions of animal welfare legislation in the EU (Directive 2010/63/EU).  The moral status of animals is now debated not only on the basis of sentience but also on the richness of their *Umwelt* (Kagan, 2002).  
+### 4. *Might the mind be an emergent property of complex networks, independent of species boundaries?*  
 
-4. **Methodological Limitations** – The reliability of the mirror test, the interpretation of neural correlates, and the risk of anthropomorphism remain methodological hot spots.  Calls for “transparent inference” (Müller & Schling, 2021) stress the need for explicit criteria when attributing mental states.
+Network theory suggests that cognition can arise wherever sufficient connectivity and feedback exist, be it in ant colonies, slime mould, or human societies. This perspective treats the “mind” as a property of the interaction network rather than of an individual organism. The question then asks: if a colony of ants collectively solves a maze, does the colony possess a mind that is not reducible to any single ant’s brain? [Camazine et al., 1999].
+
+Each of these alternative framings overturns a core assumption of the conventional hierarchy, inviting a re‑examination of what we mean by “mind” in the animal kingdom.
 
 ---
 
-### 7. Future Directions  
+## V. WHAT REMAINS UNANSWERED  
 
-- **In‑vivo Calcium Imaging in Freely Moving Animals** – Enables real‑time mapping of population dynamics during naturalistic behaviour (e.g., in zebrafish larvae, Ahrens et al., 2013).  
-- **Machine‑Learning Analyses of Behavioural Sequencing** – Unsupervised clustering of high‑dimensional pose data reveals latent behavioural “syllables” that may correspond to cognitive modules (Berman et al., 2014).  
-- **Cross‑Taxonomic Comparative Genomics** – Identifies conserved molecular pathways (e.g., opsins, neurotransmitter systems) that underlie perception and learning across vertebrates and invertebrates (Zakon, 2016).  
-- **Integrative Theories of Mind‑Body Coupling** – Development of formal models that embed *Umwelt* within predictive‑processing architectures, thereby unifying semiotic and computational perspectives.  
+1. **The neural correlates of animal consciousness** – While functional imaging in mammals has identified candidate regions (e.g., the prefrontal cortex), comparable data for birds, reptiles, and cephalopods are sparse. The question of whether similar structures are required for consciousness across divergent lineages remains open.  
 
-These avenues promise a more comprehensive understanding of how meaning is constituted in the lives of non‑human organisms.
+2. **Quantifying the continuum between instinct and learning** – No universally accepted metric exists to gauge the degree to which a behaviour is genetically canalised versus environmentally shaped. Longitudinal, cross‑generational studies are needed to disentangle inherited predispositions from cultural transmission.  
+
+3. **The scope of moral agency in non‑human animals** – If certain species possess a form of self‑awareness and empathy, what ethical obligations arise for humans? Philosophical consensus is lacking, and legal frameworks vary widely.  
+
+4. **The role of language‑like systems in non‑human cognition** – Some cetaceans and corvids exhibit combinatorial vocalisations, yet whether these constitute proto‑syntax or are merely patterned calls is disputed. Understanding the constraints and potentials of non‑human communication systems is essential for mapping the evolutionary roots of language.  
+
+5. **Methodological limits of behavioural inference** – Our instruments—cameras, tracking devices, neural probes—capture only a fraction of an animal’s lived experience. The possibility that crucial aspects of mind are systematically invisible to us (e.g., subjective qualia) may render any complete description forever provisional.  
+
+6. **The evolutionary pathways to tool use** – While convergent evolution has produced tool‑using birds, mammals, and cephalopods, the selective pressures and developmental mechanisms that lead to such behaviours are not fully elucidated.  
+
+7. **The extent of social cognition beyond primates** – Evidence for theory‑of‑mind‑like abilities in elephants, dolphins, and certain insects is suggestive but not decisive. Determining the minimal cognitive architecture required for attributing mental states to conspecifics remains a contested frontier.
+
+These lacunae underscore that the study of animal mind is a living discipline, perpetually reshaped by new techniques, theoretical shifts, and ethical considerations.
 
 ---
 
-### 8. Representative Bibliography  
+## VI. QUESTIONS FOR THE READER  
 
-- Ahrens, M. B. et al. (2013). *Whole‑brain functional imaging at cellular resolution using light‑sheet microscopy.* *Nature Methods*, 10, 413–420.  
-- Berman, G. J. et al. (2014). *Mapping the stereotyped behaviour of freely moving fruit flies.* *Nature Communications*, 5, 4357.  
-- Boyer, P., & Laland, K. N. (2008). *Cultural niche construction and human evolution.* *Proceedings of the Royal Society B*, 275, 1651–1660.  
-- Chalmers, D. J. (1996). *The Conscious Mind: In Search of a Fundamental Theory.* Oxford University Press.  
-- Clayton, N. S., & Dickinson, A. (1998). *Episodic-like memory during cache recovery by scrub‑jays.* *Nature*, 395, 272–274.  
-- Dennett, D. C. (1991). *Consciousness Explained.* Little, Brown and Co.  
-- Gödel, A., & von Uexküll, J. (1934). *Umwelt.* (German edition).  
-- Hanlon, R. T., & Messenger, J. B. (1996). *Cephalopod Behaviour.* Cambridge University Press.  
-- Köhler, W. (1925). *The Mentality of Apes.* Harcourt, Brace & World.  
-- O’Keefe, J., & Nadel, L. (1978). *The Hippocampus as a Cognitive Map.* Oxford University Press.  
-- Rizzolatti, G., & Craighero, L. (2004). *The mirror-neuron system.* *Annual Review of Neuroscience*, 27, 169–192.  
-- Shettleworth, S. J. (1998). *Cognition, Evolution, and Behavior.* Oxford University Press.  
-- Tononi, G. (2004). *An information integration theory of consciousness.* *BMC Neuroscience*, 5, 42.  
-- Tomasello, M. et al. (2005). *Understanding and sharing intentions.* *Trends in Cognitive Sciences*, 9, 327–333.  
-- Varela, F. J., Thompson, E., & Rosch, E. (1991). *The Embodied Mind.* MIT Press.  
-- Wilson, E. O. (1975). *Sociobiology: The New Synthesis.* Harvard University Press.  
+- Which of the competing perspectives—hierarchical intelligence, embodied cognition, graded consciousness, cultural emergence, or network emergence—resonates most with your intuition, and why?  
+- What unspoken assumptions do you bring when you judge a behaviour as “intelligent” or “instinctive”?  
+- Have you ever observed an animal (perhaps a pet, a farm animal, or a wild creature) performing an act that challenged your preconceptions of its mental capacities? How does that experience colour the accounts you have read?  
+- If you could add a question to this article, what would it be? Perhaps a query about the moral implications of animal cognition, or about the methodological tools you wish to develop?  
 
-(Additional citations will be inserted in the final manuscript where each claim is discussed.)
+Reflecting upon these prompts may reveal the hidden lenses through which we view the animal mind.
 
----  
+---
 
-*The foregoing revision integrates empirical findings, methodological transparency and the semiotic perspective that underlies the concept of Umwelt.  It is intended to meet the scholarly standards articulated by the reviewers while preserving the organism‑centred voice that has guided my own work.*
+## VII. PATHS FOR FURTHER INQUIRY  
+
+- **Historical trajectory:** To trace how the notion of animal cognition evolved from Aristotle’s *scala naturae* to Darwin’s comparative observations, consult *The Descent of Man* (Darwin, 1871) and the later works of Karl von Frisch on insect communication.  
+
+- **Experimental approaches:** To investigate the embodied cognition hypothesis, design field experiments that manipulate environmental affordances (e.g., altering substrate for burrowing rodents) and record behavioural adaptations, following the methods of Tinbergen’s four questions.  
+
+- **Neurobiological mapping:** For probing consciousness across taxa, employ functional magnetic resonance or calcium imaging in avian and cephalopod brains while presenting stimuli that elicit complex problem‑solving, comparing the resulting activation patterns with mammalian data.  
+
+- **Cultural transmission studies:** To explore collective intelligence, conduct longitudinal observations of tool repertoires in New Caledonian crows, tracking how novel tools spread through social networks, akin to the cultural diffusion models used in human anthropology.  
+
+- **Network‑theoretic analysis:** To assess emergent minds in social insects, construct interaction graphs from automated tracking of ant colonies and calculate measures of integration (e.g., Φ) to test integrated information theory predictions.  
+
+- **Ethical reflection:** To engage with the moral dimensions, compare legislative frameworks that grant legal personhood to great apes, cetaceans, or elephants, and examine the philosophical arguments for extending such status to other cognitively complex species.  
+
+- **Philosophical expansion:** To interrogate the concept of consciousness, read contemporary works on panpsychism and the hard problem of consciousness, juxtaposing them with the empirical findings from comparative neuroethology.  
+
+Each of these avenues offers a way to deepen the inquiry, ensuring that the question of the animal mind remains vibrant and ever‑more refined.
 ====
 
 
