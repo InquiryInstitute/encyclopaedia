@@ -158,7 +158,10 @@
   \end{center}
   \vspace*{\fill}
   \cleardoublepage
+  % Force two-column mode for entries (after TOC)
   \twocolumn
+  \setlength{\columnsep}{10mm}
+  \@twocolumntrue
 }
 
 % End of class
