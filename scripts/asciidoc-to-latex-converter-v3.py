@@ -94,22 +94,29 @@ def parse_entry(entry_content):
     title = title_match.group(1).strip() if title_match else "Untitled"
     
     # Extract author information
-    canonical_author_match = re.search(r':canonical-author:\s*(.+)', entry_content)
-    canonical_author = canonical_author_match.group(1).strip() if canonical_author_match else None
-    
+    # Author attribution should be in format a.{surname}
     faculty_id_match = re.search(r':faculty-id:\s*(.+)', entry_content)
     faculty_id = faculty_id_match.group(1).strip() if faculty_id_match else None
+    
+    canonical_author_match = re.search(r':canonical-author:\s*(.+)', entry_content)
+    canonical_author = canonical_author_match.group(1).strip() if canonical_author_match else None
     
     # Extract author image/portrait path
     author_image_match = re.search(r':author-image:\s*(.+)', entry_content)
     author_image = author_image_match.group(1).strip() if author_image_match else None
     
-    # Use canonical-author if available, otherwise try to derive from faculty-id
-    author_name = canonical_author
-    if not author_name and faculty_id:
-        # Try to derive name from faculty ID (e.g., a.peirce -> Charles Sanders Peirce)
-        # This is a fallback - ideally canonical-author should always be set
-        author_name = faculty_id.replace('a.', '').replace('.', ' ').title()
+    # Use faculty-id (a.{surname}) format for author attribution
+    # This is the canonical format for author signatures
+    author_attribution = faculty_id if faculty_id else None
+    if not author_attribution and canonical_author:
+        # Fallback: if canonical-author is already in a.{surname} format, use it
+        if canonical_author and canonical_author.startswith('a.'):
+            author_attribution = canonical_author
+        elif canonical_author:
+            # Convert full name to a.{surname} format (last resort)
+            # Extract surname (last word)
+            surname = canonical_author.split()[-1].lower()
+            author_attribution = f"a.{surname}"
     
     # Extract canonical text block - handle both generated and placeholder
     # First, remove all marginalia blocks from the content to avoid them appearing in canonical text
