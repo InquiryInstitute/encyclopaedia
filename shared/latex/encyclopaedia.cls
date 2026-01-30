@@ -13,13 +13,14 @@
 % The twocolumn option should handle this, but we'll enforce it explicitly
 
 % Required packages
-% Britannica-style margins: generous outer margin for marginalia
+% Britannica-style margins: designed for marginalia from the start
+% A4: 210 × 297 mm
 \RequirePackage[a4paper,
-  inner=25mm,        % binding + thumb space (slightly tighter)
-  outer=45mm,        % marginalia lives here (more space)
-  top=20mm,          % tighter top for more content
-  bottom=25mm,       % adequate bottom margin
-  columnsep=10mm     % clear column separation
+  inner=22mm,        % binding + thumb space (sacred, don't steal)
+  outer=40mm,        % marginalia lives here - wide enough to feel intentional
+  top=26mm,          % allows running headers without crushing
+  bottom=32mm,       % critical: marginalia must never collide with page numbers
+  columnsep=10mm     % clear column separation (don't steal for marginalia)
 ]{geometry}
 
 \RequirePackage[utf8]{inputenc}
