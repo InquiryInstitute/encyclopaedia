@@ -24,8 +24,9 @@
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
+% Use Type1 Libertinus fonts for pdflatex compatibility
+% libertinus-otf requires XeLaTeX/LuaLaTeX, so we use libertinus (Type1) instead
 \RequirePackage{libertinus}
-\RequirePackage{libertinus-otf}
 
 % Line spacing and paragraph formatting (Britannica-style: dense, readable)
 \linespread{1.0}
