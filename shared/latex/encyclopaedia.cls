@@ -37,7 +37,10 @@
 % Entry headings (Britannica-style: bold, uppercase, centered)
 \RequirePackage{titlesec}
 
-% Entry titles span both columns
+% Disable section numbering
+\setcounter{secnumdepth}{-1}
+
+% Entry titles span both columns (unnumbered)
 \titleformat{\section}
   {\normalfont\Large\bfseries}
   {}
