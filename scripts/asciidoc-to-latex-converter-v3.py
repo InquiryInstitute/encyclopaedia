@@ -433,22 +433,25 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
                 # Add author signature at end of canonical text (Britannica-style)
                 # After main text, before references/marginalia
                 # Ensure signature doesn't orphan by keeping it with content
+                # Author attribution is in a.{surname} format
                 if entry.get('author'):
                     # Add small space before signature, but keep it with last paragraph
                     latex += "\n"  # Small break before signature
                     author_image = entry.get('author_image', '')
+                    author_attribution = entry['author']  # Already in a.{surname} format
                     if author_image:
                         # Escape image path
                         image_path = escape_simple(author_image)
-                        latex += f"\\authorsignature{{{escape_simple(entry['author'])}}}{{{image_path}}}\n"
+                        latex += f"\\authorsignature{{{escape_simple(author_attribution)}}}{{{image_path}}}\n"
                     else:
-                        # No image, just name
-                        latex += f"\\authorsignature{{{escape_simple(entry['author'])}}}{{}}\n"
+                        # No image, just attribution in a.{surname} format
+                        latex += f"\\authorsignature{{{escape_simple(author_attribution)}}}{{}}\n"
             else:
                 latex += canonical_latex
-                # Add author signature even if single paragraph
+                # Add author signature even if single paragraph (in a.{surname} format)
                 if entry.get('author'):
-                    latex += f"\n\\authorsignature{{{escape_simple(entry['author'])}}}\n"
+                    author_attribution = entry['author']  # Already in a.{surname} format
+                    latex += f"\n\\authorsignature{{{escape_simple(author_attribution)}}}\n"
         else:
             # Placeholder - add note
             latex += "\\textit{[Canonical text to be generated]}\n\n"
