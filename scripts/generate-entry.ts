@@ -143,12 +143,32 @@ function buildEntryPrompt(config: EntryConfig): string {
 
 `;
   } else {
-    prompt += `This is for the ADULT EDITION. Guidelines:
-- Write in your authentic scholarly voice
-- Use precise, technical language appropriate to the subject
-- Present arguments with rigor and clarity
-- Include citations in [Author, Year] format where relevant
-- Balance depth with accessibility
+    prompt += `This is for the ADULT EDITION. Follow the Inquiry-First Encyclopædia Article Template:
+
+I. THE QUESTION THAT OPENS THIS ARTICLE
+Begin with one carefully chosen, generative question—the question that makes the article necessary. This question should not be fully answerable. It should orient the reader toward wonder, not mastery. Ideally, it should feel slightly uncomfortable.
+
+II. WHAT IS COMMONLY SAID
+Briefly summarize the prevailing or conventional account of the topic. What do textbooks, popular explanations, or authorities usually claim? What definitions or frameworks are most widely accepted? What assumptions are typically left unstated? Be neutral, concise, and non-dogmatic.
+
+III. QUESTIONS BENEATH THE ANSWER
+Expose the assumptions hiding inside the common account. What must be true for this explanation to hold? What does this view emphasize—and what does it ignore? Who benefits from framing the topic this way? When did this understanding emerge, and why then? This section should multiply questions, not resolve them.
+
+IV. COMPETING WAYS OF SEEING
+Present 2–4 alternative interpretations, traditions, or frameworks, each introduced as a question. How does this topic appear from different perspectives? How is it understood differently across cultures or disciplines? What happens if we reverse a core assumption? Do not declare a winner. Let tension remain visible. Contradiction is a feature, not a flaw.
+
+V. WHAT REMAINS UNANSWERED
+Name what is not known, unresolved, or actively debated. This may include open scientific problems, philosophical disagreements, ethical ambiguities, missing voices or perspectives, or questions we lack the tools to ask properly (yet). This section signals that knowledge is alive, not complete.
+
+VI. QUESTIONS FOR THE READER
+Invite the reader into the inquiry directly. Which explanation feels most convincing to you, and why? What assumptions do you bring to this topic? What experience in your own life complicates what you've read? What question would you add to this article?
+
+VII. PATHS FOR FURTHER INQUIRY
+Instead of a bibliography, offer directions of exploration. "To pursue this question historically, see..." "To approach this scientifically, investigate..." "To challenge this framing, compare it with..." "To deepen this inquiry, ask..." You may optionally include references, but framed as tools, not authorities.
+
+GUIDING PRINCIPLE: An encyclopædia should not be the place where questions go to die. It should be the place where better questions are learned.
+
+Write in your authentic scholarly voice. Use precise, technical language appropriate to the subject. Present arguments with rigor and clarity. Include citations in [Author, Year] format where relevant. Balance depth with accessibility.
 
 `;
   }
@@ -165,9 +185,10 @@ ${config.topics.map(t => `- ${t}`).join('\n')}
 `;
   }
 
-  prompt += `Write the complete canonical text for this entry. 
+  prompt += `Write the complete canonical text for this entry following the Inquiry-First template above.
 Output ONLY the body content (no metadata, no AsciiDoc formatting, no marginalia).
-The text should be ready to be placed inside the [role=canonical] block.`;
+The text should be ready to be placed inside the [role=canonical] block.
+Use markdown formatting for structure (## for section headers, **bold** for emphasis, etc.).`;
 
   return prompt;
 }
