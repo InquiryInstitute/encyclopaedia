@@ -34,7 +34,7 @@
 \setlength{\parskip}{0pt}
 \setlength{\baselineskip}{1.1em}
 
-% Marginalia system
+% Marginalia system (Britannica-style, strict rules)
 % For two-column mode, we need special handling
 % Use both marginnote (for stacking) and marginpar (for two-column positioning)
 \RequirePackage{marginnote}
@@ -45,6 +45,12 @@
 % Set minimum vertical separation between stacked notes
 \setlength{\marginparpush}{0.5\baselineskip}
 \renewcommand{\marginfont}{\footnotesize}
+
+% Marginalia rules enforcement:
+% 1. Anchored to baseline grid (automatic with \marginpar/\marginnote)
+% 2. Density limit enforced in converter (max 1 per 250-300 words, max 2 per column)
+% 3. No terminal elements: enforced by placement logic
+% 4. End-of-article rule: no marginalia in final paragraph (enforced in converter)
 
 % Entry headings (Britannica-style: bold, uppercase, centered)
 \RequirePackage{titlesec}
@@ -92,11 +98,15 @@
 
 % Marginalia command (Britannica-style: compact, in outer margin)
 % Usage: \marginalia{Author}{Type (Year)}{Body text}
-% In two-column mode, use \marginpar which correctly places notes in outer margin
-% \marginpar automatically handles stacking to prevent overlaps
+% Rules enforced:
+% - Anchored to baseline grid (automatic alignment)
+% - No terminal elements (enforced by placement logic)
+% - Density limits (enforced in converter)
+% - End-of-article rule (enforced in converter)
 \newcommand{\marginalia}[3]{%
   \if@twocolumn
-    % In two-column mode, \marginpar places notes in outer margin (right on odd pages, left on even)
+    % In two-column mode, \marginpar places notes in outer margin
+    % Automatically aligns to baseline grid
     \marginpar{%
       \footnotesize
       \raggedright

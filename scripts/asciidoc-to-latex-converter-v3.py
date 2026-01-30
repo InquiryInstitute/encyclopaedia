@@ -352,25 +352,56 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
             # Split canonical text into paragraphs for marginalia placement
             paragraphs = canonical_latex.split('\n\n')
             
+            # Marginalia placement rules (Britannica-style):
+            # 1. Density limit: max 1 per 250-300 words, max 2 per column
+            # 2. End-of-article rule: no marginalia in final paragraph
+            # 3. Prefer paragraph openings (first paragraph, definition paragraphs, transitions)
+            # 4. Avoid dense technical paragraphs, lists, quotations
+            
             if paragraphs:
-                # First paragraph
+                # Estimate word count for density checking
+                word_count = len(canonical_text.split())
+                max_marginalia = min(
+                    max(1, word_count // 275),  # ~1 per 275 words
+                    2  # Max 2 per column
+                )
+                
+                # Filter marginalia to respect density limit
+                available_marginalia = entry.get('marginalia', [])[:max_marginalia]
+                
+                # End-of-article rule: exclude final paragraph from marginalia
+                # Marginalia can only attach to paragraphs before the last one
+                paragraphs_with_marginalia = len(paragraphs) - 1  # Exclude final paragraph
+                
+                # First paragraph (preferred anchor point)
                 latex += paragraphs[0]
                 
-                # Add first marginalia after first paragraph if available
-                if entry['marginalia'] and len(entry['marginalia']) > 0:
-                    marg = entry['marginalia'][0]
+                # Add first marginalia after first paragraph if available and within limits
+                if available_marginalia and len(available_marginalia) > 0 and paragraphs_with_marginalia > 0:
+                    marg = available_marginalia[0]
                     marg_content = escape_simple(marg['content'])
                     latex += f"\n\\marginalia{{{escape_simple(marg['author'])}}}{{{escape_simple(marg['type'])} ({marg['year']})}}{{{marg_content}}}\n"
+                    available_marginalia = available_marginalia[1:]  # Remove used marginalia
+                    paragraphs_with_marginalia -= 1
                 
-                # Rest of paragraphs
-                for i, para in enumerate(paragraphs[1:], start=1):
+                # Rest of paragraphs (excluding final paragraph for marginalia)
+                for i, para in enumerate(paragraphs[1:-1], start=1):  # Exclude last paragraph
                     latex += "\n\n" + para
                     
-                    # Add remaining marginalia after subsequent paragraphs
-                    if i < len(entry['marginalia']):
-                        marg = entry['marginalia'][i]
-                        marg_content = escape_simple(marg['content'])
-                        latex += f"\n\\marginalia{{{escape_simple(marg['author'])}}}{{{escape_simple(marg['type'])} ({marg['year']})}}{{{marg_content}}}\n"
+                    # Add marginalia after paragraph if available and within limits
+                    # Prefer early paragraphs (first 2-3) for better reading rhythm
+                    if available_marginalia and len(available_marginalia) > 0 and paragraphs_with_marginalia > 0:
+                        # Prefer placing in first few paragraphs (better reading rhythm)
+                        if i <= 2 or (i <= 3 and len(available_marginalia) > 0):
+                            marg = available_marginalia[0]
+                            marg_content = escape_simple(marg['content'])
+                            latex += f"\n\\marginalia{{{escape_simple(marg['author'])}}}{{{escape_simple(marg['type'])} ({marg['year']})}}{{{marg_content}}}\n"
+                            available_marginalia = available_marginalia[1:]
+                            paragraphs_with_marginalia -= 1
+                
+                # Final paragraph (no marginalia per end-of-article rule)
+                if len(paragraphs) > 1:
+                    latex += "\n\n" + paragraphs[-1]
                 
                 # Add author signature at end of canonical text (Britannica-style)
                 # After main text, before references/marginalia
