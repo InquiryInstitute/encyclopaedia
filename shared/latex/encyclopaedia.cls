@@ -124,18 +124,18 @@
 % Entry command for spanning both columns (Britannica-style)
 % Usage: \entry{Title}
 % This temporarily switches to onecolumn for the title, then back to twocolumn
+% Note: \twocolumn starts a new page, so we use \twocolumn[title] syntax
 \newcommand{\entry}[1]{%
-  \onecolumn
-  \vspace*{0.3\baselineskip}
-  \begin{center}
-    \Large\bfseries\MakeUppercase{#1}
-  \end{center}
-  \vspace*{0.2\baselineskip}
-  \markboth{#1}{#1}  % Set running header
-  % Switch back to two-column mode for entry content
-  \twocolumn
+  \twocolumn[%
+    \vspace*{0.3\baselineskip}%
+    \begin{center}%
+      \Large\bfseries\MakeUppercase{#1}%
+    \end{center}%
+    \vspace*{0.2\baselineskip}%
+    \markboth{#1}{#1}%  Set running header
+  ]%
+  % Ensure two-column mode is active
   \setlength{\columnsep}{10mm}
-  % Ensure we're in two-column mode
   \@twocolumntrue
 }
 
