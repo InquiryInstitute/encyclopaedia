@@ -318,15 +318,18 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
     # Add each entry
     for entry in entries:
         # Entry title spanning both columns (using \entry command)
-        latex += f"\\entry{{{entry['title']}}}\n\n"
+        # \entry{} switches to onecolumn, prints title, then switches back to twocolumn
+        latex += f"\\entry{{{escape_simple(entry['title'])}}}\n\n"
         
         # Convert canonical text (skip if placeholder)
         if entry['canonical'] and entry['canonical'] != "[CANONICAL TEXT TO BE GENERATED]":
             # Remove duplicate title from canonical text
             canonical_latex = convert_canonical_to_latex(entry['canonical'], entry['title'])
             
+            # Remove any remaining marginalia markup that might have slipped through
+            canonical_latex = re.sub(r'\[role=marginalia[^\]]*\].*?', '', canonical_latex, flags=re.DOTALL)
+            
             # Split canonical text into paragraphs for marginalia placement
-            # For now, add marginalia at the end of the first paragraph
             paragraphs = canonical_latex.split('\n\n')
             
             if paragraphs:
@@ -334,21 +337,20 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
                 latex += paragraphs[0]
                 
                 # Add first marginalia after first paragraph if available
-                if entry['marginalia']:
+                if entry['marginalia'] and len(entry['marginalia']) > 0:
                     marg = entry['marginalia'][0]
                     marg_content = escape_simple(marg['content'])
-                    latex += f"\\marginalia{{{marg['author']}}}{{{marg['type']} ({marg['year']})}}{{{marg_content}}}\n"
+                    latex += f"\n\\marginalia{{{escape_simple(marg['author'])}}}{{{escape_simple(marg['type'])} ({marg['year']})}}{{{marg_content}}}\n"
                 
                 # Rest of paragraphs
-                for para in paragraphs[1:]:
+                for i, para in enumerate(paragraphs[1:], start=1):
                     latex += "\n\n" + para
                     
                     # Add remaining marginalia after subsequent paragraphs
-                    marg_index = paragraphs.index(para)
-                    if marg_index < len(entry['marginalia']):
-                        marg = entry['marginalia'][marg_index]
+                    if i < len(entry['marginalia']):
+                        marg = entry['marginalia'][i]
                         marg_content = escape_simple(marg['content'])
-                        latex += f"\\marginalia{{{marg['author']}}}{{{marg['type']} ({marg['year']})}}{{{marg_content}}}\n"
+                        latex += f"\n\\marginalia{{{escape_simple(marg['author'])}}}{{{escape_simple(marg['type'])} ({marg['year']})}}{{{marg_content}}}\n"
                 
                 # Add author signature at end of canonical text (Britannica-style)
                 # After main text, before references/marginalia
