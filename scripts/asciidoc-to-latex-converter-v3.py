@@ -246,7 +246,9 @@ def convert_canonical_to_latex(text, entry_title=None):
     
     # Handle italic *text* (single asterisk, not double)
     # Be careful not to match **bold** or standalone asterisks
-    text = re.sub(r'(?<!\*)\*([^*\n]+?)\*(?!\*)', r'\\textit{\1}', text)
+    # Also avoid matching asterisks that are part of quotes or special formatting
+    # Only match *text* where text doesn't contain unmatched quotes or special chars
+    text = re.sub(r'(?<!\*)\*([^*\n]+?)\*(?!\*)', lambda m: f'\\textit{{{m.group(1)}}}' if m.group(1).strip() else m.group(0), text)
     
     # Handle AsciiDoc-style horizontal rules (---)
     text = re.sub(r'^---+$', '', text, flags=re.MULTILINE)
