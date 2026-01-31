@@ -40,6 +40,27 @@ def escape_latex_safe(text):
 
 def escape_simple(text):
     """Escape LaTeX special characters (simple version)"""
+    # First, normalize Unicode spaces and special characters
+    # U+202F (narrow no-break space) -> regular space
+    text = text.replace('\u202F', ' ')
+    # U+00A0 (non-breaking space) -> regular space
+    text = text.replace('\u00A0', ' ')
+    # U+2009 (thin space) -> regular space
+    text = text.replace('\u2009', ' ')
+    # U+2013 (en dash) -> --
+    text = text.replace('\u2013', '--')
+    # U+2014 (em dash) -> ---
+    text = text.replace('\u2014', '---')
+    # U+2018 (left single quote) -> `
+    text = text.replace('\u2018', '`')
+    # U+2019 (right single quote/apostrophe) -> '
+    text = text.replace('\u2019', "'")
+    # U+201C (left double quote) -> ``
+    text = text.replace('\u201C', '``')
+    # U+201D (right double quote) -> ''
+    text = text.replace('\u201D', "''")
+    
+    # Then escape LaTeX special characters
     replacements = {
         '&': '\\&',
         '%': '\\%',
@@ -359,8 +380,8 @@ def convert_asciidoc_to_latex(adoc_file, output_file, volume_num, edition, year=
     latex = f"""\\documentclass{{encyclopaedia}}
 
 % Volume metadata for running headers
-\\newcommand{{\\volumenum}}{{{volume_num_roman}}}
-\\newcommand{{\\volumetitle}}{{{volume_title}}}
+\\renewcommand{{\\volumenum}}{{{volume_num_roman}}}
+\\renewcommand{{\\volumetitle}}{{{volume_title}}}
 
 \\title{{{doc_title}}}
 \\renewcommand{{\\subtitle}}{{Volume {volume_num_roman}: {volume_title}}}
